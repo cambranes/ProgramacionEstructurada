@@ -1,10 +1,12 @@
 
 /*
 Autor:Edgar Cambranes 26/Enero/17
-Entradas:n (int)
+Entradas: n (int)
 Salidas: sumaFactoriales
 Procedimiento general:
-Utilizando
+Utilizando un ciclo for se calcula en cada iteración
+la varible factorial contiene el factorial del valor del contador
+y se acumulan en el sumador sumaFactoriales
 */
 
 #include <stdio.h>
@@ -19,7 +21,7 @@ int main(int argc, char *argv[]) {
 	/*
 	utilizando un ciclo for calculamos los factoriales
 	*/
-	for(contador; contador <= n; contador++ )
+	for(contador; contador <= n; contador++)
 	{
 		factorial = factorial * contador;
 		sumaFactoriales = sumaFactoriales + factorial;
@@ -29,7 +31,7 @@ int main(int argc, char *argv[]) {
 	{
 		sumaFactoriales = 1;
 	}
-	
+
 	printf("La suma es %d\n",sumaFactoriales );
 	return 0;
 }
