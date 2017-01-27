@@ -1,38 +1,56 @@
-/*Autor:Edgar Cambranes 26/Enero/17Entradas:Año (int)Salidas:ImpresiónProcedimiento general:
+/*
+Autor:Edgar Cambranes 26/Enero/17
+Entradas:Ano (int)
+Salidas:Impresion
+Procedimiento general:
 Determinar si dado una entrada entera
-representa un año bisiesto o no.
-Se determina inicialmente si es múltiplo de 4. 
-Dentro de los múltiplos de 100 debe cumplir si es múltiplo de 400.
+representa un a‚Äìo bisiesto o no.
+Se determina inicialmente si es m≈ìltiplo de 4. 
+Dentro de los m≈ìltiplos de 100 debe cumplir si es m≈ìltiplo de 400.
 Se utiliza una bandera (esBisiesto)
-*/#include <stdio.h>int main(int argc, char *argv[]) 
-{	/* Entradas 
+*/
+
+#include <stdio.h>
+
+int main(int argc, char *argv[]) 
+{
+	/* Entradas 
 	bisiesto valor de entrada para verificar
 	esBisiesto bandera con dos valores 0/1 F/V
 	por defecto esBisiesto se inicia como Falso (0)
-	*/	int bisiesto, esBisiesto = 0;
-	scanf("%d", &bisiesto);	/* Verificacion de múltiplo de 4 
-	sino esBisiesto tiene valor por defecto falso*/	if (bisiesto%4 == 0)
+	*/
+	int bisiesto, esBisiesto = 0;
+	scanf("%d", &bisiesto);
+	/* Verificacion de m≈ìltiplo de 4 
+	sino esBisiesto tiene valor por defecto falso*/
+	if (bisiesto%4 == 0)
 	{
-		/* Verificación de múltiplo de 100*/
+		/* Verificaci‚Äîn de m≈ìltiplo de 100*/
 		if (bisiesto%100 == 0)
 		{
 			if (bisiesto%400 == 0)
-			{				/* Es múltiplo de 100 y 400*/
-				esBisiesto = 1;			}			
+			{
+				/* Es m≈ìltiplo de 100 y 400*/
+				esBisiesto = 1;
+			}			
 		}
-		/* Es múltiplo de 4 pero no de 100*/
+		/* Es m≈ìltiplo de 4 pero no de 100*/
 		else
 		{
 		esBisiesto = 1;	
 		}
 	}
-		/* Salida*/
+	
+	/* Salida*/
 	if (esBisiesto)
 	{
-		printf("%d es un año bisiesto", bisiesto);
+		printf("%d es un a‚Äìo bisiesto", bisiesto);
 	}
 	else 
 	{
-		printf("%d NO es un año bisiesto", bisiesto);
-	}	
-	return 0;}
+		printf("%d NO es un a‚Äìo bisiesto", bisiesto);
+	}
+	
+	return 0;
+}
+
