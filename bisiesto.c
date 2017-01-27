@@ -4,9 +4,9 @@ Entradas:Ano (int)
 Salidas:Impresion
 Procedimiento general:
 Determinar si dado una entrada entera
-representa un a–o bisiesto o no.
-Se determina inicialmente si es mœltiplo de 4. 
-Dentro de los mœltiplos de 100 debe cumplir si es mœltiplo de 400.
+representa un anioo bisiesto o no.
+Se determina inicialmente si es multiplo de 4. 
+Dentro de los multiplos de 100 debe cumplir si es multiplo de 400.
 Se utiliza una bandera (esBisiesto)
 */
 
@@ -48,9 +48,15 @@ int main(int argc, char *argv[])
 	}
 	else 
 	{
+<<<<<<< Updated upstream
 		printf("%d NO es un a–o bisiesto", bisiesto);
 	}
 	
 	return 0;
 }
 
+=======
+		printf("%d NO es un a�o bisiesto", bisiesto);
+	}	
+	return 0;}
+>>>>>>> Stashed changes
