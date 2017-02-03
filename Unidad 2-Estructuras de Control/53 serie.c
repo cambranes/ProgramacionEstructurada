@@ -34,5 +34,5 @@ int main(){
 	return 0;
 	
 }
-/* QA: Use de entradas 5 y 7 
-La salida deberia ser 428.625000 */
+/* QA: Use de entradas 5 y 7 o 2 y 9 o 7 y 1
+La salida deberia ser 428.625000, 73.000000, 0.631944  */

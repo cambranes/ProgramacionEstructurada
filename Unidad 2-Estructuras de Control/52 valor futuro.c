@@ -35,5 +35,4 @@ int main() {
 	
 	return 0;
 }
-/* QA: De entradas use el entero 4, el flotante .5 y el entero 6
-La salida deberia ser: 4220.426270*/
+/* QA: De entradas use el entero 4 o 6 o 2, el flotante .5 o .2 o .9 y el entero 6o 1 o 8La salida deberia ser: 4220.426270, 6.012000, 275.023041 */
