@@ -237,6 +237,17 @@ La variable "percentwo" debi� escribirse as�: percentTwo.
 Prueba realizada por Martin Alpuche del equipo 2 
 */
 ----------------------------------------------------------------------------------------------------------------
+/*
+Autor:Heriberto Loredo Equipo #7 31/01/17
+Programación Estructurada
+Instrucción: Escribe el programa que lea datos de muchos empleados de una fábrica. 
+De cada uno se leerá: Nombre, Edad, Sueldo por hora, Horas trabajadas en la semana y Porcentaje de impuestos a pagar.  
+El pseudocódigo calculará e imprimirá el sueldo neto semanal de cada empleado, 
+el cual es el sueldo ya con  los impuestos deducidos.   
+
+Entradas: sueldoPorHora(int), horasTrabajadas(int), nEmpleados(int),contador(int),pago(int), horasExtra(int), edad(int); 
+	porcentajeDeImpuestosAPagar(float),pagoneto(float);
+Salidas: Datos de varios empleados con el saldario a pagar*/
 #include <stdio.h>
 
 int main(int argc, char *argv[]) {
