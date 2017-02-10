@@ -14,7 +14,8 @@ int main(int argc, char *argv[])
   /*Entradas*/
 	float numero;
   /*en este bloque se leen y analizan los valores introducidos por
-  el usuario*/
+  el usuario utilizando un ciclo do while, para poder tener un mejor
+	control de los valores introducidos*/
   printf("introduzca los valores para analizar, marque el final con un 0\n");
   do
   {
@@ -34,8 +35,12 @@ int main(int argc, char *argv[])
   return 0;
 }
 /*Notas de QA
-
-QA: Luis Madera
-El programa cumple con el procedimiento definido donde debe analizar su un numero es positivo o negativo, se introducen 3 casos prueba, cumpliendo con su funciĂłn.
-Esta estructurado de la forma preestablecida contando con nombre de autor y las etapas correspondientes.
+Pruebas realizadas:
+Entradas         / Salidas esperadas         / Salidas recibidas
+5, -3, 6, -15, 0 / Positivos 2 y negativos 2 / Positivos 2 y negativos 2
+-35, -58, -4, 0  / Positivos 0 y negativos 3 / Positivos 0 y negativos 3
+23, 23, -123,    /
+23412, -12312    / Positivos 4 y negativos 3 / Positivos 4 y negativos 3
+9348, -34, 0     /
+El programa funciona correctamente.
 */

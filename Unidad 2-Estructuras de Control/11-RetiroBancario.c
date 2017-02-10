@@ -48,11 +48,12 @@ int main(int argc, char *argv[])
 }
 
 /*Notas de QA
-QA: Kirbey garcia
-Se realizaron 3 casos de prueba, e�los cuales fueron ingresar un valor de retiro
-mayor al saldo que se tiene, otro mas donde se retira el mismo saldo y por
-ultimo un caso donde se retire menos saldo que el que se tiene, en los cuales el
-programa realiz� correctamente las operaciones, o en su defecto devolvi� el error
-correspondiente.
-
+Se realizaron 3 casos de prueba:
+se retira mas del saldo disponible.
+se retira todo el saldo disponible.
+se retira menos del saldo disponible.
+en los cuales:
+programa realiza correctamente las operaciones,
+o en su defecto devuelve un mensaje de error que
+corresponde a una entrada de datos incorrecta.
 */

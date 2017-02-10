@@ -37,7 +37,7 @@ int main(int argc, char *argv[])
 }
 /*Notas de QA
 QA: Kirbey garcia
-Entradas y Salidas bien definidas basadas en el estandar de cosificaci�n
+Entradas y Salidas bien definidas basadas en el estandar de cosificacion
 Se probaron los casos siguientes:
 1, 999 Dando como salida el valor de 500 el cual cumple como solucion
 1001, 999 Dando como salida el valor de 1000 lo cual cumple como solucion
