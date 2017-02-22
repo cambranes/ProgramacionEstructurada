@@ -1,0 +1,80 @@
+numero=(input("Introduce un número del 1 al 3999: "))
+ #operaciones
+while numero>=1 and numero<=3999:
+   unidades= numero%10
+   numero=numero/10
+   decenas=numero%10
+   numero=numero/10
+   centenas=numero%10
+   millares=numero/10
+   
+   if(millares>=1): 
+     if (millares==1):
+       print("M"),
+     if(millares==2):
+       print("MM"),
+     if(millares==3):
+       print("MMM"),
+       
+   if(centenas>=1): 
+     if (centenas==1):
+       print("C"),
+     if(centenas==2):
+       print("CC"),
+     if(centenas==3):
+       print("CCC"),
+     if (centenas==4):
+       print("CD"),
+     if(centenas==5):
+       print("D"),
+     if(centenas==6):
+       print("DC"),
+     if(centenas==7):
+       print("DCC"),
+     if (centenas==8):
+       print("DCCC"),
+     if(centenas==9):
+       print("CM"),
+       
+     if(decenas>=1): 
+         if (decenas==1):
+           print("X"),
+         if(decenas==2):
+           print("XX"),
+         if(decenas==3):
+           print("XXX"),
+         if (decenas==4):
+           print("XL"),
+         if(decenas==5):
+           print("L"),
+         if(decenas==6):
+           print("LX"),
+         if(decenas==7):
+           print("LXX"),
+         if (decenas==8):
+           print("LXXX"),
+         if(decenas==9):
+           print("XC"),
+           
+           
+         if(unidades>=1): 
+           if (unidades==1):
+             print("I")
+           if(unidades==2):
+             print("II")
+           if(unidades==3):
+             print("III")
+           if (unidades==4):
+             print("IV")
+           if(unidades==5):
+             print("V")
+           if(unidades==6):
+             print("VI")
+           if(unidades==7):
+             print("VII")
+           if (unidades==8):
+             print("VIII")
+           if(unidades==9):
+             print("IX")    
+
+print("Programa terminado")

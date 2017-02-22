@@ -1,0 +1,200 @@
+//Autor:Martin Alpuche Pech,Ulises Ancona Graniel,Emmanuel Azcorra Balam,Shaid Bojorquez Interian 28/Enero/17
+//Entradas:Numerador (int), Denominador (int)
+//Salidas: Numero (int)
+//Procedimiento general: Se le asigna a cada variable el valor de cada digito del valor ingresado
+//y mediante switch´s hacer que imprima una letra dependiendo de el valor asignado
+package ejercicio18;
+import java.util.Scanner;
+/**
+ *
+ * @author Usuario
+ */
+public class Ejercicio18 {
+    
+    public static void main(String[] args) {
+        
+       int Unidades, Decenas, Centenas, Millares, Numero;
+       
+       Scanner ObjNumero= new Scanner(System.in);
+       Numero = ObjNumero.nextInt();
+       
+       Unidades=Numero%10;//Definimos el valor de Unidades
+       Numero=Numero/10;//Dividimos numero entre 10
+       Decenas=Numero%10;//Definimos el valor de Decenas
+       Numero=Numero/10;//Dividimos numero entre 10
+       Centenas=Numero%10;//Definimos el valor de Centenas
+       Millares=Numero/10;//Definimos el valor de Millares
+       
+       switch(Millares)//Dependiendo del valor de Millares, el programa imprimirá;
+	{
+		case 1: 
+			{
+				System.out.println("M");
+				break;
+			}
+		case 2: 
+			{
+				System.out.println("MM");
+				break;
+			}
+		case 3: 
+			{
+				System.out.println("MMM");
+				break;
+			}
+		default: break;
+	}
+	
+        switch(Centenas)//Dependiendo del valor de Centenas, el programa imprimirá;
+	{
+		case 1: 
+		{
+			System.out.println("C");
+			break;
+		}
+		case 2: 
+		{
+			System.out.println("CC");
+			break;
+		}
+		case 3: 
+		{
+			System.out.println("CCC");
+			break;
+		}
+		case 4: 
+		{
+			System.out.println("CD");
+			break;
+		}
+		case 5: 
+		{
+			System.out.println("D");
+			break;
+		}
+		case 6: 
+		{
+			System.out.println("DC");
+			break;
+		}
+		case 7: 
+		{
+			System.out.println("DCC");
+			break;
+		}
+		case 8: 
+		{
+			System.out.println("DCCC");
+			break;
+		}
+		case 9: 
+		{
+			System.out.println("CM");
+			break;
+		}
+		default: break;
+	}
+	
+        switch(Decenas)//Dependiendo del valor de Decenas, el programa imprimirá;
+	{
+		case 1: 
+		{
+			System.out.println("X");
+			break;
+		}
+		case 2: 
+		{
+			System.out.println("XX");
+			break;
+		}
+		case 3: 
+		{
+			System.out.println("XXX");
+			break;
+		}
+		case 4: 
+		{
+			System.out.println("XL");
+			break;
+		}
+		case 5: 
+		{
+			System.out.println("L");
+			break;
+		}
+		case 6: 
+		{
+			System.out.println("LX");
+			break;
+		}
+		case 7: 
+		{
+			System.out.println("LXX");
+			break;
+		}
+		case 8: 
+		{
+			System.out.println("LXXX");
+			break;
+		}
+		case 9: 
+		{
+			System.out.println("XC");
+			break;
+		}
+	default: break;
+	}
+	
+    switch(Unidades)//Dependiendo del valor de Unidades, el programa imprimirá;
+    {
+	case 1: 
+	{
+		System.out.println("I");
+		break;
+	}
+	case 2: 
+	{
+		System.out.println("II");
+		break;
+	}
+	case 3: 
+	{
+		System.out.println("III");
+		break;
+	}
+	case 4: 
+	{
+		System.out.println("IV");
+		break;
+	}
+	case 5: 
+	{
+		System.out.println("V");
+		break;
+	}
+	case 6: 
+	{
+		System.out.println("VI");
+		break;
+	}
+	case 7: 
+	{
+		System.out.println("VII");
+		break;
+	}
+	case 8: 
+	{
+		System.out.println("VIII");
+		break;
+	}
+	case 9: 
+	{
+		System.out.println("IX");
+		break;
+	}
+        default: break;
+    } 
+        
+    }
+    
+}

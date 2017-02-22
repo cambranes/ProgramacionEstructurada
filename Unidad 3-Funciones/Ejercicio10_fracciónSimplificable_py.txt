@@ -1,0 +1,25 @@
+def estaSimplificada(numerador, denominador):
+   contador = 2
+   contadorDivisiones=0
+   mcd = 1
+   menor=0
+   if numerador>denominador:
+     menor=denominador
+   else:
+     menor=numerador
+   contador=2
+   while contador<=menor:
+     numerador = numerador/contador;
+     denominador = denominador/contador;
+     mcd = mcd*contador;
+     contador=contador+1
+   return mcd   
+  
+numerador=(input("Introduce el numerador: "))
+denominador=(input("Introduce el denominador: "))
+estaSimplificada(numerador, denominador)
+
+if estaSimplificada(numerador,denominador) > 1:
+   print "Retorno: 0"
+else:
+   print "Retorno: 1"

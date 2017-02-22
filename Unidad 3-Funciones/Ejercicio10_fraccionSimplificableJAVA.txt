@@ -1,0 +1,61 @@
+//Autor:Martin Alpuche Pech,Ulises Ancona Graniel,Emmanuel Azcorra Balam,Shaid Bojorquez Interian 28/Enero/17
+//Entradas:Numerador (int), Denominador (int)
+//Salidas: 0,1
+//Procedimiento general: Se utiliza un cilo for que 
+//imprime el ultimo digito de el valor ingresado y los imprime 
+//en orden inverso
+package ejercicio10;
+import java.util.Scanner;
+/**
+ *
+ * @author Usuario
+ */
+public class Ejercicio10 {
+
+    
+    public static void main(String[] args) {
+        
+        int Numerador, Denominador;
+        
+        System.out.println("Introduce tu fracción");
+        Scanner ObjNumerador= new Scanner(System.in);//Se le asigna un valor a ObjNumerador
+        Scanner ObjDenominador= new Scanner(System.in);//Y a ObjDenominador
+        
+        Numerador=ObjNumerador.nextInt();//Le pasamos el valor a Numerador
+        Denominador=ObjDenominador.nextInt();//Y Denominador
+        
+        if(estaSimplificada(Numerador,Denominador)>1)//Si el Mcd es mayor a uno significa que
+        {                                            //No está simplificada 
+            System.out.println("0"); //Y se imprime un 0
+        }
+        else
+        {
+            System.out.println("1");//Si es uno, entonces está simplificada y se imprime un 1
+        }
+    }
+    
+    public static int estaSimplificada(int Numerador, int Denominador){
+        
+        int Contador =2, ContadorDivisiones=0, Mcd = 1, Menor;
+        
+        if (Numerador>Denominador)//Se designa como Menor a la variable más pequeña
+	{
+		Menor =Denominador;
+	}
+	else
+	{
+		Menor = Numerador;
+	}
+        
+        for(Contador =2; Contador<= Menor; Contador++)//Se dividen las variables entre contador
+        {
+            while (Numerador%Contador ==0 && Denominador%Contador==0)//Hasta que no se puedan dividir más
+		{
+			Numerador = Numerador/Contador;
+			Denominador = Denominador/Contador;
+			Mcd = Mcd*Contador;
+		}
+        }
+        return Mcd;
+    }
+}

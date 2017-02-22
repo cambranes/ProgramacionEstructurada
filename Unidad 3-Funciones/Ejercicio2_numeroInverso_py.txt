@@ -1,0 +1,23 @@
+"""Autor: Equipo 2
+entradas x(int)
+salidas reverso(x)
+procedimiento: Usamos una funcion junto con un ciclo for para ir dividiendo el numero
+y reacomodarlo con el resultado del operador módulo"""
+
+
+#procedimiento de la funcion
+def inverso(x):
+    while x>0:
+      print(x%10),
+      x=x/10
+    return
+
+"""entrada x, es el numero que quieres revertir*/
+	main mas claro"""
+
+
+x= (input("Dígame un número: "))
+while x<=0:
+    x= (input("Error, dígame un número: "))
+
+inverso(x)

@@ -1,0 +1,43 @@
+//Autor:Martin Alpuche Pech,Ulises Ancona Graniel,Emmanuel Azcorra Balam,Shaid Bojorquez Interian 28/Enero/17
+//Entradas:Numero (int)
+//Salidas: Numero (int)
+//Procedimiento general: Se utiliza un cilo for que 
+//imprime el ultimo digito de el valor ingresado y los imprime 
+//en orden inverso
+
+package ejemplo;
+import java.util.Scanner;//Iimportamos la libreria para leer
+/**
+ *
+ * @author Usuario
+ */
+public class Ejemplo {
+
+      
+    public static void main(String[] args) {
+        
+       //Entradas
+        int Numero;
+        Scanner ObjNumero= new Scanner(System.in);//Creamos el objeto ObjNumero y le ingresamos un valor
+        
+         System.out.println("Introduce tu número:");
+         
+         Numero = ObjNumero.nextInt();//Le pasamos el valor de ObjNumero a Numero
+         
+         
+         //Salidas
+         System.out.println("Tu numero es:\t");
+         inverso(Numero); //Se imprime el valor de cada ultimo digito
+         
+         
+         
+            
+    }
+    public static void inverso(int Numero){
+        
+        for (Numero=Numero;Numero>0;Numero=(Numero/10)) //Se usa un ciclo for para imprimir el ultimo digito 
+        {                                               //y dividir la variable entre 10
+           System.out.println((Numero%10)); 
+        }
+    }
+}
