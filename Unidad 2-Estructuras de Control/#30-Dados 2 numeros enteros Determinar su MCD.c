@@ -1,6 +1,7 @@
 #include<stdio.h>
 
 int main() {
+    /*Entradas*/
 	int a;
 	int b;
 	int i;
@@ -10,10 +11,14 @@ int main() {
 	aux=57000;
 	min=57000;
 	ban=1;
+	
+	/*Procedimiento*/
 	printf("Escribir el primer numero a Usar   ");
 	scanf("%i",&a);
 	printf("Escribir el segundo numero a Usar   ");
 	scanf("%i",&b);
+	
+	/*Salidas*/
 	for(i=a;i>1;i--){
 		if(a%i==0){
 			aux=a/i;
