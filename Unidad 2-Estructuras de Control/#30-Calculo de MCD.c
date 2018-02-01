@@ -1,3 +1,7 @@
+30./*Dados 2 numeros enteros Determinar su MCD
+Autor:Kristian Pantoja
+Entradas: #Enteros
+Salida: #Reales*/
 #include<stdio.h>
 
 int main() {
