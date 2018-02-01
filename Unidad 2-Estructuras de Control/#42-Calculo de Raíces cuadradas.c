@@ -1,3 +1,8 @@
+/*Escribir un programa que calcule las raices cuadradas de los primeros 100 numeros enteros y 
+escribir en 2 columnas diferentes el numero natural y su raiz cuadrada respectivamente
+Autor: Kristian Pantoja
+Entrada:Reales,Enteros,Logicos
+Salida: Reales, Enteros*/
 #include<stdio.h>
 #include<math.h>
 #include<stdbool.h>
