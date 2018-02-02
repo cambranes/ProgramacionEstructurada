@@ -15,7 +15,7 @@ int main(int argc, char *argv[]) {
 	
 	/*Entrada*/
 	int positivo = 0, negativo = 0;
-	float numero;
+	float numero = 1;
 	
 	/*Procedimiento*/
 	while(numero != 0){
