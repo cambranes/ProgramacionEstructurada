@@ -5,6 +5,21 @@ Salidas: sp.
 Procedimiento general:
 Mediante la evaluacion de numeros saber cuales son los primeros n numeros primos
 y sumarlos.
+
+QA Francisco Jesus Mac Cetzal 01/02/2018 12:00 pm
+Entradas./.Salidas./.Resultado
+...5...../..28...../...28..OK
+...21..../..712..../..712..OK
+...42..../.3447..../.3447..OK
+...168.../.76127.../.76127.OK
+...-1..../..Error../.Error.OK(detecta correctamente el ingreso de numeros negativos)
+
+Notas.- No se puso formato al codigo
+Entradas
+Procesos
+Salidas
+una de las impresiones no salta de linea y se ocupo una libreria adicional "<stdlib.h>"
+
 */
 
 #include <stdio.h>

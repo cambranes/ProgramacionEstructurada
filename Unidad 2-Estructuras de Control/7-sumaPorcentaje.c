@@ -1,3 +1,14 @@
+/*
+QA Francisco Jesus Mac Cetzal 01/02/2018 06:25 pm
+Entradas./.Salidas./.Resultado
+..4000.../..4600.../..4600...OK
+..3000.../..3150.../..3150...OK
+...-1..../..Error../....-1...XX (el ejercicio pide que solo se concideren todos los positivos)
+....0..../....0..../....0....OK
+..30000../..36000../..36000..OK
+no incluyo bloque de comentarios
+*/
+
 #include <stdio.h>
 #include <math.h>
 

@@ -5,6 +5,16 @@ Salidas: paridad
 Procedimiento general: Se lee el número, se comprueba que no sea cero por medio
 de un while y se saca el modulo 2 del numero para saber si es par o impar,
 posteriormente se imprime la paridad del numero.
+
+
+QA Francisco Jesus Mac Cetzal 01/02/2018 11:30 am
+Entradas./.Salidas./.Resultado
+...0...../...par.../...Error (El cero es par)
+..-3...../..impar../..impar..OK
+...5...../..impar../..impar..OK
+.76852.../...par.../...par...OK
+...9...../..impar../..impar..OK
+
 */
 
 #include <stdio.h>

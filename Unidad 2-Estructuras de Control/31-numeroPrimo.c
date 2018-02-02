@@ -1,3 +1,17 @@
+/*
+QA Francisco Jesus Mac Cetzal 01/02/2018 07:57 pm
+Entradas./.Salidas./.Resultado
+...997.../.Primo.../..Pimo...OK
+...0...../No Primo./No Primo.OK
+...-3..../No Primo./No Primo.OK
+...853.../.Primo.../..Primo..OK
+..104729./.Primo.../..Primo..OK
+Notas.- no se añadio el bloque de comentarios, no se le dio formato al codigo
+Entradas
+Procesos
+Salidas
+*/
+
 #include <stdio.h>
 
 int main(int argc, char *argv[]) {

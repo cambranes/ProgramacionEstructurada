@@ -1,3 +1,16 @@
+/*
+	QA Francisco Jesus Mac Cetzal 01/02/2018 07:28 pm
+	Entradas./.Salidas./.Resultado
+	.1,3,4.../...4...../....4....OK
+	.7,2,9.../...9...../....9....OK
+	.-3,-9,1./...1...../....1....OK
+	.0,0,0../....0...../....0....OK
+	.5,8,0../....8...../....0....XX (cuando el numero mayor esta en la pocision central el resultado ssiempre es 0)
+	Notas.- no se añadio el bloque de comentarios, no se le dio formato al codigo
+	Entradas
+	Procesos
+	Salidas
+*/
 #include <stdio.h>
 
 int main(int argc, char *argv[]) {
