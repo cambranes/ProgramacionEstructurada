@@ -2,7 +2,7 @@
 Autor: Rodrigo Moguel Gamboa (30/Enero/18 - 9:30 AM)
 Entradas: numero
 Salidas: paridad
-Procedimiento general: Se lee el número, se comprueba que no sea cero por medio
+Procedimiento general: Se lee el nÃºmero, se comprueba que no sea cero por medio
 de un while y se saca el modulo 2 del numero para saber si es par o impar,
 posteriormente se imprime la paridad del numero.
 */
@@ -16,11 +16,6 @@ int main(int argc, char *argv[]) {
 	printf("Escriba el numero del que desea saber la paridad:\n");
 	scanf("%d" ,&numero);
 	printf("\n");
-	while(numero==0){
-		printf("El numero introducido es invalido, proporcione uno distinto:\n");
-		scanf("%d" ,&numero);
-		printf("\n");
-	}
 	if(numero%2==0){
 		paridad=0;
 	}
