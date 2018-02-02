@@ -1,4 +1,4 @@
-/* Autor: Elena Soledad Medina Favela
+/* Autor: Elena Soledad Medina Favela 29/Enero/2018 21:25 hrs
 
 Entradas: numero1, numero2, numero3(Variables que almacenan los valores que van a ser comparados).
 
@@ -6,7 +6,20 @@ Salidas: mayor(Variable que almacena el numero mayor).
 
 Procedimiento General: El usuario ingresa 3 numeros, los cuales seras comparados por medio de 
 una serie de condicionales if para determinar cual de los 3 es el mayor. Al final del proceso 
-se imprime un mensaje indicando cual es el mayor*/
+se imprime un mensaje indicando cual es el mayor
+
+QA Francisco Jesus Mac Cetzal 01/02/2018 07:28 pm
+	Entradas./.Salidas./.Resultado
+	.1,3,4.../...4...../....4....OK
+	.7,2,9.../...9...../....9....OK
+	.-3,-9,1./...1...../....1....OK
+	.0,0,0../....0...../....0....OK
+	.5,8,0../....8...../....0....XX (cuando el numero mayor esta en la pocision central el resultado ssiempre es 0)
+	Notas.- no se añadio el bloque de comentarios, no se le dio formato al codigo
+	Entradas
+	Procesos
+	Salidas
+*/
 
 #include <stdio.h>
 
