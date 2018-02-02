@@ -1,3 +1,17 @@
+/*
+Autor:Francisco Jesus Mac Cetzal 30/Enero/18
+Entradas: Sueldo base y antiguedad
+Salidas: Sueldo total y comision a pagar
+Procedimiento general: Escribe el programa que lea el sueldo del empleado y su antigüedad y que
+calcule su incentivo, imprimiendo su sueldo base, el incentivo y el sueldo a
+pagar. Suponer que no se conoce el número de empleados
+
+QA: Rodrigo Moguel Gamboa 01/02/2018 10:00 AM
+Notas: 
+- Falta bloque de comentarios Francisco.-Corregido
+- El programa no corrió (quitar el int que esta dentro del for) Francisco.-El programa si se ejecuta en mi computadora
+*********N/A**********
+*/
 #include <stdio.h>
 
 int main(int argc, char *argv[]) {
