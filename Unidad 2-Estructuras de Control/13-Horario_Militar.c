@@ -1,9 +1,21 @@
 #include <stdio.h>
-/*Autor: José Marcos Morales Gómez 31/Enero/2017
+/*Autor: JosÃ© Marcos Morales GÃ³mez 31/Enero/2017
 	Entradas: hora, minutos
 	Salidas: horario estandar 
 	Procedimiento general: mediante la digitacion de horas y minutos se convertira
     a horario estandar en am o pm dependiendo el caso
+    
+ QA Francisco Jesus Mac Cetzal 01/02/2018 07:17 pm
+	Entradas./.Salidas./.Resultado	
+	.1500..../.01:00pm./.Error (no realiza lectura de forma correcta)
+	.2000..../.08:00pm./.Error (no realiza lectura de forma correcta)
+	.2359..../.11:59pm./.Error (no realiza lectura de forma correcta)
+	.0000..../.00:00am./.Error (no realiza lectura de forma correcta)
+	.0900..../.09:00am./.Error (no realiza lectura de forma correcta)
+	Nota: El problema pide la lectura de 4 numeros y no se le dio formato al codigo
+	Entradas
+	Procesos
+	Salidas
 */
 int main(int argc, char *argv[]) {
 	int hora, minutos;
