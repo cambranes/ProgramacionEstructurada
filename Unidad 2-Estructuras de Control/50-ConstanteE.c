@@ -3,6 +3,7 @@
 Ejercicio 50
 Autor Erick Cardenas
 */
+
 int main()
 {
 	//se inicializan las variables
@@ -21,3 +22,4 @@ int main()
 	
 	return 0;
 }
+
