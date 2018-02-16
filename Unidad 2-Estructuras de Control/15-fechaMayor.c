@@ -1,11 +1,15 @@
+
 /*Autor:Oscar Perera 30/Enero/17
-Programa que lee 2 fechas (dia-mes-año) con tres cantidades enteras e imprime la mayor, si son la misma imprima que son iguales.}
+Programa que lee 2 fechas (dia-mes-año) con tres cantidades enteras e imprime la mayor, si son la misma imprima que son iguales.
+
 Entradas: Las 2 fechas dividades en dia, mes y año; se enumeran para distinguir entre la fecha 1 y 2
 Una bandera que nos ayudará a tomar decisiones
-Salidas:la fecha que es mayor, o en caso de ser iguales imprimir el texto que lo indica
-Procedimiento general: compararemos los valores comenzando por los años, la bandera nos permitirá decidir la relacion de la fecha 1 con la 2, teniendo como resultados, +1 si es mayor, 0 cuando es igual, o -1 cuando es menor.
-*/
 
+Salidas:la fecha que es mayor, o en caso de ser iguales imprimir el texto que lo indica
+
+Procedimiento general: compararemos los valores comenzando por los años, la bandera nos permitirá decidir la relacion de la fecha 1 con la 2, teniendo como resultados, +1 si es mayor, 0 cuando es igual, o -1 cuando es menor.
+
+*/
 #include <stdio.h>
 int main(int argc, char *argv[]) {
 	
@@ -100,3 +104,5 @@ int main(int argc, char *argv[]) {
 		return 0;
 	}
 }
+
+
