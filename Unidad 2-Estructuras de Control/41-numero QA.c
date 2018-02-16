@@ -3,17 +3,21 @@
 Intoduccion: El programa va recibir N canditad de numeros,
 y va determinar que numero es mayor y que numero es menor*/
 
+
+
 #include <stdio.h>
-	
+
 	int main()
+
 {
+
 	int numeros[100],mayo, menor,N,i=0;/*En este lugar se definen las variables que voy a utilizar*/
-	
 	printf("cuantos numeros vas a ingresar? ");
 	scanf("%d",&N);
 	printf("Ingresa los numeros ");
 	printf("\n");
 	/*Procedimiento*/
+
 	do
 	{
 		scanf("%d",&numeros[i]); /*Aqui se escanean todos los numeros*/
@@ -46,9 +50,6 @@ y va determinar que numero es mayor y que numero es menor*/
 	printf("EL numero mayor es %d", mayo);
 	printf("\n");
 	printf("El numero menor es %d", menor);
-	
-	
-	
 	return (0);
 }
 /* 
@@ -78,9 +79,8 @@ No sale nada pues se cicla la entrada
 Prueba 3:
 Arreglo(2)
 Entrada:
-1,9
+1,5
 Salida
 Mayor:9
 Menor:1
 */
-
