@@ -1,28 +1,40 @@
-/* Autor:VÃ­ctor Ortiz GarcÃ­a (30/Enero/18 - 8:00 AM)
-Entrada: numero
-Salida: Divisores
-Procedimiento General: Lee un nÃºmero, y se hace un ciclo for que se repite las mismas veces que el
-valor del nÃºmero, y si el nÃºmero tiene sÃ³lamente 2 divisores, es primo. En cualquier otro caso, no es primo.
+/* Autor:Víctor Ortiz García (16/Febrero/18 - 8:00 AM)
 
-QA Francisco Jesus Mac Cetzal 01/02/2018 07:57 pm
-Entradas./.Salidas./.Resultado
-...997.../.Primo.../..Pimo...OK
-...0...../No Primo./No Primo.OK
-...-3..../No Primo./No Primo.OK
-...853.../.Primo.../..Primo..OK
-..104729./.Primo.../..Primo..OK
+Procedimiento General: Lee un número, y se hace un ciclo for que se repite las mismas veces que el
+valor del número, y si el número tiene sólamente 2 divisores, es primo. En cualquier otro caso, no es primo.
 */
 
 #include <stdio.h>
-
+int cuantosDivisores(int);
+int siEsPrimo(int);
 //Entrada
 int main(int argc, char *argv[]) {
-	int numero, i, divisores;
-	divisores=0;
+	int numero, divisores;
+	int esPrimoONo;
 	printf("Introducir el numero: \n");
 	scanf("%d", &numero);
 	
 	//Procedimiento
+	divisores=cuantosDivisores(numero);
+	
+	//Salida
+	esPrimoONo=siEsPrimo(divisores);
+
+	if(esPrimoONo==1)
+	{
+		printf("El numero es primo.");
+	}
+	else
+	{
+		printf("El numero no es primo.");
+	}
+	return 0;
+}
+/*@param:numero: el numero capturado. Será dividido por todos los enteros entre 1 y sí mismo.
+@return: divisores: variable que aumenta en 1 por cada vez que el residuo de numero entre i sea cero*/
+int cuantosDivisores(int numero)
+{
+	int i; int divisores=0;
 	for (i=1;i<=numero;i++)
 	{
 		if(numero%i==0)
@@ -30,16 +42,20 @@ int main(int argc, char *argv[]) {
 			divisores++;
 		}
 	}
-	
-	//Salida
+	return divisores;
+}
+/*@param: divisores: variable simple que determinará si el numero es primo o no.
+@return:devuelve el valor de siEsPrimoONo, dependiendo del valor de la variable divisores*/
+int siEsPrimo(int divisores)
+{
+	int siEsPrimoONo;
 	if (divisores==2)
 	{
-		printf("El numero %d es primo.", numero);
+		siEsPrimoONo=1;
 	}
 	else
-		{
-		printf("El nÃºmero %d no es primo.", numero);
-    	}
-
-	return 0;
+	{
+		siEsPrimoONo=2;
+	}
+	return siEsPrimoONo;
 }

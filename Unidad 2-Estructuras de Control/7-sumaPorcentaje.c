@@ -1,28 +1,29 @@
-/*Autor: VÃ­ctor Ortiz GarcÃ­a (30/Enero/18 - 8:00 AM)
-Entradas: numero
-salidas: numerofinal
-Procedimiento General: Captura el nÃºmero, y segÃºn quÃ© tan grande sea se le va sumar ya sea el 5%, 15%, o 20% de sÃ­ mismo.
+/*Autor: Víctor Ortiz García (16/Febrero/18 - 8:00 AM)
 
-QA Francisco Jesus Mac Cetzal 01/02/2018 06:25 pm
-Entradas./.Salidas./.Resultado
-..4000.../..4600.../..4600...OK
-..3000.../..3150.../..3150...OK
-...-1..../..Error../....-1...XX (el ejercicio pide que solo se consideren todos los positivos)
-....0..../....0..../....0....OK
-..30000../..36000../..36000..OK
-no incluyo bloque de comentarios
+Procedimiento General: Captura el número, y según qué tan grande sea se le va sumar ya sea el 5%, 15%, o 20% de sí mismo.
+
 */
 #include <stdio.h>
-
+float lectura(float *);
+float porcentajeAumentado(float);
 //Entrada
 int main(int argc, char *argv[]) {
-	float numero, numerofinal;
-	numero=0; numerofinal=0;
+	float numero,resultado;
+	numero=0; resultado=0;
 	printf("Capturar el numero:\n");
 	scanf("%f", &numero);
-	numerofinal=numero;
 	
-	//Procedimiento
+	resultado=porcentajeAumentado(numero);
+	
+	printf("El numero final es %f", resultado);
+	return 0;
+}
+
+/*@param: numerofinal: toma el valor capturado, y según su valor se le va aumentando
+ @return: numerofinal: regresa la misma variable, ya aumentada por el procedimiento*/
+float porcentajeAumentado(float numerofinal)
+{
+	float numero=numerofinal;
 	if (numero>1000)
 	{
 		numerofinal=numero*1.05;
@@ -35,9 +36,5 @@ int main(int argc, char *argv[]) {
 			}
 		}
 	}
-	
-	//Salida
-	printf("El numero final es %f", numerofinal);
-	return 0;
+	return numerofinal;
 }
-
