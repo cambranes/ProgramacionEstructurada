@@ -1,62 +1,73 @@
 /*
 Autor:Francisco Jesus Mac Cetzal 30/Enero/18
-Entradas: tres numeros 
+Entradas: tres numeros
 Salidas:si pertenece o no a la eccuacion de pitagoras
-Procedimiento general: Escribir el programa para un programa en C que reciba tres números
+Procedimiento general: Escribir el programa para un programa en C que reciba tres nï¿½meros
 enteros que representan dos catetos y una hipotenusa y que determine si
-cumple con la ecuación de pitágoras.
+cumple con la ecuaciï¿½n de pitï¿½goras.
 a^2 +b^2 = c^2
-
-Victor Ortiz Garcia 01/02/18
-Entradas|Salidas|Resultado
-4, 3, 5 |  Sí   |    +     
-5,12,13 |  Sí   |    +      
-4, 4, 4 |  No   |    +
-36,77,85|  Sí   |    +
-Comentarios: adjacente es con c, no con s, y ecuación no lleva doble c al final Francisco.- Corregido
 */
 #include <stdio.h>
-	
-	int main(int argc, char *argv[]) {
-	float catetoA = 0;
-	float catetoB = 0;
-	float hipotenusa = 0;
-	char *resultado = "a";
-	float potenciaAB = 0;
-	float potenciaC = 0;
-	int almacenEnt = 0;
-	float almacenDec = 0;
+
+int pot(int);
+void lect(int *, int *, int *);
+int comp(int , int , int);
+void print(int);
+int main(int argc, char *argv[]) {
+	int catetoA = 0;
+	int catetoB = 0;
+	int hipotenusa = 0;
+	int resultado = 0;
 	/*Entradas*/
-	printf("%s", "ingrese el valor del cateto opuesto ");
-	scanf("%f", &catetoA);
-	printf("%s", "ingrese el valor del cateto adjacente ");
-	scanf("%f", &catetoB);
-	printf("%s", "ingrese el valor de la hipotenusa ");
-	scanf("%f", &hipotenusa);
-	/*Procesos*/
-	potenciaAB = (catetoA*catetoA) + (catetoB*catetoB);
-	potenciaC = hipotenusa*hipotenusa;
-	almacenEnt = potenciaAB;
-	almacenDec = almacenEnt + 0.5;
-	if(potenciaAB<=almacenDec){
-		potenciaAB = almacenEnt;
-	} else{
-		potenciaAB = almacenEnt + 1;
-	}
-	almacenEnt = potenciaC;
-	almacenDec = almacenEnt + 0.5;
-	if(potenciaC<=almacenDec){
-		potenciaC = almacenEnt;
-	} else{
-			potenciaC = almacenEnt + 1;
-	}
-	if(potenciaAB==potenciaC){
-		resultado = "cumple con la ecuacion a^2 + b^2 = c^2";
-	}
-	else{
-		resultado = "no cumple con la ecuacion a^2 + b^2 = c^2";
-	};
+	lect(&catetoA, &catetoB, &hipotenusa);
+	/*Procedimiento*/
+	catetoA = pot(catetoA);
+	catetoB = pot(catetoB);
+	hipotenusa = pot(hipotenusa);
+	resultado = comp(catetoA, catetoB, hipotenusa);
 	/*Salidas*/
-	printf("%s", resultado);
+	print(resultado);
 	return 0;
+}
+/*
+@param lecturaA "cateto a" lecturaB "cateto b", lecturaH "hipotenusa"
+@return
+*/
+void lect(int *lecturaA, int *lecturaB, int *lecturaH){
+	printf("ingrese tres valores separados por un espacio \n");
+	scanf("%i %i %i", lecturaA, lecturaB, lecturaH);
+	}
+/*
+@param base "numero a potenciar"
+@return potencia "es el numero elevado al cuadrado"
+*/
+int pot(int base){
+	int potencia = 0;
+	potencia = base * base;
+	return potencia;
+}
+/*
+@param catA "cateto a" catB "cateto b" hipo "hipotenusa"
+@return
+*/
+int comp(int catA, int catB, int hipo){
+	int catAB = 0, resuABC = 0;
+	catAB = catA + catB;
+	if(catAB!=hipo){
+		resuABC = 0;
+	} else{
+		resuABC = 1;
+	}
+	return resuABC;
+}
+/*
+@param option "corresponde a si los valores ingresados cumplen o no con la eccuacion"
+@return
+*/
+void print(int option){
+	if(option!=0){
+		printf("si cumple con la eccuacion ");
+	} else{
+		printf("no cumple con la ecuaccion ");
+	};
 }
