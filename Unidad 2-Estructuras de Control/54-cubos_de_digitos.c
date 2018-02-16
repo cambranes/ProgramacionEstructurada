@@ -1,6 +1,7 @@
 #include <stdio.h>
 /* 54.Calcular todos los números de tres dígitos tales que la suma de los cubos de
 los dígitos es igual al número. 
+Autor: Esteban Abraham Madrazo Parra
  Entradas
 	numero
 	auxiliar
