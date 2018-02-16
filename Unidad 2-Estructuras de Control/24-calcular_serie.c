@@ -4,10 +4,6 @@ Calcular la suma de los términos de la serie : (1/2)+(2/2^2)+(3/2^3)...+(n/2^n)
 Autor: Esteban Abraham Madrazo Parra 31/01/18
  entradas
 numero
-contador
-operacion
-suma
-denominador
  salidas 
 resultado
 comentarios: para la resolucion del problema utilice un contador que vaya de 1 hasta el numero
@@ -27,23 +23,55 @@ QA
 +*/
 #include <stdio.h>
 
-int main() {
-	/* entradas*/
-	float numero=0;
-	float contador;
-	float operacion=0;
-	float suma=0;
-	float denominador=1;
-	/* salidas */
-	float resultado=0;
-	printf("ingrese un numero ");
-	scanf("%f",&numero);
-	for(float contador=1;contador<=numero;contador++) {
-		denominador=denominador*2;
-		operacion=contador/denominador;
+void lectura(int *);
+float potencia(int,int);
+float sumaserie(int);
+void imprimir(float);
+
+int main(){
+	int numero;
+	float resultado;
+	lectura(&numero);
+	resultado=sumaserie(numero);
+	imprimir(resultado);
+	return 0;
+}
+/* 
+Funcion para la lectura de variables
+@param variable, 
+*/
+void lectura(int* variable){
+	scanf("%i",variable);
+}
+/* 
+Funcion para la potencia
+@param base,exponente
+@return potencia
+*/
+float potencia(int base,int exponente){
+	int i, numero=1;
+	for(i=1;i<=exponente;i++){
+		numero=numero*base;
+	}
+	return numero;
+}
+/* 
+Funcion para calcular la suma de los terminos de la serie
+@param numero; hasta donde llega la serie
+@return suma; suma de los terminos de la serie
+*/
+float sumaserie(int numero){
+	float i, operacion, suma;
+	for(i=1;i<=numero;i++){
+		operacion=i/potencia(2,i);
 		suma=suma+operacion;
 	}
-	resultado=suma;
-	printf("el resulatdo es %f",resultado);
-	return 0;
+	return suma;
+}
+/*
+Funcion para imprimir valores
+@param valor
+*/
+void imprimir(float valor){
+	printf("El resultado es: %f\n", valor);
 }

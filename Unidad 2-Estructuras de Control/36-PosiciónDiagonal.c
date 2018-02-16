@@ -10,13 +10,14 @@ N= 5
 30 31 32 33
 40 41 42 43 44
 */
+void lectura(int *);
+
 int main() {
-	/* Entradas */
 	int celdas=0;
 	int fila;
 	int columna;
 	printf("ingrese el numero de celdas: ");
-	scanf("%i",&celdas);
+	lectura(&celdas);
 	for(int fila=0;fila<celdas;fila++){
 		for(int columna=0;columna<celdas;columna++){
 			if(fila>=columna){
@@ -29,4 +30,10 @@ int main() {
 	 }
 	return 0;
 }
-
+/*
+funcion para la lectura de variables
+@param variable
+*/
+void lectura(int* variable){
+	scanf("%i",variable);
+}
