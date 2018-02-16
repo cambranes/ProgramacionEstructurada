@@ -12,7 +12,13 @@ void lectura (int *);
 
 int main(){
 	int x;
+/* Funcion de lectura
+@param N/A
+@return numero con el que se va a trabajar */
 	lectura(&x);
+/* Funcion para saber si un numero es primo o no 
+@param numero del que se quiere saber si es primo
+@return 0 si no es primo o 1 si lo es */
 	esPrimo(x);
 	return 0;
 }
