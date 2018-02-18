@@ -8,6 +8,8 @@ factoriales 1! + 2! + 3!...+ n!
 
 */
 #include <stdio.h>
+//Prototipo de la funcion Factorial
+int factorial(int);
 
 int main(int argc, char *argv[]) {
 	
@@ -18,34 +20,39 @@ int main(int argc, char *argv[]) {
 	Variable entera llada "factorial" para realizar 
 	la multiplicación de los valores de n 
 	*/
-	int i, sumaDeFactoriales = 0 , numeroDeElementos, factorial = 1;
+	int numeroDeElementos;
 	/*
 	Entrada de datos
 	*/
 	printf("Ingresa el numero de elementos: ");
 	scanf("%d",&numeroDeElementos);
 	
-	/*
-	Proceso
-	*/
-	if(numeroDeElementos != 0)
-	{
-	 for(i =1;i<=numeroDeElementos;i++)
-	 {	
-		factorial = factorial*i;
-		sumaDeFactoriales += factorial;	
-	 }  	
-	}
-	else
-	{
-		sumaDeFactoriales =1;
-	}
 	
 	/*
 	Salida de datos
 	*/
-	printf("El resultado de la suma de factoriales es: %d",sumaDeFactoriales);
+	printf("El resultado de la suma de factoriales es: %d",factorial(numeroDeElementos));
 	
 	
 	return 0;
+}
+
+/*Funcion int factorial
+Realiza la suma de los factoriales anteriores al dado
+@param numeroDeElementos
+@return sumaDeFactoriales*/
+int factorial(int numeroDeElementos)
+{
+	int factorial =1,i,sumaDeFactoriales=0;
+	
+	if(numeroDeElementos !=0)
+	{
+		for(i=1;i<=numeroDeElementos;i++)
+		{
+			factorial = factorial*i;
+			sumaDeFactoriales += factorial;
+		}
+	}
+	
+	return sumaDeFactoriales;
 }
