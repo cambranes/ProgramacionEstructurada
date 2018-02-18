@@ -4,10 +4,6 @@ Entradas:ID numérico, edad y sueldo de 10 personas
 Salidas: Cuántas de llas son mayores a 35 años y ganan entre 5000 y 7500
 Procedimiento general: mediante un ciclo, comprarar la edad y el sueldo de cada persona y sumar con un contador
 
-Entrada    Salida     Resultado
-correcta   correcta   correcto 
-
-
 */
  
 #include <stdio.h>

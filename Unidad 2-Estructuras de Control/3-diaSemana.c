@@ -1,6 +1,8 @@
 /*
 Titulo:3-diaSemana.c
-Autor: Carlos Alejandro Pool Quintal"28/01//2018Entradas: Numeros enteros en un intervalo de [1,7]Salidas: Dia de la semana correspondiente al nuestro ingresadoProcedimiento General: Se determina el dia de la semana a partir del numerocorrespondiente utilizando la estructura if-else*/#include <stdio.h>int main(int argc, char *argv[]) {	int numero;		printf ("Dime un numero del 1-7 para decirte el dia:\n");	scanf ("%d", &numero); /*Se ingresa el numero a evaluar (Entrada)*/		if ( numero >= 1 && numero <= 7){ /*Primeramente se pide que el numero ingresado se encuentre en el intervalo que el problrma indica*/
+Autor: Carlos Alejandro Pool Quintal"28/01//2018Entradas: Numeros enteros en un intervalo de [1,7]Salidas: Dia de la semana correspondiente al nuestro ingresadoProcedimiento General: Se determina el dia de la semana a partir del numerocorrespondiente utilizando la estructura if-else
+
+*/#include <stdio.h>int main(int argc, char *argv[]) {	int numero;		printf ("Dime un numero del 1-7 para decirte el dia:\n");	scanf ("%d", &numero); /*Se ingresa el numero a evaluar (Entrada)*/		if ( numero >= 1 && numero <= 7){ /*Primeramente se pide que el numero ingresado se encuentre en el intervalo que el problrma indica*/
 		if ( numero ==1){ /*Ahora se pregunta si es la primera respuesta posible*/
 			printf ("El dia es Lunes."); /*En caso de que sea se imprime el resultado*/
 		}else{

@@ -6,6 +6,7 @@ el último número sea igual a 999) y calcular la media aritmética.
 Entradas: números reales
 
 Salidas:La media aritemtica de todos esos números 
+
 */
 
 #include <stdio.h>
@@ -18,7 +19,7 @@ int main(int argc, char *argv[]) {
 	while (1){  /*se abre ciclo infinito*/
 		contador= contador + 1;
 		
-		printf("Inserte el número %d de la serie:", contador);
+		printf("Inserte el numero %d de la serie:", contador);
 		scanf("%f", &cantidad );  /*lee número de la serie*/
 				
 		promedio= promedio + cantidad; 	/*Se suma el nuevo número a la seria*/

@@ -7,6 +7,8 @@ Salidas: Numero de veces en las que cabe 5 en un numero dado
 Procedimiento General: Mediante un ciclo for se evalua el resto de dividir un
 dado iniciando desde 1, cada vez que el resto se vuelva 0 se agrega uno al contador 
 indicando que hay un multiplo de 5, as’ hasta abarcar todo el numero
+
+
 */
 
 
