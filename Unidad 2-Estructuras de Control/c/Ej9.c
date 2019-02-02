@@ -1,19 +1,18 @@
-//**
-**//
+/*
+Autor: Raul Rivadeneyra 2/2/2019
+Entradas:(n € N | n < 2147483648)
+Salidas: Numero de cuantos multiplos de 5 hay entre 1 y n
+Procedimiento general: Saca el numero entero de la division de n - 1 entre 5
+*/
 #include "stdio.h"
 
 int main() {
   //Inputs
   int n = 0;
-  int multiplier = 0;
   scanf("%d", &n);
 
   //Process
-  for (int i = 1; i < n; i++){
-    if ((i % 5) == 0){
-      multiplier++;
-    }
-  }
+  int multiplier = (n - 1)  / 5;
   //Outputs
   printf("There are %d multipliers of 5 between 1 and %d\n", multiplier, n);
 
