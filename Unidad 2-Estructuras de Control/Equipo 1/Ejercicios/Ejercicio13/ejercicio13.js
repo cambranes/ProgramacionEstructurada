@@ -76,7 +76,7 @@ if(!notValid){
 /*Salidas*/
 
 if(notValid) {
-  // Sí el programa no es valido, alerta al usuario
+  // Si la entrada es invalida, alerta al usuario
   alert('Please enter a valid time'); 
 } else {
   // De otra manera, muestra los dos horarios
