@@ -5,8 +5,8 @@ Equipo 1
 
 Autor: Eyder Antonio Concha Moreno
 Fecha: 3 de Febrero 2019
-Entradas: 1
-Salidas: 2
+Entradas: La hora en formato militar
+Salidas: La hora en formato estándar
 
 ---------------------------------------
 Instrucción:
