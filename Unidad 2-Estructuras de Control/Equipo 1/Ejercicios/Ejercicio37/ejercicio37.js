@@ -56,7 +56,7 @@ while (cantidadPrimos > 0) {
   if(isPrime){
     console.log(numero);
     suma += numero;
-    //Restamos uno al a cantidad de primos a encontrar
+    //Restamos uno a la cantidad de primos a encontrar
     cantidadPrimos--;
   }
 }
