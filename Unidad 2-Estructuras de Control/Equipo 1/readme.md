@@ -39,3 +39,4 @@
 | 7          | 9           |        5%        |
 | 10         | En adelante |        7%        |
 
+#### Escribe el programa que lea el sueldo del empleado y su antigüedad y que calcule su incentivo, imprimiendo su sueldo base, el incentivo y el sueldo a pagar. Suponer que no se conoce el número de empleados.
