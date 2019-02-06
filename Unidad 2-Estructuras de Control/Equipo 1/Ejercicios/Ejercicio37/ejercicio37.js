@@ -26,7 +26,7 @@ Procedimiento General:
 
 /*Entradas*/
 
-//Definimos una variable que determine la cantidad de primos a sumarr
+//Definimos una variable que determine la cantidad de primos a sumar
 let cantidadPrimos = prompt();
 
 //Variable suma para almacenar toda suma
@@ -40,16 +40,21 @@ let isPrime;
 
 /*Procedimiento*/
 
+//Iteramos mientras que la cantidad de primos sea mayor a 0
 while (cantidadPrimos > 0) {  
   numero++;
   isPrime = true;
+  //Obtenemos el residuo del contador entre todos los números que preceden a la mitad del mismo
   for(let i = 2; i <= numero/2; i++){
+    //De tener un residuo de cero, es decir, no es primo, se declara al booleano "isPrime" como falso
     if(numero%i == 0) isPrime = false;
   }
   
+  //Si la variable "es primo", es verdadera, entonces realizamos la suma
   if(isPrime){
     console.log(numero);
     suma += numero;
+    //Restamos uno al a cantidad de primos a encontrar
     cantidadPrimos--;
   }
 }
