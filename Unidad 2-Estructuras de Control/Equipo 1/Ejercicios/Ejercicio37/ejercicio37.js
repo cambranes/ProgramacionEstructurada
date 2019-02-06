@@ -27,18 +27,22 @@ Procedimiento General:
 /*Entradas*/
 
 //Definimos una variable que determine la cantidad de primos a sumar
-let cantidadPrimos = prompt();
+let cantidadPrimos;
 
 //Variable suma para almacenar toda suma
-let suma = 0;
+let suma;
 
 //Variable contador, usada para iterar hasta que los números primos hayan sido sumados
-let numero = 1;
+let numero;
 
 //Variable booleana saber si el número en la iteración es primo
 let isPrime;
 
 /*Procedimiento*/
+
+cantidadPrimos = prompt();
+suma = 0;
+numero = 1;
 
 //Iteramos mientras que la cantidad de primos sea mayor a 0
 while (cantidadPrimos > 0) {  

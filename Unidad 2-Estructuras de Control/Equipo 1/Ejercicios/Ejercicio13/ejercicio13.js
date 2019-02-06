@@ -36,7 +36,7 @@ Procedimiento General:
 /*Entradas*/
 
 // Definimos las variables requeridas para el horario militar
-let militarTime = prompt(); 
+let militarTime; 
 let hours;
 let minutes; // Esta también será usada en el tiempo estándar ya que no cambia
 
@@ -45,10 +45,16 @@ let standardTime;
 let formatedHours;
 let timeSuffix;
 
+// Variable para expresar salida
+let mensaje;
+
 // Definimos una variable para encontrar errores
-let notValid = false;
+let notValid;
 
 /*Procedimiento*/
+
+militarTime = prompt();
+notValid = false;
 
 // Verificamos que el horario militar tenga el número correcto de caracteres
 notValid = (militarTime.length != 4);
@@ -73,14 +79,17 @@ if(!notValid){
   standardTime = `${formatedHours}:${minutes} ${timeSuffix}`;
 }
 
+//Creamos mensaje para mostrar en salidas
+if(notValid){
+  // Si la entrada es invalida, alerta al usuario
+  mensaje = 'Please enter a valid time';
+}else {
+  // De otra manera, muestra los dos horarios
+  mensaje = `Militar Time: ${militarTime} <br> Standard Time: ${standardTime}`;
+}
+
 /*Salidas*/
 
-if(notValid) {
-  // Si la entrada es invalida, alerta al usuario
-  alert('Please enter a valid time'); 
-} else {
-  // De otra manera, muestra los dos horarios
-  document.write(`Militar Time: ${militarTime} <br> Standard Time: ${standardTime}`);
-}
+document.write(mensaje);
 
 //Pruebas
