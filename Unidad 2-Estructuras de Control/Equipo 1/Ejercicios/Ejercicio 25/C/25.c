@@ -1,3 +1,4 @@
+/*
 Ejercicio 25 C
 Unidad 2 - {Programación Estructurada}
 Equipo 1
@@ -14,6 +15,7 @@ Procedimiento General:
 1.-Se solicita al usuario ingresar una letra
 2.-Se imprime la misma letra en tipo entero
 ---------------------------------------
+*/
 #include <stdio.h>
 
 int main()
