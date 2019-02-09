@@ -1,0 +1,34 @@
+<html>
+    <head>
+    </head>
+    <script>
+        function myFunction(){
+            var numero1 = document.getElementById(num1);
+            var numero2 = document.getElementById(num2);
+            var numero3 = document.getElementById(num3);
+
+            if (numero1>numero2){
+                if (numero1>numero3){
+                    document.write(numero1);
+                }
+                else{
+                    document.write(numero3);
+                }
+            }
+            else{
+                if (numero2>numero3){
+                    document.write(numero2);
+                }
+                else{
+                    document.write(numero3);
+                }
+            }
+	}
+    </script>
+    <body>
+        numero 1:<input type="text" checked name="num1"><br>
+        numero 2:<input type="text" checked name="num2"><br>
+        numero 3:<input type="text" checked name="num3"><br>
+        <input type="button" name="aceptar" id="aceptar" onclick="myFunction()" value="ACEPTAR">
+    </body>
+</html>
