@@ -1,34 +1,39 @@
 #include <stdio.h>
 
-
-int main(int argc, char *argv[]) {
+int main() {
 	int numero1;
 	int numero2;
 	int numero3;
 
-	
-		printf("\nDame un tres números: \n");
-		scanf("%d",&numero1);
-		scanf("%d",&numero2);
-		scanf("%d",&numero3);
+  int sonIguales = 0;
+  int numeroMayor;
+
+		printf("Dame un tres numeros: \n");
+		scanf("%d", &numero1);
+		scanf("%d", &numero2);
+		scanf("%d", &numero3);
+
 		if(numero1==numero2){
 			if(numero2==numero3){
-				printf("Los números son iguales");
+				sonIguales = 1;
 			}
-			
-		}else if(numero1>numero2){
-			if(numero1>numero3){
-			printf ("El mayor número es: %d", numero1);
-			}
-		}else if(numero2>numero3){
-			printf ("El mayor número es: %d", numero2);
-		}else{
-			printf("El número mayor es: %d", numero3);
+		}else if(numero1 > numero2){
+			if(numero1 > numero3){
+			  numeroMayor = numero1;
+			} else {
+        numeroMayor = numero3;
+      }
+		} else if(numero2 > numero3){
+			numeroMayor = numero2;
+		} else {
+			numeroMayor = numero3;
 		}
 
-	
-	
-	
-	
+    if(!sonIguales){
+      printf("El numero mayor es %i", numeroMayor);
+    } else {
+      printf("Los numeros son iguales");
+    }
+
 	return 0;
 }

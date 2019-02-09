@@ -1,9 +1,23 @@
-function par(){
-	n=document.getElementById("numero").value;
-	if(n % 2 == 0){
-		document.getElementById("rs").innerHTML="el numero "+n+" es par";
-	}
-	else{
-		document.getElementById("rs").innerHTML="el numero "+n+" es impar";
-	}
+
+/*Entradas*/
+let numero = prompt("Introduce un número");
+let esPar;
+
+/*Procedimiento*/
+
+if(numero % 2 == 0){
+  esPar = true;
 }
+else{
+  esPar = false;
+}
+
+/*Salidas*/
+
+if(esPar){
+  alert('El número es par');
+}else {
+  alert('El número es impar');
+}
+
+
