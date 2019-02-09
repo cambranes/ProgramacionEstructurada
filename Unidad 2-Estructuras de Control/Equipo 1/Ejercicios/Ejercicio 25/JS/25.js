@@ -1,3 +1,4 @@
+/*
 Ejercicio 25 Javascript
 Unidad 2 - {Programación Estructurada}
 Equipo 1
@@ -14,6 +15,8 @@ Procedimiento General:
 1.-Se solicita al usuario ingresar una letra
 2.-Se imprime la misma letra en tipo entero
 ---------------------------------------
+*/
+  
 /*Entradas*/
 //Se declara la variable a solicitar
 let letra;
