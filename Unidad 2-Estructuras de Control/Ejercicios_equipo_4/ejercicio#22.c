@@ -47,3 +47,10 @@ int main(int argc, char *argv[]) {
 	printf("\nla suma de factoriales es: %i",sumaFactoriales);
 	return 0;
 }
+/*
+	QA Reviso: Carlos Chan
+	Entradas: 5, 7, -1
+	Salidas: 153, 5913, "Numero fuera de rango"
+
+	El programa funciona correctamente.
+*/
