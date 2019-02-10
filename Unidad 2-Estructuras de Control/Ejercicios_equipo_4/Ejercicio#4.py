@@ -31,7 +31,7 @@ if (numero <= 100 ) :
 
 else :
 
-	numero = int( int(( int(( numero + 99 )) / 100) ) * 100 )
+	numero = int( int(( int(( numero + 50 )) / 100) ) * 100 )
 
 	print( "El redondeo es:",numero )
 
@@ -39,3 +39,4 @@ else :
 #	Entradas: 1, 50, 23501, 540
 #	Salidas: Ok, Ok, Error, Error
 #	Se redondea hacia arriba (ceil), no a la centena mas cercana, 23501 claramente está mas cerca a 23500 que 23600
+#       Corregido
