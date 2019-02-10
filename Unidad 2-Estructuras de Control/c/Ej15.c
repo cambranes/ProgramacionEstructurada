@@ -2,7 +2,7 @@
 Autor: Guillermo Canto 2/3/2019
 Entradas: 2 fechas representadas por cantidades enteras con el formato dd/mm/aaaa
 Salidas: La fecha mayor, o si ambas son iguales
-Procedimiento general: Compara los a�os, meses y dias para determinar si son iguales, de no serlo 
+Procedimiento general: Compara los años, meses y dias para determinar si son iguales, de no serlo 
 determina la fecha mayor.
 */
 
@@ -20,13 +20,13 @@ int main(int argc, char *argv[]) {
 	scanf("%d", &day1);
 	printf("Ingrese el mes 1: ");
 	scanf("%d", &month1);
-	printf("Ingrese el a�o 1: ");
+	printf("Ingrese el año 1: ");
 	scanf("%d", &year1);
 	printf("Ingrese el dia 2: ");
 	scanf("%d", &day2);
 	printf("Ingrese el mes 2: ");
 	scanf("%d", &month2);
-	printf("Ingrese el a�o 2: ");
+	printf("Ingrese el año 2: ");
 	scanf("%d", &year2);
 	if (year1 != year2){
 		if (year1 > year2){
@@ -52,3 +52,10 @@ int main(int argc, char *argv[]) {
 	return 0;
 }
 
+/*
+QA: Realizó: Jose Mendez
+Entradas: (10/05/06 - 05/12/78), (-6/-9/-9 - -9/-6/-6)
+Salidas: Ok, Ok
+Funciona correctamente, solamente deberia de considerar 
+que no existen fechas con numeros negativos y que solo existen 12 meses
+*/
