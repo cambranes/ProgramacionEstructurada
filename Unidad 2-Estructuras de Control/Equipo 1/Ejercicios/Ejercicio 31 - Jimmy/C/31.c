@@ -54,3 +54,9 @@ int main()
     return 0;
     }
     //Pruebas
+/*
+Autor QA: Alejandro Torre Reyes
+Entradas: 7, 68
+Salidas: 7 es un numero primo, 68 no es un numero primo.
+Proceso: OK
+*/
