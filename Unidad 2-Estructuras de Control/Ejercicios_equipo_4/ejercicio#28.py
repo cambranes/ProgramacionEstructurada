@@ -24,3 +24,9 @@ while numero != 999:
 #Salidas ---------------------------------------
 print("\nEl numero mayor de la serie es: ",numeroMayor)
 print("El numero menor de la serie es: ",numeroMenor)
+
+#	QA Reviso: Carlos Chan
+#	Entradas: 2, 5, -5, 10, 999
+#	Salidas: 999, -5
+#	
+#	El programa funciona correctamente.
