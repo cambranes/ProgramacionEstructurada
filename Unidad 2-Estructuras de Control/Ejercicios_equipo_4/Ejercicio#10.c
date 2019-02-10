@@ -54,3 +54,9 @@ while (contador < numero){
 };
 
 return 0; };
+/*
+	QA Reviso: Raul Rivadeneyra
+	Entradas: 5, 0, -1, 10
+	Salidas: Ok, Ok, Ok, Ok
+	El programa funciona correctamente, hasta tienen en consideracion cuando n ≤ 0
+*/
