@@ -6,12 +6,24 @@ Procedimiento general: Compara los años, meses y dias para determinar si son ig
 determina la fecha mayor.
 ]]
 --Inputs
-day1 = io.read("*n")
-month1 = io.read("*n")
-year1 = io.read("*n")
-day2 = io.read("*n")
-month2 = io.read("*n")
-year2 = io.read("*n")
+repeat 
+  day1 = io.read("*n")
+until day1 > 0 and day1 <= 31
+repeat
+  month1 = io.read("*n")
+until month1 > 0 and month1 <= 12
+repeat
+  year1 = io.read("*n")
+until year1 >= 0
+repeat 
+  day2 = io.read("*n")
+until day2 > 0 and day2 <= 31
+repeat
+  month2 = io.read("*n")
+until month2 > 0 and month2 <= 12
+repeat
+  year2 = io.read("*n")
+until year2 >= 0
 --Process
 if year1 ~= year2 then
   if year1 > year2 then
