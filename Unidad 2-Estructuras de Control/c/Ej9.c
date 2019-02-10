@@ -18,3 +18,9 @@ int main() {
 
   return 0;
 }
+/*
+QA: Realizó: Jose Mendez
+Entradas: 4 , 20 , -9
+Salidas: 0 , 3 , -2???
+Funciona bien para numeros positivos, en numeros negativos, no funciona correctamente
+*
