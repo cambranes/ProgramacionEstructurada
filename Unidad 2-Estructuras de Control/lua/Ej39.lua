@@ -11,7 +11,7 @@ sum=0
 for i=0,10,1
 do
   if (i%2 ~=0)
-    sum = sum +1
+    sum = sum +i
   end
 end
 --Output
