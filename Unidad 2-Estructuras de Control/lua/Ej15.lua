@@ -34,3 +34,12 @@ elseif day1 ~= day2 then
 else 
   io.write("Las fechas son iguales")
 end
+
+-- Outputs
+
+-- QA: Jorge Chí
+
+-- Entradas usadas: 10/05/2000 y si mismo, 10/06/2000 y 10/05/2000, 10/05/2000 y 10/06/2000, 21/07/23456 y 01/02/12, 00/00/00 y 01/00/01.
+
+-- Salidas: Las fechas son iguales, 10/06/2000 es mayor, 10/06/2000 es mayor, 21/07/23456 es mayor, 01/00/01 es mayor.
+-- Muestra correctamente si una fecha es mayor a otra.
