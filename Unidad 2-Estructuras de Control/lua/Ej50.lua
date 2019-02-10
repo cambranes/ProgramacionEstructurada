@@ -23,3 +23,10 @@ end
 
 -- Outputs
 io.write("\nThe value of e for precision "..value.." is: "..e)
+-- QA: Jorge Chí
+
+-- Entradas usadas: 1, 3, 10, 47, 1000
+
+-- Salidas: 2, 2.6666666666667, 2.7182818011464, 2.718253968254, 2.718281828459
+
+--Aproxima correctamente

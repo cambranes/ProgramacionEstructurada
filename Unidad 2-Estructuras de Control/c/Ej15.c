@@ -16,6 +16,7 @@ int main(int argc, char *argv[]) {
 	int year1;
 	int year2;
 	printf("Ingrese las fechas con el formato dd/mm/aaaa.\n");
+  
 	do {
 		printf("Ingrese el dia 1: ");
 		scanf("%d", &day1);
@@ -42,6 +43,7 @@ int main(int argc, char *argv[]) {
 	} while ( year2 < 0 );
 	
 
+
 	if (year1 != year2){
 		if (year1 > year2){
 			printf("La fecha mayor es: %d / %d / %d ",day1,month1,year1 );
@@ -66,4 +68,10 @@ int main(int argc, char *argv[]) {
 	return 0;
 }
 
+/*
+QA: Realizó: Jose Mendez
+Entradas: (10/05/06 - 05/12/78), (-6/-9/-9 - -9/-6/-6)
+Salidas: Ok, Ok
+Funciona correctamente.
+*/
 

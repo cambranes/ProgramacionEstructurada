@@ -24,3 +24,13 @@ if isPrime then
 else
   print("El numero ".. n .." no es primo")
 end
+
+
+-- Outputs
+
+-- QA: Jorge Chí
+
+-- Entradas usadas: 2, 3, 4, 6, 191
+
+-- Salidas: primo, primo, no primo, no primo, primo
+-- Muestra correctamente si es primo o no el número

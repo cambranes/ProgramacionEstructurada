@@ -30,3 +30,10 @@ int main() {
   getch();
   return 0;
 }
+
+/*
+QA: Realizó: Jose Mendez
+Entradas: 5 , -9, 0
+Salidas: 120, Ok, 1
+Funciona bien, solo que ocupa una instruccion (getch) de una libreria que no viene incluida
+*/

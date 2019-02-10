@@ -21,3 +21,9 @@ int main(int argc, char *argv[]) {
 	return 0;
 }
 
+/*
+QA: Realizó: Jose Mendez
+Entradas: None
+Salidas: 25
+Funciona Correctamente
+*/
