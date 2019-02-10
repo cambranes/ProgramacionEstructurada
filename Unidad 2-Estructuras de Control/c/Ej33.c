@@ -16,12 +16,18 @@ las variables j y k
 int main(int argc, char *argv[]) {
 	int i,n,j,k;
 	int c = 0;
-	printf("Ingrese n: ");
-	scanf("%d", &n);
-	printf("Ingrese j: ");
-	scanf("%d", &j);
-	printf("Ingrese k: ");
-	scanf("%d", &k);
+	do{
+		printf("Ingrese n: ");
+		scanf("%d", &n);
+	} while (n <= 0);
+	do{
+		printf("Ingrese j: ");
+		scanf("%d", &j);
+	} while (j <= 0);
+	do{
+		printf("Ingrese k: ");
+		scanf("%d", &k);
+	} while (k <= 0);
 	for (i=1; i<= n; i++){
 		while (j <= k){
 			printf("%d x %d = %d\n", i ,j , i*j);
@@ -31,8 +37,7 @@ int main(int argc, char *argv[]) {
 		j=j-c;
 		c=0;
 		printf("\n");
-	}
-	
+	}	
 	return 0;
 }
 
