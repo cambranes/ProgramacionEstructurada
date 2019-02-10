@@ -36,3 +36,9 @@ int main(int argc, char *argv[]) {
 	return 0;
 }
 
+/*
+QA: Realizó: Jose Mendez
+Entradas: (5,0,9) , (-9,5,-9), (6,-5,2)
+Salidas: OK,   Error,    Ok
+Funciona bien, solamente falla cuando el valor n, es un numero menor a 1
+*/
