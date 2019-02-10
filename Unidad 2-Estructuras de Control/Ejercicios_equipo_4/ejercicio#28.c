@@ -32,3 +32,11 @@ int main(int argc, char *argv[]) {
 	printf("\nEl numero mayor es: %i",numeroMayor);
 	return 0;
 }
+
+/*
+	QA Reviso: Carlos Chan
+	Entradas: 4, 3, 2, -10, 999
+	Salidas: -10, 999
+
+	El programa funciona correctamente.
+*/
