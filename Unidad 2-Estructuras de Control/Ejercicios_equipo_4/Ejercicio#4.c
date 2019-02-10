@@ -44,7 +44,8 @@ if (numero <= 100){
 
 } else {
 
-    numero = ((numero + 99) / 100 ) * 100;
+    numero = (numero + 50) / 100 ;
+    numero = numero * 100;
 
     printf("El redondeo es: %i\n", numero);
 }
@@ -55,4 +56,5 @@ return 0; };
 	Entradas: 1, 50, 23501, 540
 	Salidas: Ok, Ok, Error, Error
 	Se redondea hacia arriba (ceil), no a la centena mas cercana, 23501 claramente está mas cerca a 23500 que 23600
+	Corregido
 */
