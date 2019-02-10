@@ -28,3 +28,10 @@ int main() {
   printf("The mean is: %.3f\n", mean);
   return 0;
 }
+
+/*
+QA: Realizó: Jose Mendez
+Entradas: (1,2,3,4,5,6,7,8,9,999) , (-9,0,63,54,999)
+Salidas: 5 , 27
+Funciona correctamente
+*/

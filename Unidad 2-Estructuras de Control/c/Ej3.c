@@ -39,3 +39,10 @@ int main() {
   getch();
   return 0;
 }
+
+/*
+QA: Realizó: Jose Mendez
+Entradas: 1 ,5, 7, 0
+Salidas: Lunes, Viernes, Domingo, Ok
+Funciona correctamente, pero usa una intruccion (getch) que no se encuentra
+*/
