@@ -30,3 +30,10 @@ int main() {
   getch();
   return 0;
 }
+
+/*
+QA: Realizó: Jose Mendez
+Entradas: 1, 4, -9
+Salidas: 2, ok, ok
+Funciona Correctamente, pero usa una intruccion (getch) que no se encuentra
+*/
