@@ -12,9 +12,15 @@ Calcula e imprime las primeras n tablas de multiplicar delimitadas por
 las variables j y k
 ]]
 --Inputs
-n = io.read("*n")
-j = io.read("*n")
-k = io.read("*n")
+repeat
+  n = io.read("*n")
+until n > 0
+repeat
+  j = io.read("*n")
+until j > 0
+repeat 
+  k = io.read("*n")
+until k > 0
 --Process
 c=0
 for i=1, n, 1
