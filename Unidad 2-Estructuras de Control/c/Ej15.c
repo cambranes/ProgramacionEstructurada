@@ -72,6 +72,6 @@ int main(int argc, char *argv[]) {
 QA: Realizó: Jose Mendez
 Entradas: (10/05/06 - 05/12/78), (-6/-9/-9 - -9/-6/-6)
 Salidas: Ok, Ok
-Funciona correctamente
+Funciona correctamente.
 */
 
