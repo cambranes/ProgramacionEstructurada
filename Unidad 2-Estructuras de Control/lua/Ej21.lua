@@ -23,3 +23,12 @@ end
 
 -- Outputs
 io.write("\nThe factorial of "..value.." is: "..factorial)
+
+-- Outputs
+
+-- QA: Jorge Chí
+
+-- Entradas usadas: 0, 1, 2, 3, 12.
+
+-- Salidas: 1, 1, 2, 6, 479001600.
+-- Imprime correctamente el factorial.

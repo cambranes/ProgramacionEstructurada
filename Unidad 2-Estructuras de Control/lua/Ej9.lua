@@ -8,3 +8,8 @@ Procedimiento general: Saca el numero entero de la division de n - 1 entre 5
 n = io.read("*n")
 multiplier = math.floor((n - 1)  / 5)
 io.write("There are ".. multiplier .. " multipliers of 5 between 1 and "..n)
+-- Outputs
+-- QA: Jorge Chí
+-- Entradas usadas: 1, 5, 6, 10, 11, 100
+-- Salidas: 0, 0, 1, 1, 2, 19
+-- Muestra correctamente el número de múltiplos entre 1 y N.

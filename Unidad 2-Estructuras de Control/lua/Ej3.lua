@@ -32,3 +32,7 @@ else
 end
 
 -- Outputs
+-- QA: Jorge Chí
+-- Entradas usadas: 1, 2, 3, 4, 5, 6, 7, hola, 14, 23
+-- Salidas: Al insertar 1 - 7 se imprime correctamente el día respectivo, 14 y 23 no fueron aceptados y se reinserto otro número hasta que
+-- de diera uno en el rango de 1 - 7, la cadena causó que el programa no corriera. El programa funciona correctamente.

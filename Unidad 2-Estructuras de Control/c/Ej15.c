@@ -16,18 +16,34 @@ int main(int argc, char *argv[]) {
 	int year1;
 	int year2;
 	printf("Ingrese las fechas con el formato dd/mm/aaaa.\n");
-	printf("Ingrese el dia 1: ");
-	scanf("%d", &day1);
-	printf("Ingrese el mes 1: ");
-	scanf("%d", &month1);
-	printf("Ingrese el año 1: ");
-	scanf("%d", &year1);
-	printf("Ingrese el dia 2: ");
-	scanf("%d", &day2);
-	printf("Ingrese el mes 2: ");
-	scanf("%d", &month2);
-	printf("Ingrese el año 2: ");
-	scanf("%d", &year2);
+  
+	do {
+		printf("Ingrese el dia 1: ");
+		scanf("%d", &day1);
+	} while ( day1 <= 0 || day1 >31 );
+	do {
+		printf("Ingrese el mes 1: ");
+		scanf("%d", &month1);
+	}  while ( month1 <= 0 || month1 > 12);
+	do {
+		printf("Ingrese el año 1: ");
+		scanf("%d", &year1);
+	} while ( year1 < 0 );
+	do {
+		printf("Ingrese el dia 2: ");
+		scanf("%d", &day2);
+	} while ( day2 <= 0 || day2 >31 );
+	do {
+		printf("Ingrese el mes 2: ");
+		scanf("%d", &month2);
+	}  while ( month2 <= 0 || month2 > 12);
+	do {
+		printf("Ingrese el año 2: ");
+		scanf("%d", &year2);
+	} while ( year2 < 0 );
+	
+
+
 	if (year1 != year2){
 		if (year1 > year2){
 			printf("La fecha mayor es: %d / %d / %d ",day1,month1,year1 );
@@ -56,6 +72,6 @@ int main(int argc, char *argv[]) {
 QA: Realizó: Jose Mendez
 Entradas: (10/05/06 - 05/12/78), (-6/-9/-9 - -9/-6/-6)
 Salidas: Ok, Ok
-Funciona correctamente, solamente deberia de considerar 
-que no existen fechas con numeros negativos y que solo existen 12 meses.
+Funciona correctamente
 */
+
