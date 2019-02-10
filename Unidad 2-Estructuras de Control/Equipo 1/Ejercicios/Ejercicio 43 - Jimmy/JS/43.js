@@ -50,3 +50,10 @@ document.write("Se encontraron ",positivos," numeros positivos \n");
 document.write("Se encontraron ",negativos," numeros negativos");
 
 /*Pruebas*/
+/*
+Autor QA. Alejandro Torre Reyes
+Entradas: 19,38,2,-568,0
+Salidas: Se encontraron 3 números positivos y 1 número negativo.
+Proceso: OK
+*/
+
