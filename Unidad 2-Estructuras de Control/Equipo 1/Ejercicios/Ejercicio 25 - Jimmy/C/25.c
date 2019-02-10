@@ -39,3 +39,9 @@ int main()
     return 0;
     }
     /*Pruebas*/
+/*
+Autor QA: Alejandro Torre Reyes
+Entradas: a, g, r, D
+Salidas: 97, 103, 114, 68
+Proceso: OK
+*/
