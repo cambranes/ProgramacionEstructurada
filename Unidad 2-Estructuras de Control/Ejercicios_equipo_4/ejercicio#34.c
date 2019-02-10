@@ -30,3 +30,15 @@ int main(int argc, char *argv[]) {
 	
 	return 0;
 }
+
+/*
+	QA Reviso: Carlos Chan
+	Entradas: 3, 6, 22, 0, -2
+	Salidas: Ok, Ok, Ok, Ok, ERROR
+
+	El programa funciona correcto para numeros positivos
+	pero no se toma en cuenta que el usuario pueda ingresar numeras negativos y
+	esto resulta en un error del programa, el cual se detiene, ademas 
+	toda la seccion del encabezado (Entradas, salidas, procedimiento) no corresponden
+	con lo que realiza este programa.
+*/

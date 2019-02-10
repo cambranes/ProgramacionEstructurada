@@ -50,3 +50,9 @@ if (numero <= 100){
 }
 
 return 0; };
+/*
+	QA Reviso: Raul Rivadeneyra
+	Entradas: 1, 50, 23501, 540
+	Salidas: Ok, Ok, Error, Error
+	Se redondea hacia arriba (ceil), no a la centena mas cercana, 23501 claramente está mas cerca a 23500 que 23600
+*/

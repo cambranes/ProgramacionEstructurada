@@ -27,3 +27,10 @@ else:
 
 #Salidas ---------------------------------------
 print("La suma de los factoriales es: ",sumaFactoriales)
+
+# 	QA Reviso: Carlos Chan
+#	Entradas: 6, 10, 1, -3
+#	Salidas: 873, 4037913, 1, "Numero fuera de rango"
+#	
+#	El programa funciona correctamente, sin embargo en "salidas" y "procedimiento general" no
+#	corresponde con las acciones que realiza este programa.

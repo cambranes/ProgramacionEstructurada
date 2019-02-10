@@ -62,3 +62,9 @@ while i < num_clientes:
 print('\n\n')
 print("Total en caja: {:0.2f}".format(total_Caja))
 print("Total de descuentos aplicados: {:0.2f}".format(total_Descuentos))
+
+#QA
+#Realizo: Guillermo Canto
+#Entradas: -1, 0 , 2,1000,500
+#Salidas: Ok, Ok, Ok
+#El programa funciona correctamente.

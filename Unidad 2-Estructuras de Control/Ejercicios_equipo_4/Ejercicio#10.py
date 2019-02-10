@@ -40,3 +40,8 @@ while ( contador < numero ) :
     print( "El múltiplo #",numeroMultiplo,"es",multiplo )
 
     contador = int( contador + 1 )
+
+#	QA Reviso: Raul Rivadeneyra
+#	Entradas: 5, 0, -1, 10
+#	Salidas: ok, ok, ok, ok
+#	El programa funciona correctamente, hasta tienen en consideracion cuando n ≤ 0

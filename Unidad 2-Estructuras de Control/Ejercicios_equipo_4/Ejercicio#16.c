@@ -37,7 +37,6 @@ while (1){
         contador++;
 
     }
-
 };
 
 /*Proceso : si ningun dato fue ingresado se infor de ello, en otro caso
@@ -55,3 +54,10 @@ if (suma == 0){
 }
 
 return 0; };
+
+/*
+	QA Reviso: Raul Rivadeneyra
+	Entradas: (3,5,3,5),(1,2,3,4,5,6,7,8,9), -1, 0
+	Salidas: Ok(4), Ok(5), Ok, Ok
+	El programa funciona correctamente
+*/

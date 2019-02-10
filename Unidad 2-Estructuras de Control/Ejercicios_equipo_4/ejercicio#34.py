@@ -16,3 +16,8 @@ while i <= numero:
 	print(numeros[:i])
 	i += 1
 
+#	QA Reviso: Carlos Chan
+#	Entradas: 10, 3, 6
+#	Salidas: Correctas.
+#
+#	El programa funciona correctamente.
