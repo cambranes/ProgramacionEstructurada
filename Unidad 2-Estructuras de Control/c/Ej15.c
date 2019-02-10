@@ -57,5 +57,5 @@ QA: Realizó: Jose Mendez
 Entradas: (10/05/06 - 05/12/78), (-6/-9/-9 - -9/-6/-6)
 Salidas: Ok, Ok
 Funciona correctamente, solamente deberia de considerar 
-que no existen fechas con numeros negativos y que solo existen 12 meses
+que no existen fechas con numeros negativos y que solo existen 12 meses.
 */
