@@ -30,4 +30,4 @@ while i < tam:
 #Revisó: Guillermo Canto
 #Entradas: 0, 2,1000,500, 2,1000,800
 #Salidas: Ok, Ok, Ok	
-#El programa funciona correctamente
+#El programa funciona correctamente.
