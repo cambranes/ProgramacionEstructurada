@@ -35,3 +35,9 @@ while i < 10 :
 	i += 1	
 
 print("\n Total de personas mayores de 35 años y con sueldo entre 5000 y 7500: {}".format(mayores_35))
+
+#QA: Realizó: Guillermo Canto
+#Entradas: 0, -1, 18, 5000, 5001, 7500, 7501
+#Salidas: Ok, Ok
+#El programa funciona correctamente
+
