@@ -25,3 +25,9 @@ print("\n")
 while i < tam:
 	print("El sueldo del trabajador {} es de: {:0.2f}".format(i+1,trabajador[i]))
 	i += 1		
+	
+#QA
+#Revisó: Guillermo Canto
+#Entradas: 0, 2,1000,500, 2,1000,800
+#Salidas: Ok, Ok, Ok	
+#El programa funciona correctamente
