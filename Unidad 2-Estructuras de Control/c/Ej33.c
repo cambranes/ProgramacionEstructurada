@@ -49,6 +49,6 @@ int main(int argc, char *argv[]) {
 QA: Realizó: Jose Mendez
 Entradas: (5,0,9) , (-9,5,-9), (6,-5,2)
 Salidas: OK,   Ok,    Ok
-Funciona Correctamente
+Funciona Correctamente.
 */
 
