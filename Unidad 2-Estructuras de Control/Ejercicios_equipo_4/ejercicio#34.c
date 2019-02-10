@@ -12,6 +12,11 @@ int main(int argc, char *argv[]) {
 	printf("Numero de lineas a querer: ");
 	scanf("%i",&numero);
 	
+	while(numero<1){
+		printf("Numero no valido. Intente nuevamente: ");
+		scanf("%i",&numero);
+	}
+	
 	int numeros[numero]; //se define el tamanio de la lista
 	/*Procedimiento*/
 	while(i <= numero)
