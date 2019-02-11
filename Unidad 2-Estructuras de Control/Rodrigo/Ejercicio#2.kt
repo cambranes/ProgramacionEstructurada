@@ -25,3 +25,9 @@ fun main (args: Array<String>) {
     }
     //Salidas: la comparacion de ambos números
 }
+
+//QA//
+//Por: Amaury Morales Cerecedo
+//Entradas: -10 y 10, 1 y 1, 0 y 1.
+//Salida: -10 menor, 10 mayor.  1 igual que 1.  0 menor que 1.
+//Notas: Funciona correctamente. Mismas notas que el codigo equivalente en C

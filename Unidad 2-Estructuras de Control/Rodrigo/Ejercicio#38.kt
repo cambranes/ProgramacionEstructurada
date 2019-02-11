@@ -22,3 +22,10 @@ fun main(args: Array<String>){
         }
     }
 }
+
+
+//QA//
+//Por: Amaury Morales Cerecedo
+//Entradas: 888, 123, 444.
+//Salida: 1241, 882, 0.
+//Notas: No funciona. La suma de los cubos de los digitos da una cantidad erronea. A veces no corre.
