@@ -1,4 +1,8 @@
-﻿using System;
+/*ejercicio 6.-Escribir el programa para un programa en C que reciba tres números
+enteros que representan dos catetos y una hipotenusa y que determine si
+cumple con la ecuación de pitágoras.
+a2 +b2 = c2 */
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
