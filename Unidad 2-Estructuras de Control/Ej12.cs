@@ -1,4 +1,6 @@
-﻿using System;
+/*ejercicio 12.-Escribir el programa que lea 2 números y los imprima de mayor a menor.
+*/
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
