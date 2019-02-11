@@ -43,3 +43,8 @@ if(esPar){
 }
 
 
+/*
+Autor QA:Emmanuel Azcorra Balam
+Entradas:3,4,3,12
+salidas:impar,par,impar,par
+Proceso :Ok, todo correcto.*/
