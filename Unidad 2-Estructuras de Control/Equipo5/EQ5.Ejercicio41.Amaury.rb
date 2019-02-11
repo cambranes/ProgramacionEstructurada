@@ -68,4 +68,7 @@ def main()
  return 0 #Creo que esto se refiere al ''valor 0''.
 end
 
-main()
+main()#¿Para que funciona?
+#QA realizado por Rodrigo Hernández
+#Entradas probadas: 0, 1(2), 3(1-4-7)
+#El algoritmo funciona, pero te pide una variable innecesaria despues de los resultados
