@@ -1,5 +1,16 @@
 #!/usr/bin/env ruby
-
+=begin
+Creado por: Hector Abraham Valdivieso Cosgalla
+Entradas: Articulos, PrecioN, Decs
+Salidas: Cliente, TotalCaja, TotalDesc, TotalN, PrecDesc1, PrecDesc2, PrecDesc3, PrecDesc4
+Procedimiento: Se ingresa la cantidad de articulos y se lee el precio de cada uno,
+Esto se guarda en una variable llamada TotalN, Posteriormente se lee TotalN y dependiendo
+de la suma se decide el descuento que se le hace, y se le informa al cliente,
+al terminar esto informa cuanto se desconto, cuanto se cobro y cuantos clientes
+fueron atendidos.
+Notas: El codigo fue diseñado para tener un ciclo Do ... while ... pero no funciono
+por eso se elimino y quedaron algunas cosas "raras"
+=end
 class Ejercicio46
   Desc1 = 0.05
   Desc2 = 0.11
