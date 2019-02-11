@@ -1,9 +1,4 @@
 #!/usr/bin/env ruby
-<<<<<<< Branch_Hector
-
-#QA: Luis Leon 
-# INCOMPLETO
-=======
 =begin
 Hecho por:Hector A. V. Cosgalla
 Entradas:Un numero n
@@ -26,4 +21,7 @@ class Ejercicio35
     puts ''
   end
 end
->>>>>>> Branch_Hector
+
+#QA: Luis Leon 
+#Entradas:Un numero n
+#Salidas:La diagonal superior de una tabla de nxn
