@@ -60,3 +60,6 @@ int main()
 
  return 0; //Creo que esto se refiere al ''valor 0''.
 }
+//QA realizado por: Rodrigo Hernández Góngora
+//Entradas probadas: 10,000-1-50, 0-0-0, 1-1-1
+//El algoritmo funciona, pero te pide una variable innecesaria después de dar la respuesta
