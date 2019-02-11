@@ -1,6 +1,9 @@
+//32.Dados dos números que representan dos años, determinar la cantidad de años bisiestos que hay entre los dos años.
+//Autor: Jorge Pinto
+//Entradas: Dos numeros enteros (años)
 #include <stdio.h>
 
-
+//Proceso:
 int main()
 {
   int anio, anio2, resta, bisiesto;
@@ -18,3 +21,4 @@ int main()
 
 return 0;
 }
+//Salidas: El numero de años bisiestos en el período dado
