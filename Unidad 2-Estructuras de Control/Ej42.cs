@@ -9,7 +9,7 @@ Autor: Emmanuel Azcorra
 Entradas: El codigo no requiere entradas
 Salidas: El valor de la raiz cuadrada de los primeros 100 numeros naturales
 Proceso: Mediante un ciclo for, se imprimen los primeros 100 numeros naturales junto con sus raices
-cuadradas correspondientes.
+cuadradas correspondientes
 */
 
 namespace Ej42
