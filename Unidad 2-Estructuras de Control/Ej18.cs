@@ -83,3 +83,10 @@ namespace Ej18
         }
     }
 }
+//Prueba QA//
+/*
+Autor QA: Daniel Eduardo Gutiérrez Delfin
+Entradas: (Resta (2), 10, -20) (División (4), 1, 0) (Residuo(5), 10, 3)
+salidas: -10 correcto, unhandled division correcto(?),1 correcto 
+Proceso: Es correcto, funciona adecuadamente, exceptuando divisiones entre 0
+*/

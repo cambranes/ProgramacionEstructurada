@@ -29,3 +29,10 @@ namespace Ej42
         }
     }
 }
+/*
+QA
+Autor QA:Eyder Antonio Concha Moreno
+Entradas:
+salidas: 100 números naturales
+Proceso: El proceso funciona correctamente
+*/

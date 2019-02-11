@@ -82,3 +82,10 @@ int main(){
 
 return(EXIT_SUCCESS);
 }
+//Prueba QA//
+/*
+Autor QA: Daniel Eduardo Gutiérrez Delfin
+Entradas:(1,587,361)(2,846,2654)(3,58,23)(4,1584,100)(5,184,5)(6)
+Salidas:(948)(-1808)(1334)(15)(4)(Fin del programa)
+Proceso:Todo Correcto
+/*

@@ -53,3 +53,23 @@ namespace Ej47
         }
     }
 }
+/*
+QA
+Autor QA:Eyder Antonio Concha Moreno
+Entradas: 
+ - (Nombre: Eyder 
+    Edad: 18,
+    Sueldo por hora: 1000, 
+    horas trabajadas en la semana: 40, 
+    porcentaje impuestos: 10
+    )
+-  (Nombre: Daniel 
+    Edad: 18,
+    Sueldo por hora: 2000, 
+    horas trabajadas en la semana: 41, 
+    porcentaje impuestos: 20
+    )
+salidas: Sueldo Neto: 36000, correcto
+         Sueldo Neto: 67200, correcto
+Proceso: El proceso funciona correctamente
+*/

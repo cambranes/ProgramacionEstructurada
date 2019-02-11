@@ -35,3 +35,10 @@ if(lados==hipotenusa){
 
 return 0;
 }
+/*
+QA
+Autor QA:Eyder Antonio Concha Moreno
+Entradas: (3, 4, 5), (9, 10, 5)
+salidas: "Los datos corresponden a un triC!ngulo RectC!ngulo" Correcto, "Los valores introducidos NO corresponden a un triangulo rectangulo" Correcto
+Proceso: Es correcto, sin embargo debería ser capaz de funcionar con valores indeterminados al inicio
+*/

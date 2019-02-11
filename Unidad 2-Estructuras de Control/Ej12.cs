@@ -33,3 +33,9 @@ namespace Ej12
         }
     }
 }
+/* QA
+Autor QA:Daniel Eduardo Gutierrez Delfin
+Entradas: (4, 2), (-3, -10), (-1 0)
+salidas: 4 2 correcto, -3-10 correcto, 0 -1 correcto
+Proceso: Es correcto, aunque la representación no tiene espacios
+*/

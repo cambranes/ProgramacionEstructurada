@@ -19,3 +19,14 @@ if (a>=b){
    printf("%i %i",b,a);
 }
 }
+//Prueba QA//
+/*
+Autor QA: Daniel Eduardo Gutiérrez Delfin
+Entradas: *******
+Salidas:**********
+Proceso: Tuvo los siguiente inconvenientes
+Ej12.c:10:4: error:implicit declaration of fuction 'ascendente' [-Wimplicit-declaration] 
+Ej12.c:15:6: error conflicting types for 'ascendente'
+Ej12.c:23:1: error: unterminated comment 
+"La funcion está declarada de forma implicita, deberia estar declarada fuera del main"
+/*

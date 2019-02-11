@@ -40,5 +40,12 @@ int main(int argc, char const *argv[])
 }
 
 /*
+QA
 Salida:raiz cuadrada de los primeros 100 numeros naturales
+*/
+/*
+Autor QA:Eyder Antonio Concha Moreno
+Entradas:
+salidas: 100 números naturales
+Proceso: El proceso funciona correctamente
 */
