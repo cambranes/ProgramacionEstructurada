@@ -31,5 +31,5 @@ int main() {
 * Salida general: una suma de los primero n numeros pares
 * Proceso general:
 * - La suma de los primeros n numeros pares
-* Comentario: Problema al compilar "scanf_s" y las variabes deben ser locales
+* Comentario: Problema al compilar "scanf_s" y las variabes deben ser locales de ahi en fuera funciona bien
 */
