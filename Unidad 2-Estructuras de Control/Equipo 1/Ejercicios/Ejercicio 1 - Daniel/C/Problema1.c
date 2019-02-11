@@ -1,14 +1,14 @@
 /*
 Ejercicio 1 C
-Unidad 2 - {Programación Estructurada}
+Unidad 2 - {ProgramaciÃ³n Estructurada}
 Equipo 1
 Autor: Daniel Eduardo Gutierrez Delfin
 Fecha: 8 de Febrero 2019
-Entradas: Un número
+Entradas: Un nÃºmero
 Salidas: Si el numero es par o impar
 ---------------------------------------
-Instrucción:
-Escribe un programa que reciba un número y te diga si ese número es par o
+InstrucciÃ³n:
+Escribe un programa que reciba un nÃºmero y te diga si ese nÃºmero es par o
 impar.
 ---------------------------------------
 Procedimiento General:
@@ -50,3 +50,7 @@ int main()
 	return 0;
 }
 
+/*
+Autor QA:Emmanuel Azcorra Balam
+Entradas:3,4,3.3,12
+Proceso :Ok, todo correcto.*/
