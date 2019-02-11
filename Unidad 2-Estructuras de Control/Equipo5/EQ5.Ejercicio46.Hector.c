@@ -81,3 +81,7 @@ int main(){
   printf("Se desconto un total de: %f\n", TotalDesc);
   return 0;
 }
+/* QA: Luis Leon 
+Entradas: Articulos, PrecioN, Decs
+Salidas: Cliente, TotalCaja, TotalDesc, TotalN, PrecDesc1, PrecDesc2, PrecDesc3, PrecDesc4 */
+

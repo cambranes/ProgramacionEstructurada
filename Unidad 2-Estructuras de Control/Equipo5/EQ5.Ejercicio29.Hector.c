@@ -29,3 +29,6 @@ int main() {
   printf("%d", Numero);
   return 0;
 }
+/*QA: Luis Leon */
+/*Entradas: Un numero n
+Salida todos los factores de un numero n*/

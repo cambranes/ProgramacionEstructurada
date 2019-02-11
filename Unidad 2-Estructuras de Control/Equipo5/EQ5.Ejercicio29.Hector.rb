@@ -5,3 +5,6 @@ class Ejercicio29
   puts 'Dame un Numero: '
   Numero = gets
 end
+
+#QA: Luis Leon 
+# INCOMPLETO
