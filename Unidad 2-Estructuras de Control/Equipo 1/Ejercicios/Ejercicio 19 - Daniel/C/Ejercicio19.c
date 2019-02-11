@@ -1,14 +1,14 @@
 /*
 Ejercicio 19 C
-Unidad 2 - {Programación Estructurada}
+Unidad 2 - {ProgramaciÃ³n Estructurada}
 Equipo 1
 Autor: Daniel Eduardo Gutierrez Delfin
 Fecha: 8 de Febrero 2019
 Entradas: 3 numeros
 Salidas: El numero mayor
 ---------------------------------------
-Instrucción:
-Escribir un programa que lea tres números y determine el mayor de los tres.
+InstrucciÃ³n:
+Escribir un programa que lea tres nÃºmeros y determine el mayor de los tres.
 ---------------------------------------
 Procedimiento General:
 ---------------------------------------
@@ -57,3 +57,11 @@ int main() {
 
 	return 0;
 }
+
+
+/*
+Autor QA:Emmanuel Azcorra Balam
+Entradas:(1,2,3),(3,2,1),(2,1,3),(9,3,10)
+salidas:3,3,3502080,4087808
+Proceso :Al poner un numero intermedio luego el numero mas pequeÃ±o y al final el numero mayor el numero que da en salida es incorrecto.
+
