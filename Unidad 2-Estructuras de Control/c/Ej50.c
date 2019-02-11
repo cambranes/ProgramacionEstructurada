@@ -27,7 +27,6 @@ int main() {
 
   //Outputs
   printf("\nThe value of e for precision %d is: %f", value, e);
-  getch();
   return 0;
 }
 
