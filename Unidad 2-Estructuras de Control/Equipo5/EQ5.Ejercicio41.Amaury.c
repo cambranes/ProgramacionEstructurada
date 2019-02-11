@@ -76,3 +76,6 @@ int main()
 
  return 0; //Creo que esto se refiere al ''valor 0''.
 }
+//QA realizado por: Rodrigo Hernández Góngora
+//Entradas probadas: 3(1-2-5), 5(2-3-6-8-9), 0, 1(2)
+//El algoritmo funciona, pero te solicita una variable innecesaria despues de dar los resultados
