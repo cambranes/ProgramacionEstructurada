@@ -5,57 +5,57 @@ class Ejercicio46
   Desc2 = 0.11
   Desc3 = 0.18
   Desc4 = 0.25
-  Descuento1 = 0.0
-  Descuento2 = 0.0
-  Descuento3 = 0.0
-  Descuento4 = 0.0
-  PrecDesc1 = 0.0
-  PrecDesc2 = 0.0
-  PrecDesc3 = 0.0
-  PrecDesc4 = 0.0
-  TotalCaja = 0.0
-  TotalPago = 0.0
+  descuento1 = 0.0
+  descuento2 = 0.0
+  descuento3 = 0.0
+  descuento4 = 0.0
+  precDesc1 = 0.0
+  precDesc2 = 0.0
+  precDesc3 = 0.0
+  precDesc4 = 0.0
+  totalCaja = 0.0
+  totalPago = 0.0
   puts 'Ingrese la cantidad de articulos'
   Articulos = gets.to_i
   n = 0
-  TotalN = 0
+  totalN = 0
   while n < Articulos
     n = n + 1
     puts 'Ingrese el precio del articulo ' + n.to_s
-    PrecioN = gets.to_i
-    TotalN = TotalN + PrecioN
+    precioN = gets.to_i
+    totalN = totalN + precioN
   end
-  if TotalN < 500
-    puts 'El total de compra es ' + TotalN.to_s
+  if totalN < 500
+    puts 'El total de compra es ' + totalN.to_s
     puts 'No obtuvo descuento'
-    Totalpago = TotalN
-  elsif TotalN >= 500 and TotalN < 1000
-    PrecDesc1 = TotalN * Desc1
-    TotalPago = TotalN - PrecDesc1
-    puts 'El total de compra es: ' + TotalPago.to_s
-    puts 'Tiene un descuento de: ' + PrecDesc1.to_s
-    Descuento1 = Descuento1 + PrecDesc1
-  elsif TotalN >= 1000 and TotalN <7000
-    PrecDesc2 = TotalN * Desc2
-    TotalPago = TotalN - PrecDesc2
-    puts 'El total de compra es: ' + TotalPago.to_s
-    puts 'Tiene un descuento de: ' + PrecDesc2.to_s
-    Descuento2 = Descuento2 + PrecDesc2
-  elsif TotalN >= 7000 and TotalN < 15000
-    PrecDesc1 = TotalN * Desc3
-    TotalPago = TotalN - PrecDesc3
-    puts 'El total de compra es: ' + TotalPago.to_s
-    puts 'Tiene un descuento de: ' + PrecDesc3.to_s
-    Descuento3 = Descuento3 + PrecDesc3
-  elsif TotalN >= 15000
-    PrecDesc4 = TotalN * Desc4
-    TotalPago = TotalN - PrecDesc4
-    puts 'El total de compra es: ' + TotalPago.to_s
-    puts 'Tiene un descuento de: ' + PrecDesc4.to_s
-    Descuento4 = Descuento4 + PrecDesc4
+    totalPago = totalN
+  elsif totalN >= 500 and totalN < 1000
+    precDesc1 = totalN * Desc1
+    totalPago = totalN - precDesc1
+    puts 'El total de compra es: ' + totalPago.to_s
+    puts 'Tiene un descuento de: ' + precDesc1.to_s
+    descuento1 = descuento1 + precDesc1
+  elsif totalN >= 1000 and totalN <7000
+    precDesc2 = totalN * Desc2
+    totalPago = totalN - precDesc2
+    puts 'El total de compra es: ' + totalPago.to_s
+    puts 'Tiene un descuento de: ' + precDesc2.to_s
+    descuento2 = descuento2 + precDesc2
+  elsif totalN >= 7000 and totalN < 15000
+    precDesc3 = totalN * Desc3
+    totalPago = totalN - precDesc3
+    puts 'El total de compra es: ' + totalPago.to_s
+    puts 'Tiene un descuento de: ' + precDesc3.to_s
+    descuento3 = descuento3 + precDesc3
+  elsif totalN >= 15000
+    precDesc4 = totalN * Desc4
+    totalPago = totalN - precDesc4
+    puts 'El total de compra es: ' + totalPago.to_s
+    puts 'Tiene un descuento de: ' + precDesc4.to_s
+    descuento4 = descuento4 + precDesc4
   end
-  TotalCaja = TotalCaja + TotalPago
-  TotalDesc = Descuento1 + Descuento2 + Descuento3 + Descuento4
-  puts 'El total de venta fue de: ' + TotalCaja.to_s
-  puts 'Se desconto un total de: ' + TotalDesc.to_s
+  totalCaja = totalCaja + totalPago
+  totalDesc = descuento1 + descuento2 + descuento3 + descuento4
+  puts 'El total de venta fue de: ' + totalCaja.to_s
+  puts 'Se desconto un total de: ' + totalDesc.to_s
 end
