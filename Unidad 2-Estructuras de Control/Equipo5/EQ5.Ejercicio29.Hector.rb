@@ -22,4 +22,5 @@ class Ejercicio29
 end
 
 #QA: Luis Leon 
-# INCOMPLETO
+#Entradas:  Un numero n
+#Salidas: Todos los factores de n
