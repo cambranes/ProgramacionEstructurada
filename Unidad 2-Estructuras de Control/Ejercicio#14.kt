@@ -14,3 +14,9 @@ fun main(args: Array<String>){
         //Salidas: La oracion correspondiente con el dato introducido
     }
 }
+/*
+QA: Hector Cosgalla
+Entradas: Un numero entero (velocidad)
+Salidas: la evaluación de los numeros en sus respectivos casos
+Comentarios: No lee el rango de velocidades de 1 a 99
+*/
