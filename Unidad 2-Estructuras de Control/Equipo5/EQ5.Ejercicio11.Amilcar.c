@@ -23,3 +23,7 @@ int main(){
 	}
 	return 0;
 }
+/*
+QA: Luis Gerardo Leon Ortega
+entradas: la cantidad a retirar
+salidas: el monto q ue se retira, junto con el saldo */

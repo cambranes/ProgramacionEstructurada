@@ -17,3 +17,6 @@ else
     print "No es bisiesto\n"
   end
 end
+#QA: Luis Gerardo Leon Ortega
+#entradas: el año que es propuesto por el usuario
+#salidas: el año es bisiesto o no
