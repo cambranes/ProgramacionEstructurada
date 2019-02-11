@@ -50,3 +50,8 @@ if(numeroMayor){
   alert("Los números son iguales");//si no se cumplio ningun caso los numeros son iguales//
 }
   
+
+/*Autor QA:Emmanuel Azcorra Balam
+Entradas:(1,2,3),(3,2,1),(2,1,3),(9,3,10)
+salidas:3,3,3,10
+Proceso :Ok, todo correcto.

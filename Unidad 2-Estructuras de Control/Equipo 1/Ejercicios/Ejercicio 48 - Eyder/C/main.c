@@ -1,6 +1,6 @@
 /*
 Ejercicio 48 C
-Unidad 2 - {Programación Estructurada}
+Unidad 2 - {ProgramaciÃ³n Estructurada}
 Equipo 1
 
 Autor: Eyder Antonio Concha Moreno
@@ -9,11 +9,11 @@ Entradas: sueldo base, antiguedad en la empresa
 Salidas: Incentivo, sueldo total y sueldo base, o error por entradas incorrectas
 
 ---------------------------------------
-Instrucción:
-Una compañía efectúa cálculos para su reparto de utilidades.
-En esta ocasión añadirá un pequeño incentivo de acuerdo a la antigüedad de sus empleados.
-Se sabe que la compañía lleva 15 años trabajando y el incentivo se dará de acuerdo al número de años laborados
-según la información siguiente:
+InstrucciÃ³n:
+Una compaÃ±Ã­a efectÃºa cÃ¡lculos para su reparto de utilidades.
+En esta ocasiÃ³n aÃ±adirÃ¡ un pequeÃ±o incentivo de acuerdo a la antigÃ¼edad de sus empleados.
+Se sabe que la compaÃ±Ã­a lleva 15 aÃ±os trabajando y el incentivo se darÃ¡ de acuerdo al nÃºmero de aÃ±os laborados
+segÃºn la informaciÃ³n siguiente:
 
 | Antiguedad |             | % de sobresueldo |
 |:----------:|:-----------:|:----------------:|
@@ -23,15 +23,15 @@ según la información siguiente:
 | 7          | 9           |        5%        |
 | 10         | En adelante |        7%        |
 
-Escribe el programa que lea el sueldo del empleado y su antigüedad y que calcule su incentivo, imprimiendo
-su sueldo base, el incentivo y el sueldo a pagar. Suponer que no se conoce el número de empleados.
+Escribe el programa que lea el sueldo del empleado y su antigÃ¼edad y que calcule su incentivo, imprimiendo
+su sueldo base, el incentivo y el sueldo a pagar. Suponer que no se conoce el nÃºmero de empleados.
 ---------------------------------------
 
 Procedimiento General:
 ---------------------------------------
-1.-Preguntamos el número de años de antiguedad
+1.-Preguntamos el nÃºmero de aÃ±os de antiguedad
 2.-Preguntamos antiguedad del empleado
-3.-Verificamos si los datos ingresados son válidos
+3.-Verificamos si los datos ingresados son vÃ¡lidos
 4.-Con su antiguedad, determinamos el porcentaje a otorgar
 5.-Definimos el incentivo con el porcentaje obtenido
 6.-Calculamos el sueldo total
@@ -91,11 +91,11 @@ int main()
     incentivo = porcentajeIncentivo * sueldoBase;
     sueldoTotal = sueldoBase + incentivo;
 
-    //Con base a la validación, determinamos la salida
+    //Con base a la validaciÃ³n, determinamos la salida
     if(cantidadValida){
         mensaje = "El sueldo total es de: $ %f \nEl sueldo base es de: $ %f \nEl incentivo es de: %f";
     } else {
-        mensaje = "Entrada inválida";
+        mensaje = "Entrada invÃ¡lida";
     }
 
     /*Salidas*/
@@ -103,3 +103,11 @@ int main()
 
     return 0;
 }
+/*Autor QA: Ronsson Ramiro May Santos
+Entradas: sueldoBase= 1200,
+          antiguedad= 3,
+Salidas: sueldo total: 1212.
+         sueldo base :  1200.
+           incentivo :   12.
+Procesos: ok
+*/

@@ -93,3 +93,9 @@ if(notValid){
 document.write(mensaje);
 
 //Pruebas
+/*
+Autor QA: Alejandro Torre Reyes
+Entradas: 1200, 0600
+Salidas: 12:00 pm, 6.00 am
+Proceso:Ok
+*/

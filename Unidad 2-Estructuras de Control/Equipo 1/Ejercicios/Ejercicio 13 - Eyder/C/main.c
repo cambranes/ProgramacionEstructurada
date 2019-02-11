@@ -1,25 +1,25 @@
 /*
 Ejercicio 13 Javascript
-Unidad 2 - {Programación Estructurada}
+Unidad 2 - {ProgramaciÃ³n Estructurada}
 Equipo 1
 Autor: Eyder Antonio Concha Moreno
 Fecha: 4 de Febrero 2019
 Entradas: La hora en formato militar
-Salidas: La hora en formato estándar
+Salidas: La hora en formato estÃ¡ndar
 ---------------------------------------
-Instrucción:
-Escribir el programa para convertir una hora leída en horario militar (número de cuatro dígitos)
-y la imprima a una hora en formato estándar (hh:00am/pm).
+InstrucciÃ³n:
+Escribir el programa para convertir una hora leÃ­da en horario militar (nÃºmero de cuatro dÃ­gitos)
+y la imprima a una hora en formato estÃ¡ndar (hh:00am/pm).
 ---------------------------------------
 Procedimiento General:
 ---------------------------------------
 1.-Se comprueba que la hora ingresada por el usuario sea valida
-2.-De serlo, obtenemos los primeros y últimos dos caracteres del horario militar
-3.-Comprobamos que los primeros y últimos dos caracteres (las horas y minutos) sean validos
+2.-De serlo, obtenemos los primeros y Ãºltimos dos caracteres del horario militar
+3.-Comprobamos que los primeros y Ãºltimos dos caracteres (las horas y minutos) sean validos
 4.-De ser validos, comprobamos si las horas son mayor o igual a 12,
    de serlo definimos el sufijo como "pm", de no serlo lo definimos como "am"
-5.-Comprobamos si las horas son mayores a 12, de serlo definimos las horas en formato estándar
-   como (las horas militares - 12), de otra forma las horas estándar son iguales a las militares.
+5.-Comprobamos si las horas son mayores a 12, de serlo definimos las horas en formato estÃ¡ndar
+   como (las horas militares - 12), de otra forma las horas estÃ¡ndar son iguales a las militares.
 ---------------------------------------
 */
 
@@ -37,7 +37,7 @@ int main()
     int formatedHours;
     int formatedMinutes;
 
-    // Definimos las variables requeridas para el tiempo estándar
+    // Definimos las variables requeridas para el tiempo estÃ¡ndar
     int standardHours;
     char * timeSuffix;
 
@@ -75,14 +75,14 @@ int main()
 
     //Verificamos si la hora es mayor a las 11, de serlo entonces el sufijo es "PM", de otra manera es "AM"
     timeSuffix = (formatedHours > 11) ?  "PM" : "AM";
-    //Verificamos si las horas son mayores a 12, de serlo le restamos 12 para añadirlas al formato estándar
+    //Verificamos si las horas son mayores a 12, de serlo le restamos 12 para aÃ±adirlas al formato estÃ¡ndar
     standardHours = (formatedHours > 12) ? (formatedHours - 12) : formatedHours;
 
     /*Salidas*/
 
     //De ser valido, se ejecuta normalmente, de otra manera se imprime "invalid value"
     if(!notValid){
-            //Si los minutos son menores a 10, entonces les añadimos un cero para formar el horario adecuado, Ejemplo: de 12:1 a 12:01
+            //Si los minutos son menores a 10, entonces les aÃ±adimos un cero para formar el horario adecuado, Ejemplo: de 12:1 a 12:01
         if(formatedMinutes < 10){
             printf("%d:0%d %s", standardHours, formatedMinutes, timeSuffix);
         }else {
@@ -94,3 +94,9 @@ int main()
 
     return 0;
 }
+/*
+Autor QA: Alejandro Torre Reyes
+Entradas: 0400, 1600
+Salidas: 4:00 AM y 4:00 pm
+Proceso. OK
+*/

@@ -93,3 +93,18 @@ if(cantidadValida){
 
 /*Salidas*/
 document.write(mensaje);
+
+/*Autor QA: Ronsson Ramiro May Santos
+Entradas:
+sueldoBase:1200
+antiguedad:3
+
+salidas: 
+El sueldo total es de:$1212 
+El sueldo base es de $1200 
+El incentivo es de $12
+
+Procesos. Funciona Segùn las especificaciones
+
+metodo de testing: consola de navegador Chrome
+*/

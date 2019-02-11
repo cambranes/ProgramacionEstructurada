@@ -1,21 +1,21 @@
 /*
 Ejercicio 7 C
-Unidad 2 - {Programación Estructurada}
+Unidad 2 - {ProgramaciÃ³n Estructurada}
 Equipo 1
 Autor: Daniel Eduardo Gutierrez Delfin
 Fecha: 8 de Febrero 2019
 Entradas: Un numero
 Salidas: El numero con su respectivo caso
 ---------------------------------------
-Instrucción:
+InstrucciÃ³n:
 Escribir el programa para un programa que reciba un numero positivo, si
 este numero es mayor a 1000 se le sumara un 5%, si el numero es mayor a
 3000 se le sumara otro 10% adicional y si el numero es mayor a 5000 se le
 sumara otro 5% adicional.
 Notese que al final
-número > 1000 5%
-número > 3000 5% + 10%
-número > 5000 5% + 10% + 5%
+nÃºmero > 1000 5%
+nÃºmero > 3000 5% + 10%
+nÃºmero > 5000 5% + 10% + 5%
 ---------------------------------------
 Procedimiento General:
 ---------------------------------------
@@ -62,4 +62,11 @@ int main() {
 
 	return 0;
 }
+
+
+/*
+Autor QA:Emmanuel Azcorra Balam
+Entradas:3,1000,1001,3000,,3001,5001
+salidas:3,1000,1051.05,3150,3451.15,6001.20
+Proceso :Ok, todo correcto.*/
 

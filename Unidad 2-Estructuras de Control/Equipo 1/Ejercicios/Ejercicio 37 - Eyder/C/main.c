@@ -1,23 +1,23 @@
 /*
 Ejercicio 37 C
-Unidad 2 - {Programación Estructurada}
+Unidad 2 - {ProgramaciÃ³n Estructurada}
 Equipo 1
 Autor: Eyder Antonio Concha Moreno
 Fecha: 5 de Febrero 2019
-Entradas: n número de primos a sumar
-Salidas: la suma del número de primos (o 0 en caso de ser un valor invalido)
+Entradas: n nÃºmero de primos a sumar
+Salidas: la suma del nÃºmero de primos (o 0 en caso de ser un valor invalido)
 ---------------------------------------
-Instrucción:
-Determinar la suma de los primeros n números primos.
+InstrucciÃ³n:
+Determinar la suma de los primeros n nÃºmeros primos.
 ---------------------------------------
 Procedimiento General:
 ---------------------------------------
 1.-Verificamos que la cantidad de primos escrita por el usuario sea mayor a 0
-2.-Iteramos através de los números naturales, comparando un contador con los números desde dos hasta su mitad
+2.-Iteramos atravÃ©s de los nÃºmeros naturales, comparando un contador con los nÃºmeros desde dos hasta su mitad
   de esta manera, determinando si es primo
-3.-Si el número tiene un residuo de 0, se determina que el número no es primo, y se representa en una variable booleana
+3.-Si el nÃºmero tiene un residuo de 0, se determina que el nÃºmero no es primo, y se representa en una variable booleana
 4.-Comprobamos si la variable isPrime es verdadera o falsa
-5.-Si es verdadera (si es primo) sumamos ese número a la suma total, y restamos uno a la cantidad de primos
+5.-Si es verdadera (si es primo) sumamos ese nÃºmero a la suma total, y restamos uno a la cantidad de primos
 ---------------------------------------
 */
 
@@ -28,16 +28,16 @@ int main()
 {
     /*Entradas*/
 
-    //Definimos variable usada para la cantidad de números primos a encontrar
+    //Definimos variable usada para la cantidad de nÃºmeros primos a encontrar
     int cantidadDePrimos;
 
     //Variable suma para almacenar toda suma
     int suma = 0;
 
-    //Variable contador, usada para iterar hasta que los números primos hayan sido sumados
+    //Variable contador, usada para iterar hasta que los nÃºmeros primos hayan sido sumados
     int numero = 1;
 
-    //Variable "booleana" saber si el número en la iteración es primo
+    //Variable "booleana" saber si el nÃºmero en la iteraciÃ³n es primo
     int isPrime;
 
     /*Procedimiento*/
@@ -50,7 +50,7 @@ int main()
     while(cantidadDePrimos > 0) {
         numero++;
         isPrime = 1;
-        //Obtenemos el residuo del contador entre todos los números que preceden a la mitad del mismo
+        //Obtenemos el residuo del contador entre todos los nÃºmeros que preceden a la mitad del mismo
         for(int i = 2; i <= (numero / 2); i++){
             //De tener un residuo de cero, es decir, no es primo, se declara al booleano "isPrime" como falso
             if((numero % i) == 0) {
@@ -72,7 +72,12 @@ int main()
 
     return 0;
 }
-
+/*
+Autor QA: Alejandro Torre Reyes
+Entradas: 2, 10, 200
+Salidas: 5,129,111587
+Proceso: OK
+*/
 
 
 

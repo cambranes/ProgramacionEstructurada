@@ -48,3 +48,10 @@ if (suma==1){
 }
 /*Salidas*/
 document.write(numero,mensaje);
+
+/*
+Autor QA: Alejandro Torre Reyes
+Entradas: 7, 0
+Salidas: 7 es un numero primo, 0 no es un numero primo
+Proceso: OK
+*/

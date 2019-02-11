@@ -54,3 +54,9 @@ int main()
     return 0;
     }
     /*Pruebas*/
+/*
+Autor QA: Alejandro Torre Reyes
+Entrada: 1,2,3,4,-1,-2,-3,-4,0
+Salida: Se encontraron 4 números positivos y 4 números negativos
+Proceso: OK
+*/

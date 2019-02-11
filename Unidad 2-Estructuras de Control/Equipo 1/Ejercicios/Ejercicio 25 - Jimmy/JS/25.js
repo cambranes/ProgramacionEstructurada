@@ -34,3 +34,9 @@ codigo=(letra).charCodeAt(0)
 document.write("El codigo ASCII de ",letra," es ",codigo);
 
 /*Pruebas*/
+/*
+Autor QA: Alejandro Torre Reyes
+Entradas: a, l, W, ñ
+Salidas: 97, 108, 87, 241
+Procesos: OK 
+*/

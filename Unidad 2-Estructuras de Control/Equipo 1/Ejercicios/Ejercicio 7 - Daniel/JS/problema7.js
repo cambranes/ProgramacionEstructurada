@@ -54,3 +54,10 @@ if (v==0){//Si la variable es igual a 0 se imprime el resultado//
 }else{//Si la variable fue 1 significa que el numero fue negativo y que no es valido//
 alert('El resultado es invalido');
 }
+
+/*
+Autor QA:Emmanuel Azcorra Balam
+Entradas:3,1000,1001,3000,,3001,5001
+salidas:3,1000,1051.05,3150,3451.15,6001.20
+Proceso :Ok, todo correcto.*/
+
