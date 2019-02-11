@@ -41,8 +41,9 @@ int main() {
 		}else if(numero1 > numero2){//vemos si el numero 1 es amyor al numero 2//
 			if(numero1 > numero3){//Si es asi vemos si el numero 1 es mayor al numero 3)
 			  numeroMayor = numero1; //Si fue asi el numero uno toma el trono
-			} else {
-      }
+			}else {
+              numeroMayor = numero3;
+			}
 		} else if(numero2 > numero3){//Si el numero 1 no fue mayor al numero 2, comparamos si el numero 2 es mayor al numero 3//
 			numeroMayor = numero2;//Si es asi el numero 2 ocupa el trono//
 		} else {
@@ -54,7 +55,6 @@ int main() {
     } else {
       printf("Los numeros son iguales");
     }
-
 	return 0;
 }
 
@@ -63,5 +63,7 @@ int main() {
 Autor QA:Emmanuel Azcorra Balam
 Entradas:(1,2,3),(3,2,1),(2,1,3),(9,3,10)
 salidas:3,3,3502080,4087808
-Proceso :Al poner un numero intermedio luego el numero mas pequeño y al final el numero mayor el numero que da en salida es incorrecto.
+Proceso:THIS IS NOW SOLVED Al poner un numero intermedio luego el numero mas pequeño y al final el numero mayor el numero que da en salida es incorrecto.
+
+*/
 
