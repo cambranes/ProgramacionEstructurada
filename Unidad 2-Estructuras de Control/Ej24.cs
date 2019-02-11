@@ -47,3 +47,9 @@ namespace Ej24
         }
     }
 }
+/* QA
+Autor QA:Eyder Antonio Concha Moreno
+Entradas: 1, 2, 10
+salidas: .5 correcto, 1 correcto, 1.98828125 correcto
+Proceso: Funciona correctamente
+*/

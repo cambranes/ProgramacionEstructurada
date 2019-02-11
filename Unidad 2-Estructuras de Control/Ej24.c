@@ -37,3 +37,10 @@ int power(int base, int x){ //funcion de potencia
     }
     return p;
 }
+//Prueba QA//
+/*
+Autor QA: Daniel Eduardo Gutiérrez Delfin
+Entradas:(25) (16) (7)
+Salidas:(1.999999) (1.999725) (1.929688)
+Proceso:Todo Bien
+*/

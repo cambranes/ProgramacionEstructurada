@@ -38,3 +38,10 @@ namespace Ej30
         }
     }
 }
+/*
+QA
+Autor QA:Eyder Antonio Concha Moreno
+Entradas: (8, 8), (7, 11), (200,100), (3, 1)
+salidas:8, 1, 100, 1
+Proceso :Ok, todo correcto.
+*/
