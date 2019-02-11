@@ -22,3 +22,9 @@ int main()
 return 0;
 }
 //Salidas: El numero de años bisiestos en el período dado
+/*
+QA: Hector A. V. Cosgalla
+Entradas: Dos numeros enteros (años)
+Salidas: El numero de años bisiestos en el período dado
+Comentario: Use de ejemplo del año 2000 al 2004 y solo me leyo 1 año de los 2 bisiestos
+*/

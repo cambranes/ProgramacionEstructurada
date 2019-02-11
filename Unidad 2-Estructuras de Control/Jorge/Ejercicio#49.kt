@@ -18,3 +18,9 @@ fun main(args: Array<String>){
         }
     }
 }
+/*
+QA: Hector Cosgalla
+Entradas: No se introduce ningun dato
+Salidas: Las tablas de multiplicar del 2 al 9
+Comentario: Funciona perfecto!
+*/

@@ -21,3 +21,9 @@ fun main(args: Array<String>){
     }
     //Salidas: El numero de dias bisiestos en un período dado
 }
+/*
+QA: Hector A. V. Cosgalla
+Entradas: Dos numeros enteros (años)
+Salidas: El numero de años bisiestos en el período dado
+Sin comentarios
+*/
