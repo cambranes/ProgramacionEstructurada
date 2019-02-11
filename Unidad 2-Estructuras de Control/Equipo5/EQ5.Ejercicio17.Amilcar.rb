@@ -42,3 +42,6 @@ end
 if (anglres > 180)then
   print("El angulo resultante es concavo\n")
 end
+#QA: Luis Gerardo Leon Ortega
+#entradas: Los dos ángulos a evaluar que sean enteros positivos.
+#salidas: Los tipos de ángulo que son resultado de la diferencia entre los dos ángulos

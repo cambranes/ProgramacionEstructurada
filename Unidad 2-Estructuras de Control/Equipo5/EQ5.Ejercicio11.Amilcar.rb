@@ -15,3 +15,6 @@ if (retirar <= x) and (retirar > 0) then
 else
   print("la operacion no puede realizarse\n");
 end
+#QA: Luis Gerardo Leon Ortega
+#entradas: La cantidad a retirar.
+#salidas: El monto que se retira, junto con el saldo; la operación no se puede realizar.
