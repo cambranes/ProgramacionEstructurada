@@ -70,3 +70,8 @@ class Ejercicio46
   puts 'El total de venta fue de: ' + totalCaja.to_s
   puts 'Se desconto un total de: ' + totalDesc.to_s
 end
+
+
+#QA: Luis Leon 
+#Entradas: Articulos, PrecioN, Decs
+#Salidas: Cliente, TotalCaja, TotalDesc, TotalN, PrecDesc1, PrecDesc2, PrecDesc3, PrecDesc4

@@ -32,3 +32,8 @@ int main() {
   }
   return 0;
 }
+/* QA: Luis Leon 
+Entradas: Un numero n
+Salidas: La diagonal superior de una tabla de nxn */
+
+

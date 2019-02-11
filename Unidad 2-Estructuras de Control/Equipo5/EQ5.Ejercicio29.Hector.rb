@@ -20,3 +20,6 @@ class Ejercicio29
   end
   print numero.to_s
 end
+
+#QA: Luis Leon 
+# INCOMPLETO
