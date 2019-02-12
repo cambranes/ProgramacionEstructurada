@@ -1,7 +1,9 @@
 /*ejercicio 18.-.Escribir y ejecutar un programa que simule una calculadora simple. Lee dos
-enteros y un car·cter. Si el car·cter es un +, se imprime la suma; si es un -,
+enteros y un car√°cter. Si el car√°cter es un +, se imprime la suma; si es un -,
 se imprime la diferencia; si es un * se imrpime el producto; si es un /, se
-imprime el cociente; y si es un % se imprime el resto. */
+imprime el cociente; y si es un % se imprime el resto.
+Autor: Ronsson Santos
+*/
 
 #include<stdio.h> //librerias
 #include<stdlib.h>
@@ -84,7 +86,7 @@ return(EXIT_SUCCESS);
 }
 //Prueba QA//
 /*
-Autor QA: Daniel Eduardo GutiÈrrez Delfin
+Autor QA: Daniel Eduardo Guti√©rrez Delfin
 Entradas:(1,587,361)(2,846,2654)(3,58,23)(4,1584,100)(5,184,5)(6)
 Salidas:(948)(-1808)(1334)(15)(4)(Fin del programa)
 Proceso:Todo Correcto
