@@ -25,6 +25,6 @@ fun main() {
 * Entrada: un numero n
 * Salida general: una suma de los primero n numeros pares
 * Proceso general:
-* - La suma de los primeros n numeros pares
+* La suma de los primeros n numeros pares
 * Comentario:Funciona bien.
 */
