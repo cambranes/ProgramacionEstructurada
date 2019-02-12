@@ -1,4 +1,6 @@
-/*ejercicio 12.-Escribir el programa que lea 2 números y los imprima de mayor a menor. */
+/*ejercicio 12.-Escribir el programa que lea 2 nÃºmeros y los imprima de mayor a menor. 
+Autor: Ronsson Santos
+*/
 
 #include<stdio.h> //librerias
 #include<math.h>
@@ -21,12 +23,12 @@ if (a>=b){
 }
 //Prueba QA//
 /*
-Autor QA: Daniel Eduardo Gutiérrez Delfin
+Autor QA: Daniel Eduardo GutiÃ©rrez Delfin
 Entradas: *******
 Salidas:**********
 Proceso: Tuvo los siguiente inconvenientes
 Ej12.c:10:4: error:implicit declaration of fuction 'ascendente' [-Wimplicit-declaration] 
 Ej12.c:15:6: error conflicting types for 'ascendente'
 Ej12.c:23:1: error: unterminated comment 
-"La funcion está declarada de forma implicita, deberia estar declarada fuera del main"
+"La funcion estÃ¡ declarada de forma implicita, deberia estar declarada fuera del main"
 /*
