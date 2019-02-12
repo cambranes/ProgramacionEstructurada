@@ -1,4 +1,5 @@
 /*ejercicio 12.-Escribir el programa que lea 2 números y los imprima de mayor a menor.
+Autor: Ronsson Santos
 */
 using System;
 using System.Collections.Generic;
