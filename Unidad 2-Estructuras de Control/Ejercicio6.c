@@ -1,7 +1,9 @@
-/*ejercicio 6.-Escribir el programa para un programa en C que reciba tres números
+/*ejercicio 6.-Escribir el programa para un programa en C que reciba tres nÃºmeros
 enteros que representan dos catetos y una hipotenusa y que determine si
-cumple con la ecuación de pitágoras.
-a2 +b2 = c2 */
+cumple con la ecuaciÃ³n de pitÃ¡goras.
+a2 +b2 = c2
+Autor: Ronsson Santos
+*/
 
 #include<stdio.h> //librerias
 #include<math.h>
@@ -40,5 +42,5 @@ QA
 Autor QA:Eyder Antonio Concha Moreno
 Entradas: (3, 4, 5), (9, 10, 5)
 salidas: "Los datos corresponden a un triC!ngulo RectC!ngulo" Correcto, "Los valores introducidos NO corresponden a un triangulo rectangulo" Correcto
-Proceso: Es correcto, sin embargo debería ser capaz de funcionar con valores indeterminados al inicio
+Proceso: Es correcto, sin embargo deberÃ­a ser capaz de funcionar con valores indeterminados al inicio
 */
