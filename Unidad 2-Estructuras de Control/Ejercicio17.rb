@@ -1,3 +1,4 @@
+#Autor: Amilcar Ramirez Patron
 #Entradas: Los dos ángulos a evaluar que sean enteros positivos.
 #Salidas: Los tipos de ángulo que son resultado de la diferencia entre los dos ángulos
 #Procedimiento General:Evalúo los dos ángulos que el usuario pone, de forma que queden en ángulos menores de 360, para posteriormente 
