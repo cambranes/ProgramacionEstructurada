@@ -1,4 +1,5 @@
 /*
+  Autor: Amilcar Ramirez Patron
   Entradas: El año que es propuesto por el usuario (linea 10, 11).
   Salidas: El año es bisiesto o no.
   Procedimiento general:Para la parte más "complicada" que es discernir cuando los años múltipos de 100 son también de 400, usé la evaluación
