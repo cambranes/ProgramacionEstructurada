@@ -4,11 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+/*
+Autor:. Alejandro Torre Reyes
+Entradas: Un numero n entero positivo
+Salidas: El factorial de n
+Proceso: Dado un numero entero n determina su factorial.
+*/
 namespace Ejercicio21
 {
     class Program
     {
-        static int Read()
+        static int Read() //Metodo para leer las entradas
         {
             int leer;
             Console.WriteLine("Ingrese n para calcular su factorial");
@@ -16,7 +22,7 @@ namespace Ejercicio21
             return leer;
         }
         
-        static int Fact(int x)
+        static int Fact(int x) //Metodo para calcular el factorial
         {
             int factorial = 1;
             int i;
