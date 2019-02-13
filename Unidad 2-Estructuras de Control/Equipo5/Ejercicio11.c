@@ -1,4 +1,5 @@
 /*
+  Autor: Amilcar Ramirez Patron
   Entradas:La cantidad a retirar.
   Salidas: El monto que se retira, junto con el saldo; la operación no se puede realizar.
   Procedimiento general: Creé 3 variables. 1 como un saldo que se tiene de la máquina, siendo el máximo; el segundo fue para evaluar el 
