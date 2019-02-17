@@ -3,7 +3,7 @@
 	Entradas: ID, Edad y sueldo de 10 personas.
 	Salidas: El numero de personas con mas de 35 años  entre 5000 y 7500.
 	Procedimiento general: Lee los datos y luego compara si el sueldo esta en
-  el rango de 5000 y 7500 para aumentar el valor de un contador.
+ 	el rango de 5000 y 7500 para aumentar el valor de un contador.
 */
 #include <stdio.h>
 
