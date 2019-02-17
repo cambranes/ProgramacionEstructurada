@@ -16,6 +16,7 @@ procedimiento(numero);
 
 
 function entradas(){
+   //Imprimimos el resultado
     numero = prompt('Ingresa el tamaño de la tabla diagonal');
 }
 
