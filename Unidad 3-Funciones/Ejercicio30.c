@@ -1,3 +1,15 @@
+/*
+Autor: Hector Abraham Valdivieso Cosgalla
+Entrada: Dos numeros enteros
+Salidas: El maximo comun divisor
+Procedimiento: dados los dos numeros enteros primero comprueba si son divisibles
+entre los primeros numeros primos, si es asi entra a un ciclo "mientras" que los
+va descomponiendo entre sus primeros primos y cuando son iguales los multiplica
+entre elllos y posteriormente muestra cual es su maximo comun divisor, si no son
+divisibles entre los primeros numeros primos entonces muestra a su maximo comun
+divisor como 1
+*/
+
 #include "stdio.h"
 
 void MCD(int a, int b);
