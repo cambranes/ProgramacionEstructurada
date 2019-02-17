@@ -14,7 +14,6 @@ Procedimiento general:
 void entradas(int*);
 float exponencial(int, int);
 float serie(int);
-void salidas(int);
 
 int main()
 {
