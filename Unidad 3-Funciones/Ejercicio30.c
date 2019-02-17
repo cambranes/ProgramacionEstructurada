@@ -16,7 +16,7 @@ void MCD(int a, int b);
 
 int main() {
   int a, b;
-  printf("Ingrese el primer y segundo numero: \n");
+  printf("Ingrese el primer numero: \n");
   scanf("%d", &a);
   printf("Ingrese el segundo numero: \n");
   scanf("%d", &b);
