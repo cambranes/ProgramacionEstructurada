@@ -8,40 +8,40 @@
 
 /* entradas */
 let x,y
-entradas();
+entradas()
 /* proceso */
-proceso();
+proceso()
 /* salidas */
-salidas();
+salidas()
 
 /**
  * Entradas 
  */
 function entradas(){
   x = parseInt(prompt("Ingresa el año")) 
-  y = parseInt(prompt("Ingresa el segundo año"));
+  y = parseInt(prompt("Ingresa el segundo año"))
 }
 
 /**
  * Proceso 
  */
 function proceso(){
-  let temp;
+  let temp
     if(x < y){
-        temp = x; x = y; y = temp;
+        temp = x; x = y; y = temp
     }
-    temp = 0;
+    temp = 0
     for (let i = 1; i < (x-y); ++i) {
         if( ((y+i)%4 == 0 && (y+i)%100 != 100) || ((y+i)%400 == 0)){
-            temp++;
+            temp++
         }
     }
-    x = temp;
+    x = temp
 }
 
 /**
  * Salidas
  */
 function salidas(){
-  console.log(`Cantidad de años biciestos entre los años: ${x}`);
+  alert(`Cantidad de años biciestos entre los años: ${x}`)
 }

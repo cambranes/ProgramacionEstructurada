@@ -12,19 +12,17 @@
 
 /* entradas */
 let x,y
-entradas();
+entradas()
 /* proceso */
-proceso();
+proceso()
 /* salidas */
-salidas();
+salidas()
 
 /**
  * Entradas 
  */
 function entradas(){
-  console.log("Ingresa un numero")
   x = parseInt(prompt("primer numero")) 
-  console.log("Ingresa tu segundo numero") 
   y =  parseInt(prompt("segundo numero"))
 }
 
@@ -34,9 +32,9 @@ function entradas(){
 function proceso(){
   while(x != y){
         if(x > y){
-            x = x - y;
+            x = x - y
         }else{
-            y = y - x;
+            y = y - x
         }
     }
 }
@@ -45,5 +43,5 @@ function proceso(){
  * Salidas
  */
 function salidas(){
-  console.log(x)
+  alert(x)
 }
