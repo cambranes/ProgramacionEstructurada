@@ -22,3 +22,13 @@ function proceso(x){
 function salidas(y) {
 	alert("La suma de los numeros es " + y)
 }
+/*
+Autor QA: Alejandro Torre Reyes
+Entradas: 100
+Salidas: 5050
+Proceso: Ok
+Modularidad: OK. Se realizan funciones para las entradas, el proceso y las salidas.
+    funcion entradas: ok
+    funcion proceso: Ok. También se pudo haber realizado con la formula de n(n+1)/2
+    funcion salidas: Ok
+*/
