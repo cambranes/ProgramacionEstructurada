@@ -75,4 +75,7 @@ Entradas: 5,8
 Salidas: 8,5
 Proceso: OK
 Modularización: OK. El main no puede estar más simple.
+ Función lectura: OK
+ Función ascendente: OK
+ Función impresion: OK
 */
