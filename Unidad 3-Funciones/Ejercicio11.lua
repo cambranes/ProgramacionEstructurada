@@ -1,18 +1,27 @@
+--Funciones
 function entrada()
     montoARetirar = io.read("*n")
-    return montoARetirar
 end
-function proceso(montoARetirar)
+
+function proceso()
   saldo = 3000
     if montoARetirar > 3000 or montoARetirar <= 0 then
+        flag = 0
     else
-    saldo = saldo - montoARetirar
+        saldo = saldo - montoARetirar
+        flag = 1
     end
-  return saldo
 end
-function salida(saldo)
-  io.write("Tu saldo es de .. saldo ..")
+
+function salida()
+    if flag == 0 then
+        io.write("La operacion no pudo realizarse")
+    else
+        io.write("Tu saldo es de .. saldo .. ")
+    end
 end
-montoARetirar = entrada()
-saldo = proceso(montoARetirar)
-salida(saldo)
+
+entrada()
+proceso()
+salida()
+
