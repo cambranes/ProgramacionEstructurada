@@ -30,3 +30,13 @@ int proceso(int x){
 void salidas(int y, int z){
     printf("La suma de los primeros %d numeros naturales es %d\n", y,z);
 }
+/*
+Autor QA: Alejandro Torre Reyes
+Entradas: 100
+Salidas: 5050
+Proceso: Ok
+Modularidad: OK. El main no puede estar más simple.
+    funcion entradas: ok
+    funcion proceso: Ok. También se pudo haber realizado con la formula de n(n+1)/2
+    funcion salidas: Ok
+*/
