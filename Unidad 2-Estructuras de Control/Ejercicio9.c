@@ -1,5 +1,5 @@
 /*
-Autor: Raul Rivadeneyra 2/2/2019
+Autor: Raul Rivadeneyra 2/2/2019 
 Entradas:(n € N | n < 2147483648)
 Salidas: Numero de cuantos multiplos de 5 hay entre 1 y n
 Procedimiento general: Saca el numero entero de la division de n - 1 entre 5

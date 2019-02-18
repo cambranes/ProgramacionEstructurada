@@ -18,7 +18,7 @@ until value >= 1
 -- Process
 for i = 1, value, 1 do
 	factorial = factorial * i
-    e = e + (1 / factorial);
+   	e = e + (1 / factorial)
 end
 
 -- Outputs

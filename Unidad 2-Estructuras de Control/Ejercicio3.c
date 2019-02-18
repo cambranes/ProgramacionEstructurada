@@ -36,7 +36,6 @@ int main() {
   }
 
   //Outputs
-  getch();
   return 0;
 }
 
