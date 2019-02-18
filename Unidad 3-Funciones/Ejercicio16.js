@@ -55,3 +55,13 @@ function impresion(){
         alert(`La media es ${mediaFinal}`);
     }
 }
+/*
+Autor QA: Alejandro Torre Reyes
+Entradas: 1,10,100
+Salida: 37
+Proceso: Ok
+Modularidad: OK. Se realizan funciones para entradas, procedimientos y salidas.
+	Funcion lecturaValores: OK
+	Funcion media: OK
+	Funcion impresion: OK
+*/
