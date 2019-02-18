@@ -68,3 +68,11 @@ void impresion(int numeroA2, int numeroB2){
 
 
 }
+
+/*
+Autor QA: Alejandro Torre Reyes
+Entradas: 5,8
+Salidas: 8,5
+Proceso: OK
+Modularización: OK. El main no puede estar más simple.
+*/
