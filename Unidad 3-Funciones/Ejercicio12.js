@@ -63,4 +63,7 @@ Entradas: 19,45
 Salidas: 45,19
 Proceso: OK
 Modularidad: OK. Se realiza funciones para entradas, procedimientos e impresión de salidas.
+	Funcion lectura: Ok
+	Funcion ascendente: OK
+	Funcion impresion: OK
 */
