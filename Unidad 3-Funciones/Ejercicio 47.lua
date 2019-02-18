@@ -6,29 +6,29 @@ Salidas: Sueldo Neto
 function getName()
   io.write("Ingrese su nombre:")
   name= io.read("*n")
-  return name
-end  
+end 
+
 function getAge()
   io.write("Ingrese su edad:")
   age = io.read("*n")
-  return age
 end
+
 function getSalary()
   io.write("Ingrese su salario por hora:")
   salary = io.read("*n")
-  return salary
 end
+
 function getHours()
   io.write("Ingrese horas trabajadas:")
   hours = io.read("*n")
-  return hours
 end
+
 function getTax()
   io.write("Porcentaje de impuestos:")
   tax = io.read("*n")
-  return tax
 end
-function proceso(salary, hours, tax)
+
+function proceso()
   if hours > 40 then
     horas_extra = hours - 40
     horas_tot = ((salary)*(hours))+((salary)*(horas_extra))
@@ -36,25 +36,26 @@ function proceso(salary, hours, tax)
     horas_tot = ((salary)*(hours))
   end
   impuestos_tot = ((tax)*(horas_tot)/(100))
-	sueldoNeto = ((horas_tot) - (impuestos_tot))
-  return sueldoNeto
+  resultado = ((horas_tot) - (impuestos_tot))
+  return resultado
 end
-function salida(sueldoNeto)
+
+function salida()
   io.write("SUELDO NETO: .. sueldoNeto ..")
 end
 
 --Entradas
 
-name = getName()
-age = getAge()
-salary = getSalary()
-hours = getHours()
-tax = getTax()
+getName()
+getAge()
+getSalary()
+getHours()
+getTax()
 
 -- Proceso
 
-sueldoNeto = proceso(salary, hours, tax)
+sueldoNeto = proceso()
 
 -- Salida
 
-salida(sueldoNeto)
+salida()
