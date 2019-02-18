@@ -1,8 +1,15 @@
+--[[
+Autor: Guillermo Canto Dzul
+Entradas: Un numero entero
+Salidas: Imprime si es primo o no.
+]]
+
+--Funciones
 function entrada()
   n = io.read("*n")
-  return n
 end
-function proceso(n)
+
+function proceso()
   suma = 0
   for i=1, n, 1
     if n%i == 0 then
@@ -16,7 +23,8 @@ function proceso(n)
   end
   return flag
 end
-function salida(n, esPrimo)
+
+function salida()
   if esPrimo == 1 then
     io.write("El numero es primo")
   else
@@ -24,8 +32,10 @@ function salida(n, esPrimo)
   end
 end
 
-n = entrada()
-esPrimo = proceso(n)
-salida (n, esPrimo)
+--Main
+
+entrada()
+esPrimo = proceso()
+salida ()
 
   
