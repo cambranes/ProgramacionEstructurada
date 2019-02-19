@@ -8,7 +8,7 @@ typedef char bool;
 Autor: Alejandro Torre Reyes
 Entrada: una cantidad de primeros numeros primos
 Salida: la suma de esos numeros primos
-Proceso: Determinar la suma de los primeros n n�meros primos.
+Proceso: Determinar la suma de los primeros n números primos.
 */
 bool primo();
 int read();
@@ -57,3 +57,7 @@ int sumaPrimos(int y){ //Sumar los numeros que sean primos
     }
     return suma;
 }
+
+/*QA:Jorge Chí
+Entradas: 3, 2, 0, 10, 5
+salidas: OK, devuelven lo esperado*/
