@@ -47,3 +47,21 @@ namespace Ejercicio1
         }
     }
 }
+/* QA: Jorge Chí
+error al compilar:
+ 
+Result
+
+$mcs *.cs -out:main.exe
+Compilation failed: 9 error(s), 0 warnings
+main.cs(21,13): error CS0103: The name `numeroN' does not exist in the current context
+main.cs(22,20): error CS0103: The name `numeroN' does not exist in the current context
+main.cs(27,17): error CS0103: The name `numeroN' does not exist in the current context
+main.cs(39,13): error CS0103: The name `N' does not exist in the current context
+main.cs(40,27): error CS0103: The name `numeroN' does not exist in the current context
+main.cs(40,13): error CS0103: The name `par' does not exist in the current context
+main.cs(41,17): error CS0103: The name `par' does not exist in the current context
+main.cs(42,59): error CS0103: The name `numeroN' does not exist in the current context
+main.cs(44,61): error CS0103: The name `numeroN' does not exist in the current context
+
+*/
