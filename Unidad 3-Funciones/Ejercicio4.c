@@ -1,9 +1,9 @@
 /*
-Autor:Jorge Chí 16/Febrero/19
+Autor:Jorge ChÃ­ 16/Febrero/19
 Entradas: numero (a redondear).
-Salidas: cadena con el número redondeado
+Salidas: cadena con el nÃºmero redondeado
 Procedimiento general: Se ingresa un numero. Si es negativo se pide de nuevo.
-Se redondea el numero a la centena más cercana
+Se redondea el numero a la centena mÃ¡s cercana
 */
 
 
@@ -15,20 +15,20 @@ void impresionNumero(int numeroX);
 
 int main(void){
 
-//se inicia la variable que guarda el número
+//se inicia la variable que guarda el nÃºmero
 
 int numero = 0;
 
-//Entradas: se solicita el número a redondear que no sea negativo
+//Entradas: se solicita el nÃºmero a redondear que no sea negativo
 
 numero = lectura();
 
-/*Proceso : si el número es 100 o menor que 100 se imprime el redondeo 100. sino,
+/*Proceso : si el nÃºmero es 100 o menor que 100 se imprime el redondeo 100. sino,
 se hace el proceso de redondeo a la siguiente centena cercana */
 
 numero = redondeo(numero);
 
-//salidas: se imprime el número
+//salidas: se imprime el nÃºmero
 
 impresionNumero(numero);
 
@@ -41,7 +41,7 @@ int lectura(){
 
     int dato = 0;
 
-//procedimiento: se imprime la petición del dato y se lee
+//procedimiento: se imprime la peticiÃ³n del dato y se lee
 
 while (1){
 
@@ -71,7 +71,7 @@ int redondeo(int numero){
 
     int numeroRedondeado = 0;
 
-//procedimiento: se redondea el número
+//procedimiento: se redondea el nÃºmero
 
     if (numero <= 100){
 
@@ -93,8 +93,29 @@ void impresionNumero(int numero){
 
 //entrada: el numero redondeado
 
-//procedimiento: se imprime el númerp
+//procedimiento: se imprime el nÃºmerp
 
 printf("El numero redondeado es: %i", numero);
 
 }
+
+/*QA: Amaury Morales Cerecedo
+
+Funcion: main()
+Entradas: printf despues de cada linea.
+Salidas: El codigo se ejecuta.
+
+Funcion: lectura()
+Entradas: 1, 101, 151
+Salidas: los numeros introducidos.
+
+Funcion: redondeo()
+Entradas: 1, 101, 151
+Salidas: 100, 100, 200.
+
+Funcion: impresionNumero()
+Entradas: ninguna
+Salidas: solo imprime el numero redondeado
+
+ Final: El codigo funciona correctamente.
+*/
