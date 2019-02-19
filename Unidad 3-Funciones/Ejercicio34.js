@@ -31,3 +31,11 @@ function Nlineas(n) {
   }
   alert(text);
 }
+
+/*
+QA: Raul Rivadeneyra
+
+Nlineas():
+Valores mayores a 32, pero para los valores que si funcionan (1-32) trabaja de maravilla
+Valores menores a 0 simplemente no hace nada
+*/

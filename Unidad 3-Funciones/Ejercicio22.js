@@ -37,4 +37,19 @@ function proceso(i){
 function salida(numero){
 	alert("La suma de los factoriales es:" + numero);
 }
-	
+
+/*
+QA: Raul Rivadeneyra
+
+entrada():
+Todos los valores numericos ingresados funcionan, OK
+
+proceso():
+Calcula correctamente el factorial de i, OK
+
+salida():
+Muestra correctamente el dato, Ok
+
+Prueba integral:
+Correctamente realiza su tarea el codigo, con las validaciones necesarias, 10/10
+*/
