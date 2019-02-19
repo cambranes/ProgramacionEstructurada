@@ -24,3 +24,10 @@ mean = sum / counter
 
 --Outputs
 io.write("The mean is: ".. mean)
+
+-- QA: Jorge Chí
+
+-- Entradas usadas: 2 - 3 - 999, 10 - 34 - 26 - 999, 999, 0 - 999
+
+-- Salidas: 2.5, 23.33333333, -nan, 0.
+-- Imprime correctamente la media.

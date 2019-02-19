@@ -31,7 +31,7 @@ int main() {
 
 /*
 QA: Realizó: Jose Mendez
-Entradas: 7, 5, 9, -2
+Entradas: 7, 5, 9, -2 
 Salidas: OK, OK, OK, Error
 Funciona bien, solamente no detecta si se da un numero negativo
 */

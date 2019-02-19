@@ -27,7 +27,6 @@ int main() {
 
   //Outputs
   printf("\nThe factorial of %d is: %d", value, factorial);
-  getch();
   return 0;
 }
 
