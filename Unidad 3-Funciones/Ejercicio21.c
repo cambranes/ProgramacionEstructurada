@@ -37,6 +37,15 @@ int fact(int x){ //funcion de factorial
     }
     return factorial;
 }
+/*
+QA: Luis Gerardo Leon Ortega
+Entradas: Un numero n entero positivo
+Salidas: El factorial de n
 
+El funcionamiento general esta correcto. falla apartir de ciertos numeros, pero se debe
+al limite de int.
+
+Nota 1: tu prototipo fact() no tiene declarado el pase de algun parametro, por ende es ambiguo.
+*/
 
 

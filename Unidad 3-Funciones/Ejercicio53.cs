@@ -80,3 +80,14 @@ void Salida()
 }
 
 main(); //Para iniciar el programa.
+
+/*
+QA: Luis Gerardo Leon Ortega
+Entrada: Cualquier numero, puede ser flotante y negativo.
+Salida: (e^-x)(x).
+
+Nota 1: Funciona de forma correcta pero no deberia tener variables globales
+
+Nota 2: Las variables no deben ser globales, lo dijo nuestro emperador Cambrane para
+ re escribir una variable existen los apuntadores que explico en las primeras clases :p
+*/
