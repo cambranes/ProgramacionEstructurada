@@ -45,3 +45,13 @@ function proceso(){
 function salidas(){
   alert(`Cantidad de años biciestos entre los años: ${x}`)
 }
+/*
+Autor QA: Jorge Abraham Pinto López
+Entradas: 1947, 2018
+Salidas:  Cantidad de años biciesto entre los años: 18
+Proceso:  OK.
+Modularidad: OK. 
+  Función LecturaDeValores: OK
+  Función media: OK.
+  Función impresion: OK
+*/
