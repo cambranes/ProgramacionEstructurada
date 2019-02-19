@@ -20,3 +20,10 @@ end
 
 formula()
 print(result)
+
+--[[Autor QA: Ronsson RAMIRO MAY SANTOS
+ENTRADAS: 5,8,10
+SALIDAS : THE OUTCOME IS :148.413;
+          THE OUTCOME IS :2980.954493
+          THE OUTCOME IS :22025.43166
+OBSERVACIONES:EL PROGRAMA SI DETERMINA ex = 1 + x + x2/2! + x3/3! + … + xn/n! ]]
