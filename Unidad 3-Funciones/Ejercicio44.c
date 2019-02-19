@@ -55,3 +55,24 @@ void proceso(int* x, int* y){
 void salida(int x){
     printf("resultado: %i", x);
 }
+
+/*QA: Amaury Morales Cerecedo
+
+Funcion: main()
+Entradas: printf despues de cada linea.
+Salidas: El codigo se ejecuta.
+
+Funcion: entradas()
+Entradas: 250, 12
+Salidas: ninguna, solo sobreescribir
+
+Funcion: proceso()
+Entradas: 250, 12
+Salidas: el MCM.
+
+Funcion: salida()
+Entradas: el resultado del proceso
+Salidas: solo imprime el mcm, en este caso fue 2.
+
+ Final: El codigo funciona correctamente.
+*/
