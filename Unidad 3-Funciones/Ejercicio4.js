@@ -59,7 +59,7 @@ Funcion: redondeo()
 Entradas: 1, 101, 151
 Salidas: 100, 100, 200.
 
-Funcion: impresionNumero()
+Funcion: impresion()
 Entradas: ninguna
 Salidas: solo imprime el numero redondeado
 
