@@ -59,3 +59,9 @@ b=prompt();
 alert("El resultado es:"+resultado);{
 
 }
+/*
+QA Reviso: Carlos Chan
+- El programa funciona bien, excepto en la opcion de suma "+", en ese caso no suma
+los dos numeros, los concatena.
+- El programa funciona bien pero se supone que debia de ser modular, utilizando funciones.
+*/
