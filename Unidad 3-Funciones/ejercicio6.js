@@ -42,3 +42,34 @@ function comparacion( resultado, hipotenusa){ // producto del proceso
     }
     return ;
 }
+/*
+    QA Reviso: Carlos Chan 
+    
+    getValueCat1():
+    Entradas: 5, 10, 3
+    Salidas: 5, 10, 3
+    Ok
+    
+    getValueCat2():
+    Entradas: 10, 3, 4
+    Salidas: 10, 3, 4
+    Ok
+    
+    getHipotenusa():
+    Entradas: 12, 11, 8
+    Salidas: 12, 11, 8
+    Ok
+    
+    catetos():
+    Entradas: 10, 4
+    Salidas: 10.77
+    Ok
+    
+    comparacion():
+    Entradas: (10.77, 15), (5, 5)
+    Salidas: Ok, Ok
+    
+    Integracion:
+    Entradas: (6, 8, 10), (12, 16, 20), (1, 3, 7)
+    Salidas: Ok, Ok, Ok
+*/

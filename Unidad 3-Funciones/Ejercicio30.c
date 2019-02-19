@@ -106,3 +106,11 @@ void MCD(int a, int b) {
   }
   printf("El maximo comun divisor es: %d\n", MaxComDiv);
 }
+/*
+QA
+Realizó: Guillermo Canto
+Entradas:         Salidas:
+21,28             No hay salida
+2,4               4, se esperaba 2.
+Error en la funcion MCD()
+*/

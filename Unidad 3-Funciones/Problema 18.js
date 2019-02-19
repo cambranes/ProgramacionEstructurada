@@ -59,3 +59,12 @@ b=prompt();
 alert("El resultado es:"+resultado);{
 
 }
+/*
+QA Reviso: Carlos Chan
+Entradas: (/, 10, 2), (*, 2, 3), (%, 10, 3), (-, 5, 3), (+, 2, 3)
+Salidas: 5, 6, 1, 2, 23
+- El programa funciona bien, excepto en la opcion de suma "+", en ese caso no suma
+los dos numeros, los concatena.
+- El programa funciona bien pero se supone que debia de ser modular, utilizando funciones.
+- No esta de mas que en los prompt pongas que variable se esta pidiendo, ejemplo: opcion = prompt("Ingresa la operacion a realizar: ");
+*/
