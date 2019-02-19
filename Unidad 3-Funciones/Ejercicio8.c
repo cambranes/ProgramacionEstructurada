@@ -40,3 +40,13 @@ void salidas(int z){
     }
     return;
 }
+/*
+Autor QA: Jimmy Nathan Ojeda Arana
+Entradas: 10,2
+Salidas: "El primer numero es multiplo del segundo"
+Proceso: OK
+Modularización: OK. El main no puede estar más simple.
+ Función entradas: OK
+ Función proceso: OK
+ Función salidas: OK
+*/

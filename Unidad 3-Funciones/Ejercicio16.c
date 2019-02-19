@@ -1,6 +1,6 @@
 /*
-Autor:Jorge Ch� 16/Febrero/19
-Entradas: numero (colecci�n de n�meros).
+Autor:Jorge Chí 16/Febrero/19
+Entradas: numero (colección de números).
 Salidas: media (de la suma de numero)
 Procedimiento general: Se ingresan numeros que se suman en la variable numero y luego se
 calcula la media de estos. Si se teclea un 0 se deja de tomar entradas. si se teclea un negativo se informa de esto.
@@ -44,7 +44,7 @@ int lecturaValores(float* sumaValores, int contadorSuma){
 
   float numero = 0;
 
-  //proceso: se leen los n�meros y despues se pasa por referencia la suma y el contador aumenta
+  //proceso: se leen los números y despues se pasa por referencia la suma y el contador aumenta
 
   while (1){
 
@@ -106,3 +106,13 @@ void impresion(float mediaAImprimir){
 
 
 }
+/*
+Autor QA: Alejandro Torre Reyes
+Entradas: [10,9,0]
+Salidas: 9.5000
+Proceso: OK
+Modularidad: OK. el main no puede estar más simple.
+  Función LecturaDeValores: Ok.
+  Función media: OK.
+  Función impresion: OK.
+*/

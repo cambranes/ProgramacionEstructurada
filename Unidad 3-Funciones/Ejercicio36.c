@@ -46,6 +46,24 @@ void procedimiento(int tamanoTablaDiagonal){
     }
 }
 
+/*QA: Amaury Morales Cerecedo
 
+Funcion: main()
+Entradas: printf despues de cada linea.
+Salidas: El codigo se ejecuta.
 
+Funcion: entradas()
+Entradas: 4
+Salidas: scanf - numero
+
+Funcion: procedimiento()
+Entradas: 4
+Salidas:  
+ 00 
+ 10  11 
+ 20  21  22 
+ 30  31  32  33 
+
+ Final: El codigo funciona correctamente.
+*/
 

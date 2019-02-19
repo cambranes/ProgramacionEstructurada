@@ -45,3 +45,24 @@ function proceso(){
 function salidas(){
   alert(x)
 }
+
+/*QA: Amaury Morales Cerecedo
+
+Funcion: main() (campo de pruebas)
+Entradas: alert despues de cada linea.
+Salidas: El codigo se ejecuta.
+
+Funcion: entradas()
+Entradas: 9999, 13
+Salidas: ninguna, solo sobreescribir
+
+Funcion: proceso()
+Entradas: 9999, 13
+Salidas: el MCM.
+
+Funcion: salidas()
+Entradas: el resultado del proceso
+Salidas: solo imprime el mcm, en este caso fue 1.
+
+ Final: El codigo funciona correctamente.
+*/

@@ -42,3 +42,14 @@ void asignacion(int* x, int* y){
 void salidas(int a, int b){
     printf("El numero mayor es %d y el numero menor es %d\n", a, b);
 }
+
+/*
+Autor QA: Jorge Abraham Pinto López
+Entradas: (54, 3, 5, 7, 3467, 3, 35, 998,999)
+Salidas:  El numero mayor es 3467 y el numero menor es 3
+Proceso: OK
+Modularidad: OK. el main no puede estar más simple.
+  Función LecturaDeValores: Ok.
+  Función media: OK.
+  Función impresion: OK.
+*/

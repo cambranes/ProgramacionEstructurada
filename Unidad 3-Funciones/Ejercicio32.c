@@ -57,4 +57,13 @@ void salidas(int x){
     printf("Cantidad de años biciesto entre ellos %i", x);
 }
 
-
+/*
+Autor QA: Jorge Abraham Pinto López
+Entradas: 1947, 2018
+Salidas:  Cantidad de años biciesto entre ellos 18
+Proceso: El programa presenta un error debido a que en la línea 22 se tiene una variable (y) demás en la función "salidas" que no está declarada. Se realiza corrección y el proceso es OK.
+Modularidad: OK. el main no puede estar más simple.
+  Función LecturaDeValores: OK
+  Función media: OK.
+  Función impresion: OK
+*/

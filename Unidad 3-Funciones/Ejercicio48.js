@@ -88,3 +88,15 @@ function validacionValores(){
         cantidadValida = 0;
     }
 }
+/*
+Autor QA: Jimmy Nathan Ojeda Arana
+Entradas: 1000,5
+Salidas: El sueldo total es de: 1030    El sueldo base es de: 1000    El incentivo es de: 30
+Proceso: OK
+Modularización: OK
+ Función entradas: OK
+ Función validacionValores: OK
+ Función calculoIncentivo: OK
+ Función calculoSueldoTotal: OK
+ Función salidas: OK
+*/

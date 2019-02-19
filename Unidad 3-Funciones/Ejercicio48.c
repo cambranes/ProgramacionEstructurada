@@ -102,3 +102,15 @@ int validacionValores(float sueldoBase, int antiguedad){
     }
     return cantidadValida;
 }
+/*
+Autor QA: Jimmy Nathan Ojeda Arana
+Entradas: 1000,8
+Salidas: El sueldo total es de: $ 1050.000000    El sueldo base es de: $ 1000.000000    El incentivo es de: 50.000000
+Proceso: OK
+Modularización: OK. El main no puede estar más simple.
+ Función entradas: OK
+ Función validacionValores: OK
+ Función calculoIncentivo: OK
+ Función calculoSueldoTotal: OK
+ Función salidas: OK
+*/
