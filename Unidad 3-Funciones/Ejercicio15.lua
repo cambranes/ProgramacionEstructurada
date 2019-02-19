@@ -45,3 +45,16 @@ end
 --[[ Main ]]--
 leerAmbasFechas()
 compararAmbasFechas()
+--[[
+QA: Hector Abraham V. Cosgalla
+Entradas:
+10--|24--|10--|
+2---|3---|2---|
+1998|1995|1995|
+24--|10--|10--|
+3---|2---|2---|
+1995|1998|1995|
+Salidas:
+La primera fecha ingresada es mayor | la segunda fecha ingresada es mayor | las fechas son las mismas
+Comentarios: Esta bien solo que falta un poco de informacion al momento de pedir las fechas
+]]

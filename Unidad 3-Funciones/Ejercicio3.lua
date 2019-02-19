@@ -57,3 +57,10 @@ until validarNumero(n)
 
 -- Salida
 imprimirDia(n)
+--[[
+QA: Hector Abraham V. Cosgalla
+Entradas: 5, 2
+Salidas: viernes, martes (respectivamente)
+Funciona correctamente solo que por algun motivo cuando lo 
+ejecutaba primero leia el numero y luego aparecia lo demas.
+]]
