@@ -64,7 +64,7 @@ int getTax(){
 int proceso(int salary, int hours, int tax){
 	int horas_extra, horas_tot, impuestos_tot, sueldoNeto;
 
-	if(hours > 40){ //condicional en caso de que el empleado haya trabajado m�s de 40 horas.
+	if(hours > 40){ //condicional en caso de que el empleado haya trabajado más de 40 horas.
 		horas_extra = hours - 40;
 		horas_tot = ((salary)*(hours))+((salary)*(horas_extra)); //En caso verdadero; se paga doble.
 	}
@@ -81,4 +81,9 @@ void salida(int sueldoNeto){
 	printf("SUELDO NETO: %d", sueldoNeto);
 }
 
-
+/*
+QA: Realizó: Jose Mendez
+Entradas: (Martin , 26, 100, 45, 10)
+Salidas: 3 positivps y 3 negativos
+Funciona Correctamente. pero no deberia aceptar numeros negativos.
+*/

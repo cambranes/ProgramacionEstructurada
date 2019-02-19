@@ -27,3 +27,10 @@ end
 
 process()
 print("Hay "..positive.." numeros positivos y "..negative.." numeros negativos")
+
+--[[
+QA: Realizó: Jose Mendez
+Entradas: (3, -5, 5, -7, 99, -99 , 0)
+Salidas: 3 positivos y 3 negativos
+Funciona Correctamente.
+]]
