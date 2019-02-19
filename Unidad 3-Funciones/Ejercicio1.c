@@ -14,7 +14,7 @@ int main(){
 
     printf ("Ingresa un numero entero \n");
     scanf("%d",&numero);//Lee la entrada
-    paridadNumero=determinarSiUnNumeroEsPar(numero,paridad);//Llama a la funci�n determinarSiUnNumeroEsPar
+    paridadNumero=determinarSiUnNumeroEsPar(numero,paridad);//Llama a la función determinarSiUnNumeroEsPar
     if (paridadNumero==0) {
         printf("El numero %d es impar",numero);
     } else {
@@ -31,3 +31,6 @@ int determinarSiUnNumeroEsPar(int numero,int paridad) {
     }
     return paridad;
 }
+/*QA: Jorge Chí
+entradas probadas: 1, 2, 3, -1, -2, -200, 244, 0.
+Salidas: todas correctas respectivamente conlo esperado.*/
