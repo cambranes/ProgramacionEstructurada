@@ -47,7 +47,7 @@ function impresion(numeroY){
 
 /*QA: Amaury Morales Cerecedo
 
-Funcion: main()
+Funcion: main() (campo de pruebas)
 Entradas: alert despues de cada linea.
 Salidas: El codigo se ejecuta.
 
