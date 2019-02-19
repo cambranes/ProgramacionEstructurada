@@ -61,4 +61,6 @@ namespace Ejercicio37
         }
     }
 }
-
+/*QA:Jorge Chí
+Entradas: 3, 2, 0, 10, 5
+salidas: OK, devuelven lo esperado*/
