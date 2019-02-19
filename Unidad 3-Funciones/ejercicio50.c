@@ -72,5 +72,5 @@ Entradas:		Salidas:
 -1			1
 5			2.708333
 15			2.718282
-Funciona correctamente
+Funciona correctamente, pero recomiendo validar las entradas producen salidas de 1.
 */
