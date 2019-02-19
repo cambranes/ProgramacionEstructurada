@@ -42,3 +42,7 @@ int validacion(int x){
     }
     return cont;
 }
+//QA realizado por Rodrigo Hernandez Gongora
+//Entradas probadas: 7, 14, 53, 91
+//Salidas: primo, no primo, primo, no primo
+//El algoritmo funciona, pero causa conflicto el nombre de la entrada Read, ya que es parte de la sintaxis de C, por lo que seria recomendable cambiar el nombre de la funcion (Se tuvo que cambiar el nombre para que compile)

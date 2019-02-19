@@ -23,3 +23,7 @@ int main()
     printf("El codigo ASCII para %c es %d",letra,cod);
     return 0;
 }
+//QA realizado por Rodrigo Hernandez Gongora
+//Entradas probadas: r, a, T, F
+//Salidas: 114, 97, 84, 70
+//El algoritmo funciona, pero no es modular, que es lo que se solicito para esta entrega, por lo que esta mal

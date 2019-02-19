@@ -45,3 +45,7 @@ namespace Ejercicio9
         }
     }
 }
+//QA realizado por Rodrigo Hernandez Gongora
+//Entradas probadas: 1, 5, 10, 100, 98
+//Salidas: 0, 0, 1, 19, 19
+//El algoritmo funciona parcialmente, porque te marca un numero menos si el numero final es multiplo de 5
