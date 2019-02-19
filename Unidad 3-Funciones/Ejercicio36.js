@@ -42,7 +42,7 @@ function procedimiento(tamanoTablaDiagonal){
 
 /*QA: Amaury Morales Cerecedo
 
-Funcion: main()
+Funcion: main() (campo de pruebas aparte)
 Entradas: document.write despues de cada linea.
 Salidas: El codigo se ejecuta.
 
