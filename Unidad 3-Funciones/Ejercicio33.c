@@ -85,3 +85,48 @@ void Salida(int n)
 
  scanf("%d", &constanteA); //GetChar no me funciono aqui, asi que solo reescribo una variable.
 }
+
+/* QA
+Por: Eyder Antonio Concha Moreno
+Función Entradas - Correcto
+-Lee correctamente las variables
+
+Función Proceso - Incorrecto
+
+-Entradas: 1.-(0, 0, 1)
+           2.-(1, 2, 3)
+           3.-(1, 4, 4)
+           4.-(1, 8, 2)
+
+-Salidas: 1.-(1 x 0 = 0) Correcto
+
+          2.-(1 x 1 = 1) Incorrecto
+             (1 x 2 = 2)
+             (2 x 1 = 2)
+
+          3.-(1 x 1 = 1) Incorrecto
+             (1 x 2 = 2)
+             (1 x 3 = 3)
+             (1 x 4 = 4)
+
+          4.-(1 x 1 = 1) Incorreco
+             (1 x 2 = 2)
+
+Función Salida - Correcto
+-Todos los datos son impresos correctamente
+
+Notas:
+-No están permitidos los arreglos, es posible utilizar solamente dos funciones (Entradas, y proceso, donde igual se puede imprimir,
+esto ha sido preguntado y confirmado por el Profesor)
+
+-Los valores no son impresos correctamente, un ejemplo funcional es el siguiente:
+
+    3 primeras tablas de multiplicar
+    2 valor minimo
+    4 valor maximo
+
+    1x2   2x2   3x2
+    1x3   2x3   3x3
+    1x4   2x4   3x4
+
+*/

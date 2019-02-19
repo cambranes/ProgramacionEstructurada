@@ -81,3 +81,19 @@ void Salida()
 
  scanf("%d", &constanteA); //GetChar no me funciono aqui, asi que solo reescribo una variable.
 }
+
+/* QA
+Por: Eyder Antonio Concha Moreno
+Notas:
+-No se debe usar arreglos, está posible imprimir en el procedimiento para evitar su uso (confirmado por el Profesor)
+
+Función Entradas Correcto
+-El mensaje es impreso correctamente
+
+Función Proceso Incorrecto
+-Funciona correctamente, sin embargo se debe evitar el uso de arreglos
+
+Función Salidas Correcto
+-Esta función funciona correctamente, sin embargo no es necesaria, ya que para este tipo de ejercicios es posible imprimir en el proceso
+
+*/

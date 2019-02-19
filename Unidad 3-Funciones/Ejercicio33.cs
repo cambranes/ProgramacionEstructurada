@@ -85,3 +85,11 @@ void Salida(int n)
 }
 
 main(); //Para iniciar el programa.
+
+/* QA
+    El proceso general es correcto, sin embargo el programa no compila con el siguiente error:
+    ..\Playground\(85,2): error CS1520: Method must have a return type
+    
+    Software usado para el test: https://code.sololearn.com/#cs
+    (Recomendado por Alex en entrega anterior)
+*/
