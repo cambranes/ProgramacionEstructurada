@@ -47,3 +47,11 @@ namespace Ejercicio21
         }
     }
 }
+/*
+QA: Luis Gerardo Leon Ortega
+Entradas: Un numero n entero positivo
+Salidas: El factorial de n
+
+El funcionamiento general esta correcto. falla apartir de ciertos numeros, pero se debe
+al limite de int.
+*/
