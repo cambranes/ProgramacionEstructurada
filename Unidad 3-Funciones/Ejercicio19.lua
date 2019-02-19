@@ -27,7 +27,7 @@ function encontrarMayor(num1, num2, num3)
   mayor = 0;
   if(num1 > num2 and num1 > num3) then
     mayor = num1;
-  elseif(num2 > num1 and num2 > num3) then
+  else if(num2 > num1 and num2 > num3) then
     mayor = num2;
   else
     mayor = num3;
@@ -58,3 +58,16 @@ end
 
 -- Salidas
 imprimirResultados(igualdad, mayor);
+
+--[[AUTOR QA : RONSSON RAMIRO MAY SANTOS
+COMPILADO Y PROBADO EN :
+https://www.tutorialspoint.com/execute_lua_online.php
+
+ENTRADAS: NUMERO 1: 34
+          NUMERO 2: -1
+          NUMERO 3: 100
+SALIDAS: "El  mayor es 100"
+
+OBSERVACIONES: MUY BIEN MODULADO EL CODIGO
+
+]]
