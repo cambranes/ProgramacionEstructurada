@@ -62,4 +62,5 @@ printf("El resultado es: %i",resultado);
 /*
 	QA Reviso: Carlos Chan
 	- El programa esta mal hecho, no compila.
+	- El nombramiento debe ser: Ejercicio#
 */
