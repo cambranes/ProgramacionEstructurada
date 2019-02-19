@@ -36,3 +36,18 @@ function getMultiplo( numero){ // procesa numero introducido por el usuario para
 
     return;
 }
+/*
+QA: Amílcar Ramírez
+
+entrada():
+Todos los valores numericos ingresados funcionan, OK
+
+proceso():
+Calcula correctamente los primeros n multiplos de 7, OK
+
+salida():
+Muestra correctamente el dato, Ok
+
+Prueba integral:
+Correctamente realiza su tarea el codigo, con las validaciones necesarias.
+*/
