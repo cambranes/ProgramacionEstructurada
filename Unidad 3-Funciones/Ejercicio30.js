@@ -97,3 +97,11 @@ function MCD(a,b) {
   }
   alert("El maximo comun divisor es: " + maxComDiv)
 }
+/*
+QA
+Realizó: Guillermo Canto
+Entradas:         Salidas:
+21,28             No hay salida
+2,4               4, se esperaba 2.
+Error en la funcion MCD()
+*/

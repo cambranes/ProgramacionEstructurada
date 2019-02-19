@@ -44,3 +44,18 @@ int getMultiplo(int x){ // procesa numero introducido por el usuario para obtene
 
 return multiplo;
 }
+/*
+QA: Amílcar Ramírez
+
+entrada():
+Todos los valores numericos ingresados funcionan, OK
+
+proceso():
+Calcula correctamente los primeros n multiplos de 7, OK
+
+salida():
+Muestra correctamente el dato, Ok
+
+Prueba integral:
+Falta de prototipado de las funciones, el cógido no compila.
+*/

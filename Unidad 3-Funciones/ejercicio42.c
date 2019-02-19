@@ -32,5 +32,21 @@ float proceso(int numero){
 
 void salida(int numero, float raiz){
 	printf("Numero: %i   Raiz: %.2f \n",numero,raiz);
-	
+
 }
+
+/*
+QA: Raul Rivadeneyra
+
+proceso():
+Saca correctamente la raiz del numero
+
+salida():
+Imprime correctamente el resultado
+
+Prueba integral: Imprime correctamente todas las primeras 100 raices
+
+Observacion: No estoy seguro si era permitido el uso de librerias en los ejercicios, pero no diré nada ;)
+
+Arreglar nombrado del ejercicio
+*/

@@ -17,3 +17,12 @@ function compara(a,b){
   }
   return;
 }
+/*
+QA
+Realizo: Guillermo Canto
+Entradas:   Salidas:
+5,10        Ok
+0,-1        Ok
+0,0         Ok
+El programa funciona correctamente.
+*/

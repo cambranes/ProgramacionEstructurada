@@ -39,3 +39,11 @@ void NLineas(int n) {
   }
   return;
 }
+
+/*
+QA: Raul Rivadeneyra
+
+NLineas():
+Funciona correctamente para cualquier n positiva
+Prueba integral: Funciona correctamente todo el codigo
+*/
