@@ -28,3 +28,9 @@ if(resultado==1){
 }else if(resultado=="0"){
     alert("Detenido")
 }
+/*
+	QA Reviso: Carlos Chan
+	Entradas: 200, 0, 50
+	Salidas: "Muy rapido", "Detenido", ...
+	- El programa funciona correctamente, pero debia ser modular, utilizando funciones.
+*/
