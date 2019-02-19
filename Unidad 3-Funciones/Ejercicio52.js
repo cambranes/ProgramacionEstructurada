@@ -43,7 +43,7 @@ function salidas(){
 Autor QA: Jimmy Nathan Ojeda Arana
 Entradas: 2000,10,10
 Salidas: 2200
-Proceso: OK. Se puede seguir mejor la instrucción del ejercicio (interés decimal, cerrar al leer un valor 0 como cantidad).
+Proceso: OK. Se puede seguir mejor la instrucción del ejercicio (interés decimal, cerrar al leer un valor 0 como cantidad de dinero).
 Modularización: OK. El main no puede estar más simple.
  Función entradas: OK
  Función proceso: OK
