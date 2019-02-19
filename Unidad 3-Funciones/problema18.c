@@ -33,7 +33,7 @@ return 0;
 
 
 //Proceso//
-{
+{ 
 if (opcion == '+'){
 	resultado= a+b;
 
