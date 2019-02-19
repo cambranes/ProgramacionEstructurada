@@ -14,3 +14,18 @@ function SumaNPares(n){
   }
   alert("La suma de los primeros " + n + " pares es: " + suma)
 }
+/*
+QA: Amílcar Ramírez
+
+entrada():
+Todos los valores numericos (validos, por definicion del ejercicio) ingresados funcionan, OK
+
+proceso():
+Calcula correctamente los primeros n multiplos de 7, OK
+
+salida():
+Muestra correctamente el resultado, Ok
+
+Prueba integral:
+Correctamente realiza su tarea el codigo, con las validaciones necesarias.
+*/
