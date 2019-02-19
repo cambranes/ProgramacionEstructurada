@@ -54,3 +54,10 @@ int contarMayores(int edad[], int sueldo[]){
 void imprimirResultados(int mayores35){
   printf("La cantidad de personas con mas de 35 anios y sueldo entre 5000 - 7500 es: %d", mayores35);
 }
+
+/*
+QA: Realizó: Jose Mendez
+Entradas: (id,35,5000)(id,64,6500)(id, 65,7500)
+Salidas: 3 personas mayores. 
+Funciona Correctamente.
+*/
