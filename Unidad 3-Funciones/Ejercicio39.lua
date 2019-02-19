@@ -6,3 +6,11 @@ end
 
 --[[ Main ]]--
 sumaDeImpares()
+
+--[[
+QA: Realizó: Daniel Delfin
+Entradas: None
+Salidas: 25
+Funciona Correctamente. 
+No tiene la documentacion completa
+]]
