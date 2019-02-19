@@ -51,3 +51,13 @@ void salidas(float inversion, int* salida){
     printf("¿Desea continuar calculado inversiones a futuro? presione 1 para si, y 0 para no \n");
     scanf("%i", salida);
 }
+/*
+Autor QA: Jimmy Nathan Ojeda Arana
+Entradas: 2000,10,10
+Salidas: 2200
+Proceso: OK. Se puede seguir mejor la instrucción del ejercicio (interés decimal, cerrar al leer un valor 0 como cantidad de dinero).
+Modularización: OK. El main no puede estar más simple.
+ Función entradas: OK
+ Función proceso: OK
+ Función salidas: OK
+*/
