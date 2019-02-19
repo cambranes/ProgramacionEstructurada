@@ -27,3 +27,9 @@ if(x>y){
 
 }
 //Salidas: la comparacion de ambos numeros
+
+/*
+QA
+Reviso: Guillermo Canto
+No compila, faltó agregar el tipo de variables a la funcion prototipo.
+*/
