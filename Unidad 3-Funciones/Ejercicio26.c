@@ -23,3 +23,14 @@ void SumaNPares(int n, int suma) {
   printf("La suma de los primeros n pares es: %d \n", suma );
   return;
 }
+/*
+QA: Amílcar Ramírez
+entrada():
+Los valores numericos validos funcionan, OK
+proceso():
+Calcula correctamente la suma de los primeros n numeros pares
+salida():
+Muestra correctamente el dato, Ok
+Prueba integral:
+El codigo compila correctamente, con las validaciones necesarias
+*/
