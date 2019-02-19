@@ -44,3 +44,24 @@ function impresion(numeroY){
     //procedimiento: se imprime el númerp
    alert(`El numero redondeado es ${numeroY}`); 
 }
+
+/*QA: Amaury Morales Cerecedo
+
+Funcion: main()
+Entradas: alert despues de cada linea.
+Salidas: El codigo se ejecuta.
+
+Funcion: lectura()
+Entradas: 1, 101, 151
+Salidas: los numeros introducidos.
+
+Funcion: redondeo()
+Entradas: 1, 101, 151
+Salidas: 100, 100, 200.
+
+Funcion: impresionNumero()
+Entradas: ninguna
+Salidas: solo imprime el numero redondeado
+
+ Final: El codigo funciona correctamente asi como su version en C
+*/
