@@ -1,9 +1,9 @@
 /**
  * @author: Luis Gerardo Leon Ortega | ejercicio 32
- * Entrada: Un año
- * Salida general: Es biciesto o no es biciesto
+ * Entrada: valor futuro, valor presente invertido, tasa de interés expresada como fracción decimal y número de períodos de inversión
+ * Salida general:  el valor futuro de la inversión.
  * Proceso general:
- *  - si el año es divisible por 4 y no es divisible por 100 o el numero es divisible por 400 es biciesto
+ * - se calcula F = P ( 1 + i / 100 ) n y acaba el programa cuando se escribe un 0
  */
 
 let x,y,z,inversion, salida = 1
@@ -48,5 +48,5 @@ Modularización: OK. El main no puede estar más simple.
  Función entradas: OK
  Función proceso: OK
  Función salidas: OK
- Nota: No se cambió la información del ejercicio (Dice ejercicio 32 y la instrucción del ejercicio 32).
+ Nota: No se cambió la información del ejercicio (Dice ejercicio 32 y la instrucción del ejercicio 32). (SOLVED)
 */
