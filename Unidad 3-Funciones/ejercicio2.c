@@ -31,5 +31,5 @@ if(x>y){
 /*
 QA
 Reviso: Guillermo Canto
-No compila, faltó agregar el tipo de variables a la funcion prototipo.
+No compila, faltó agregar el tipo de los parametros al definir la funcion.
 */
