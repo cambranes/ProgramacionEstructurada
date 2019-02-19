@@ -40,4 +40,7 @@ Modularización: Vacío
  Función lectura: Vacío
  Función ascendente: Vacío
  Función impresion: Vacío
+ 
+ -CORREGIDO
+ PROBLEMA AL SUBIR EL EJERCICIO INICIALMENTE, SIN EMBARGO SE ASEGURO QUE FUNCIONE DE LA MISMA MANERA QUE C
 */
