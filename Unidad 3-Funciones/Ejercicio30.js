@@ -33,6 +33,12 @@ function MCD(a,b) {
               primosB = 5;
               b = b / 5;
             }
+            else {
+              if (b%7 == 0) {
+                primosB = 7;
+                b = b/7;
+              }
+            }
           }
         }
       }
@@ -52,6 +58,12 @@ function MCD(a,b) {
                 primosA = 5;
                 a = a / 5;
               }
+              else {
+                if (a%7==0) {
+                  primosA = 7;
+                  a=a/7;
+                }
+              }
             }
           }
         }
@@ -70,6 +82,12 @@ function MCD(a,b) {
                 primosA = 5;
                 a = a / 5;
               }
+              else {
+                if (a%7==0) {
+                  primosA = 7;
+                  a=a/7;
+                }
+              }
             }
           }
           if (b%2==0) {
@@ -86,12 +104,20 @@ function MCD(a,b) {
                 primosB = 5;
                 b = b / 5;
               }
+              else {
+                if (b%7==0) {
+                  primosB = 7;
+                  b=b/7;
+                }
+              }
             }
           }
         }
       }
       if (primosB == primosA) {
         maxComDiv = maxComDiv * primosA;
+        primosA = 0;
+        primosB = 0;
       }
     }
   }
