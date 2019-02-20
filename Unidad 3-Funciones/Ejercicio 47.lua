@@ -41,7 +41,7 @@ function proceso()
 end
 
 function salida()
-  io.write("SUELDO NETO: .. sueldoNeto ..")
+  io.write("SUELDO NETO: " .. sueldoNeto )
 end
 
 --Entradas
