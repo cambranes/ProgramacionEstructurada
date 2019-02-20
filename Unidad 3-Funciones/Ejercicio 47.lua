@@ -4,27 +4,27 @@ Salidas: Sueldo Neto
 ]]--
 --Funciones
 function getName()
-  io.write("Ingrese su nombre:")
-  name= io.read("*n")
+  --io.write("Ingrese su nombre:")
+  name= io.read()
 end 
 
 function getAge()
-  io.write("Ingrese su edad:")
+  --io.write("Ingrese su edad:")
   age = io.read("*n")
 end
 
 function getSalary()
-  io.write("Ingrese su salario por hora:")
+  --io.write("Ingrese su salario por hora:")
   salary = io.read("*n")
 end
 
 function getHours()
-  io.write("Ingrese horas trabajadas:")
+  --io.write("Ingrese horas trabajadas:")
   hours = io.read("*n")
 end
 
 function getTax()
-  io.write("Porcentaje de impuestos:")
+  --io.write("Porcentaje de impuestos:")
   tax = io.read("*n")
 end
 
