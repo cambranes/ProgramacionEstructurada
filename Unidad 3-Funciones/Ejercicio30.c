@@ -42,6 +42,12 @@ void MCD(int a, int b) {
               PrimosB = 5;
               b = b / 5;
             }
+            else {
+              if (b%7==0) {
+                PrimosB = 7;
+                b = b/7;
+              }
+            }
           }
         }
       }
@@ -61,6 +67,12 @@ void MCD(int a, int b) {
                 PrimosA = 5;
                 a = a / 5;
               }
+              else {
+                if (a%7 == 0) {
+                  PrimosA = 7;
+                  a = a/7;
+                }
+              }
             }
           }
         }
@@ -79,8 +91,14 @@ void MCD(int a, int b) {
                 PrimosA = 5;
                 a = a / 5;
               }
-            }
-          }
+              else {
+                if (a%7 == 0) {
+                  PrimosA = 7;
+				a = a/7;
+				}
+			  }
+			}
+		  }
           if (b%2==0) {
             PrimosB = 2;
             b = b / 2;
@@ -95,14 +113,22 @@ void MCD(int a, int b) {
                 PrimosB = 5;
                 b = b / 5;
               }
-            }
-          }
-        }
-      }
+              else {
+                if (b%7 == 0) {
+                  PrimosB = 7;
+                  b = b/7;
+				}
+			  }
+			}
+		  }
+		}
+	  }
       if (PrimosB == PrimosA) {
         MaxComDiv = MaxComDiv * PrimosA;
+        PrimosA = 0;
+        PrimosB = 0;
       }
-    }
+	}
   }
   printf("El maximo comun divisor es: %d\n", MaxComDiv);
 }
