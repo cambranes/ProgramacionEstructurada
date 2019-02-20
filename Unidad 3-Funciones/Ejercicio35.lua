@@ -1,3 +1,9 @@
+--[[Autor: Amílcar A. Ramírez Patrón
+Entradas: Número de celdas (n)
+Proceso: Iterar por cada parte del número necesario del ejercicio y condicionar que sólo se imprima cuando se necesite,
+imprimirlos con un espacio para la fácil legibilidad.
+Salidas: El orden de los números pedidos.
+]]
 --[[ Funciones ]]--
 function entradaNCeldas()
     n = io.read("*n")
