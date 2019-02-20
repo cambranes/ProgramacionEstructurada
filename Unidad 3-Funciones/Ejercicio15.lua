@@ -6,34 +6,40 @@
    mesdos = 0
    anodos = 0
 function leerAmbasFechas()
+   io.write("Escriba el dia uno:")
    diauno = io.read("*n")
+   io.write("Escriba el mes uno:")
    mesuno = io.read("*n")
+   io.write("Escriba el ano uno:")
    anouno = io.read("*n")
+   io.write("Escriba el dia dos:")
    diados = io.read("*n")
+   io.write("Escriba el mes dos:")
    mesdos = io.read("*n")
+   io.write("Escriba el ano dos:")
    anodos = io.read("*n")
 end
 
 function compararAmbasFechas()
     if anouno < anodos then
-        print("La segunda fecha ingresada es mayor: ", diados, mesdos, anodos)
+        print("La segunda fecha ingresada es mayor: dia", diados, "mes" , mesdos, "ano", anodos)
     end
     if anouno > anodos then
-        print("La primera fecha ingresada es mayor: ", diauno, mesuno, anouno)
+        print("La primera fecha ingresada es mayor: dia", diauno,"mes", mesuno,"ano" anouno)
     end
     if anouno == anodos then
         if mesuno < mesdos then
-            print("La segunda fecha ingresada es mayor: ", diados, mesdos, anodos)
+            print("La segunda fecha ingresada es mayor: dia", diados, "mes" , mesdos, "ano", anodos)
         end
         if mesuno > mesdos then
-            print("La primera fecha ingresada es mayor: ", diauno, mesuno, anouno)
+            print("La primera fecha ingresada es mayor: dia", diauno,"mes", mesuno,"ano" anouno)
         end
         if mesuno == mesdos then
             if diauno < diados then
-               print("La segunda fecha ingresada es mayor: ", diados, mesdos, anodos)
+               print("La segunda fecha ingresada es mayor: dia", diados, "mes" , mesdos, "ano", anodos)
             end
             if diauno > diados then
-                print("La primera fecha ingresada es mayor: ", diauno, mesuno, anouno)
+                print("La primera fecha ingresada es mayor: dia", diauno,"mes", mesuno,"ano" anouno)
             end
             if diauno == diados then
                 print("las fechas son las mismas")
