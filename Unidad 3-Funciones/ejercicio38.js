@@ -6,45 +6,47 @@ Procedimiento: Mostrara aquellos numeros talque la suma de los cubos de los digi
 */
 
 
-
-
 	var num = 100;
-	
+	var x=1 , y=0 , z=0;
 	while (num < 1000)
 	{
 
-		num = proceso(num);
+		num = proceso(num,x,y,z);
 		num++;
-		
-	}	
 
-function proceso(numero)
+	}
+
+function proceso(numero,x,y,z)
 {
-	var x,y,z;
 	var s1 = 1, s2 = 1, s3 = 1;
 	var suma = 1;
-	for(x = 1; x<=9 ; x++){
-		for(y = 0; y <= 9; y++){
-			for(z = 0; z <= 9; z++){
-				
-				//calculando los cubos de cada digito	
+	while(x <= 9){
+		while(y <= 9){
+			while(z <= 9){
+
+				//calculando los cubos de cada digito
 				s1 = x*x*x;
 				s2 = y*y*y;
 				s3 = z*z*z;
-				
-				//la suma de los cubos de los digitos	
+                
+				//la suma de los cubos de los digitos
 				suma = s1+s2+s3;
-																		
+
 				if(suma == numero){
-					salida(numero);				
-				}					
-				numero++;	
+					salida(numero);
+				}
+				numero++;
+				z++;
 			}
+			z=0;
+			y++;
 		}
+		y=0;
+		x++;
 	}
 }
 
 function salida(num){
 
-	alert("El numero" + num + "cumple con la condicion");
+	alert("El numero" + num + " cumple con la condicion");
 }
