@@ -22,10 +22,10 @@ function salida()
     if flag == 0 then
         io.write("La operacion no pudo realizarse")
     else
-        io.write("Tu saldo es de .. saldo .. ")
+        io.write("Tu saldo es de " .. saldo )
     end
 end
-
+--Main
 entrada()
 proceso()
 salida()
