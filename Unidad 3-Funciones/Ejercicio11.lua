@@ -1,3 +1,8 @@
+--[[
+Autor: Guillermo Canto Dzul
+Entradas: Monto a retirar del cajero
+Salidas: Saldo luego del retiro
+]]
 --Funciones
 function entrada()
     montoARetirar = io.read("*n")
