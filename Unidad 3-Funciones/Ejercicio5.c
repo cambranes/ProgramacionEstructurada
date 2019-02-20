@@ -3,9 +3,9 @@
 
 /*
 Autor: Jimmy Nathan Ojeda Arana
-Entradas: Un aÒo
+Entradas: Un a√±o
 Salidas: Determinar si es bisiesto o no
-Proceso: Dado un aÒo cualquiera determina si es bisiesto o no.
+Proceso: Dado un a√±o cualquiera determina si es bisiesto o no.
 */
 
 int determinarSiUnAnioEsBisiesto(int,int);
@@ -14,7 +14,7 @@ int main(){
 
     printf ("Ingresa un anio \n");
     scanf("%d",&anio);//Lee la entrada
-    anioBisiesto=determinarSiUnAnioEsBisiesto(anio,multiploDe4);//Llama a la funciÛn determinarSiUnAnioEsBisiesto
+    anioBisiesto=determinarSiUnAnioEsBisiesto(anio,multiploDe4);//Llama a la funci√≥n determinarSiUnAnioEsBisiesto
     if (anioBisiesto==1) {
         printf("El anio %d es anio bisiesto",anio);
     } else {
@@ -31,3 +31,7 @@ int determinarSiUnAnioEsBisiesto(int anio,int multiploDe4) {
     }
     return multiploDe4;
 }
+/*QA: Jorge Ch√≠
+Entradas: 2020, 2016, 2000, 2004, 2003, 1235.
+Salidas: OK segun lo esperado.
+*/

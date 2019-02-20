@@ -90,3 +90,17 @@ void Salida()
 }
 
 main(); //Corre el programa.
+/*
+QA: Luis Gerardo Leon Ortega
+Entrada: Cualquier numero entero, ya sea positivo o negativo.
+Salida: El numero mas grande y el mas chico de todos los numeros dados por el usuario
+
+Bueno... el proceso esta bien pero...
+Estas utilizando arrays y eso esta mal.
+Estas utilizando variables globales y eso esta mal x2.
+
+nota 1: El uso de una lista con limite [999999] es ineficiente, estas consumiendo
+memoria de forma inecesaria puedes utilizar una lista dinamica
+
+nota 2: Para re escribir una variable utiliza los apuntadores :v
+*/

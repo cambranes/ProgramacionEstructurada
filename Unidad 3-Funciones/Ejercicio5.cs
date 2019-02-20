@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 /*
 Autor: Jimmy Nathan Ojeda Arana
-Entradas: Un año
+Entradas: Un aÃ±o
 Salidas: Determinar si es bisiesto o no
-Proceso: Dado un año cualquiera determina si es bisiesto o no.
+Proceso: Dado un aÃ±o cualquiera determina si es bisiesto o no.
 */
 
 namespace Ejercicio5
@@ -49,3 +49,8 @@ namespace Ejercicio5
         }
     }
 }
+/*QA: Jorge Chi
+error al compilar:
+$mcs *.cs -out:main.exe
+Compilation failed: 1 error(s), 0 warnings
+main.cs(52,12): error CS1525: Unexpected symbol `Console'*/

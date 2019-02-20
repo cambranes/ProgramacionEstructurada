@@ -56,3 +56,8 @@ namespace Ejercicio45
         }
     }
 }
+//QA realizado por Rodrigo Hernandez Gongora
+//Entradas probadas: 7, 14, 53, 91
+//Salidas: primo, no primo, primo, no primo
+//El algoritmo funciona correctamente
+
