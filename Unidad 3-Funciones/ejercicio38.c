@@ -52,6 +52,7 @@ int proceso(int numero, int x, int y, int z)
 		y=0;
 		x++;
 	}
+	return numero;
 }
 
 void salida(int num){
