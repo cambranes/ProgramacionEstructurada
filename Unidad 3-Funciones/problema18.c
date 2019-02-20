@@ -12,7 +12,7 @@ Despues guardar el resultado en una variable para imprimirla en otro bloque.
 */
 #include <stdio.h>
 
-void ( int a, int b, int resultado, char opcion);
+void variables( int a, int b, int resultado, char opcion);
 
 //Entrada//
 int main (){
@@ -33,7 +33,7 @@ return 0;
 
 
 //Proceso//
-{ 
+void variables( int a, int b, int resultado, char opcion){ 
 if (opcion == '+'){
 	resultado= a+b;
 
@@ -57,6 +57,7 @@ if (opcion == '+'){
 }
 
 //salida//
+void variables(int resultado){
 printf("El resultado es: %i",resultado);
 }
 /*
