@@ -22,7 +22,11 @@ int main() {
 	int numero = 1;
 	float precision;
 	float e = 1,ePas;
-	precision = entrada();
+	
+	while(precision < 2){
+		precision = entrada();
+	}
+	
 	do
 	{
 		ePas = e;
@@ -64,6 +68,7 @@ float factorial(int num){
 void salida(float e){
 	printf("El valor de la constante e es: %f",e);
 }
+
 /*
 QA
 Realizó: Guillermo Canto
