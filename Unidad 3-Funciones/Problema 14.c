@@ -1,43 +1,29 @@
-/*
-Autor: Daniel Eduardo Gutiérrez Delfín
-Problema:Escribir el programa que lea una velocidad e imprima “Muy rápido” si es
-superior a 100, si no imprima “Detenido” si la velocidad es cero
-Entrada: La velocidad (Velocidad)
-Salida: Muy rapido o Detenido dependiendo la velocidad
-Proceso: Se introduce la velocidad, vemos si es mayor a 100 o igual a 0, dependiendo de eso la variable "resultado" tomara un valor
-	     para que mediante otro if se proyecte el resultado
-*/
 #include <stdio.h>
 
-//Main//
-void ( int Velocidad, int resultado);
-	
-	//Entrada//
-	int main(){
-	printf("\nIntroduce la velocidad\n");
-	scanf("%i",&Velocidad);
-	return 0;
-	}
-	
-	//Proceso//
-	if (Velocidad>100){
-		resultado=1;
-	}else if (Velocidad==0){
-		resultado=0;
-	}
+void valor(int velocidad);
 
-	//Salida//
-	if(resultado==1){
-		printf("Muy rapido");
-	}else if (resultado==0){
-		printf("Detenido");
-	}
+int main() {
+	int velocidad;
+	printf("Ingrese la velocidad \n");
+	scanf("%d", &velocidad);
+	valor(velocidad);
 	return 0;
 }
+
+void valor(int velocidad) {
+	if (velocidad > 100) {
+		printf("Muy rapido!\n");
+	} else if (velocidad == 0) {
+		printf("Detenido\n");
+	}
+}
+
 /*
 	QA Reviso: Carlos Chan
 	- No compila.
 	- El prototipo de funcion void al inicio esta mal hecho
 	- Hay codigo fuera del main
 	- Debe ser con funciones.
+	
+	Corregido
 */
