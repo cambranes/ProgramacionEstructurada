@@ -1,7 +1,7 @@
-//Escribe el programa que estime el valor de la constante matem·tica e,
+//Escribe el programa que estime el valor de la constante matem√°tica e,
 //mediante la formula:
 //e = 1 + 1/1! + 1 / 2! + 1/3! + ....+ 1/N!
-//Leer el valor N que indica la precisiÛn con la que se quiere obtener el
+//Leer el valor N que indica la precisi√≥n con la que se quiere obtener el
 //valor de e
 
 #include <stdio.h>
@@ -22,7 +22,11 @@ int main() {
 	int numero = 1;
 	float precision;
 	float e = 1,ePas;
-	precision = entrada();
+	
+	while(precision < 2){
+		precision = entrada();
+	}
+	
 	do
 	{
 		ePas = e;
