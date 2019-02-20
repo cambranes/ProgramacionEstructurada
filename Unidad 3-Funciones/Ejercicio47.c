@@ -38,26 +38,34 @@ char getName(){
 }
 int getAge(){
 	int age;
-	printf("Ingrese su edad: ");
-	scanf("%d", &age);
+	do{
+		printf("Ingrese su edad: ");
+		scanf("%d", &age);
+	} while (age<=0);
 	return age;
 }
 int getSalary(){
 	int salary;
-	printf("Ingrese su sueldo por hora: ");
-	scanf("%d", &salary);
+	do{
+		printf("Ingrese su sueldo por hora: ");
+		scanf("%d", &salary);
+	} while (salary<=0);
 	return salary;
 }
 int getHours(){
 	int hours;
-	printf("Ingrese horas trabajadas en la semana: ");
-	scanf("%d", &hours);
+	do{
+		printf("Ingrese horas trabajadas en la semana: ");
+		scanf("%d", &hours);
+	}while (hours <= 0);
 	return hours;
 }
 int getTax(){
 	int tax;
-	printf("Porcentaje de impuestos: ");
-	scanf("%d", &tax);
+	do{
+		printf("Porcentaje de impuestos: ");
+		scanf("%d", &tax);	
+	}while (tax<=0);
 	return tax;
 }
 //Calcula el sueldo neto de acuerdo a las condiciones del problema
@@ -85,5 +93,5 @@ void salida(int sueldoNeto){
 QA: Realizó: Jose Mendez
 Entradas: (Martin , 26, 100, 45, 10)
 Salidas: 3 positivps y 3 negativos
-Funciona Correctamente. pero no deberia aceptar numeros negativos.
+Funciona Correctamente. pero no deberia aceptar numeros negativos. (corregido)
 */
