@@ -33,5 +33,5 @@ salida()
 QA: Hector Abraham V. Cosgalla
 Entradas:3000, 500, 4000
 Salidas: Tu saldo es de .. saldo .. , Tu saldo es de .. saldo .. , La operacion no puede realizarse
-Comentarios: Falta documentacion
+Comentarios: Falta documentacion (corregido)
 ]]
