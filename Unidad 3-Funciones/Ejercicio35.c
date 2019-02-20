@@ -36,5 +36,11 @@ void seleccionEspacioCelda(int *n){
 		}
 		printf("\n");
 	}
-	
+
 }
+/*
+QA: Realizo: Daniel
+Entradas: 5
+Salidas: la diagonal superior de una matriz de 5 numeros
+Todo bien
+*/

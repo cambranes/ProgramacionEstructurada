@@ -59,3 +59,11 @@ sueldoNeto = proceso()
 -- Salida
 
 salida()
+
+--[[
+QA: Realizó: Jose Mendez
+Entradas: jose, 26, 100 , 45 , 10
+Salidas: None
+Tiene problemas al momento de pedir el nombre, ya que solo acepta numeros.
+ademas al momento de imprimir variables, no funciona io.write
+]]

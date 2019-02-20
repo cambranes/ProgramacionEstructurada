@@ -18,3 +18,10 @@ end
 --[[ Main ]]--
 entradaNCeldas()
 seleccionEspacioCelda()
+--[[
+QA: Realizo: Daniel
+Entradas: Numero 5
+Salidas: Diagonal superior de una matriz de 5 por 5
+No tiene el formato requerido
+
+]]

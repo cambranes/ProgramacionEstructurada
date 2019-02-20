@@ -1,5 +1,5 @@
 #include "stdio.h"
- 
+
 void getNumber(float*);
 void moreThan1K(float*);
 void moreThan3K(float*);
@@ -42,3 +42,7 @@ void moreThan5K(float *number) {
     *number += (*number * 0.05);
   }
 }
+/*
+QA: Hector Abraham V. Cosgalla
+TODO MAL!!
+*/
