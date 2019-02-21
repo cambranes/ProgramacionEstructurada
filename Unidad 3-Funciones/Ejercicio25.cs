@@ -16,18 +16,26 @@ namespace Ejercicio25
 {
     class Program
     {
+        static char entrada()
+        {
+            char letter;
+            Console.WriteLine("Ingresa una letra");
+            letter = Convert.ToChar(Console.ReadLine());
+            return letter;
+        }
+        static int C_ascii(char x)
+        {
+            int y = Convert.ToInt32(x);
+            return y;
+        }    
         static void Main(string[] args)
         {
-            //Entradas
             char letra;
             int cod;
-            Console.WriteLine("Ingresa una letra");
-            letra = Convert.ToChar(Console.ReadLine());
-
-            //Proceso
-            cod = Convert.ToInt32(letra);
-
-            //Salida
+            
+            letra = entrada();
+            cod = C_ascii(letra);
+            
             Console.WriteLine("El codigo ASCII para {0} es {1}", letra, cod);
             Console.ReadKey();
         }
