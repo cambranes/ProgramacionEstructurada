@@ -8,23 +8,23 @@ Salidas: El factorial de n
 Proceso: Dado un numero entero n determina su factorial.
 */
 int fact();
-int read();
+int leer();
 
 int main()
 {
     int n;
     int res;
-    n = read(); //llamar a la funcion de entrada
+    n = leer(); //llamar a la funcion de entrada
     res = fact(n); //llamar a la funcion para calcular factorial
     printf("El factorial de %d es %d", n, res);
     return 0;
 }
 
-int read(){ //funcion para leer la entrada
-    int leer;
+int leer(){ //funcion para leer la entrada
+    int lec;
     printf("Ingrese n para calcular su factorial \n");
-    scanf("%d", &leer);
-    return leer;
+    scanf("%d", &lec);
+    return lec;
 }
 
 int fact(int x){ //funcion de factorial
