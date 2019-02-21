@@ -5,16 +5,16 @@
 Autor: Alejandro Torre Reyes
 Entrada: un numero n entero positivo
 Salida: Comprueba si el numero ingresado es primo o no
-Proceso: Se desea saber si un número dado es primo o no. Escribir el programa. (Un
-número es primo si sólo se puede dividir entre el mismo y la unidad, si el
-número es divisible por otros números entonces no es primo).
+Proceso: Se desea saber si un nÃºmero dado es primo o no. Escribir el programa. (Un
+nÃºmero es primo si sÃ³lo se puede dividir entre el mismo y la unidad, si el
+nÃºmero es divisible por otros nÃºmeros entonces no es primo).
 */
-int read();
+int leer();
 int validacion();
 int main()
 {
     int n, primo;
-    n = read();
+    n = leer();
     primo = validacion(n);
 
     if(primo == 2){
@@ -25,7 +25,7 @@ int main()
     return 0;
 }
 
-int read(){
+int leer(){
     int w;
     printf("Ingrese n \n");
     scanf("%d", &w);
