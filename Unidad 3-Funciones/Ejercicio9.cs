@@ -26,7 +26,7 @@ namespace Ejercicio9
         static int multiplosDe5(int numeroN) //Metodo para comprobar uno por uno si los numeros entre 1 y N son multiplos de 5
         {   
             int numeroMultiploDe5=0,i;
-            for (i=1;i<numeroN;i++) {
+            for (i=1;i<=numeroN;i++) {
                 if (i % 5 ==0){
                     numeroMultiploDe5=numeroMultiploDe5+1;
                     Console.WriteLine("{0} es multiplo de 5 ",i);
