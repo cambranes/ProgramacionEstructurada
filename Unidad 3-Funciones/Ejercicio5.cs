@@ -54,3 +54,6 @@ error al compilar:
 $mcs *.cs -out:main.exe
 Compilation failed: 1 error(s), 0 warnings
 main.cs(52,12): error CS1525: Unexpected symbol `Console'*/
+
+/*Nota de Jimmy: El código compila bien, lo que pasó fue que el QA no cerró su bloque de comentario de la linea 52 y el compilador
+    lo detectó como error tal como dice en la línea 56 "main.cs(52,12): error CS1525: Unexpected symbol */
