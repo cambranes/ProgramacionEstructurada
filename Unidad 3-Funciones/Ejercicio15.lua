@@ -1,3 +1,9 @@
+--[[Autor: Amílcar A. Ramírez Patrón
+Entradas: El dia, mes y año de dos fechas distintas
+Proceso: Verificar, en orden año, mes, día, qué numero de ambas fechas es mayor y escribir la fecha que es, a la vez
+que procurar continuar en orden en caso de empate, hasta que se concluya que ambas fechas son iguales
+Salidas: La fecha mayor]]
+
 --[[ Funciones ]]--
    diauno = 0
    mesuno = 0
