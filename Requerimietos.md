@@ -54,3 +54,64 @@ Requerimientos no funcionales
 10.	 Al ser seleccionado el elemento que abrirá la sección del establecimiento que la ofrece. 
 
 
+![](https://github.com/HectorCosgalla/ProgramacionEstructuradaEQ4/blob/RonssonSantos/casosdeUso.PNG)
+
+
+**Ver los bares disponibles**: Los usuarios podrán ver desde la app los establecimientos que se han puesto en interfaz de la aplicación, cada uno con su respectivo espacio.  
+
+**Ver horarios**: Los usuarios podrán ver los horarios de servicio que tiene cada establecimiento entrando a al apartado del establecimiento en la app.  
+
+**Ver los menús:** Los usuarios podrán ver los productos y/o servicios que ofrece el establecimiento, así como su precio por cada uno de ellos.  
+
+**Ver las direcciones:** Los usuarios puede ver la dirección del establecimiento de preferencia para ver cómo llegar y así mismo ver si es de su conveniencia.  
+
+**Ver las promociones:** Los usuarios podrán ver desde la pagina de inicio de la app las promociones que los establecimientos ofrecen al público así mismo si seleccionan el anuncio los llevará al apartado del establecimiento en la pp.
+Ver o dejar comentarios: Los usuarios podrán ver los comentarios que dejan otros usuarios sobre su experiencia en el establecimiento, así como podrán dejar sus propios comentarios, (la caja de comentarios se encontrará hasta abajo en el apartado de cada apartado.  
+
+**Calificar establecimiento:** Los usuarios podrán usar un sistema de calificación por medio de estrellas con el cual podrán darle una calificación al establecimiento, (esta ira antes de la caja de comentarios).  
+
+**Ver contactos:** Así mismo los usuarios podrán contar con los números del establecimiento para poder hacer reservaciones, aclarar sus dudas, etc.  
+
+**Actualizar menús:** Los programadores estarán a cargo de mantener actualizados los productos y/o servicios de cada local.  
+
+**Actualizar promociones:** Los programadores estarán al tanto de las promociones por lo cual constantemente estarán poniendo las nuevas y descontinuando las que vaya quitando cada establecimiento.  
+
+**Actualizar horarios:** Los programadores en caso de que el establecimiento cambie de horario tendrán el deber de actualizarlo.  
+
+**Actualizar contactos:** De igual forma si el establecimiento cambia su número, correo, etc. Los programadores lo actualizarán.  
+
+### Proceso de desarrollo  
+
+#### Modelo de trabajo:  
+
+El modelo de trabajo va a ser sencillo nos apegaremos al ciclo de vida de software de cascada, donde teniendo todos los requisitos, procederemos al diseño del cual se encargaran al menos dos de los miembros del equipo uno dedicado a la parte de las interfaces o bien del front in y otro que se encargue del back in.  
+
+Teniendo los requisitos y el diseño todos los miembros del equipo pasaríamos al proceso de implementación donde basándonos en el diseño generaríamos los módulos de trabajo necesarios para el funcionamiento óptimo del software, cabe mencionar que durante este proceso se realizaran las pruebas necesarias para que al final los errores sean mínimos.  
+
+El siguiente paso sería una verificación final para comprobar que el sistema funciona correctamente y en caso de tener un fallo se pueda corregir lo más pronto posible.  
+
+Vamos a mantener una comunicación constante por medio de un grupo de whatsapp en el que estaremos mandándonos reportes de  nuestra actividad, también tendremos al menos una reunión semanal para mantenernos al corriente de todo lo que sea necesario, ajustar algún detalle, cambios de fecha, etc. y cada reunión será registrada en un bitácora, así como el avance y cualquier otro evento importante durante el proceso.  
+
+Para medir el avance del proyecto se establecerán los siguientes porcentajes:  
+
+Requisitos – 5%
+Diseño – 20%
+Código – 50%
+Validación e implementación – 25%  
+
+Y se espera que se lleven a cabo estas etapas en las siguientes fechas:  
+
+Diseño: 28/febrero/2018 – 12/Marzo/2018  
+
+Codificación: 12/marzo/2018 – 22/abril/2018  
+
+Validación e implementación: 22/abril/2018 – 14/mayo/2018    
+
+
+Estas fechas en caso de ser MUY necesario se cambiarían.
+Para medir el avance personal de cada miembro del equipo se espera que haya al menos 3 a 4 contribuciones a la semana en el repositorio, esperan que el miembro del equipo le dedique 1 o 2 horas al proyecto.
+
+
+
+
+
