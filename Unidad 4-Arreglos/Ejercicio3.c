@@ -5,7 +5,7 @@ Salidas: Impresion de numeros pares, y cantidad de impares
 Procedimiento general:
 1.-Asignamos numeros aleatoriamente al arreglo
 2.-Iteramos atraves de cada elemento del arreglo, de ser divisible entre 2 sin residuo, lo imprimimos
-3.-Iteramos atraves de cada elemento del arreglo, de no ser divisible entre 2 sin residuo, añadimos 1 al contador de impares
+3.-Iteramos atraves de cada elemento del arreglo, de no ser divisible entre 2 sin residuo, aï¿½adimos 1 al contador de impares
 4.- Imprimimos la cantidad de impares
 */
 #include <stdio.h>
@@ -20,7 +20,7 @@ void imprimirPares(int[SIZE][SIZE]);
 
 int main()
 {
-    int matriz[SIZE][SIZE], impares;
+    int matriz[SIZE][SIZE];
     llenarMatriz(matriz);
 
     // Imprimimos los numeros con valor par
@@ -29,7 +29,6 @@ int main()
 
     // Determinamos la cantidad de impares
     printf("\n la cantidad de impares es de: %d", cantidadImpares(matriz));
-
 
 	return 0;
 }

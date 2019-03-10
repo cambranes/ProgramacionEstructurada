@@ -1,6 +1,6 @@
 /*
 Autor: Eyder Concha Moreno 09/Marzo/19
-Entradas: El tamaño del triangulo de pascal
+Entradas: El tamaï¿½o del triangulo de pascal
 Salidas: La piramide de pascal inversa
 Procedimiento general:
 1.-Determinamos la piramida normalmente
@@ -44,6 +44,3 @@ void imprimirPiramideInversa(int matrizSize, int matriz[][matrizSize]){
         printf("\n");
     }
 }
-
-
-
