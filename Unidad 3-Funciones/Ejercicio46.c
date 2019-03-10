@@ -99,3 +99,17 @@ void salida(float pagarC, float descuentoC, float pagarDC, int i){
 			printf("Cliente %i: Monto inicial %.2f  Descuento %.2f  Total a pagar %.2f \n",i+1,pagarC,descuentoC,pagarDC);
 		}
 }
+/*
+QA: Amílcar Ramírez
+entrada():
+Todos los valores numericos ingresados funcionan, OK
+proceso():
+Calcula correctamente el n numero de clientes a comprar, el monto por cada cliente del producto, el descuento junto con el precio 
+mas el descuento, a su vez determina el dinero en caja por los montos a pagar de todos los clientes, y el dinero del total de
+descuentos aplicados, OK
+salida():
+Muestra correctamente y ordenado todos los datos, Ok
+Prueba integral:
+El codigo compila correctamente; como nota usa arreglos, ademas de no haber definido cuales son sus entradas, procesos, salidas
+en el lugar comentado correspondiente.
+*/

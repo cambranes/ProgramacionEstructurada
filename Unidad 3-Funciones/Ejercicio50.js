@@ -49,6 +49,19 @@ function factorial(num){
 }
 
 function salida(e){
-	alert("El valor de la constante e es: " + e);
-	
+	alert("El valor de la constante e es: " + e);	
 }
+
+/*
+QA
+Realizó: Guillermo Canto
+Entradas:	Salidas:
+0		Fuerza a elegir otra entrada
+-1		Fuerza a elegir otra entrada
+1		Fuerza a elegir otra entrada
+2		2
+5		2.708333333333333
+15		2.71828182845823
+Funciona correctamente
+*/
+
