@@ -1,36 +1,63 @@
 /**
- * @author Luis Gerardo Leon Ortega
-Realizar la suma de dos matrices Bidimensionales. Para que se puedan sumar las matrices A[i. j] y
-B[i, j] deben de tener las mismas dimensiones la matriz S[i, j], tendrá las mismas dimensiones y
-cada elemento tendrá la suma, es decir B[i, j] = A[i, j] + B[i, j]. Crear el pseudocódigo que realice
-esto, utilizando notación de arreglos
-*/
+@author Luis Gerardo Leon Ortega
+ * Se tiene un vector de cien elementos que representan calificaciones de cinco materias de 20
+estudiantes. Del 1 al 5 son las calificaciones del primer estudiante; del 6 al 10, son las del
+        segundo; y así sucesivamente. Se desea programa que lea estas calificaciones y que calcule el
+        promedio de cada estudiante y que lo vaya guardando en un segundo vector que tendrá como
+        elementos solamente los promedios de los 20 estudiantes.
+ */
+#include "stdio.h"
+#define size 101
 
-#include <stdio.h>
-//Consts sizes
-#define X 3
-#define Y 1
+void entradas(int*);
+void proceso(int*, int*);
+void salidas(int*, int*);
 
-int main(){
-    int valor[X][Y];
-    int valor2[X][Y];
+ int main(){
+     /* entradas */
+     int people[size];
+     int prom[20];
+     entradas(people);
+     /* proceso */
+     proceso(people, prom);
+     /* salidas */
+     salidas(people, prom);
+     return 0;
+ }
 
-    //Procedimiento
-    for (int i = 0; i < X; ++i) {
-        for (int j = 0; j < Y; ++j) {
-            printf("1) Ingresa el valor[%i][%i] \n",i,j);
-            scanf(" %i", &valor[i][j]);
-            printf("2) Ingresa el valor[%i][%i] \n",i,j);
-            scanf(" %i", &valor2[i][j]);
-            //Procedimiento de la suma
-            valor2[i][j] += valor[i][j];
-        }
-    }
-    //Salidas
-    for (int i = 0; i < X; ++i) {
-        for (int j = 0; j < Y; ++j) {
-            printf("Suma[%i]: \n", valor2[i][j]);
-        }
-    }
-    return 0;
-}
+ void entradas(int* people){
+     for (int i = 1; i < size; ++i) {
+         printf("Ingresa la calificacion %i", i);
+         scanf(" %i", &people[i]);
+     }
+ }
+
+ void proceso(int* people, int* prom){
+     int compuerta = 0;
+     int acumulador = 0;
+     int contadorProm = 0;
+     //Set prom
+     for (int j = 1; j < size; ++j) {
+         acumulador += people[j];
+         compuerta = (j%5 == 0)? 1 : 0;
+         if(compuerta){
+             contadorProm++;
+             prom[contadorProm] = acumulador / 5;
+             acumulador = 0;
+         }
+     }
+ }
+
+ void salidas(int* people, int* prom){
+     int contadorProm = 0;
+     int compuerta = 0;
+     for (int j = 1; j < size; ++j) {
+         printf("| %i |", people[j]);
+         compuerta = (j%5 == 0)? 1 : 0;
+         if(compuerta){
+             contadorProm++;
+             printf(" PROM: %i\n", prom[contadorProm]);
+
+         }
+     }
+ }
