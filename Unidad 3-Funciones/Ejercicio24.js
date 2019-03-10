@@ -41,7 +41,16 @@ function exponencial(base, exponente){
     }
     return resultado;
 }
-
+/*
+Autor QA: Jorge Abraham Pinto López
+Entradas: 25
+Salidas:  1.999999
+Proceso: OK
+Modularidad: OK. Se realizan las funciones de entrada,proceso y salida.
+  Función LecturaDeValores: Ok.
+  Función media: OK.
+  Función impresion: OK.
+*/
 
 
 

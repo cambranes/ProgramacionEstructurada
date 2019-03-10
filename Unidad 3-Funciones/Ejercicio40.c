@@ -60,5 +60,24 @@ void procedimiento(int numeroTrabajadores){
 }
 
 
+/*QA: Amaury Morales Cerecedo
 
+Funcion: main()
+Entradas: printf despues de cada linea.
+Salidas: El codigo se ejecuta.
+
+Funcion: entrada()
+Entradas: trajadores 5, sueldo 100, trabajadores 1, sueldo 900
+Salidas: 5 trabajadores. c/sueldo 100. 1 trabajador, sueldo 900.
+
+Funcion: procedimiento()
+Entradas: trabajadores 5, trabajadores 1
+Salidas: sueldo 115, aumento 15. sueldo 900, aumento 0.
+
+Funcion: impresionSueldo()
+Entradas: ninguna
+Salidas: solo imprime el sueldo de cada trabajador
+
+ Final: El codigo funciona correctamente.
+*/
 

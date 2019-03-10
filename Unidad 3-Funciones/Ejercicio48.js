@@ -44,6 +44,7 @@ function entradas(){
 }
 
 function salidas(){
+    // Comprobamos si la cantidad ingresada por el usuario fue válida
     if(cantidadValida){
         document.write(`El sueldo total es de: ${sueldoTotal} <br> El sueldo base es de: ${sueldoBase} <br> El incentivo es de: ${incentivo}`);
     } else {
@@ -52,6 +53,7 @@ function salidas(){
 }
 
 function calculoSueldoTotal(){
+    // Sumamos el incentivo al sueldo base
     var suma = parseFloat(sueldoBase) + incentivo;
     return suma;
 }
@@ -86,3 +88,15 @@ function validacionValores(){
         cantidadValida = 0;
     }
 }
+/*
+Autor QA: Jimmy Nathan Ojeda Arana
+Entradas: 1000,5
+Salidas: El sueldo total es de: 1030    El sueldo base es de: 1000    El incentivo es de: 30
+Proceso: OK
+Modularización: OK
+ Función entradas: OK
+ Función validacionValores: OK
+ Función calculoIncentivo: OK
+ Función calculoSueldoTotal: OK
+ Función salidas: OK
+*/
