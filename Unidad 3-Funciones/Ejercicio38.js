@@ -49,7 +49,9 @@ function proceso(numero,x,y,z)
 function salida(num){
 
 	alert("El numero" + num + " cumple con la condicion");
+	
 }
+
 
 /*
 QA: Raul Rivadeneyra
@@ -73,3 +75,4 @@ al nuevo valor, así que ya sea nunca o dentro de un muy largo tiempo si es que 
 
 Arreglar nombrado del ejercicio
 */
+

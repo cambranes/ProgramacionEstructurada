@@ -5,9 +5,6 @@ Salidas:
 Procedimiento:
 */
 
-
-
-
 	
 let tam = parseFloat(prompt("numero de clientes a cobrar:"))
 
@@ -118,6 +115,7 @@ function salida(pagarC,descuentoC,pagarDC,i){
 			alert("Cliente "+ i + ": Monto inicial "+ pagarC +"  Descuento" + descuentoC + "  Total a pagar " + pagarDC);
 		}
 }
+
 /*
 QA: Amílcar Ramírez
 
@@ -136,3 +134,4 @@ Prueba integral:
 Correctamente realiza su tarea el codigo, con las validaciones necesarias.
 
 */
+

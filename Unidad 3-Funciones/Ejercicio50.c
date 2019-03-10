@@ -1,9 +1,3 @@
-//Escribe el programa que estime el valor de la constante matemática e,
-//mediante la formula:
-//e = 1 + 1/1! + 1 / 2! + 1/3! + ....+ 1/N!
-//Leer el valor N que indica la precisión con la que se quiere obtener el
-//valor de e
-
 #include <stdio.h>
 
 /*
@@ -79,3 +73,4 @@ Entradas:		Salidas:
 15			2.718282
 Funciona correctamente, pero recomiendo validar las entradas producen salidas de 1.
 */
+

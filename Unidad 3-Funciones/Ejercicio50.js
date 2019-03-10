@@ -49,8 +49,9 @@ function factorial(num){
 }
 
 function salida(e){
-	alert("El valor de la constante e es: " + e);
+	alert("El valor de la constante e es: " + e);	
 }
+
 /*
 QA
 Realizó: Guillermo Canto
@@ -63,3 +64,4 @@ Entradas:	Salidas:
 15		2.71828182845823
 Funciona correctamente
 */
+
