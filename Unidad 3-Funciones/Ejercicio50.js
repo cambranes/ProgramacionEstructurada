@@ -50,4 +50,5 @@ function factorial(num){
 
 function salida(e){
 	alert("El valor de la constante e es: " + e);
+	
 }
