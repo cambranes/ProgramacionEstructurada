@@ -3,7 +3,7 @@ Autor: Jimmy Nathan Ojeda Arana
 Entradas: Se generan numeros al azar del 1 al 49 para los elementos de las matrices A y B
 Salidas: Se genera una matriz S como resultado de la suma de las matrices A y B
 Proceso: Se suma el valor correspondiente de la matriz A con el de la matriz B y se asigna al valor correspondiente de la matris S
-*/ 
+*/
 
 #include <iostream>
 #include<stdlib.h>
