@@ -3,7 +3,7 @@ Autor: Jimmy Nathan Ojeda Arana
 Entradas: Se generan 5 calificaciones al azar del 1 al 100 para cada uno de los 20 alumnos
 Salidas: El promedio por alumno de sus 5 calificaciones
 Proceso: Se van contando de 5 en 5 las calificaciones de los alumnos, se les saca el promedio y se guarda en un vector llamado promedios
-*/ 
+*/
 
 #include <iostream>
 #include<stdlib.h>
