@@ -3,7 +3,7 @@ Autor: Jimmy Nathan Ojeda Arana
 Entradas: Eliges una funcion a, b ó c, ingresas 180 numeros para cualquiera de las funciones.
 Salidas: En la funcion a te señala el menor de los numeros ingresados, en la funcion b te devuelve la suma de los numeros de las primeras
 5 primeras filas y en la funcion c te devuelve el valor de la suma de las 5 ultimas columnas.
-Proceso: 
+Proceso:  
 */
 
 #include <iostream>
