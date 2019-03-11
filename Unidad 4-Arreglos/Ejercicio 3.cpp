@@ -4,7 +4,7 @@ Entradas: Se generan 2500 numeros al azar y se guardan en la matriz "matriz" de 
 Salidas: Se imprimen los numeros pares encontrados en "matriz" y se da el valor de numeros impares contenidos en "matriz"
 Proceso: Se verifica uno por uno si los elementos de "matriz" son pares o impares, en caso de ser par se imprime, en caso de ser impar
 se guarda en un contador de numeros impares
-*/
+*/ 
 
 #include <iostream>
 #include<stdlib.h>
