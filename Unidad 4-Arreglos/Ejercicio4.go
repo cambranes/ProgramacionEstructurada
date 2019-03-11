@@ -11,7 +11,7 @@ package main
 import "fmt"
 
 func main() {
-	const size = 26
+	const size = 101
 	/* entradas */
 	var people [size]int
 	var prom [20]int
@@ -20,18 +20,18 @@ func main() {
 	salidas(&people, &prom)
 }
 
-func entradas(people *[26]int) {
-	for i := 1; i < 26; i++ {
+func entradas(people *[101]int) {
+	for i := 1; i < 101; i++ {
 		fmt.Println("Ingresa la calificacion: ", i)
 		fmt.Scan(&people[i])
 	}
 }
 
-func proceso(people *[26]int, prom *[20]int) {
+func proceso(people *[101]int, prom *[20]int) {
 	var compuerta bool = false
 	var acumulador int = 0
 	var contadorProm int = 0
-	for i := 1; i < 26; i++ {
+	for i := 1; i < 101; i++ {
 		acumulador += people[i]
 
 		if i%5 == 0 {
@@ -48,10 +48,10 @@ func proceso(people *[26]int, prom *[20]int) {
 	}
 }
 
-func salidas(people *[26]int, prom *[20]int) {
+func salidas(people *[101]int, prom *[20]int) {
 	var compuerta bool = false
 	var contadorProm int = 0
-	for i := 1; i < 26; i++ {
+	for i := 1; i < 101; i++ {
 		fmt.Print("| ", people[i], " |")
 
 		if i%5 == 0 {

@@ -18,22 +18,39 @@ silla.
 #define X 3
 #define Y 3
 
+void entradas(int[X][Y]);
+void proceso(int[X][Y], int*);
+void salidas(int);
+
 int main(){
     int matriz[X][Y];
-    //Insert values
+    int puntosSilla = 0;
+    /* entrada */
+    entradas(matriz);
+
+    /*
+    for (int i = 0; i < X; ++i) {
+        printf("\n");
+        for (int j = 0; j < Y; ++j) {
+            printf("| %i |", matriz[i][j]);
+        }
+    } */
+    /* proceso */
+    proceso(matriz, &puntosSilla);
+    /* salidas */
+    salidas(puntosSilla);
+    return 0;
+}
+void entradas(int matriz[X][Y]){
     for (int i = 0; i < X; ++i) {
         for (int j = 0; j < Y; ++j) {
             printf("Ingresa el valor[%i][%i]: \n", i, j);
             scanf(" %i", &matriz[i][j]);
         }
     }
-    for (int i = 0; i < X; ++i) {
-        printf("\n");
-        for (int j = 0; j < Y; ++j) {
-            printf("| %i |", matriz[i][j]);
-        }
-    }
-    int puntosSilla = 0;
+}
+
+void proceso(int matriz[X][Y], int* puntosSilla){
     for (int i = 0; i < X; ++i) {
         int minimum = 1000; //Min value
         int maximum = 0; //Max value
@@ -55,9 +72,12 @@ int main(){
             }
         }
         if(minimum == maximum){
-            puntosSilla++;
+            *puntosSilla = *puntosSilla + 1;
+            printf("Encontre un punto silla ");
         }
     }
+}
+
+void salidas(int puntosSilla){
     printf("\n Cantidad de puntos silla %i", puntosSilla);
-    return 0;
 }

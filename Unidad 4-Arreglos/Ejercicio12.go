@@ -17,38 +17,50 @@ package main
 import "fmt"
 
 func main() {
+	/* variables */
 	const x = 3
 	const y = 3
 	var matriz [x][y]int
+	var puntosSilla int
+
 	//Get data
-	for i := 0; i < x; i++ {
-		for j := 0; j < y; j++ {
+	entradas(&matriz)
+	//Print data
+	/*
+		for i := 0; i < x; i++ {
+			fmt.Println(" ")
+			for j := 0; j < y; j++ {
+				fmt.Print("| ", matriz[i][j], " |")
+			}
+		} */
+
+	proceso(&matriz, &puntosSilla)
+	salidas(puntosSilla)
+}
+
+func entradas(matriz *[3][3]int) {
+	for i := 0; i < 3; i++ {
+		for j := 0; j < 3; j++ {
 			fmt.Println("Ingresa el valor[", i, "][", j, "]")
 			fmt.Scanln(&matriz[i][j])
 		}
 	}
-	//Print data
-	for i := 0; i < x; i++ {
-		fmt.Println(" ")
-		for j := 0; j < y; j++ {
-			fmt.Print("| ", matriz[i][j], " |")
-		}
-	}
-	var puntosSilla int
+}
 
-	for i := 0; i < x; i++ {
+func proceso(matriz *[3][3]int, puntosSillas *int) {
+	for i := 0; i < 3; i++ {
 		var minimum = 1000 //Min vañ
 		var maximum = 0    //Max val
 		//Get min val
-		for j := 0; j < y; j++ {
+		for j := 0; j < 3; j++ {
 			if matriz[i][j] < minimum {
 				minimum = matriz[i][j]
 			}
 		}
 		//Get max val
-		for j := 0; j < y; j++ {
+		for j := 0; j < 3; j++ {
 			if matriz[i][j] == minimum {
-				for k := 0; k < x; k++ {
+				for k := 0; k < 3; k++ {
 					if matriz[k][j] > maximum {
 						maximum = matriz[k][j]
 					}
@@ -57,9 +69,11 @@ func main() {
 		}
 
 		if maximum == minimum {
-			puntosSilla++
+			*puntosSillas++
 		}
 	}
-	fmt.Println("Cantidad de puntos silla: ", puntosSilla)
+}
 
+func salidas(puntosSilla int) {
+	fmt.Println("Cantidad de puntos silla: ", puntosSilla)
 }
