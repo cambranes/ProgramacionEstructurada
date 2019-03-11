@@ -4,7 +4,7 @@ Entradas: Se genera un vector de n numeros
 Salidas: Se imprime el promedio, la desviacion estandar y la varianza de los elementos del vector
 Proceso: Se define una funcion para rellenar el vector, otra para obtener el promedio, se captura el valor del promedio en una
 variable llamada "promedio" y con ello se obtiene la desviacion estandar y la varianza.
-*/
+*/ 
 
 #include <iostream>
 #include<stdlib.h>
