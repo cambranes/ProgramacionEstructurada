@@ -57,3 +57,15 @@ func recursiveSum(n [6]int, size float64, media float64) float64 {
 	}
 	return alCuadrado(float64(n[int(size)])-media) + recursiveSum(n, size-1, media)
 }
+/*
+	QA Reviso: Carlos Chan
+	
+	Entradas: 1,2,3,4,5,6
+	Salidas:
+	La variaza es:  3.5  
+	La media es:  3.5  
+	La desviacion estandar es:  1.8708286933869707
+	
+	El programa funciona correcto, pero se supone que debia ser para un vector de largo N con valores aleatorios,
+	no para un vector de largo 6 con valores introducidos por el usuario
+*/
