@@ -69,4 +69,11 @@ for i in range(0,15):
 
 print("numero menor es: ",menor)
 print("suma total de las 5 filas es: ",sumaF)
-print("suma total de las ultimas 5 columnas es: ",sumaC)		
+print("suma total de las ultimas 5 columnas es: ",sumaC)
+
+"""
+Autor QA:Jimmy Nathan Ojeda Arana
+Entradas: Se generan al azar
+Salidas: El numero menor de la matriz, la suma de sus primeras 5 filas y la suma de las 5 ultimas columnas
+Proceso: Hace el proceso y da las salidas correctamente 
+"""
