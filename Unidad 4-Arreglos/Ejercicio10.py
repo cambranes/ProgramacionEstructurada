@@ -64,3 +64,11 @@ n = Entradas()
 cuadrado = Procedimiento1()
 acumulador1, acumulador2 = Procedimiento2()
 Salidas()
+
+"""
+Autor QA:Alejandro Torre Reyes
+Entradas: OK
+Salidas: OK
+Proceso: Es correcto solo que la unica forma de comprobarlo es leyendo el código ya que el 
+programa no imprime el "cuadrado mágico". 
+"""
