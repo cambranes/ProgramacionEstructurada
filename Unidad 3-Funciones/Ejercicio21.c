@@ -1,0 +1,51 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/*
+Autor:. Alejandro Torre Reyes
+Entradas: Un numero n entero positivo
+Salidas: El factorial de n
+Proceso: Dado un numero entero n determina su factorial.
+*/
+int fact();
+int leer();
+
+int main()
+{
+    int n;
+    int res;
+    n = leer(); //llamar a la funcion de entrada
+    res = fact(n); //llamar a la funcion para calcular factorial
+    printf("El factorial de %d es %d", n, res);
+    return 0;
+}
+
+int leer(){ //funcion para leer la entrada
+    int lec;
+    printf("Ingrese n para calcular su factorial \n");
+    scanf("%d", &lec);
+    return lec;
+}
+
+int fact(int x){ //funcion de factorial
+    int factorial = 1;
+    int i;
+    if(x != 0){
+        for(i=1; i<=x; i++){
+            factorial = factorial * i;
+        }
+    }
+    return factorial;
+}
+/*
+QA: Luis Gerardo Leon Ortega
+Entradas: Un numero n entero positivo
+Salidas: El factorial de n
+
+El funcionamiento general esta correcto. falla apartir de ciertos numeros, pero se debe
+al limite de int.
+
+Nota 1: tu prototipo fact() no tiene declarado el pase de algun parametro, por ende es ambiguo.
+*/
+
+
