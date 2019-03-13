@@ -66,3 +66,23 @@ func salidas(people *[101]int, prom *[20]int) {
 		}
 	}
 }
+/*
+QA
+Realizo: Guillermo Canto
+Funcion "entradas".
+	Entradas: [-50, 50]
+	Salidas: Ninguna
+	No deberia leer entradas negativas.
+
+Funcion "proceso".
+	Entradas: Ninguna.
+	Salidas: Ninguna.
+	Realiza el proceso correctamente respecto a las entradas dadas.
+
+Funcion "salidas".
+	Entradas:Ninguna.
+	Salidas:Los promedios pedidos con respecto a las entradas.
+
+El unico detalle es que las entradas deberian ser validadas en el rango [0,100].
+
+*/
