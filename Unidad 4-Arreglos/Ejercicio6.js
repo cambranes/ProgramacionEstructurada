@@ -31,6 +31,7 @@ alert("La suma sin las diagonales es: " + sum);
 
 
 function entrada(){
+	//QA:Funciona pero: no es aleatorio!!!!
 	let num = 0;
 	do{
 		num = parseInt(prompt("Ingresa un numero entre 0 y 999: "));
@@ -39,6 +40,8 @@ function entrada(){
 }
 
 function validarEntrada(num, limiteInferior, limiteSuperior){
+//QA: Entradas: 1, 0, 999, 678, -12, 1001
+//Salidas: 0, 0, 0, 0, 1, 1.               Funciona
 	let validar = false;
 	if(num >= limiteInferior && num <= limiteSuperior){
 		validar = true;
@@ -47,6 +50,7 @@ function validarEntrada(num, limiteInferior, limiteSuperior){
 }
 
 function leerMatriz(matriz, filas, columnas){
+	//QA:Funciona pero: No es aleatorio!!!
 	alert("Ingrese los valores para la matriz " + filas + " x " + columnas + ": ");
 	for(let i = 0; i < filas; i++){
 		for(let j = 0; j < columnas; j++){
@@ -57,6 +61,9 @@ function leerMatriz(matriz, filas, columnas){
 }
 
 function sumarMatrizSinDiagonales(matriz, filas, columnas){
+	//QA: Entradas: Matriz 2x2, matriz 1x1, matriz 3x3 (1,2,3,4,5,6,7,8,9), matriz 0x0
+    //salidas: 0 (ya que no suma nada en readlidad), 0 (igual), 20, 0.
+//Funciona correctamente
 	let suma = 0;
 	for(let i = 0; i < filas; i++){
 		for(let j = 0; j < columnas; j++){
@@ -69,6 +76,7 @@ function sumarMatrizSinDiagonales(matriz, filas, columnas){
 }
 
 function imprimirMatriz(matriz, filas, columnas){
+	 //Imprime correctamente
 	let impresion = "";
 	for(let i = 0; i < filas; i++){
 		for(let j = 0; j < columnas; j++){
@@ -78,3 +86,4 @@ function imprimirMatriz(matriz, filas, columnas){
 	}
 	alert(impresion);
 }
+//QA: Jorge Chí
