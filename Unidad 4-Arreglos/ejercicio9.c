@@ -16,7 +16,7 @@ int main(){
   */
 
   //Generador//
-  int sudoku[9][9];
+    int sudoku[9][9];
   srand(time(NULL));
   for (int i = 0; i < 9; i++) {
     for (int j = 0; j < 9; j++) {
@@ -50,3 +50,7 @@ int main(){
   }
   return 0;
 }
+//QA realizado por Rodrigo Hernandez
+//El programa no compilo
+//Marca error en la linea 20 ("Conflicting types for srand", "implicit declaration invalid" y "function declaration not a prototype")
+//Marca warning en la linea 23 (""implicit declaration invalid" y "function declaration not a prototype")
