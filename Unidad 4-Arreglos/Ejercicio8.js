@@ -72,3 +72,12 @@ function imprimirVector(vec, tam){
 	}
 	alert("Vector: " + impresion);
 }
+
+/**
+ * QA: Luis Gerardo Leon Ortega
+ * 
+ * Entradas: El tamaño del vector. (RANDOM)
+ * Salidas: La media, desviacion estandar y varianza.
+ *
+ * FUNCIONA
+ */

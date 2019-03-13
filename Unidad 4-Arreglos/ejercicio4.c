@@ -2,7 +2,7 @@
 Autor: Guillermo Canto
 Entradas: Ninguna
 Salidas: Ninguna
-Procedimiento general: Llena un vector de tamaño 100 con valores aleatorios del 1 al 100 (calificaciones)
+Procedimiento general: Llena un vector de tamaï¿½o 100 con valores aleatorios del 1 al 100 (calificaciones)
 Calcula los promedios de cada alumno si cada 5 calificaciones en el vector antes mencionado corresponde 
 a un alumno diferente y los almacena en un vector de promedios.
 */
@@ -45,3 +45,12 @@ void calcularPromedios(int calificaciones[N], int promedios[N]){
 		numAlumno++;
 	}
 }
+
+/**
+ * QA: Luis Gerardo Leon Ortega
+ *
+ * NO FUNCIONA
+ *
+ * return: Process finished with exit code 0
+ */
+
