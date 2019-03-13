@@ -15,3 +15,10 @@ int main(int argc, char *argv[]) {
 void sumaDeImpares(int *resultado){
 	printf("%d", *resultado = (1 + 3 + 5 + 7 + 9));
 }
+
+/*
+QA: Realizó: Daniel Delfin
+Entradas: None
+Salidas: 25 
+Funciona Correctamente. 
+*/

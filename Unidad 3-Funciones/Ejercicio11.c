@@ -36,5 +36,9 @@ void salida(float saldo){
 	printf("Tu saldo es de %f\n", saldo);
 }
 
-
-
+/*
+QA: Hector Abraham V. Cosgalla
+Entradas:3000, 500, 4000
+Salidas: Tu saldo es de 0 , Tu saldo es de 2500 , La operacion no puede realizarse Tu saldo es de 3000
+Comentarios: Todo bien!
+*/

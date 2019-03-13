@@ -1,5 +1,11 @@
+/*
+  Autor: Raul Rivadeneyra
+  Entradas: numeros positivos
+  Salidas: la adicion al numero ingresado respecto a ciertos factores
+  Proceso general: si el numero ingresado es mayor a 1000 o 3000 o 5000 aumenta cierta cantidad respectivamente
+ */
 #include "stdio.h"
- 
+
 void getNumber(float*);
 void moreThan1K(float*);
 void moreThan3K(float*);
@@ -42,3 +48,7 @@ void moreThan5K(float *number) {
     *number += (*number * 0.05);
   }
 }
+/*
+QA: Hector Abraham V. Cosgalla
+TODO MAL!!
+*/

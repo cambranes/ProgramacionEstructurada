@@ -50,7 +50,7 @@ int verificarIgualdad(int num1, int num2, int num3){
 // Compara 3 numeros para encontrar el mayor
 int encontrarMayor(int num1, int num2, int num3){
   int mayor = 0;
-  if(num1 > num2 && num1 > num3){
+  if((num1 > num2 && num1 > num3) || (num1 >= num2 && num1 >= num3)){
     mayor = num1;
   }
   else if(num2 > num1 && num2 > num3){
@@ -71,3 +71,9 @@ void imprimirResultados(int igualdad, int mayor){
     printf("El mayor es: %d", mayor);
   }
 }
+
+/*AUTOR QA: RONSSON RAMIRO MAY SANTOS
+ENTRADAS: 9,9, -3
+SALIDAS: EL MAYOR ES -3
+OBSERVACIONES: SOLO FUNCIONA CON NUMEROS POSITIVOS, CON UN NEGATIVO DICE QUE EL NEGATIVO ES EL MAYOR.
+*/

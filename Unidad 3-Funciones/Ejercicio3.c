@@ -63,3 +63,9 @@ void imprimirDia(int num){
     default: printf("El numero no esta en el rango de 1 a 7.\n");
   }
 }
+/*
+QA: Hector Abraham V. Cosgalla
+Entradas: 4, 2, 8 y 7
+Salidas: Jueves, Martes, nada y Domingo (respectivamente)
+Comentarios: Todo excelente.
+*/
