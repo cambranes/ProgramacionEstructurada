@@ -86,3 +86,13 @@ print D2
  
 print("No sé como se llama XD")
 print (T-D1-D2)
+
+"""
+Autor QA: Alejandro Torre Reyes
+Entradas: 3
+Salidas: File "..\Playground\", line 71
+    print j,
+          ^
+SyntaxError: Missing parentheses in call to 'print'. Did you mean print(j, end=" ")?
+Proceso: No compila
+"""
