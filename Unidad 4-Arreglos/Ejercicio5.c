@@ -36,7 +36,7 @@ void leerMatriz(float matriz[SIZE1][SIZE2]){
                     printf("Introduce las ventas del dia\n");
                     break;
             }
-            scanf("%f", &matriz[i][j]);
+            scanf("%f", &matriz[i][j]); 
         }
     }
 }
