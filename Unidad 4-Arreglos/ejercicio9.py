@@ -75,3 +75,21 @@ if(esSudoku):
 else:
 	#en caso contrario, entonces si lo es
 	print("Si es sudoku")	
+
+"""
+Autor QA: Alejandro Torre Reyes
+Entrada: Ninguna
+Salida: 
+[2, 7, 6, 6, 7, 4, 3, 1, 7]
+[2, 7, 9, 5, 5, 4, 2, 2, 7]
+[5, 9, 3, 8, 8, 8, 5, 4, 6]
+[1, 8, 3, 2, 6, 4, 9, 9, 1]
+[2, 4, 8, 5, 5, 9, 4, 9, 8]
+[3, 2, 2, 7, 3, 7, 9, 9, 5]
+[9, 5, 7, 1, 4, 8, 5, 8, 4]
+[4, 4, 9, 6, 6, 1, 8, 1, 4]
+[2, 8, 1, 9, 4, 5, 4, 8, 7]
+
+La matriz no es sudoku
+Proceso: OK. Todo correcto. Se pudo usar otra funcion para imprimir la matriz.
+"""
