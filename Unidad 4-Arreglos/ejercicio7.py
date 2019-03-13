@@ -105,4 +105,12 @@ print("La moda es/son: ",moda)
 
 print("la mediana es:", medianas)
 
-
+"""
+Autor QA: Alejandro Torre Reyes
+Entrada: 10
+Salida: Vector  [10, 26, 43, 0, 16, 2, 41, 26, 9, 29]
+la media es:  20.2
+La moda es/son:  [26]
+la mediana es: 9.0
+Proceso: Ok. Todo correcto
+"""
