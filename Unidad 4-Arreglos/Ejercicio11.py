@@ -42,3 +42,53 @@ n = entradas()
 resultado = procedimientos(n)
 salidas(resultado)
 
+"""
+QA: Amaury Morales Cerecedo
+
+(Funcion entradas)
+Entradas: 1, 20, 0, -3.
+Salidas: Se aceptaron todos los valores exceptuando los que son menores a cero.
+
+(Funcion procedimiento)
+Entradas: 1, 20, 0, -3.
+Salidas: El procedimiento es correcto.
+
+(Funcion salidas)
+Entradas: 1, 20, 0, -3.
+Salidas: La impresion del triangulo, pero no tiene forma del triangulo invertido.
+
+--Notas--
++El codigo no corre porque en la linea 42 la funcion se llama ''procedimiento'' y no ''procedimientos''.
++El codigo no imprime los valores como el triangulo invertido. Lo imprime como si estuviera pegado
+al lado izquierdo de la consola y el unico lado visible del triangulo es del lado derecho.
+
+Ejemplo:
+
+Sale asi:
+[1, 9, 36, 84, 126, 126, 84, 36, 9, 1]                                                                                              
+[1, 8, 28, 56, 70, 56, 28, 8, 1]                                                                                                    
+[1, 7, 21, 35, 35, 21, 7, 1]                                                                                                        
+[1, 6, 15, 20, 15, 6, 1]                                                                                                            
+[1, 5, 10, 10, 5, 1]
+[1, 4, 6, 4, 1]                                                                                                                     
+[1, 3, 3, 1]                                                                                                                        
+[1, 2, 1]                                                                                                                           
+[1, 1]                                                                                                                              
+[1] 
+
+Cuando deberia salir asi:
+
+[1, 9, 36, 84, 126, 126, 84, 36, 9, 1]                                                                                              
+   [1, 8, 28, 56, 70, 56, 28, 8, 1]                                                                                                    
+     [1, 7, 21, 35, 35, 21, 7, 1]                                                                                                        
+       [1, 6, 15, 20, 15, 6, 1]                                                                                                            
+         [1, 5, 10, 10, 5, 1]
+           [1, 4, 6, 4, 1]                                                                                                                     
+             [1, 3, 3, 1]                                                                                                                        
+              [1, 2, 1]                                                                                                                           
+                [1, 1]                                                                                                                              
+                  [1] 
+
+
+"""
+
