@@ -67,8 +67,8 @@ Salidas()
 
 """
 Autor QA:Alejandro Torre Reyes
-Entradas: OK
-Salidas: OK
+Entradas: 3,1
+Salidas: No es un cuadrado mágico, es un cuadrado magico.
 Proceso: Es correcto solo que la unica forma de comprobarlo es leyendo el código ya que el 
 programa no imprime el "cuadrado mágico". 
 """
