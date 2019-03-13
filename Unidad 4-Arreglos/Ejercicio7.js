@@ -113,3 +113,30 @@ function imprimirVector(vec, tam){
 	}
 	alert("Vector: " + impresion);
 }
+
+/* QA                                    
+Por: Eyder Antonio Concha Moreno
+
+Entradas: 4
+Salidas: {16, 20, 34, 47, }
+Ordenar vector: vector son ordenados apropiadamente - CORRECTO
+Calcular media: 29.25 - CORRECTO
+Calcular mediana: 27 - CORRECTO
+Calcular Moda: No hay moda - CORRECTO
+
+Entradas: 10
+Salidas: {3, 10, 14, 16, 20, 26, 26, 33, 36, 40, }
+Ordenar vector: vector son ordenados apropiadamente - CORRECTO
+Calcular media: 22.4 - CORRECTO
+Calcular mediana: 23 - CORRECTO
+Calcular Moda: 26 - CORRECTO
+
+Entradas: 7
+Salidas: {0, 5, 16, 22, 23, 39, 48, }
+Ordenar vector: vector son ordenados apropiadamente - CORRECTO
+Calcular Media: 21.857142857142858 - CORRECTO
+Calcular Mediana: 22 - CORRECTO
+Calcular Moda: No hay moda - CORRECTO
+
+Buen codigo 10/10
+*/
