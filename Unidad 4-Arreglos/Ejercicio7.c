@@ -113,4 +113,29 @@ void swap(int* valor1, int* valor2){
     *valor2 = almacenador;
 }
 
-
+/*
+	QA Reviso: Carlos Chan
+	
+	void llenarVector()
+	Entradas: 4
+	Salidas: Ninguna, pero el vector quedo asi:
+	{12, 26, 30, 28}
+	
+	float mediaDatos()
+	Entradas: 4, {12, 26, 30, 28}
+	Salidas: 21.5
+	Es correcto
+	
+	int modaDatos()
+	Entradas: 4, {12, 26, 30, 28}
+	Salidas: 0
+	Es correcto
+	
+	int mediana()
+	Entradas: 4, {12, 26, 30, 28}
+	Salidas: 2
+	Es correcto
+	
+	void sortea()
+	Ordena correctamente el vector
+*/
