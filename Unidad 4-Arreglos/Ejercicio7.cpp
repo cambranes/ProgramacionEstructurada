@@ -2,7 +2,7 @@
 Autor: Alejandro Torre
 Entradas: un vector de 50 elementos
 Salidas: la media, mediana y moda de los elementos de ese vector
-Proceso: Escribir un programa que llene un vector de tama�o n llena con n�meros aleatorios del 0
+Proceso: Escribir un programa que llene un vector de tamaño n llena con números aleatorios del 0
 al 50. El programa debe calcular:
 La media de los datos
 La moda de los datos
@@ -13,72 +13,106 @@ La mediana de los datos.
 #include <cstdlib>
 
 using namespace std;
-const int MAX = 12;
+const int MAX = 6;
 
 void llenar_vector(int vec[]){ //Funcion para asignar elementos al vector
-    int i;
-    for(i=0;i<MAX;i++){
-            vec[i] = 1+(rand()%MAX);
-            cout << vec[i] << "  ";
-    }
+	int i;
+	for(i=0;i<MAX;i++){
+		vec[i] = 1+(rand()%MAX);
+		cout << vec[i] << "  ";
+	}
 }
 float media(int x[]){ //Funcion para calcular la media
-    int i;
-    float sum = 0;
-    float prom = 0;
-    for(i=0;i<MAX;i++){
-        sum = sum + x[i]; //se obtiene la suma de los elementos
-    }
-    prom = sum/MAX; //se promedian entre el numero de datos
-    return prom;
+	int i;
+	float sum = 0;
+	float prom = 0;
+	for(i=0;i<MAX;i++){
+		sum = sum + x[i]; //se obtiene la suma de los elementos
+	}
+	prom = sum/MAX; //se promedian entre el numero de datos
+	return prom;
 }
 int moda(int y[]){ //Funcion para calcular la moda
-    int aux,i,j;
-    int frecuencia = 0;
-    int frecuencia_moda = 0;
-    int moda = -1;
-
-    for(i=0;i<MAX-1;i++)
-        for(j=0;j<MAX-i;j++){
-            if(y[j]>y[j+1]){
-                aux=y[j];
-                y[j]=y[j+1];
-                y[j+1]=aux;
-            }
-        }
-    for(i=0;i<MAX-1;i++){
-        if(y[i]==y[i+1]){
-            if(++frecuencia>frecuencia_moda){
-                frecuencia_moda=frecuencia;
-                moda=y[i];
-            }
-            else{
-                frecuencia=0;
-            }
-        }
-    }
-    return moda;
+	int aux,i,j;
+	int frecuencia = 0;
+	int frecuencia_moda = 0;
+	int moda = -1;
+	
+	for(i=0;i<MAX-1;i++)
+		for(j=0;j<MAX-i;j++){
+		if(y[j]>y[j+1]){
+			aux=y[j];
+			y[j]=y[j+1];
+			y[j+1]=aux;
+		}
+	}
+		for(i=0;i<MAX-1;i++){
+			if(y[i]==y[i+1]){
+				if(++frecuencia>frecuencia_moda){
+					frecuencia_moda=frecuencia;
+					moda=y[i];
+				}
+				else{
+					frecuencia=0;
+				}
+			}
+		}
+		return moda;
 }
 int mediana(int z[]){ //Funcion para calcular la mediana
-    int mitad;
-    mitad = (((MAX/2) + ((MAX/2)+ 1))/2); //Formula de la mediana
-    return z[mitad];
+	int mitad;
+	mitad = (((MAX/2) + ((MAX/2)+ 1))/2); //Formula de la mediana
+	return z[mitad];
 }
 int main()
 {
-    int arr[MAX];
-    float med;
-    int mod;
-    int medium;
-
-    llenar_vector(arr);
-    med = media(arr);
-    mod = moda(arr);
-    medium = mediana(arr);
-
-    cout << endl;
-    cout << "La media es " << med << "\n";
-    cout << "La moda es " << mod << "\n";
-    cout << "La mediana es " <<medium;
-    return 0;
+	int arr[MAX];
+	float med;
+	int mod;
+	int medium;
+	
+	llenar_vector(arr);
+	med = media(arr);
+	mod = moda(arr);
+	medium = mediana(arr);
+	
+	cout << endl;
+	cout << "La media es " << med << "\n";
+	cout << "La moda es " << mod << "\n";
+	cout << "La mediana es " <<medium;
+	return 0;
 }
+
+/*
+QA: Jose Mendez Verdejo
+
+Entradas: ninguna
+Salidas: Media: correcta, Moda: Error, Mediana: Error
+
+Funcion llenar_vector(): Rellena el vector correctamente, pero los valores
+							con los que rellena no se encuentran entre 0 y 50
+
+funcion media(): Encuentra la media corrctamente a traves del vector.
+
+funcion moda(Inicio de los problemas):
+Reordena el vector de forma ascendente, el problema es que modifica al vector
+principal por ser un apuntador, lo recomendable seria crear un nuevo array donde
+ordendes los gdatos para encontrar la moda.
+
+De igual manera, al momentos de  contabilizar los datos, no reinicializa el contador
+"frecuencia", por lo cual hace que la moda no se calcule de manera correcta.
+
+funcion mediana(): funciona bien, pero no de la mejor manera, ya que si el
+vector es de tamaño par, no calcula el promedio de las medianas, la formula
+de la mediana tiene el problema de que cuando se obtiene el valor, falta
+restarle 1, ya que los vectores tienen una pos menos que el tamaño definido.
+
+otro detalle, como anteriormente se modifico el vector, no calculara la mediana
+del vector original, si no del modificado.
+
+Comentarios: No deja definir el tamaño del vector, ademas que los elementos
+del vector no estan entre 0 y 50.
+
+Falta corregir, pero vamos, con el tiempo se mejora, ;)
+
+*/
