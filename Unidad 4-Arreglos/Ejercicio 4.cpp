@@ -30,3 +30,37 @@ int main()
     }
     return 0;
 }
+
+/*
+QA:Jose Mendez Verdejo
+
+Entradas: ninguna
+Salidas:
+Promedio del alumno 1 = 45
+Promedio del alumno 2 = 39
+Promedio del alumno 3 = 34
+Promedio del alumno 4 = 74
+Promedio del alumno 5 = 35
+Promedio del alumno 6 = 67
+Promedio del alumno 7 = 55
+Promedio del alumno 8 = 53
+Promedio del alumno 9 = 49
+Promedio del alumno 10 = 34
+Promedio del alumno 11 = 54
+Promedio del alumno 12 = 79
+Promedio del alumno 13 = 43
+Promedio del alumno 14 = 60
+Promedio del alumno 15 = 45
+Promedio del alumno 16 = 38
+Promedio del alumno 17 = 27
+Promedio del alumno 18 = 59
+Promedio del alumno 19 = 55
+Promedio del alumno 20 = 41
+
+Todas correctas
+
+Comentarios: Solucion sencilla, sin el uso de funciones, pero el uso de un
+vector de una dimension, se recomiendael uso de una matriz, pero de igual manera
+funciona. Muy bien pensado.  :)
+
+*/
