@@ -31,3 +31,8 @@ int main() {
   }
   return 0;
 }
+
+//QA realizado por Rodrigo Hernandez
+//Funcion main probada: funciona correctamente, solo no imprime los resultados
+//Nota: Todo el programa se hizo dentro del main, aunque me parece se podría modularizar,
+//al menos con una función que haga los procesos solicitados

@@ -45,3 +45,12 @@ function leer_n(){
   }while(n <=0);
   return n;
 }
+/*
+QA
+Por: Eyder Antonio Concha Moreno
+Entradas: 3
+Saldias: No hay
+
+Notas: parte del error se debe a que se utiliza n como variable cantidad, y luego N
+las cuales no son equivalentes
+*/

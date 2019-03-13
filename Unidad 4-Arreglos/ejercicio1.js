@@ -23,3 +23,8 @@ for (var i = 0; i < 15; i++) {
     }
   }
 }
+
+//QA realizado por Rodrigo Hernandez
+//Funcion main probada: funciona correctamente
+//Nota: Todo el programa se hizo dentro del main, aunque me parece se podría modularizar,
+//al menos con una función que haga los procesos solicitados

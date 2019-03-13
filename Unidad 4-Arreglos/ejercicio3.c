@@ -22,10 +22,20 @@ int main() {
         printf("%d ", matrix[i][j]);
       }
       else{
-        imp++;
+      	imp++;
       }
     }
   }
   printf("imp = %d", imp);
   return 0;
 }
+
+/* QA                                    
+Por: Eyder Antonio Concha Moreno
+
+Entradas: Ninguna - Ok
+Salidas: Muchos numeros pares, y la cantidad de numeros impares - Ok
+
+Buen codigo 9/10
+Deberia estar modular
+*/

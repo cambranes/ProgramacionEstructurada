@@ -49,3 +49,25 @@ int leer_n(){
 	}while (n <= 0);
 	return n;
 }
+
+/* QA                                    
+Por: Eyder Antonio Concha Moreno
+
+Entradas: 2
+Salidas:
+766623139 32765 
+1 1 
+1 32765
+INCORRECTO
+
+Entradas: 4
+Salidas:
+0 0 0 0 
+1 3 3 1 
+1 2 1 32767 
+1 1 1077835936 32767 
+1 32632 0 0 
+INCORRECTO
+
+El algoritmo no funciona adecuadamente
+*/

@@ -19,3 +19,10 @@ int main() {
   }
   return 0;
 }
+/*QA: Jorge Chí
+Entradas:1 y 2 para A[m][n] y B[m][n], Salidas: 3,3,3,3,3,3,3,3...,3.
+Entradas:13 y 23 para A[m][n] y B[m][n], Salidas: 36,36,36,36,36,36,36,36...,36.
+Entradas:-1 y -4 para A[m][n] y B[m][n], Salidas:-5, -5, -5...,-5.
+Funciona correctamente, más, podría tener una función de lectura y definir
+la suma como una función y llamarla.
+*/

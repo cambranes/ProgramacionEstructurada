@@ -44,3 +44,6 @@ if (isSudoku == 0) {
 else{
   printf("No es sudoku\n");
 }
+
+//QA realizado por Rodrigo Hernandez
+//El programa no funciono

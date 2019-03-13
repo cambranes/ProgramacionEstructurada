@@ -1,56 +1,76 @@
 /*
-	Autor: Carlos Chan
-	Entradas: El numero del producto y la cantidad vendida.
-	Salidas: El total de los productos vendidos al dia.
-	Procedimiento general: Se lee dos numeros que representan un producto y la cantidad vendida del mismo, 
-	posterior con un switch se calcula el precio a pagar y se va acumulando, el programa termina cuando
-	el numero de producto este fuera de rango o cuando la cantidad vendida sea negativa.
-*/
+ Autor: Carlos Chan
+ Entradas: El numero del producto y la cantidad vendida.
+ Salidas: El total de los productos vendidos al dia.
+ Procedimiento general: Se lee dos numeros que representan un producto y la cantidad vendida del mismo,
+ posterior con un switch se calcula el precio a pagar y se va acumulando, el programa termina cuando
+ el numero de producto este fuera de rango o cuando la cantidad vendida sea negativa.
+ */
+ //QA realizado por Rodrigo Hernandez
+#include <stdio.h>
+#define N 5
 
-let productos = [2.98, 4.5, 9.98, 4.49, 6.87];
-let cantidad = 0, 
-	producto = 1,
-	totalVendido = 0;
+void entrada(int*, int*);
+void proceso(float[], int, int, float*);
+void salida(float);
 
-while(cantidad >= 0 && producto >= 1 && producto <=5){
-	alert("Ingresa el numero del producto: ");
-	producto = entrada();
-	alert("Ingresa la cantidad vendida: ");
-	cantidad = entrada();
-	
-	totalVendido += proceso(productos, cantidad, producto);
-	salida(totalVendido);
+int main(){
+    //QA: Entradas probadas:1,1  , 2,1,  4,1   3,5  5,2  3,1
+    //    Salidas: 2.98000, 7.48000, 11.969999, 61.869995, 75.609993, 85.589996
+	//    La funcion deberia imprimir las ventas totales por cada producto,
+	// no la suma total, aparte de que en algun punto causa errores con los flotantes 
+	//(a partir de la tercera lectura en mi caso)
+    float productos[N] = {2.98, 4.5, 9.98, 4.49, 6.87};
+    int cantidad = 0, producto = 1;
+    float totalVendido = 0;
+    
+    while(cantidad >= 0 && producto >= 1 && producto <=5){
+        entrada(&cantidad, &producto);
+        proceso(productos, cantidad, producto, &totalVendido);
+        salida(totalVendido);
+    }
+    
+    return 0;
 }
 
-function entrada(){
-	let variable = parseInt(prompt("Ingresa un numero: "));
-	return variable;
+void entrada(int* cantidad, int* producto){
+    //QA: Entradas probadas: 1,1  , 2,1,  4,1   3,5  5,2
+    //    Salidas: 1,1  , 2,1,  4,1   3,5  5,2
+    //Funciona correctamente
+    printf("\nIngresa el numero de producto: ");
+    scanf("%d", producto);
+    printf("Ingresa la cantidad vendida: ");
+    scanf("%d", cantidad);
 }
 
-function proceso(productos, cantidad, producto){
-	let vendido = 0;
-	if(cantidad >= 0){
-		switch(producto){
-		case 1: vendido = productos[0] * cantidad;
-			break;
-		case 2: vendido = productos[1] * cantidad;
-			break;
-		case 3: vendido = productos[2] * cantidad;
-			break;
-		case 4: vendido = productos[3] * cantidad;
-			break;
-		case 5: vendido = productos[4] * cantidad;
-			break;
-		default:
-		alert("Saliste");
-		}	
-	}
-	else{
-		alert("Saliste");
-	}
-	return vendido;
+void proceso(float productos[], int cantidad, int producto, float* vendido){
+    //    QA: la funcion funciona correctamente,
+    // pero lo vendido tambien deberia ser una columan de la matriz,
+    // o un vector aparte, ya que asi no se puede imprimir las ventas individuales
+    if(cantidad >= 0){
+        switch(producto){
+            case 1: *vendido = *vendido + productos[0] * cantidad;
+                break;
+            case 2: *vendido = *vendido + productos[1] * cantidad;
+                break;
+            case 3: *vendido = *vendido + productos[2] * cantidad;
+                break;
+            case 4: *vendido = *vendido + productos[3] * cantidad;
+                break;
+            case 5: *vendido = *vendido + productos[4] * cantidad;
+                break;
+            default:
+                printf("\nSaliste");
+        }
+    }
+    else{
+        printf("\nSaliste");
+    }
 }
 
-function salida(vendido){
-	alert("Total vendido: " + vendido);
+void salida(float vendido){
+    //    QA: funciona correctamente
+    printf("\nTotal vendido: %f\n", vendido);
 }
+
+

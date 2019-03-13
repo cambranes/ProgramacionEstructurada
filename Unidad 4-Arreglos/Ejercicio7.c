@@ -130,15 +130,29 @@ void imprimirVector(int vec[], int tam){
 	printf("}");
 }
 
+/* QA                                    
+Por: Eyder Antonio Concha Moreno
 
+Entradas:
+Salidas: {2, 7, 17, 39, }
+Ordenar vector: vector son ordenados apropiadamente - CORRECTO
+Calcular media: 16.25 - CORRECTO
+Calcular mediana: [(7+17)/2] = 12 - CORRECTO
+Calcular Moda: No hay moda - CORRECTO
 
+Entradas: 10
+Salidas: {3, 5, 12, 23, 27, 35, 41, 47, 50, }
+Ordenar vector: vector son ordenados apropiadamente - CORRECTO
+Calcular media: 27 - CORRECTO
+Calcular mediana: 27 - CORRECTO
+Calcular Moda: 27 - CORRECTO
 
+Entradas: 7
+Salidas: {0, 16, 35, 39, 44, 45, 45, }
+Ordenar vector: vector son ordenados apropiadamente - CORRECTO
+Calcular Media: 32 - CORRECTAS
+Calcular Mediana: 39 - CORRECTAS
+Calcular Moda: 45 - CORRECTO
 
-
-
-
-
-
-
-
-
+Buen codigo 10/10
+*/

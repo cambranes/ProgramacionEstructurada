@@ -28,3 +28,12 @@ function calcularPromedios(calificaciones, promedios){
     numAlumno++;
   }
 }
+
+/**
+ * QA: Luis Gerardo Leon Ortega
+ *
+ * NO FUNCIONA
+ *
+ * return: Process finished with exit code 0
+ */
+

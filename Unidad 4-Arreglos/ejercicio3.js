@@ -18,3 +18,8 @@ for (int i = 0; i < m; i++) {
     }
   }
 }
+
+/* QA                                    
+Por: Eyder Antonio Concha Moreno
+No 'Compila' debido que bucles for están definidos con int
+*/
