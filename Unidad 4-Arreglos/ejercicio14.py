@@ -59,3 +59,13 @@ cadena = str(input("Que palabra deseas buscar? "))
 contadorRepeticiones = 	cadenaRepite(texto,cadena)
 
 print("El numero de veces que {} se repite en el parrafo es: {}".format(cadena,contadorRepeticiones))
+
+#QA: Amaury Morales Cerecedo
+#
+#(Funcion cadenaRepite)
+#Entradas: paco paco paco de mi paco☺. paco. | esternocleidomastoideo☺. i.
+#Salidas: Ninguna, pero se evalua la condicion en la siguiente funcion.
+#
+#(Funcion repite)
+#Entradas: Las entradas de la funcion anterior
+#Salidas: 4, 2.
