@@ -35,7 +35,7 @@ void entradas(int* n, float* media){
     //Get the values
     for (int i = 0; i < SIZE; ++i) {
         scanf(" %i", &n[i]);
-        *media += n[i];
+        *media += n[i]; 
     }
 }
 
