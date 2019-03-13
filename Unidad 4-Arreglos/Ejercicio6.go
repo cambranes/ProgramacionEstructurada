@@ -90,3 +90,55 @@ func main() {
 		}
 	}
 }
+
+/*
+	QA Reviso: Carlos Chan
+	void lectura()
+	Entradas: 3
+	Salidas: Ninguna
+	Es correcto
+	
+	void asignacionAleatoriaMatriz()
+	Entradas: Una matriz 3x3 vacia
+	Salidas: Ninguna pero la matriz se encuentra en este estado:
+		482	138	930
+		857	798	385
+		676	802	977
+	Llena la matriz con valores aleatorios correctamente.
+	
+	void impresionMatriz()
+	Entradas: Una matriz 3x3
+	Salidas: 
+		482	138	930
+		857	798	385
+		676	802	977
+		
+	void sumaMatrizCuadrada()
+	Entradas: 
+		482	138	930
+		857	798	385
+		676	802	977
+	Salidas: 2182
+	Suma correctamente los numeros que no esten en las diagonales.
+	
+	void asignacionAleatoriaMatriz()
+	Entradas: Una matriz 4x2 vacia
+	Salidas: Ninguna pero la matriz se encuentra en este estado:
+		1	2
+		3	4
+		5	6
+		7	8
+		
+	void invertirColumFilMatriz()
+	Entradas:
+		1	2
+		3	4
+		5	6
+		7	8
+	Salidas:
+		1	3	5	7
+		2	4	6	8
+	Crea la matriz transpuesta correctamente.
+	
+	El programa es correcto
+*/
