@@ -24,6 +24,7 @@ function leer_n(){
   do{
     N = prompt("Ingresa un numero impar menor o igual a 11");
   }while((n%2)!=0 && n <= 11);
+	//QA:desde aqui no procede
   return n;
 }
 
@@ -80,3 +81,4 @@ function checkIfMagic(arreglo, n){
 	}
 	return flag;
 }
+//QA: Jorge Chí, desde la primera lectura se crashea
