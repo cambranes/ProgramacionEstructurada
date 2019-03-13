@@ -61,3 +61,23 @@ void salidas(int*, int*);
          }
      }
  }
+/*
+QA
+Realizo: Guillermo Canto
+Funcion "entradas".
+	Entradas: [-50, 50]
+	Salidas: Ninguna
+	No deberia leer entradas negativas.
+
+Funcion "proceso".
+	Entradas: Ninguna.
+	Salidas: Ninguna.
+	Realiza el proceso correctamente respecto a las entradas dadas.
+
+Funcion "salidas".
+	Entradas:Ninguna.
+	Salidas:Los promedios pedidos con respecto a las entradas.
+
+El unico detalle es corregir las entradas que se aceptan.
+
+*/
