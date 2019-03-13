@@ -57,9 +57,9 @@ int main()
 void lectura(long* x){
 	//se leen los datos del tamaño de los vectores
 	while(1){
-	printf("Dame un numero natural como maximo 11: \n");
+	printf("Dame un numero natural como maximo 11 e impar: \n");
     scanf("%d", x);
-    if ((*x<=11)&&(*x>0))
+    if ((*x<=11)&&(*x>0)&&((*x % 2)!=0))
     {
     	break;
     }
