@@ -2,10 +2,8 @@
 Autor: AMAURY MORALES CERECEDO
 Entrada: 2 cadenas de numeros que no tengan mas de 256 digitos.
 Salida: Un vector de caracteres numericos (que es la suma de las dos cadenas que dio el usuario anteriormente)
-
 Procedimiento General: Se introducen las dos cadenas, y se pasan a numero para sumarlas. Despues este numero se pasa a cadena para
 finalmente pasarlo a caracter y ponerlo en un arreglo de caracteres.
-
 Notas: Es imposible hacer lo que hace este codigo con Chars. Hay muchas excepciones y errores que C++ simplemente no permite.
 Tuve que usar una libreria de strings para transformar tipos y conseguir otros datos especiales.
 Tambien cabe destacar que aunque puse un limite para la cadena, la libreria para pasar estas cadenas a otro tipo de valor tienen limites
@@ -22,47 +20,66 @@ El programa debe calcular la suma de los dos vectores y almacenar elresultado en
 //Funcion que lee ambas cadenas de numeros.
 int leerCadena()
 {
- std::string cadena = "";
- std::cin>>cadena;
-
- if (cadena.size() > 256) //Esto esta aqui por la instruccion del ejercicio, aunque nunca pase en este programa.
- {
-  std::cout<<"La cadena tiene mas de 256 digitos. Se anulo y se puso un 0 como cadena\n";
- }
- else
- {
-  return std::stoi(cadena);
- }
-
- return 0;
+	std::string cadena = "";
+	std::cin>>cadena;
+	
+	if (cadena.size() > 256) //Esto esta aqui por la instruccion del ejercicio, aunque nunca pase en este programa.
+	{
+		std::cout<<"La cadena tiene mas de 256 digitos. Se anulo y se puso un 0 como cadena\n";
+	}
+	else
+	{
+		return std::stoi(cadena);
+	}
+	
+	return 0;
 }
 
 int main()
 {
- int cadena1, cadena2;
- int sumaDeCadenas;
- std::string cadenaDeSumas;
- //char numeroFinal;
- std::cout<< "Por favor, introduce la cadena 1: ";
- cadena1 = leerCadena();
- std::cout<< "Por favor, introduce la cadena 2: ";
- cadena2 = leerCadena();
-
- sumaDeCadenas = cadena1+cadena2;
-
- char vectorFinal[std::to_string(sumaDeCadenas).length()];
-
- cadenaDeSumas = std::to_string(sumaDeCadenas);
- cadenaDeSumas.copy(vectorFinal, std::to_string(sumaDeCadenas).length());
-
- std::cout<<"Vector de caracteres numericos: ";
- for (int i = 0; i < std::to_string(sumaDeCadenas).length(); i++)
- {
-  std::cout<<vectorFinal[i];
- }
-
- cadena2 = leerCadena();
- std::cin.get(); //Por alguna razon, Aqui ya no funciona este truco para que no se cierre la consola, por lo que añadi la linea de arriba.
-
- return 0;
+	int cadena1, cadena2;
+	int sumaDeCadenas;
+	std::string cadenaDeSumas;
+	//char numeroFinal;
+	std::cout<< "Por favor, introduce la cadena 1: ";
+	cadena1 = leerCadena();
+	std::cout<< "Por favor, introduce la cadena 2: ";
+	cadena2 = leerCadena();
+	
+	sumaDeCadenas = cadena1+cadena2;
+	
+	char vectorFinal[std::to_string(sumaDeCadenas).length()];
+	
+	cadenaDeSumas = std::to_string(sumaDeCadenas);
+	cadenaDeSumas.copy(vectorFinal, std::to_string(sumaDeCadenas).length());
+	
+	std::cout<<"Vector de caracteres numericos: ";
+	for (int i = 0; i < std::to_string(sumaDeCadenas).length(); i++)
+	{
+		std::cout<<vectorFinal[i];
+	}
+	
+	cadena2 = leerCadena();
+	std::cin.get(); //Por alguna razon, Aqui ya no funciona este truco para que no se cierre la consola, por lo que añadi la linea de arriba.
+	
+	return 0;
 }
+
+/*
+QA: Jose Mendez Verdejo
+
+Entradas: (123, 456) , (1 , -1)
+Salidas 	579 		, 0
+
+Funcion leerCadena(): Funciona correctamente en la lectura de las cadenas
+						 detecta si la cadena es mayor a 256 digitos, pero
+						 contiene un return innecesario, se le puede asignar
+						 a una variable y asi solo tener un return.
+
+
+Comentarios: El programa cumple con lo que debe, aunque se puede modularizar
+mas, en la cuestion de calcular la suma,y agisnarla a otro vector.
+
+En general bien hecho.  :)
+
+*/
