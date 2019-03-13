@@ -1,9 +1,9 @@
 /*
 Autor: Guillermo Canto
-Entradas: Un  número  natural  impar   menor  o  igual  a  11
+Entradas: Un  nÃºmero  natural  impar   menor  o  igual  a  11
 Salidas: Imprime si se trata de un cuadrado magico o no el arreglo que se produce.
 Procedimiento general: Lee n conforme a las especificaciones, llena un arreglo de
-dimension n*n con los numeros del 1 al n*n, cambia el orden de estos de forma 
+dimension n*n con los numeros del 1 al n*n, cambia el orden de estos de forma
 aleatoria, verifica si se trata de un cuadrado magico o no.
 */
 #include <stdio.h>
@@ -11,7 +11,7 @@ aleatoria, verifica si se trata de un cuadrado magico o no.
 #include<time.h>
 #define N 100
 
-int leer_n(); 
+int leer_n();
 void llenarArreglo(int arreglo[][N], int n);
 void barajarArreglo(int arreglo[][N], int n);
 int checkIfMagic(int arreglo[][N], int n);
@@ -23,13 +23,13 @@ int main(int argc, char *argv[]) {
 	llenarArreglo(arreglo, n);
 	barajarArreglo(arreglo, n);
 	flag = checkIfMagic(arreglo, n);
-	
+
 	if (flag == 1){
 		printf("Se trata de un cuadrado magico");
 	}else{
 		printf("No es un cuadrado magico");
 	}
-	
+
 	return 0;
 }
 int leer_n(){
@@ -37,6 +37,7 @@ int leer_n(){
 	do{
 		scanf("%d", &n);
 	}while (n%2!=0 && n<=11);
+	//QA:No funciona desde aqui
 	return n;
 }
 void llenarArreglo(int arreglo[][N], int n){
@@ -91,3 +92,5 @@ int checkIfMagic(int arreglo[][N], int n){
 	}
 	return flag;
 }
+//QA:Jorge Chi
+//Desde la lectura crashea el programa
