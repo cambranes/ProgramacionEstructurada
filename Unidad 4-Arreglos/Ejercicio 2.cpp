@@ -52,3 +52,36 @@ void matrizS(){
         }
     }
 }
+
+/*
+QA: Jose Mendez Verdejo
+
+Entradas: ninguna
+Salidas:
+S[1][1] = 33
+S[1][2] = 30
+S[1][3] = 47
+S[1][4] = 52
+S[2][1] = 63
+S[2][2] = 48
+S[2][3] = 68
+S[2][4] = 47
+S[3][1] = 59
+S[3][2] = 45
+S[3][3] = 64
+S[3][4] = 83
+
+Salidas correctas, cumplen con la suma de los dos vectores( A y B).
+
+Funcion valoresA(): añade correctamente los valores del vectorA
+
+Funcion valoresB(): añade correctamente los valores del vectorB
+
+funcion matrizS(): Realiza la suma de los dos vectores correctamente.
+
+Comentarios: Estaria bien poder definir uno el tamaño de las natrices,
+pero en general cumple con el proposito de la suma de las matrices.
+
+Muy bien hecho  :)
+
+*/

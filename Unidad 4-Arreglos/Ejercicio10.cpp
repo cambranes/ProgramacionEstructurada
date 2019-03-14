@@ -2,10 +2,10 @@
 Autor: Alejandro Torre Reyes
 Entradas: un numero n natural impar menor o igual a 11
 Salidas: una matriz de n*n y verifica si es un cuadrado magico.
-Proceso: Escribir una programa que lea un número natural impar n menor o igual a 11. El
-programa debe llenar la matriz con los números del 1 al n*n seleccionando las posiciones
-en forma aleatoria. El programa debe verificar después del llenado si la matriz es un
-cuadrado mágico. Un cuadrado mágico cumple con la condición de que la sema de los
+Proceso: Escribir una programa que lea un nÃºmero natural impar n menor o igual a 11. El
+programa debe llenar la matriz con los nÃºmeros del 1 al n*n seleccionando las posiciones
+en forma aleatoria. El programa debe verificar despuÃ©s del llenado si la matriz es un
+cuadrado mÃ¡gico. Un cuadrado mÃ¡gico cumple con la condiciÃ³n de que la sema de los
 valores almacenados en cada fila y columna coincide.
 */
 
@@ -68,3 +68,16 @@ int main()
     cuadrado_magico(n);
     return 0;
 }
+/*
+QA: Hector A. V. Cosgalla
+QA por separado:
+Entrada:Se ingreso un numero par (4) y un numero impar (5) ambos los leyo sin problema.
+cuadrado_magico: Genera una matriz de n*n numeros con numeros desde 1 hasta n*n, numeros probados:3, 4, 10
+QA Completo:
+Entrada: La funcion lee los numeros correctamente (3,3,4)
+cuadrado_magico:Genera un cuadro de n*n correctamente y lo llena con numeros de 1 hasta n*n
+validar_cuadrado: Valida los numeros correctamente, en los tres casos no produjo un cuadrado magico
+Comentario general: el problema indica que deben ser numeros naturales impares menores o iguales a 11, en otras
+palabras 1,3,5,7,8,9 y 11 si se escribe un numero diferente no deberia funcionar y aunque ingrese un numero par 
+sigue trabajando, corrijan eso.
+*/
