@@ -6,6 +6,9 @@
 package main
 import "fmt"
 
+/*
+  Aloja de manera correcta los datos ingresados por el usuario a la matriz
+*/
 func leerMatriz(matriz *[15][12] int){
 	var value int
 	for i := 0; i < 15; i++ {
@@ -16,7 +19,9 @@ func leerMatriz(matriz *[15][12] int){
 		}
 	}
 }
-
+/*
+  Determina de manera incorrecta el numero menor ya que si el usuario solo ingresa numeros mayores a 32767 no funciona
+*/
 func menor(matriz [15][12] int ) int {
 // 32767 es el numero mas grande que se le puede asignar a un Int,
 // por lo que se usa como bandera para un numero menor
@@ -30,7 +35,9 @@ func menor(matriz [15][12] int ) int {
 	}
 	return min
 }
-
+/*
+  Suma de manera correcta las primeras 5 filas
+*/
 func suma1(matriz [15][12] int) int {
 	var sum1=0 
 	for i := 0; i < 5; i++ {
@@ -40,7 +47,9 @@ func suma1(matriz [15][12] int) int {
 	}
 	return sum1
 }
-
+/*
+  Suma de manera correcta las ultimas 5 columnas
+*/
 func suma2(matriz [15][12] int) int {
 	var sum2=0 
 	for i := 0; i < 15; i++ {
@@ -69,3 +78,8 @@ func main() {
 	 sum2=suma2(matriz)
 	 salidas(min, sum1, sum2)
 }
+
+/*
+  QA: Raul Rivadeneyra
+  El codigo funciona bien a excepcion de la funcion menor(), pero se arregla facilmente cambiando el tamaño maximo del menor
+*/
