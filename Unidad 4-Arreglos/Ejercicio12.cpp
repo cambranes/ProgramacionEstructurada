@@ -125,3 +125,62 @@ int main()
 
  return 0;
 }
+/*
+QA: Hector A. V. Cosgalla
+Entradas: Ninguna
+Se ejecuto el programa 3 veces para comprobarlo, las salidas fueron las siguientes:
+Primera ejecucion:
+Matriz:
+[0,0] = 231
+[0,1] = 795
+[0,2] = 599
+
+[1,0] = 976
+[1,1] = 650
+[1,2] = 788
+
+[2,0] = 27
+[2,1] = 938
+[2,2] = 931
+
+===================
+La matriz tiene 5 punto(s) silla.
+Su funcionamiento es incorrecto, para empezar los puntos sillas no deben ser mayor a las filas
+y en este caso los puntos silla son mayor a las filas, tambien ninguno de los numeros de la matriz
+cumple con la condicion de que sean los menores de su fila y los mayores de su columna.
+Segunda ejecucion:
+Matriz:
+[0,0] = 714
+[0,1] = 695
+[0,2] = 288
+
+[1,0] = 402
+[1,1] = 879
+[1,2] = 120
+
+[2,0] = 918
+[2,1] = 686
+[2,2] = 814
+
+===================
+La matriz tiene 5 punto(s) silla.
+Lo mismo que en la anterior.
+Tercera ejecucion:
+Matriz:
+[0,0] = 80
+[0,1] = 101
+[0,2] = 228
+
+[1,0] = 749
+[1,1] = 232
+[1,2] = 929
+
+[2,0] = 65
+[2,1] = 511
+[2,2] = 336
+
+===================
+La matriz tiene 6 punto(s) silla.
+En este caso por algun motivo aumento en 1 la cantidad de puntos silla, el comentario
+sigue siendo el mismo.
+*/
