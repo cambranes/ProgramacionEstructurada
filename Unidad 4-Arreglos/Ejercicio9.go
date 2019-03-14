@@ -9,7 +9,9 @@ import (
 	"math/rand"
 	"time"
 )
-
+/*
+  Ingresa numeros aleatoreos del 0 al 8 no del 1 al 9
+*/
 func llenarMatriz(matriz *[9][9] int) {
 // Usamos time, por que de no utilizarlo, la secuencia Rand es siempre la misma,
 // con time la conviertes en aleatoria ya que toma el tiempo como parametro
@@ -23,7 +25,9 @@ func llenarMatriz(matriz *[9][9] int) {
 		}
 	}
 }
-
+/*
+  La funcion checa de manera correcta si no se repiten de manera horizontal, vertical o por cuadrante
+*/
 func verificarSudoku(matriz [9][9] int ) int {
 	 var flag=0
 	 //    Verificamos que las columnas sean diferentes
@@ -73,3 +77,7 @@ func main() {
 		fmt.Printf("El sudoku es invalido \n")
 	}
 }
+/*
+  QA: Raul Rivadeneyra
+  El codigo funciona correctamente a excepcion de que se asigna el numero 0 y no el 9
+*/
