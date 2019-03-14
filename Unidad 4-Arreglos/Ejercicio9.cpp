@@ -12,6 +12,7 @@ se toma la matriz como un sudoku.
 
 */
 
+
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
@@ -31,35 +32,56 @@ void llenar_matriz(int arr[tam][tam]){
     }
     cout << endl;
 }
+void esSudoku(bool verificado){ //Funcion para verificar si es true entonces no es sudoku
+    if(verificado){
+        cout << "No es sudoku";
+    } else{
+        cout << "Si es sudoku";
+    }
+}
 void sudoku(){ //Funcion para verificar si la matriz creada es un sudoku
     int matriz[tam][tam];
-    int sum[tam];
-    int i,j,suma,val;
+    int i,j,k,aux; //variable aux es un contador para ver si se repite
+    bool check = false; //variable para verificar. Si check es falso si es un sudoku
     llenar_matriz(matriz); //llamar a la funcion anterior
 
-    for(i=0;i<tam;i++){ //ciclo para sumar las filas
-            suma = 0;
+    for(i=0;i<tam;i++){ //Analizar por filas
         for(j=0;j<tam;j++){
-            suma = suma + matriz[i][j];
+            aux = 0;
+          for(k=0;k<tam;k++){
+            if(j == matriz[i][k]){
+                aux = aux + 1;
+            }
         }
-        sum[i] = suma;
-    }
-    for(i=0;i<tam;i++){ //validar si todas sumaron 45
-        if(sum[i]==45){
-            val++;
+        if(aux>1){
+            check = true; //Si se repite más de una vez, no es sudoku, por lo tanto check es true
         }
     }
-    if(val == tam){ //
-        cout << "Es un SUDOKU";
-    }else{
-        cout << "No es un SUDOKU";
+
     }
+
+     for(i=0;i<tam;i++){ //Analizar por columnas
+        for(j=0;j<tam;j++){
+            aux = 0;
+          for(k=0;k<tam;k++){
+            if(j == matriz[k][i]){
+                aux = aux + 1;
+            }
+        }
+        if(aux>1){
+            check = true;
+        }
+    }
+
+    }
+    esSudoku(check); //llamar a la funcion es Sudoku
 }
 int main()
 {
     sudoku();
     return 0;
 }
+
 /*
 QA: Hector A. V. Cosgalla
 Las primeras 4 pruebas se hicieron sin entradas los resultados fueron los siguientes:
