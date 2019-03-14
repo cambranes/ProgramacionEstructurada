@@ -19,7 +19,10 @@ int entrada(){ //Funcion para leer n
     int x;
     cout << "Ingrese un numero impar menor o igual a 11\n";
     cin >> x;
+    if(x==1 || x==3 || x==5 || x==7 || x==9 || x==11){
     return x;
+    } else {
+        cout << "Entrada incorrecta";
 }
 int validar_cuadrado(int num, int fila, int col){ //Funcion para validar la suma de las filas y columnas
     int val;
