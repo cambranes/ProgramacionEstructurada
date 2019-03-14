@@ -17,7 +17,6 @@ void salida(float);
 int main(){
     //QA: Entradas probadas:1,1  , 2,1,  4,1   3,5  5,2  3,1
     //    Salidas: 2.98000, 7.48000, 11.969999, 61.869995, 75.609993, 85.589996
-    //    La funcion deberia imprimir las ventas totales por cada producto, no la suma total, aparte de que en algun punto causa errores con los flotantes (a partir de la tercera lectura en mi caso)
     float productos[N] = {2.98, 4.5, 9.98, 4.49, 6.87};
     int cantidad = 0, producto = 1;
     float totalVendido = 0;
@@ -42,7 +41,6 @@ void entrada(int* cantidad, int* producto){
 }
 
 void proceso(float productos[], int cantidad, int producto, float* vendido){
-    //    QA: la funcion funciona correctamente, pero lo vendido tambien deberia ser una columan de la matriz, o un vector aparte, ya que asi no se puede imprimir las ventas individuales
     if(cantidad >= 0){
         switch(producto){
             case 1: *vendido = *vendido + productos[0] * cantidad;
