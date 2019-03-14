@@ -32,7 +32,9 @@ int main()
 
 	return 0;
 }
-
+/*
+  Ingresa valores aleatorios de manera correcta a la matriz
+*/
 void llenarMatriz(int matriz[SIZE][SIZE]){
     // Usamos time, por que de no utilizarlo, la secuencia Rand es siempre la misma, con time la conviertes en aleatoria
     //ya que toma el tiempo como parametro
@@ -45,6 +47,10 @@ void llenarMatriz(int matriz[SIZE][SIZE]){
     }
 }
 
+/*
+  Checa cada numero de la matriz y usando modulo 2 verifica si es o no impar de manera correcta
+*/
+
 int cantidadImpares(int matriz[SIZE][SIZE]){
     int numeroImpares = 0;
     for(int i = 0; i < SIZE; i++){
@@ -55,7 +61,9 @@ int cantidadImpares(int matriz[SIZE][SIZE]){
     }
     return numeroImpares;
 }
-
+/*
+  Imprime todos los numeros pares correctamente
+*/
 void imprimirPares(int matriz[SIZE][SIZE]){
     for(int i = 0; i < SIZE; i++){
         for(int j = 0; j < SIZE; j++){
@@ -64,3 +72,8 @@ void imprimirPares(int matriz[SIZE][SIZE]){
         }
     }
 }
+
+/*
+QA: Raul Rivadeneyra
+El codigo funciona de maravilla, es perfecto en todo su esplendor. Porfis no uses recursion
+*/
