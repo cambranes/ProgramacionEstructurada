@@ -3,8 +3,8 @@
 Autor: Alejandro Torre Reyes
 Entradas: un numero n.
 Salida: la suma de los elementos de la matriz n*n que no pertenecen a la diagonal principal ni a la diagonal inversa.
-Proceso: Escribir un programa que lea una matriz cuadrada n x n llena con n�meros aleatorios del
-0 al 999. El programa debe calcular la suma de todos los n�meros de la matriz excepto los
+Proceso: Escribir un programa que lea una matriz cuadrada n x n llena con números aleatorios del
+0 al 999. El programa debe calcular la suma de todos los números de la matriz excepto los
 que se encuentran en la diagonal principal y la diagonal inversa.
 */
 
@@ -54,3 +54,10 @@ int main()
 
     return 0;
 }
+/*QA
+Autor:Daniel Eduardo Gutiérrez Delfín
+Entrada:[2],[3]
+Salida:[0],2[141]
+Compila
+Comentarios:Todo parece correcto. 
+*/
