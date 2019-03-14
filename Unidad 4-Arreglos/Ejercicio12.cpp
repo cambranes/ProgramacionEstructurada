@@ -63,14 +63,14 @@ void imprimirMatriz(int** matriz, int filas, int columnas)
 }
 
 //Funcion que determina si hay puntos silla
-int hayPuntoSilla(int** matriz, int filas, int columnas)
+int hayPuntoSilla(int** matriz, int filas, int columnas, int x, int y)
 {
  int noExiste = 1;
  for (int i = 0; i < filas && noExiste; i++)
  {
   for (int j = 0; j < columnas && noExiste; j++)
   {
-   if (matriz[filas][columnas] > matriz[filas][j] || matriz[filas][columnas] < matriz[i][columnas])
+   if (matriz[x][y] < matriz[x][j] || matriz[x][y] > matriz[i][y])
    {
     noExiste = 0;
    }
@@ -87,9 +87,9 @@ int calcularPuntosSilla(int** matriz, int filas, int columnas)
  {
   for (int j = 0; j < columnas; j++)
   {
-   if (hayPuntoSilla(matriz, i, j) == 1)
+   if (hayPuntoSilla(matriz, filas, columnas, i, j) == 1)
    {
-    //printf("Hay un punto silla en: %d-%d\n", i, j);    //AQUI SE PUEDE DES-COMENTAR PARA VER TODOS LOS PUNTOS SILLA.
+    printf("Hay un punto silla en: %d,%d\n", i, j);    //AQUI SE PUEDE DES-COMENTAR PARA VER TODOS LOS PUNTOS SILLA.
     Existen++;
    }
   }
@@ -125,6 +125,9 @@ int main()
 
  return 0;
 }
+
+//CORRECCIONES DE QA HECHAS  -Amaury.
+
 /*
 QA: Hector A. V. Cosgalla
 Entradas: Ninguna
