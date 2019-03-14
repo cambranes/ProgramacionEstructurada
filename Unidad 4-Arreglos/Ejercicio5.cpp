@@ -4,11 +4,11 @@ Entradas: la cantidad de productos vendidos de un cierto tipo
 Salidas: El desglose de los tipos de productos y su total vendido
 Proceso: Una empresa de ventas por correo vende cinco diferentes productos, cuyos precios al menudeo
 son: producto1 = $2,98, producto2 = $4,50, producto 3 = $9.98, producto 4 = $4.49 y producto
-5 = $6.87. Escriba el programa que lea una serie de pares de números de la siguiente forma:
-d. Número de producto
-e. Cantidad vendida por día
-Su programa debe calcular y desplegar el valor total al menudeo de los productos vendidos al día.
-Utilice una estructura de selección múltiple (switch) para tal propósito.
+5 = $6.87. Escriba el programa que lea una serie de pares de nÃºmeros de la siguiente forma:
+d. NÃºmero de producto
+e. Cantidad vendida por dÃ­a
+Su programa debe calcular y desplegar el valor total al menudeo de los productos vendidos al dÃ­a.
+Utilice una estructura de selecciÃ³n mÃºltiple (switch) para tal propÃ³sito.
 */
 
 #include <iostream>
@@ -53,3 +53,9 @@ int main()
 
     return 0;
 }
+/*QA
+Autor:Daniel Eduardo GutiÃ©rrez DelfÃ­n
+Compila
+Entradas: 300,300,300,300,300
+Salidas: 894,1350,1.2018e+262,1347,2061
+Comentarios:La Tercera salida falla con el calculo del resultado, del resto todo bien*/
