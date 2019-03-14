@@ -57,5 +57,10 @@ print("matriz sumados")
 for i in range(0,m):
 	print(matrizS[i])	
 
-
+"""
+Autor QA:Jimmy Nathan Ojeda Arana
+Entradas: Numero N de filas y numero M de columnas
+Salidas: Una matriz S que es la suma de los elemetos de la misma posicion de los matrices anteriores
+Proceso: Hace el proceso y da las salidas correctamente 
+"""
 
