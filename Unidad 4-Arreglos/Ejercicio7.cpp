@@ -47,6 +47,7 @@ int moda(int y[]){ //Funcion para calcular la moda
 		}
 	}
 		for(i=0;i<MAX-1;i++){
+			frecuencia = 0;
 			if(y[i]==y[i+1]){
 				if(++frecuencia>frecuencia_moda){
 					frecuencia_moda=frecuencia;
@@ -61,8 +62,8 @@ int moda(int y[]){ //Funcion para calcular la moda
 }
 int mediana(int z[]){ //Funcion para calcular la mediana
 	int mitad;
-	mitad = (((MAX/2) + ((MAX/2)+ 1))/2); //Formula de la mediana
-	return z[mitad];
+	mitad = (((MAX/2) + ((MAX/2)+ 1))/2); //Formula de la mediana, como MAX es par
+	return z[mitad-1];
 }
 int main()
 {
@@ -110,3 +111,4 @@ del vector no estan entre 0 y 50.
 Falta corregir, pero vamos, con el tiempo se mejora, ;)
 
 */
+//Con la instrucción del problema yo entendí que el vector podía ser de tamaño n pero no necesariamente definido por el usuario
