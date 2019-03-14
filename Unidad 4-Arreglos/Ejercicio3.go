@@ -27,7 +27,9 @@ func main() {
 	// Determinamos la cantidad de impares
 	fmt.Printf("\n la cantidad de impares es de: %d", cantidadImpares(matriz))
 }
-
+/*
+  Ingresa valores aleatorios de manera correcta a la matriz
+*/
 func llenarMatriz(matriz *[50][50]int) {
 	// Usamos time, por que de no utilizarlo, la secuencia Rand es siempre la misma, con time la conviertes en aleatoria
 	//ya que toma el tiempo como parametro
@@ -37,6 +39,9 @@ func llenarMatriz(matriz *[50][50]int) {
 		}
 	}
 }
+/*
+  Checa cada numero de la matriz y usando modulo 2 verifica si es o no impar de manera correcta
+*/
 
 func cantidadImpares(matriz [50][50]int) int {
 	numeroImpares := 0
@@ -50,7 +55,9 @@ func cantidadImpares(matriz [50][50]int) int {
 	}
 	return numeroImpares
 }
-
+/*
+  Imprime todos los numeros pares correctamente
+*/
 func imprimirPares(matriz [50][50]int) {
 	for i := 0; i < 50; i++ {
 		for j := 0; j < 50; j++ {
@@ -61,3 +68,7 @@ func imprimirPares(matriz [50][50]int) {
 		}
 	}
 }
+/*
+  QA: Raul Rivadeneyra
+  El codigo funciona bien
+*/
