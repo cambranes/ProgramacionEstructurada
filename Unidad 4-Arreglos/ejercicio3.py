@@ -66,3 +66,10 @@ for i in range(0,50):
 print("")
 
 print("El numero de impares es:",impares)	
+
+"""
+Autor QA:Jimmy Nathan Ojeda Arana
+Entradas: Se generan 2,500 numero al azar del 1 al 100
+Salidas: Se imprimen los numeros pares encontrados en la matríz generada y se señala la cantidad de numeros impares en dicha matríz
+Proceso: Hace el proceso y da las salidas correctamente 
+"""

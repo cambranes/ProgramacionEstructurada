@@ -57,3 +57,10 @@ print("Vector ",array)
 print("media: ",media)
 print("varianza: ",varianza)
 print("desviacion Estandar: ",desviacionEstandar)
+
+"""
+Autor QA:Jimmy Nathan Ojeda Arana
+Entradas: El tamaño N del vector y se generan automáticamente N elementos en él
+Salidas: El valor del promedio, la varianza y la desviación estanadar
+Proceso: Hace el proceso y da las salidas correctamente 
+"""

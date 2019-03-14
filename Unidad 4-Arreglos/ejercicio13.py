@@ -58,3 +58,14 @@ suma = 	suma(num1,num2)
 sumaTotal = str(suma)	
 
 print("la suma de {} + {} es: {}".format(num1,num2,sumaTotal))
+
+
+#QA: Amaury Morales Cerecedo
+#
+#(Funcion factor1 y factor2)
+#Entradas: 123456789, 987654321. 123, -123
+#Salidas: Ambas cadenas.
+#
+#(Funcion suma)
+#Entradas: Las cadenas 1 y cadenas 2 de la funcion anterior.
+#Salidas: 1111111110, y 0.

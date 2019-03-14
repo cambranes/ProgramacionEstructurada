@@ -43,3 +43,20 @@ def Salidas(sillas):
 matriz = Matriz()
 sillas = busquedaSillas(matriz)
 Salidas(sillas)
+
+"""
+QA: Amaury Morales Cerecedo
+--Nota: He probado el codigo original pero he modificado el tamaño de la matriz aparte para poder verificar los puntos silla.
+
+(Funcion Matriz)
+Entradas: Ninguna
+Salidas: Una matriz de 5 x 10 con numeros aleatorios del 0 al 999.
+
+(Funcion busquedaSillas)
+Entradas: Una matriz de 5 x 10. En especifico la que saca el programa en la funcion Matriz.
+Salidas: El numero de puntos silla de la matriz.
+
+(Funcion Salidas)
+Entrada: Nada
+Salida: Hay 2 puntos silla (lo cual es correcto).
+"""

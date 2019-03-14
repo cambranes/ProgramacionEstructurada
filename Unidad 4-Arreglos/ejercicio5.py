@@ -64,4 +64,8 @@ while not(continuar):
 #impresion de los datos
 for i in range(0,5):
 	print("producto {} su total es: {}".format(i+1,matrizProducto[i][1]))
-
+"""
+Entradas: 3,3
+Salida: producto 3 su total es 29.94
+Proceso: OK.Todo correcto
+"""

@@ -63,3 +63,10 @@ n = 0
 for i in range(0,10):
 	print("promedio del alumno {} es: {} 	promedio del alumno {} es: {}".format(i+1+n,promedios[i][0],i+2+n,promedios[i][1]))
 	n += 1
+	
+"""
+Autor QA:Jimmy Nathan Ojeda Arana
+Entradas: Se generan 100 calificaciones con rango de 1 al 10
+Salidas: Una matriz con el promedio de los 20 alumnos
+Proceso: Hace el proceso y da las salidas correctamente 
+"""
