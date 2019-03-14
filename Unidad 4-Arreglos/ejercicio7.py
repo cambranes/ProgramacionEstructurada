@@ -42,7 +42,19 @@ def getModa(trono):
 			moda.append(i) #añade en la ultima posicion el numero
 
 #----- Obtiene la mediana -----
-def getMediana(medianaPos1,medianaPos2):
+def getMediana(medianaPos1,medianaPos2,array,arrayOrdenada):
+
+#paso el vector original a otro, por que se debe de ordenar de forma ascendente
+	for i in range(0,n):
+		arrayOrdenada.append(array[i])
+
+#se ordena el array auxiliar para obtener la mediana
+	for j in range(0,n-1):
+		for i in range(0,n - 1):
+			if (arrayOrdenada[i] > arrayOrdenada[i+1]):
+				aux =  arrayOrdenada[i]
+				arrayOrdenada[i] =  arrayOrdenada[i+1]
+				arrayOrdenada[i+1] = aux
 
 	#determina si el tam del vector es par o impar
 	if(n % 2 == 1):
@@ -55,10 +67,10 @@ def getMediana(medianaPos1,medianaPos2):
 
 				
 	if(medianaPos2 == 0):
-		medianas = array[medianaPos1]
+		medianas = arrayOrdenada[medianaPos1]
 	else:
-		mediana[0] = array[medianaPos1]
-		mediana[1] = array[medianaPos2]	
+		mediana[0] = arrayOrdenada[medianaPos1]
+		mediana[1] = arrayOrdenada[medianaPos2]	
 		medianas = (mediana[0] + mediana[1]) / 2
 
 
@@ -76,26 +88,11 @@ medianaPos2 = 0
 mediana = [0,0]
 media = 0
 trono = -1
-
+arrayOrdenada = []
 
 media = generateArray(array,media)
-
 getModa(trono)
-
-medianas = getMediana(medianaPos1,medianaPos2)
-
-# if(n % 2 == 1):
-# 	medianaPos1 = int(n/2) 
-# else:
-# 	medianaPos1 = int(n/2) - 1
-# 	medianaPos2 = int(n/2) 
-
-			
-# if(medianaPos2 == 0):
-# 	mediana[0] = array[medianaPos1]
-# else:
-# 	mediana[0] = array[medianaPos1]
-# 	mediana[1] = array[medianaPos2]	
+medianas = getMediana(medianaPos1,medianaPos2,array,arrayOrdenada)
 
 print("Vector ",array)
 
@@ -104,6 +101,8 @@ print("la media es: ",media)
 print("La moda es/son: ",moda)	
 
 print("la mediana es:", medianas)
+
+print(arrayOrdenada)
 
 """
 Autor QA: Alejandro Torre Reyes
