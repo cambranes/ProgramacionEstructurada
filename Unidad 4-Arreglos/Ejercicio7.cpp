@@ -95,11 +95,7 @@ Funcion llenar_vector(): Rellena el vector correctamente, pero los valores
 funcion media(): Encuentra la media corrctamente a traves del vector.
 
 funcion moda(Inicio de los problemas):
-Reordena el vector de forma ascendente, el problema es que modifica al vector
-principal por ser un apuntador, lo recomendable seria crear un nuevo array donde
-ordendes los gdatos para encontrar la moda.
-
-De igual manera, al momentos de  contabilizar los datos, no reinicializa el contador
+Al momento de  contabilizar los datos, no reinicializa el contador
 "frecuencia", por lo cual hace que la moda no se calcule de manera correcta.
 
 funcion mediana(): funciona bien, pero no de la mejor manera, ya que si el
@@ -107,8 +103,6 @@ vector es de tamaño par, no calcula el promedio de las medianas, la formula
 de la mediana tiene el problema de que cuando se obtiene el valor, falta
 restarle 1, ya que los vectores tienen una pos menos que el tamaño definido.
 
-otro detalle, como anteriormente se modifico el vector, no calculara la mediana
-del vector original, si no del modificado.
 
 Comentarios: No deja definir el tamaño del vector, ademas que los elementos
 del vector no estan entre 0 y 50.
