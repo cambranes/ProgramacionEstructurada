@@ -31,11 +31,19 @@ int main()
 	impresionMatriz(sizeFilaMatriz, sizeColumnaMatriz, matrizSuma);
 	return 0;
 }
+
+/*
+  Lectura valida
+*/
 void lectura(long* x){
 	//se leen los datos del tamaño de los vectores
     printf("Dame las dimensiones de las matrices: \n");
     scanf("%d", x);
 }
+
+/*
+  Lectura valida
+*/
 void asignacionMatriz(long filaMatriz, long columnaMatriz, long matriz[][columnaMatriz]){
     for (int i = 0; i < filaMatriz; ++i)
 	{
@@ -47,6 +55,12 @@ void asignacionMatriz(long filaMatriz, long columnaMatriz, long matriz[][columna
 		}
 	}
 }
+/*
+  Le asigne los valores 1,1,1,1,1,1,1,1,1 y 1,1,1,1,1,1,1,1,1 a las matrices de 3x3 y me devolvio 2,2,2,2,2,2,2,2,2.
+  Le asigne los valores de 1,2 y 1,3 a las matrices de 1x2 y me devolvio 2,5
+  Le asigne los valores 2,4,4,2 y 1,2,1,2 a las matrices de 2x2 y me devolvio 3,6,5,4.
+  Por lo tanto es correcto
+*/
 void SumaMatriz(long filaMatriz, long columnaMatriz, long matriz[][columnaMatriz],
 	long matrizUno[][columnaMatriz], long matrizDos[][columnaMatriz]){
     for (int i = 0; i < filaMatriz; ++i)
@@ -58,6 +72,9 @@ void SumaMatriz(long filaMatriz, long columnaMatriz, long matriz[][columnaMatriz
 		}
 	}
 }
+/*
+  Imprime de manera correcta las matrices
+*/
 void impresionMatriz(long filaMatriz, long columnaMatriz, long matriz[][columnaMatriz]){
     printf("--------\n");
     for (int i = 0; i < filaMatriz; ++i)
@@ -76,3 +93,11 @@ void impresionMatriz(long filaMatriz, long columnaMatriz, long matriz[][columnaM
 	}
 	printf("--------\n");
 }
+
+/*
+QA: Raul Rivadeneyra
+La acoplacion entre las funciones es valida y funciona de manera correcta, y todas las funciones de manera individual puede realizar
+apropiadamente su funcionalidad.
+Codigo correcto 10/10 IGN
+*/
+
