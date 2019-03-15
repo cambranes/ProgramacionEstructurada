@@ -50,6 +50,8 @@ int busqueda(char cadena[], char parrafo[]){
     if (cadena[banderaEncontrado]==parrafo[i])
     {
       banderaEncontrado = banderaEncontrado + 1;
+    } else if (("\0"==parrafo[i])||("\32"==parrafo[i]))
+    {
     } else if (cadena[0]==parrafo[i])
     {
       banderaEncontrado = 1;
@@ -66,3 +68,4 @@ int busqueda(char cadena[], char parrafo[]){
   }
   return encontado;
 }
+//Correcion: Ahora soporta espacios como "\0"
