@@ -11,11 +11,12 @@ import "strings"
 func main() {
 	var inputCadena string
 	var inputParrafo string
-	inputParrafo = "lolololalalo"
-	fmt.Println("Dame la cadena: ")
+	fmt.Println("Dame la cadena:")
 	fmt.Scanf("%s", &inputCadena)
-	fmt.Println("Dame el parrafo: ")
+	fmt.Scanf("%s", &inputParrafo)
+	fmt.Println("Dame el parrafo:")
 	fmt.Scanf("%s", &inputParrafo)
 	fmt.Println("Veces que se repite: ")
 	fmt.Println(strings.Count(inputParrafo, inputCadena))
 }
+//Corregido:Ahora si lee las dos cadenas. No puede contar con los espacios porque en go no existen los chars
