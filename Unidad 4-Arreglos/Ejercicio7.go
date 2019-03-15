@@ -25,6 +25,8 @@ func main() {
 	println("Ingresa el largo del vector")
 	fmt.Scan(&vectorSize)
 	llenarVector(vectorSize, &vector)
+	sortea(vectorSize, &vector);
+	imprimirVector(vectorSize, vector)
 
 	// Determinamos moda, mediana y media
 	media = mediaDatos(vectorSize, vector)
@@ -33,7 +35,7 @@ func main() {
 
 	fmt.Printf("\n La media es de: %f \n", media)
 	if moda > 1 || vectorSize == 1 {
-		fmt.Printf("\n La moda es de: %i, y se repite %d veces\n", datoModa, moda)
+		fmt.Printf("\n La moda es de: %d, y se repite %d veces\n", datoModa, moda)
 	} else {
 		fmt.Printf("\n No hay moda (o es de uno)!\n")
 	}
@@ -46,7 +48,12 @@ func llenarVector(vectorSize int, vector *[1000]int) {
 	//ya que toma el tiempo como parametro
 	rand.Seed(time.Now().UnixNano())
 	for i := 0; i < vectorSize; i++ {
-		vector[i] = rand.Intn(50)
+		vector[i] = rand.Intn(50)		
+	}
+}
+// Imprimimos el vector de forma ordenada
+func imprimirVector(vectorSize int, vector [1000]int) {	
+	for i := 0; i < vectorSize; i++ {		
 		fmt.Printf("\nValor: %d es de: %d\n", i, vector[i])
 	}
 }
@@ -93,7 +100,7 @@ func mediana(vectorSize int, vector [1000]int) int {
 	return median
 }
 
-func sortea(vectorSize int, vector [1000]int) {
+func sortea(vectorSize int, vector *[1000]int) {
 	for i := 0; i < vectorSize; i++ {
 		// Ordenamiento de datos con algoritmo iterativo (burbuja)
 		for j := 0; j < vectorSize; j++ {
@@ -112,6 +119,7 @@ func swap(valor1 *int, valor2 *int) {
 }
 /*
 	QA Reviso: Carlos Chan
+	// SOLUCIONADO, AHORA EL VECTOR ES IMPRESO DE FORMA ORDENADA
 	
 	void llenarVector()
 	Entradas: 4

@@ -15,6 +15,7 @@ Procedimiento general:
 #define SIZE 1000
 
 void llenarVector(int vectorSize, int [vectorSize]);
+void imprimeVector(int vectorSize, int [vectorSize]);
 float mediaDatos(int vectorSize, int [vectorSize]);
 int modaDatos(int vectorSize, int [vectorSize], int*);
 int mediana(int vectorSize, int vector[vectorSize]);
@@ -29,6 +30,7 @@ int main()
     printf("Ingresa el largo del vector ");
     scanf("%d", &vectorSize);
     llenarVector(vectorSize, vector);
+    imprimeVector(vectorSize, vector);
 
     // Determinamos moda, mediana y media
     media = mediaDatos(vectorSize, vector);
@@ -50,7 +52,13 @@ void llenarVector(int vectorSize, int vector[vectorSize]){
     for(int i = 0; i < vectorSize; i++){
         // Generamos numero del 0 al 50
         vector[i] = rand() % 51;
-        printf("\nValor: %d es de: %d\n", i, vector[i]);
+    }
+}
+
+void imprimeVector(int vectorSize, int vector[vectorSize]){
+    sortea(vectorSize, vector);
+    for(int i = 0; i < vectorSize; i++){
+        printf("\nEl valor %d del vector es de %d\n", i,vector[i]);
     }
 }
 
@@ -115,6 +123,7 @@ void swap(int* valor1, int* valor2){
 
 /*
 	QA Reviso: Carlos Chan
+    // SOLUCIONADO, AHORA EL VECTOR ES IMPRESO DE FORMA ORDENADA
 	
 	void llenarVector()
 	Entradas: 4

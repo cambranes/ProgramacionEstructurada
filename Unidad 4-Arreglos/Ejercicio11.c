@@ -46,6 +46,7 @@ void imprimirPiramideInversa(int matrizSize, int matriz[][matrizSize]){
 }
 /*
 QA Realizo: Guillermo Canto
+// CORREJIDO
 	No compiló en Zinjai por error de declaracion implicita de la funcion llenarPiramide()
 	Funciona correctamente con el compilador de https://www.onlinegdb.com/online_c_compiler
 
