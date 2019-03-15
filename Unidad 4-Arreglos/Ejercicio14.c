@@ -5,47 +5,36 @@ de los párrafos de esta forma : cuando detecte que un caracter del párrafo es 
 son, y si lo son, entonces se añade una cuenta al contador
 Salidas: La cantidad de veces que está la cadena dentro del párrafo*/
 
-include <stdio.h>
-void tamParrafo(int*, int*);
-void tamCadena(int*, int*);
+#include <stdio.h>
+#define SIZE 300
 
+void lecturaDeStringUno(char parrafo[SIZE]);
+void lecturaDeStringDos(char cadena[SIZE]);
+void vaciarArreglos(char parrafo[SIZE], char cadena[SIZE]);
 
 
 int main(int argc, char *argv[]) {
 	//Entrada
-	int i = 0, j = 0, tamparrafo, tamparrafoscan, tamcadena, tamcadenascan, finparrafo, fincadena, contun = 0, cont = 0;
-	tamParrafo(&tamparrafo, &tamparrafoscan);
-	tamCadena(&tamcadena, &tamcadenascan);
-	char parrafo[tamparrafo];
-	char cadena[tamcadena];
+	int i = 0, j = 0,  fincadena, contun = 0, cont = 0;
+	char parrafo[SIZE];
+	char cadena[SIZE];
 	
 	//proceso
-	for(i = 0; i < tamparrafo; i++){
-		parrafo[i] = 0;
+	vaciarArreglos(parrafo, cadena);
+	lecturaDeStringUno(parrafo);
+	lecturaDeStringDos(cadena);
+
+	//Delimito el tamaño de la cadena
+	for (int i = 0; ((cadena[i] != '\0') && (cadena[i + 1] != '0')); i++)
+	{
+		fincadena++;
 	}
-	for(i = 0; i < tamcadena; i++){
-		cadena[i] = 0;
-	}
-	printf("Escriba su texto\n");
-	scanf(" %s", parrafo);
-	printf("Escriba su cadena\n");
-	scanf(" %s",cadena);
 	
-	for(i = 0; i < tamparrafo; i++){
-		if(((parrafo[i] == 0) && (parrafo[i + 1] == 0)) || (i < tamparrafo - 1)){
-			finparrafo = i + 1;
-			break;
-		}
-	}
-	for(i = 0; i < tamcadena; i++){
-		if(((cadena[i] == 0) && (cadena[i + 1] == 0)) || (i < tamcadena - 1)){
-			fincadena = i + 1;
-			break;
-		}
-	}
-	for(i = 0; i < finparrafo; i++){
+	//Calcula las veces que cabe la cadena dentro del parrafo
+	
+	for(i = 0; i < SIZE; i++){
 		if(cadena[0] == parrafo[i]){
-			for(j = 0; j < fincadena; j++){
+			for(j = 0; j < SIZE; j++){
 				if(cadena[j] == parrafo[i + j]){
 					contun = contun + 1;
 				}
@@ -53,32 +42,43 @@ int main(int argc, char *argv[]) {
 					cont = cont + 1;
 				}
 			}
-			contun = 0
-		};
+			contun = 0;
+		}
 	}
+	
 	//Salida
-	printf("La cantidad de veces que se repite ");
-	for(i = 0; i < fincadena; i++){
-		printf(" %s", cadena[i]);
-	}
-	printf("Es de: %d", cont);
+	printf("La cantidad de veces que se repite su cadena ");
+	printf("es de: %d", cont);
 	return 0;
 }
 
-void tamParrafo(int *tamparrafo, int *tamparrafoscan){
-	
-	printf("Escriba la cantidad de palabras que contiene su texto\n");
-	scanf("%d", tamparrafoscan);
-	*tamparrafo = *tamparrafoscan * 8;
+
+void lecturaDeStringUno(char parrafo[SIZE]){
+	printf("Escriba su texto\n");
+	fgets(parrafo, SIZE, stdin);
+	//for(int x = 0; x < SIZE; x++){
+		//printf("[%d](%d) = %c \n", x, parrafo[x], parrafo[x]);
+	//}
 }
 
-void tamCadena(int *tamcadena, int *tamcadenascan){
+
+void lecturaDeStringDos(char cadena[SIZE]){
+	printf("Escriba su cadena\n");
+	fgets(cadena, SIZE, stdin);
+	//for(int x = 0; x < SIZE; x++){
+		//printf("[%d](%d) = %c \n", x, cadena[x], cadena[x]);
+	//}
 	
-	printf("Escriba la cantidad de palabras que contiene su cadena de busqueda\n");
-	printf("(Tome en cuenta que cada palabra son 8 caracteres, en caso de que no busque una palabra)");
-	scanf ("%d", tamcadenascan);
-	*tamcadena = *tamcadenascan * 8;
 }
+
+
+void vaciarArreglos(char parrafo[SIZE], char cadena[SIZE]){
+	for(int i = 0; i < SIZE; i++){
+		parrafo[i] = 0;
+		cadena[i] = 0;
+	}
+}
+
 //QA: Jorge Chi. No compila porque le falta # al include
 // yen la linea 56 le falta ; Fuera de eso, elprograma no imprime nada al realizar la búsqueda
 //pruebe lo que pruebe
