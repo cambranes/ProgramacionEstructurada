@@ -15,44 +15,45 @@ Utilice una estructura de selección múltiple (switch) para tal propósito.
 
 using namespace std;
 
-void ventas_menudeo(double lista_precios[]){ //Funcion para calcular las ventas totales
+void ventas_menudeo(float lista_precios[]){ //Funcion para calcular las ventas totales
 
-    double venta[5];
+    float venta[5];
     int i, cantidad;
 
     for(i=1;i<=5;i++){
-    cout << "Ingrese la cantidad vendida del producto " << i <<"\n";
-    cin >> cantidad;
+        cout << "Ingrese la cantidad vendida del producto " << i <<"\n";
+        cin >> cantidad;
 
-    switch(i){
-    case 1:
-        venta[0] = ((venta[0]) + (lista_precios[0]*cantidad));
-        break;
-    case 2:
-        venta[1] = ((venta[1]) + (lista_precios[1]*cantidad));
-        break;
-    case 3:
-        venta[2] = ((venta[2]) + (lista_precios[2]*cantidad));
-        break;
-    case 4:
-        venta[3] = ((venta[3]) + (lista_precios[3]*cantidad));
-        break;
-    case 5:
-        venta[4] = ((venta[4]) + (lista_precios[4]*cantidad));
-        break;
+        switch(i){
+        case 1:
+            venta[0] = (lista_precios[0]*cantidad);
+            break;
+        case 2:
+            venta[1] = (lista_precios[1]*cantidad);
+            break;
+        case 3:
+            venta[2] = (lista_precios[2]*cantidad);
+            break;
+        case 4:
+            venta[3] = (lista_precios[3]*cantidad);
+            break;
+        case 5:
+            venta[4] = (lista_precios[4]*cantidad);
+            break;
+        }
     }
-}
     for(i=0;i<5;i++){
         cout << "Producto " << i+1 << "- Venta Total: " << venta[i] << "\n";
     }
 }
 int main()
 {
-    double precio[5] = {2.98,4.50,9.98,4.49,6.87};
+    float precio[5] = {2.98,4.50,9.98,4.49,6.87};
     ventas_menudeo(precio);
 
     return 0;
 }
+
 /*QA
 Autor:Daniel Eduardo Gutiérrez Delfín
 Compila
