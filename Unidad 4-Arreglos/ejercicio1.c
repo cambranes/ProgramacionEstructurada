@@ -9,6 +9,7 @@
 #define m 15
 #define n 12
 
+void process(int[m][n]);
 
 int main() {
   int matrix[m][n];
@@ -17,7 +18,14 @@ int main() {
   int add_2 = 0;
   for (int i = 0; i < m; i++) {
     for (int j = 0; j < n; j++) {
-      scanf("%d", &matrix[i][j]);
+      process(matrix);
+    }
+  }
+  return 0;
+}
+
+void process(int matrix[m][n]){
+  scanf("%d", &matrix[i][j]);
       if ((min == 0)||(matrix[i][j] < min)){
         min = matrix[i][j];
       }
@@ -27,9 +35,6 @@ int main() {
       if (j < 5){
         add_2 = add_2 + matrix[i][j];
       }
-    }
-  }
-  return 0;
 }
 
 //QA realizado por Rodrigo Hernandez
