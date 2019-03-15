@@ -66,3 +66,27 @@ func salidas(people *[101]int, prom *[20]int) {
 		}
 	}
 }
+/*
+QA
+Realizó: Guillermo Canto
+
+func entradas()
+
+	Entradas: [-50, 50]
+	
+	Salidas: El programa corre, pero se debe validar que las calificaciones se encuentran en el rango de [0,100]
+	
+func proceso()
+
+	Entradas: people[]- arreglo de 100 elementos con los valores del -50 al 50, prom[20] = 0
+	
+	Salidas: Realiza el proceso correctamente respecto a las entradas dadas.
+	
+func salidas()
+
+	Entradas: people[], prom[]
+	
+	Salidas: Los promedios correctos con respecto a las entradas.
+	
+El unico detalle es que las entradas deberian ser validadas en el rango [0,100].
+*/

@@ -44,3 +44,31 @@ void imprimirPiramideInversa(int matrizSize, int matriz[][matrizSize]){
         printf("\n");
     }
 }
+/*
+QA Realizo: Guillermo Canto
+	No compiló en Zinjai por error de declaracion implicita de la funcion llenarPiramide()
+	Funciona correctamente con el compilador de https://www.onlinegdb.com/online_c_compiler
+
+main()
+	Entradas: -10, 0, 5
+	Salidas: OK, OK, OK
+	
+void llenarPiramide()
+	Entradas: 5, piramide[100][100] inicializada en cero.
+	Salidas: 	1
+			1  1
+			1  2  1 
+			1  3  3  1
+			1  4  6  4  1  
+Funciona correctamente.
+
+void imprimirPiramideInversa()
+	Entradas: 5, La matriz obtenida como salida de la funcion llenar piramide.
+	Salidas:  	1  4  6  4  1                                                                                                                                                                              
+ 			1  3  3  1                                                                                                                                                                                 
+			1  2  1                                                                                                                                                                                    
+ 			1  1      
+ 			1  
+			
+El programa funciona correctamente.	                                                                                                                                                          		                                                                                                                                                                                      		
+*/

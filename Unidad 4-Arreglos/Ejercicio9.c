@@ -22,7 +22,9 @@ int main() {
     }
     return 0;
 }
-
+/*
+  Ingresa numeros aleatoreos del 0 al 9 no del 1 al 9
+*/
 void llenarMatriz(int matriz[SIZE][SIZE]){
     // Usamos time, por que de no utilizarlo, la secuencia Rand es siempre la misma, con time la conviertes en aleatoria ya que toma el tiempo como parametro
     srand( time(NULL));
@@ -34,7 +36,9 @@ void llenarMatriz(int matriz[SIZE][SIZE]){
         }
     }
 }
-
+/*
+  La funcion checa de manera correcta si no se repiten de manera horizontal, vertical o por cuadrante
+*/
 int verificarSudoku(int matriz[SIZE][SIZE]){
     int i=0, j=0, columna=0, fila=0, flag=0;
 //    Verificamos que las columnas sean diferentes
@@ -71,3 +75,8 @@ int verificarSudoku(int matriz[SIZE][SIZE]){
     }
     return flag;
 }
+
+/*
+QA: Raul Rivadeneyra
+El codigo funciona correctamente a excepcion de que tambien se asigna el numero 0
+*/

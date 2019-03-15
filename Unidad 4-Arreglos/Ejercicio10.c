@@ -175,3 +175,63 @@ int sumaColumna(long filaMatriz, long columnaMatriz,
 	}
 	return bandera;
 }
+/*
+QA Realizo: Guillermo Canto
+
+void lectura()
+	Entradas: 0, -3, 3;
+	Salidas: OK, OK, OK
+
+Lee las entradas correctamente.
+
+
+void asignacionInicialMatriz()
+Entradas: 3,3, matriz[3][3] inicializada en  cero
+Inicializa correctamente la matriz lo cual se observa en la impresion siguiente
+
+void impresionMatriz()
+
+	Entradas: 3,3,  0	0	0
+			0	0	0
+			0	0	0
+
+	Salidas: 	1	2	3	
+			4	5	6
+			7	8	9
+Imprime bien las matrices.
+
+void asignacionAleatoriaMatriz()
+
+	Entradas: 3,3,  1	2	3	
+			4	5	6
+			7	8	9
+			
+	Salidas:	6	1	2
+			8	3	4
+			7	5	9
+Funciona correctamente.
+
+int sumaColumna()
+	Entradas: 3,3   6	1	2
+			8	3	4
+			7	5	9
+	Salidas: 0
+Funciona bien pero el nombre de la funcion no hace referencia a lo que la funcion hace.
+
+int sumaFila()
+Entradas: 3,3   6	1	2
+8	3	4
+7	5	9
+Salidas: 0
+Funciona bien pero el nombre de la funcion no hace referencia a lo que la funcion hace.
+
+int main()
+	Entradas: 3
+	Salidas: El cuadrado no es magico.
+El programa funciona correctamente.
+
+
+
+
+
+*/

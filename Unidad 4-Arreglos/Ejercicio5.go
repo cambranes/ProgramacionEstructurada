@@ -66,3 +66,53 @@ func main() {
 	salidas(matriz)
 }
 
+/*
+	QA Reviso: Carlos Chan
+	
+	void leerMatriz()
+		Entradas: (1, 2), (1, 2), (1, 3), (1, 1), (1, 3)
+		Salidas: Ninguna, pero la matriz se encuentra de esta manera: (La x representa que esa posicion esta vacia)
+			1	2	x
+			1	2	x
+			1	3	x
+			1	1	x
+			1	3	x
+		
+		- La funcion lee datos y los almacena en la matriz correctamente.
+	
+	void ventas()
+		Entradas: 
+			1	2	x
+			1	2	x
+			1	3	x
+			1	1	x
+			1	3	x
+		
+		Salidas: Ninguna, pero la matriz se encuentra en este estado:
+			1	2	5.96
+			1	2	9.0
+			1	3	29.94
+			1	1	4.49
+			1	3	20.61
+
+	void salidas()
+		Entradas: 
+			1	2	5.96
+			1	2	9.0
+			1	3	29.94
+			1	1	4.49
+			1	3	20.61
+		
+		Salidas:
+			- Las ventas del producto 1 fueron 5.96
+			- Las ventas del producto 2 fueron 9.0
+			- Las ventas del producto 3 fueron 29.94
+			- Las ventas del producto 4 fueron 4.49
+			- Las ventas del producto 5 fueron 20.61
+	
+	- El programa funciona de manera incorrecta, ya que se puede ver que unicamente introduje
+	el numero de producto 1, por lo cual el programa solo deberia calcular las ventas del producto 1,
+	pero en lugar de eso, el programa calculo las ventas de todos los 5 productos, 
+	ademas no se sabe cuantas ventas hay por dia (Me lo dijo el maestro),
+	por lo que leer unicamente 5 veces el numero de producto y la cantidad vendida es incorrecto. 
+*/

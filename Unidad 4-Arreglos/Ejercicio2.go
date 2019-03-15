@@ -35,3 +35,11 @@ func main() {
 	}
 
 }
+/*
+  QA: Raul Rivadeneyra
+  Le asigne los valores 1,1,1,1,1,1,1,1,1 y 1,1,1,1,1,1,1,1,1 a las matrices de 3x3 y me devolvio 2,2,2,2,2,2,2,2,2.
+  Le asigne los valores de 1,2 y 1,3 a las matrices de 1x2 y me devolvio 2,5
+  Le asigne los valores 2,4,4,2 y 1,2,1,2 a las matrices de 2x2 y me devolvio 3,6,5,4.
+  Por lo tanto es correcto
+  Solo que se puede modular
+*/

@@ -24,6 +24,10 @@ int main(){
     salidas(min, sum1, sum2);
 }
 
+
+/*
+  Funcion lee correctamente los valores ingresados y los aloja en la matriz 
+*/
 void leerMatriz(int matriz[SIZE1][SIZE2]){
     int i=0, j=0;
     for (i=0; i<15; i++) {
@@ -33,7 +37,10 @@ void leerMatriz(int matriz[SIZE1][SIZE2]){
         }
     }
 }
-
+/*
+  El numero mas grande que se le puede asignar a un int es 2,147,483,647 por lo tanto el codigo es erroneo ya que si alguien
+  solo ingresa numero mayores a min no funcionaría de manera correcta
+*/
 int menor(int matriz[SIZE1][SIZE2]){
 // 32767 es el numero mas grande que se le puede asignar a un Int, por lo que se usa como bandera para un numero menor
     int min=32767, i=0, j=0;
@@ -47,6 +54,9 @@ int menor(int matriz[SIZE1][SIZE2]){
     return min;
 }
 
+/*
+  La funciona suma correctamente las primeras 5 filas
+*/
 int suma1(int matriz[SIZE1][SIZE2]){
     int suma=0, i=0, j=0;
     for (i=0; i<5; i++) {
@@ -57,6 +67,9 @@ int suma1(int matriz[SIZE1][SIZE2]){
     return suma;
 }
 
+/*
+  La funciona suma correctamente las ultimas 5 columnas
+*/
 int suma2(int matriz[SIZE1][SIZE2]){
     int suma=0, i=0, j=1;
     for (i=0; i<15; i++) {
@@ -72,3 +85,8 @@ void salidas(int x, int y, int z){
     printf("La suma de las primeras 5 filas es: %d\n", y);
     printf("La suma de las ultimas 5 columnas es: %d\n", z);
 }
+
+/*
+  QA: Raul Rivadeneyra
+  Todo el codigo funciona bien a excepcion de el limite dentro de la funcion menor(), es un error sencillo de cambiar el limite.
+*/

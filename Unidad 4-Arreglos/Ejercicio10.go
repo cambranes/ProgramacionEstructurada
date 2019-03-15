@@ -115,3 +115,33 @@ func main() {
 		}
 	}
 }
+/*
+QA Realizo: Guillermo Canto
+
+func main()
+
+	Entradas: 0, -1, 3
+	
+	Salidas: OK, OK, 
+	Matriz original / La posicion: [ 0 ][ 0 ]: 1
+	Matriz original / La posicion: [ 0 ][ 1 ]: 2
+	Matriz original / La posicion: [ 0 ][ 2 ]: 3
+	Matriz original / La posicion: [ 1 ][ 0 ]: 4
+	Matriz original / La posicion: [ 1 ][ 1 ]: 5
+	Matriz original / La posicion: [ 1 ][ 2 ]: 6
+	Matriz original / La posicion: [ 2 ][ 0 ]: 7
+	Matriz original / La posicion: [ 2 ][ 1 ]: 8
+	Matriz original / La posicion: [ 2 ][ 2 ]: 9
+	Matriz randomizada / La posicion: [ 0 ][ 0 ]: 8
+	Matriz randomizada / La posicion: [ 0 ][ 1 ]: 9
+	Matriz randomizada / La posicion: [ 0 ][ 2 ]: 5
+	Matriz randomizada / La posicion: [ 1 ][ 0 ]: 2
+	Matriz randomizada / La posicion: [ 1 ][ 1 ]: 7
+	Matriz randomizada / La posicion: [ 1 ][ 2 ]: 4
+	Matriz randomizada / La posicion: [ 2 ][ 0 ]: 6
+	Matriz randomizada / La posicion: [ 2 ][ 1 ]: 3
+	Matriz randomizada / La posicion: [ 2 ][ 2 ]: 1
+	El cuadrado no es magico...
+
+El programa funciona correctamente.
+*/

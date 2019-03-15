@@ -35,7 +35,7 @@ void entradas(int* n, float* media){
     //Get the values
     for (int i = 0; i < SIZE; ++i) {
         scanf(" %i", &n[i]);
-        *media += n[i];
+        *media += n[i]; 
     }
 }
 
@@ -73,3 +73,9 @@ float recursiveSum(int* n, int size, float media){
     }
     return alCuadrado(n[size]-media) + recursiveSum(n, size-1, media);
 }
+
+/*
+    QA Reviso: Carlos Chan
+    - No compila debido a que en la funcion proceso() llamas a sqrt() pasandole como parametro un apuntador,
+    pero sqrt no recibe apuntadores como parametros.
+*/
