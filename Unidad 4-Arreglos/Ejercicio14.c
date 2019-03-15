@@ -79,3 +79,6 @@ void tamCadena(int *tamcadena, int *tamcadenascan){
 	scanf ("%d", tamcadenascan);
 	*tamcadena = *tamcadenascan * 8;
 }
+//QA: Jorge Chi. No compila porque le falta # al include
+// yen la linea 56 le falta ; Fuera de eso, elprograma no imprime nada al realizar la búsqueda
+//pruebe lo que pruebe
