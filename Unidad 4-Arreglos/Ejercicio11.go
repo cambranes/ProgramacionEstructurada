@@ -1,14 +1,13 @@
 /*
 Autor: Eyder Concha Moreno 09/Marzo/19
-Entradas: Ninguna
-Salidas: Impresion de numeros pares, y cantidad de impares
+Entradas: El tama�o del triangulo de pascal
+Salidas: La piramide de pascal inversa
 Procedimiento general:
-1.-Asignamos numeros aleatoriamente al arreglo
-2.-Iteramos atraves de cada elemento del arreglo, de ser divisible entre 2 sin residuo, lo imprimimos
-3.-Iteramos atraves de cada elemento del arreglo, de no ser divisible entre 2 sin residuo, a�adimos 1 al contador de impares
-4.- Imprimimos la cantidad de impares
+1.-Determinamos la piramida normalmente
+    -En caso de que la columna este en la primera o la ultima posicion de la respeciva fila, entonces se introduce un 1
+    -De otra forma, el valor se define como el valor de la columna anterior menos una posicion en la fila anterior, mas la columna anterior en la fila anterior
+2.-Imprimimos la piramide en orden contrario
 */
-
 package main
 
 import (
@@ -72,4 +71,6 @@ func imprimirPiramideInversa()
 			
 El programa funciona correctamente.
 La documentacion no corresponde al ejercicio realizado.
+
+Resuelto xd
 */

@@ -11,6 +11,7 @@ Procedimiento general:
 #include <stdio.h>
 
 void llenarPiramide(int matrizSize, int matriz[][matrizSize]);
+void imprimirPiramideInversa(int matrizSize, int matriz[][matrizSize]);
 
 int main()
 {
