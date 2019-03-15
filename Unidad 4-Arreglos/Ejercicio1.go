@@ -25,7 +25,7 @@ func leerMatriz(matriz *[15][12] int){
 func menor(matriz [15][12] int ) int {
 // 32767 es el numero mas grande que se le puede asignar a un Int,
 // por lo que se usa como bandera para un numero menor
-	var min=32767 
+	var min=matriz[0][0]
 	for i := 0; i < 15; i++ {
 		for j := 0; j < 12; j++ {
 			if matriz[i][j]<min {
@@ -39,7 +39,7 @@ func menor(matriz [15][12] int ) int {
   Suma de manera correcta las primeras 5 filas
 */
 func suma1(matriz [15][12] int) int {
-	var sum1=0 
+	var sum1=0
 	for i := 0; i < 5; i++ {
 		for j := 0; j < 12; j++ {
 			sum1+=matriz[i][j]
@@ -51,7 +51,7 @@ func suma1(matriz [15][12] int) int {
   Suma de manera correcta las ultimas 5 columnas
 */
 func suma2(matriz [15][12] int) int {
-	var sum2=0 
+	var sum2=0
 	for i := 0; i < 15; i++ {
 		for j := 8; j < 12; j++ {
 			sum2+=matriz[i][j]
