@@ -12,9 +12,9 @@ void asignacionInicialMatriz(long filaMatriz, long columnaMatriz,
 	long matriz[][columnaMatriz]);
 void impresionMatriz(long filaMatriz, long columnaMatriz,
 	long matriz[][columnaMatriz]);
-int sumaFila(long filaMatriz, long columnaMatriz,
+int verificarFilaMagica(long filaMatriz, long columnaMatriz,
 	long matriz[][columnaMatriz]);
-int sumaColumna(long filaMatriz, long columnaMatriz,
+int verificarColumnaMagica(long filaMatriz, long columnaMatriz,
 	long matriz[][columnaMatriz]);
 int main()
 {
@@ -34,12 +34,12 @@ int main()
 	printf("Matriz:\n");
 	impresionMatriz(dimensiones, dimensiones, matriz1alanXn);
 	//se calcula si es magico (muy raro xddd) el cuadrado
-	determinadorMagicoUno = sumaFila(dimensiones, dimensiones, matriz1alanXn);
+	determinadorMagicoUno = verificarFilaMagica(dimensiones, dimensiones, matriz1alanXn);
 	if (determinadorMagicoUno == 0)
 	{
 		printf("El cuadrado no es magico...\n");
 	}else{
-		determinadorMagicoDos = sumaColumna(dimensiones, dimensiones,
+		determinadorMagicoDos = verificarColumnaMagica(dimensiones, dimensiones,
 		matriz1alanXn);
 		if (determinadorMagicoDos == 0)
 		{
@@ -117,7 +117,7 @@ void asignacionInicialMatriz(long filaMatriz, long columnaMatriz,
 		}
 	}
 }
-int sumaFila(long filaMatriz, long columnaMatriz,
+int verificarFilaMagica(long filaMatriz, long columnaMatriz,
 	//se ve si todas las filas dan el mismo numero
 	long matriz[][columnaMatriz]){
 	long suma = 0;
@@ -146,7 +146,7 @@ int sumaFila(long filaMatriz, long columnaMatriz,
 	}
 	return bandera;
 }
-int sumaColumna(long filaMatriz, long columnaMatriz,
+int verificarColumnaMagica(long filaMatriz, long columnaMatriz,
 	//se ve si todas las columnas dan el mismo numero
 	long matriz[][columnaMatriz]){
 	long suma = 0;
@@ -229,7 +229,7 @@ int main()
 	Entradas: 3
 	Salidas: El cuadrado no es magico.
 El programa funciona correctamente.
-
+Correcion: Nombre cambiado de las funciones para reflejar lo que hacen
 
 
 
