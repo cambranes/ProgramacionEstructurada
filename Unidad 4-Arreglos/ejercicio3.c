@@ -11,9 +11,18 @@
 
 #define m 50
 #define n 50
+
+void process(int[m][n], int*);
+
 int main() {
   int matrix[m][n];
   int imp = 0;
+  process(matrix,&imp);
+  printf("imp = %d", imp);
+  return 0;
+}
+
+void process(int matrix[m][n], int *imp){
   srand(time(NULL));
   for (int i = 0; i < m; i++) {
     for (int j = 0; j < n; j++) {
@@ -26,8 +35,6 @@ int main() {
       }
     }
   }
-  printf("imp = %d", imp);
-  return 0;
 }
 
 /* QA                                    
