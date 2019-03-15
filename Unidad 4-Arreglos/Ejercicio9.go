@@ -20,7 +20,7 @@ func llenarMatriz(matriz *[9][9] int) {
 	rand.Seed(time.Now().UnixNano())
 	for i := 0; i < 9; i++ {
 		for j := 0; j < 9; j++ {
-			matriz[i][j] = rand.Intn(9)
+			matriz[i][j] = rand.Intn(9)+1
 			fmt.Printf("\nValor: %d, %d es de: %d\n", i+1, j+1, matriz[i][j])
 		}
 	}
