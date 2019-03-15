@@ -74,17 +74,17 @@ for i in M:
  
 T=SumaTotal(M)
 print("La suma total es")
-print T
+print (T)
  
 D1=SumaDiagonal1(M)
 print("La suma de la diagonal es")
-print D1
+print (D1)
  
 D2=SumaDiagonal2(M)
 print("La suma de la diagonal inversa es")
-print D2
+print (D2)
  
-print("No sé como se llama XD")
+print("El resutado es: ")
 print (T-D1-D2)
 
 """
