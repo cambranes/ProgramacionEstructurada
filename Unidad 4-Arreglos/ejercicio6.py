@@ -69,7 +69,7 @@ for i in M:
 	#Para cada casilla j en mi fila i
 	for j in i:
 		#imprimir j
-		print j,
+		print (j)
 	print(" ")
  
 T=SumaTotal(M)
