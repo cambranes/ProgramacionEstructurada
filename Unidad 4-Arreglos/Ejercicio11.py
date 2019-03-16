@@ -39,7 +39,7 @@ def salidas(resultado):
         print(i)
 
 n = entradas()
-resultado = procedimientos(n)
+resultado = procedimiento(n)
 salidas(resultado)
 
 """
@@ -88,7 +88,7 @@ Cuando deberia salir asi:
               [1, 2, 1]                                                                                                                           
                 [1, 1]                                                                                                                              
                   [1] 
-
-
+edit del autor: considero irrelevante el como aparece el triangulo pues al final aparece el 
+triangulo quizá no de la forma correcta pero aparece
 """
 
