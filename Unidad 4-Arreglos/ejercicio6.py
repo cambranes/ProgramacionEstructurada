@@ -72,6 +72,12 @@ for i in M:
 		print (j)
 	print(" ")
  
+p=0
+medio=0
+if( n%2 != 0):
+	p= int(n/2)
+	medio=M[p][p]
+
 T=SumaTotal(M)
 print("La suma total es")
 print (T)
@@ -85,7 +91,7 @@ print("La suma de la diagonal inversa es")
 print (D2)
  
 print("El resutado es: ")
-print (T-D1-D2)
+print (T-D1-D2++medio)
 
 """
 Autor QA: Alejandro Torre Reyes
