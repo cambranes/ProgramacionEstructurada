@@ -13,7 +13,7 @@ totalNumeros = int(input())
 
 #verificación de haber ingresado en totalNumeros un numero entero mayor a cero
 #Salida si el número es negativo o cero: "Error, ingrese otro número\n"
-while(totalNumeros <= 0 & totalNumeros != int):
+while(totalNumeros <= 0):
     print("Error, ingrese otro número\n") 
     totalNumeros = int(input())
 
@@ -22,12 +22,13 @@ while(totalNumeros <= 0 & totalNumeros != int):
 #Entradas:  números enteros pares
 #salida:  "Error, ingrese otro número\n" si coloca un número que no sea entero o par
 for i in range(totalNumeros):
-    nNums = int(input)
-    while nNums != int & nNums%2 != 0: 
+    nNums = float(input())
+    while  nNums%2 != 0: 
         print("Error, ingrese otro número\n") 
-        nNums = int(input)
+        nNums = int(input())
     totalSuma = totalSuma + nNums
 
 
 #Impresion de la suma de todos los números pares ingresados
-    print(totalSuma)
+#salida: variable totalSuma
+print(int(totalSuma))
