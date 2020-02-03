@@ -4,7 +4,7 @@
 
 aNum = 0 #Primer número a leer
 bNum = 0 #Segundo número a leer 
-iguales =  "Los números son iguales"
+iguales =  "Los números son iguales" #String que se imprime si ambos números son iguales 
 
 #Fin declaración de variables
 
