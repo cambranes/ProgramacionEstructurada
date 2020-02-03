@@ -1,10 +1,22 @@
-vel=-1
+#Este programa lee una velocidad y determina si es mayor a 100, imprime "muy rapido" y si es cero, imprime "detenido"
 
-while vel<0:
-    vel=float(input())
+#Inicio de declaración e inicialización de variables
 
-if vel>100:
-    print("Muy rapido")
-else:
-    if vel==0:
-        print("Detenido")
+vel = 0 #Variable que almacenara la velocidad
+
+#Fin de declaración e inicialización de variables
+
+#Inicio lectura de velocidad
+
+vel = float(input()) #Leer velocidad
+
+#Fin lectura de velocidad
+
+#Inicio para determinar si la velocidad es mayor a 100 o cero
+
+if (vel > 100):
+    print("Muy rápido")
+elif (vel == 0):
+    print("Detenido")
+
+#Fin para determinar si la velocidad es mayor a 100 o cero
