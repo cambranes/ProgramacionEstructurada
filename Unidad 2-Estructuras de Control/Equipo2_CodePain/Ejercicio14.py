@@ -7,8 +7,16 @@ vel = 0 #Variable que almacenara la velocidad
 
 
 #Inicio lectura de velocidad
-#Entrada: Cualquier número real 
+#Entrada: Cualquier número real positivo 
 vel = float(input()) #Leer velocidad
+
+
+#Condicion por si pone velocidad negativa
+#Salida: "Error, ingrese otro número"
+#Entrada: Cualquier número real positivo
+while (vel < 0 ):
+    print("Error, ingrese otro número")
+    vel = float(input())
 
 
 #Condiconal para determinar si es mayor a cien o cero la velocidad
