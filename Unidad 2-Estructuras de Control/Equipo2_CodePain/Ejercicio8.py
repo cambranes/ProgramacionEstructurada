@@ -1,15 +1,15 @@
 #Autores: Programa realizado por el Equipo2_CodePain
-#Este programa recibe dos números e indica si el primero es 
-#múltiplo del segundo
+#Version 1.1
+#Este programa recibe dos números e indica si el primero es multiplo del segundo
 
 
-#Entrada: Dos números aMult y bNum 
+#Entrada: Dos numeros aMult y bNum 
 aMult=int(input())
 bNum=int(input())
 
 
-#Proceso: Operación para determinar si son múltiplos (módulo)
-#Salida: Impresión de si son o no múltiplos
+#Proceso: Operacion para determinar si son multiplos (modulo)
+#Salida: Impresion de si son o no multiplos
 if aMult%bNum==0:
     print("Si es Multiplo")
 else:
