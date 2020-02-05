@@ -11,11 +11,11 @@ bNum=int(input())
 #Proceso: Operacion para determinar si son multiplos (modulo)
 #Salida: Impresion de si son o no multiplos
 
-while bNum==0:
-    print("0 No tiene multiplos, Ingrese de nuevo")
-    aMult=int(input())
-    bNum=int(input())
-if aMult%bNum==0:
+if aMult==0 and bNum==0:
+    print("Si es Multiplo")
+elif aMult!=0 and bNum==0:
+    print("No es multiplo")
+elif aMult%bNum==0:
     print("Si es Multiplo")
 else:
     print("No es multiplo")

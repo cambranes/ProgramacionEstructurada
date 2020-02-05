@@ -7,8 +7,8 @@
 vel = 0 #Variable que almacena la velocidad
 vel = float(input()) 
 
-while (vel < 0 or (vel>0 and vel<=100)): #Condicion para velocidades positivas
-    print("Error, ingrese otro numero")
+while vel < 0: #Condicion para velocidades positivas
+    print("Ingrese una velocidad valida")
     vel = float(input())
 
 
