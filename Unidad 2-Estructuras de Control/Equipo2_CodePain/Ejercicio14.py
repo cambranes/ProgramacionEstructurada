@@ -1,5 +1,5 @@
 #Autores: Programa realizado por el Equipo2_CodePain
-#Version 1.1
+#Version 1.2
 #Este programa lee una velocidad y determina si es mayor a 100, imprime "muy rapido" y si es cero, 
 # imprime "detenido"
 
@@ -7,7 +7,7 @@
 vel = 0 #Variable que almacena la velocidad
 vel = float(input()) 
 
-while (vel < 0 ): #Condicion para velocidades positivas
+while (vel < 0 or (vel>0 and vel<=100)): #Condicion para velocidades positivas
     print("Error, ingrese otro numero")
     vel = float(input())
 
