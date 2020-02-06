@@ -20,6 +20,7 @@ bNum = float(input()) #Leer segundo número
 #Inicio condicionales para asignación e impresión de quien es mayor, menor o si son iguales 
 #Salida: impresión de quien es mayor, menor o si son iguales
 
+
 if aNum > bNum:
     print(str(aNum) + " > " + str(bNum)) #La primera salida es el número más grande y la segunda el más chico
 elif (aNum < bNum):
