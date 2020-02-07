@@ -30,8 +30,8 @@ sueldoaPagar = main(sueldoBase, antiguedad) + sueldoBase
 
 #SALIDAS: 
 #El sueldo base que el usuario ingreso el principio de la funcion
-print("Sueldo Base:", sueldoBase)
+print(sueldoBase)
 #El incentivo que se calcul'o en la funcion main
-print("Incentivo:", main(sueldoBase, antiguedad))
+print( main(sueldoBase, antiguedad))
 #Sueldo a pagar 
-print("Sueldo a pagar:", sueldoaPagar)
+print( sueldoaPagar)
