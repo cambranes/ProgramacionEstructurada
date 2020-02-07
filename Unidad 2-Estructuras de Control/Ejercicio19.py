@@ -15,9 +15,9 @@ num2 = 0
 num3 = 0 
 
 #Se solicita que el usuario ingrese los números 
-num1 = float(input("Ingresa un numero: "))
-num2 = float(input("Ingresa un segundo numero: "))
-num3 = float(input("Ingresa un tercer numero: "))
+num1 = float(input())
+num2 = float(input())
+num3 = float(input())
 
 #Procedimiento 
 #Primero se analiza si el número 1 es el mayor, comporándolo con los otros números
@@ -35,4 +35,4 @@ else:
 
 #Salida
 #Por último se imprime el resultado 
-print ("El número mayor es:" , numMayor)
+print (numMayor)
