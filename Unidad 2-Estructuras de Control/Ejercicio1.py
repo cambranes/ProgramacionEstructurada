@@ -10,7 +10,7 @@
 num = 0 
 esPar = 0
 #Se le solicita al usuario ingresar un número
-num = int(input("Ingresa un número: "))
+num = int(input())
 
 #Procedimiento
 #Se evalua el residuo por medio de una condicional
@@ -21,8 +21,5 @@ else:
     esPar = 0
 
 #Salida
-#Se imprime el resultado dependiendo del valor de la bandera
-if esPar == 1: 
-    print ("El número ", num, "es par")
-else: 
-    print ("El número ", num, "es impar") 
+#Se imprime el resultado dependiendo del valor de la bandera 
+print (esPar) 
