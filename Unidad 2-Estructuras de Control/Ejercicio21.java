@@ -11,19 +11,18 @@ public class Main{
    
    //Definir variables
    Scanner entrada = new Scanner(System.in); 
-   int num = 0, i = 0, factor = 1;
+   int num = 0, i = 0, factorial = 1;
 
-   //Solicita y agarra el dato ingresado por el usuario
    System.out.println("Ingrese el numero a sacar factorial");
    num = entrada.nextInt();
    
    //Ciclo for de multiplicacion
-   for(i = num; i > 0; i--){
-     factor = (factor*i);
+   while(num != 0){
+     factorial *= num;
+     num --;
    }
 
-   //Imprimir resultados
-   System.out.println("El numero " + num + "!" + " da como resultado: " + factor);
+   System.out.println(factorial);
 
  }
 }
