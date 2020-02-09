@@ -1,5 +1,5 @@
 #Autores: Programa realizado por el Equipo2_CodePain
-#Version 1.0
+#Version 1.1
 #Programa que imprime la tabla de multiplicar del 2 al 9
 
 #Entrada: Declaracion de variables
@@ -12,4 +12,4 @@ y = 0
 for x in range(2,10):
     for y in range(1,11):
         prod = x * y
-        print(str(x) + "x" + str(y) + "=" + str(prod)) 
+        print(str(prod)) 
