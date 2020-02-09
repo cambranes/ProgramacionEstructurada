@@ -11,7 +11,6 @@ public class Main {
         float e,factorial;
         
         //Entrada del valor de N 
-        System.out.println("Introduzca N ");
         N = entrada.nextInt();
         
         //Operaciones matemáticas
@@ -25,7 +24,7 @@ public class Main {
         }
         
         //Salida de la constante matemática 'e'
-        System.out.println("valor de la constante "+ e);
+        System.out.println(e);
         
     }
     
