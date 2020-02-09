@@ -21,12 +21,12 @@ public class Main{
    do{
     System.out.println("Ingrese el dia(1-31)");
     diaUno = entrada.nextInt();
-   }while(diaUno>0 || diaUno<32);
+   }while(diaUno>0 && diaUno<32);
    
    do{
     System.out.println("Ingrese el mes(1-12)");
     mesUno = entrada.nextInt();
-   }while(mesUno>0 || mesUno<13);
+   }while(mesUno>0 && mesUno<13);
 
    System.out.println("Ingrese el año");
    anioUno = entrada.nextInt();
@@ -37,12 +37,12 @@ public class Main{
    do{
    System.out.println("Ingrese el dia(1-31)");
    diaDos = entrada.nextInt();
-   }while(diaDos>0 || diaDos<32);
+   }while(diaDos>0 && diaDos<32);
 
    do{
     System.out.println("Ingrese el mes(1-12)");
     mesDos = entrada.nextInt();
-   }while(mesDos>0 || mesDos<13);
+   }while(mesDos>0 && mesDos<13);
 
    System.out.println("Ingrese el año");
    anioDos = entrada.nextInt();
