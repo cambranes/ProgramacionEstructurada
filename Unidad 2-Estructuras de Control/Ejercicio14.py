@@ -1,5 +1,5 @@
 #Autores: Programa realizado por el Equipo2_CodePain
-#Version 1.4
+#Version 1.5
 #Este programa lee una velocidad y determina si es mayor a 100, imprime "muy rapido" y si es cero, 
 # imprime "detenido"
 
@@ -14,5 +14,5 @@ if vel < 0: #Condicion para velocidades positivas
     print("Ingrese una velocidad válida")
 elif (vel > 100):
     print("Muy rápido")
-else:
+elif (vel==0):
     print("Detenido")
