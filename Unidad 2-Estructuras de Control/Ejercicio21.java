@@ -11,7 +11,7 @@ public class Main{
    
    //Definir variables
    Scanner entrada = new Scanner(System.in); 
-   int num = 0, i = 0, factorial = 1;
+   int num = 0, factorial = 1;
 
    System.out.println("Ingrese el numero a sacar factorial");
    num = entrada.nextInt();
