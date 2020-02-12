@@ -6,14 +6,13 @@
 saldo=3000
 
 #Se solicita la cantidad a retirar
-print("Ingrese la cantidad a retirar")
-retiro=int(input())
+retiro=float(input())
 
 #Se evalua si la cantidad a retirar es valida y se efectua el retiro
 if retiro>saldo:
-    print("La cantidad ingresada para el retiro es mayor al saldo disponible\nSeleccione otra cantidad")
+   print ("La cantidad maxima a sacar es 3000.00")
 else:
     saldo-=retiro
 
 #Se imprime la cantidad restante de saldo
-print("El saldo restante es de: "+str(saldo))
+print(saldo)
