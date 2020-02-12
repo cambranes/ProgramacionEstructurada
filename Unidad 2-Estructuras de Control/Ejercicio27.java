@@ -13,14 +13,16 @@ Salidas:
 caso 1: 5.0
 caso 2: 3.142857
 */
+
 import java.util.Scanner;
+import java.lang.Math;
 
 public class Main{
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
         //Variables empleadas
-        int numero = 0, sumaNum = 0, contador = 0;
-        float promNum = 0;
+        int numero = 0, sumaNum = 0, contador = 0, promNumRedon;
+        float promNumDeci = 0;
         
          while(numero != 999){
             numero = entrada.nextInt();
@@ -30,7 +32,18 @@ public class Main{
                 contador++;
              }
         }
-        promNum =(float) sumaNum/contador;
-        System.out.println(promNum);
+        //Comprobamos la necesidad de puntos decimales
+        if(sumaNum % contador == 0){
+            promNumRedon = sumaNum/contador;
+            System.out.println(promNumRedon);
+        }else{
+            promNumDeci =(float) sumaNum/contador;
+            /*Multiplicamos por 100 para salvar los primeros 2 decimales, redondeamos el valor y dividmos entre 100
+            para imprimir el valor con unicamente 2 decimales
+            */
+            System.out.println(Math.round(promNumDeci*100.0)/100.0); 
+        }
     }
 }
+
+//Cambios: Se modifico la salida para concordar con lo pedido en OmegaUp
