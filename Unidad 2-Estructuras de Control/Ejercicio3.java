@@ -41,7 +41,7 @@ public class Main{
 
         //Entrega de salidas [Salida]
         if (auxiliar == false){
-            System.out.println("El día correspondiente al número es: " + salida);
+            System.out.println(salida);
         } else {
             System.out.println("El número proporcionado está fuera de rango [1,7]");
         }
