@@ -1,8 +1,8 @@
 #Autores: Programa realizado por el Equipo2_CodePain
-#Version 1.1
+#Version 1.2
 #Programa que determina el valor de una secuencia 1 a N
 
-#Entrada: Limite de la secuencia (nNums)
+#Entrada: Limite de la secuencia (nNums) (entero)
 
 nNums=-1
 total=0
