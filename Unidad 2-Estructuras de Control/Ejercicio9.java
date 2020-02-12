@@ -28,7 +28,7 @@ public class Main{
              multiplos = limite/5;
          }
 
-         //Impresión de salidas[Salida]
+         //Impresión de salidas
          for(int i = 0; i < multiplos; i++){
              resultado = resultado + 5;
              System.out.println(resultado);
