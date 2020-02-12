@@ -22,7 +22,7 @@ public class Main{
     public static void main(String[] args) {
        Scanner entrada = new Scanner(System.in);
        //Variables usadas
-       int numTablas = 0, inicio = 0, fin = 0, contador = 1; 
+       int numTablas = 0, inicio = 0, fin = 0, contador = 1, result = 0; 
        
        //Leemos las n primeras tablas
        numTablas = entrada.nextInt();
@@ -42,8 +42,12 @@ public class Main{
 
        //Ciclo para las primeras tablas de multiplicar
        for(int n= 1; n<= numTablas; n++){
-        for (int i= inicio; i<= fin; i = i + contador)
-        System.out.println(n + " X " + i + " = "+ (n*i));
-    }
+        for (int i= inicio; i<= fin; i = i + contador){
+            result = n*i;
+            System.out.println(result);
+            }
+        }
     }
 }
+
+//Cambios: Se modifico la salida para concordar con OmegaUp
