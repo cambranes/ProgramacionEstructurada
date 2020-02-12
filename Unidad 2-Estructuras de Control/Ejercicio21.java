@@ -2,7 +2,7 @@
 //Diego De Gante
 //Programa que dado un número entero n determina su factorial.
 //Entrada:num (numero deseado por el usuario ha sacar factorial)
-//Salida:factor (resultado de la factorial del numero dado)
+//Salida:factorial (resultado de la factorial del numero dado)
 
 import java.util.Scanner;
 
