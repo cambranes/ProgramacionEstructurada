@@ -1,3 +1,10 @@
+//Equipo 3
+//Diego De Gante
+//Programa que lea dos fechas (día-mes-año) con tres cantidades enteras 
+//e imprima la mayor, si son la misma imprima son iguales.
+//Entrada:diaUno, diaDos, mesUno, mesDos, anioUno, anioDos
+//Salida: La fecha mayor o si las fechas son iguales
+
 #include <stdio.h>
 
 int main()
