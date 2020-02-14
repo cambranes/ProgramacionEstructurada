@@ -2,13 +2,15 @@
 
 int main(){
 	float descuentos = 0, total = 0, clientes = 0, x = 1, n = 0, proseguir = 0, monto = 0, descuento = 0, continuacion = 0;
+#include <stdio.h>
+
+int main(){
+	float descuentos = 0, total = 0, clientes = 0, x = 1, n = 0, monto = 0, descuento = 0, continuacion = 0;
 	
-	printf("¿Hay clientes?[si(1)/no(0)]\n");
-		scanf("%f",&proseguir);
-		if (proseguir == 1){
-			while (n < x){
-				printf("Escriba el monto a pagar para verificar si le corresponde algún descuento:\n");
-					scanf("%f",&monto);
+		scanf("%f",&n); /*Se lee a cuÃ¡ntos clientes se les va a calcular sus descuentos*/
+		if (n != 0){
+			while (clientes < n){
+					scanf("%f",&monto);/*Se lee los montos individuales de cada cliente*/
 					if (monto<500){
 						descuento = 1;
 					}else{
@@ -31,28 +33,15 @@ int main(){
 						}
 					}
 			monto = monto * descuento;
-			printf("Le corresponde pagar un total de: $\n");
-			printf("%f", monto);
+			printf("%f", monto);/*Se le imprime al cliente su monto final con el descuento aplicado, si hubo*/
 			total = total + monto;
-			n = n + 1;
 			clientes = clientes + 1;
-			printf("¿Hay más clientes?[si(1)/no(0)]\n");
-				scanf("%f",&continuacion);
-				if (continuacion == 1){
-					x = x + 1;
-				}
-				else
-					printf("No hay más clientes. \n");
 			}
-			printf("El día de hoy hubieron \n");
-			printf("%f", clientes);
-			printf(" cliente(s), \n");
-			printf("%f", descuentos);
-			printf(" descuento(s) aplicados y se recaudó un total de \n");
-			printf("%f", total);
-			printf(" pesos.\n");
+			printf("%f", total);/*Se imprime el total rcaudado del dÃ­a*/
+			
+			printf("%f", descuentos);/*Se imprime la cantidad de descuentos aplicados*/
 		}
 		else
-			printf("El día de hoy no hubieron clientes.\n");
+			printf("%f", n);
 	
 }
