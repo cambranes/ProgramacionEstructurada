@@ -34,7 +34,7 @@ public class Main{
             auxiliar = false;
         }
 
-        //Entrega de salidas [Salida]
+        //Entrega de salidas 
         if (auxiliar == true){
             System.out.println("El día correspondiente al número es: " + salida);
         } else {
