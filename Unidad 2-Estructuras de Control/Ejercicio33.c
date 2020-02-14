@@ -16,25 +16,24 @@ Caso 1: las primeras 2 tablas de multiplicar desde 1 hasta 3
 Caso 2: las primeras 3 tablas de multiplicar desde -10 hasta -8
 Caso 3: las primeras 2 tablas de multiplicar desde 1 hasta 2
 */
-import java.util.Scanner;
 
-public class Main{
-    public static void main(String[] args) {
-       Scanner entrada = new Scanner(System.in);
+#include <stdio.h>
+
+int main(){
        //Variables usadas
        int numTablas = 0, inicio = 0, fin = 0, contador = 1, result = 0; 
        
        //Leemos las n primeras tablas
-       numTablas = entrada.nextInt();
+       scanf("%i", &numTablas);
 
        //Verificamos que las tablas sean mayores a 0, de lo contrario se vuelve a leer
        while(numTablas<=0){
-        numTablas = entrada.nextInt();
+           scanf("%i", &numTablas);;
        }
 
        //Leemos los valores de inicio y final de las tablas
-       inicio = entrada.nextInt();
-       fin = entrada.nextInt();
+       scanf("%i", &inicio);
+       scanf("%i", &fin);
 
        //Determinamos la forma del contador
        if(inicio>fin){
@@ -44,10 +43,7 @@ public class Main{
        for(int n= 1; n<= numTablas; n++){
         for (int i= inicio; i<= fin; i = i + contador){
             result = n*i;
-            System.out.println(result);
+            printf("%i\n", result);
             }
         }
-    }
 }
-
-//Cambios: Se modifico la salida para concordar con OmegaUp
