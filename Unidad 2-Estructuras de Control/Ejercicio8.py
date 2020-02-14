@@ -12,10 +12,10 @@ bNum=int(input())
 #Salida: Impresion de si son o no multiplos
 
 if aMult==0 and bNum==0:
-    print("Si es Multiplo")
+    print("Si es multiplo")
 elif aMult!=0 and bNum==0:
     print("No es multiplo")
 elif aMult%bNum==0:
-    print("Si es Multiplo")
+    print("Si es multiplo")
 else:
     print("No es multiplo")
