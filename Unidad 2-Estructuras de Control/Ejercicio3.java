@@ -13,7 +13,7 @@ public class Main{
         Scanner entrada = new Scanner(System.in);
         int dia = 0;
         String salida = "";
-        boolean auxiliar = false;
+        boolean auxiliar = true;
 
         String nombreDias[] = new String[7];
         nombreDias[0] = "Lunes";
@@ -24,26 +24,21 @@ public class Main{
         nombreDias[5] = "Sábado";
         nombreDias[6] = "Domingo";
 
-        System.out.println("Escriba el número del día que quiere(Empezando en lunes)");
-        try {
-            dia = entrada.nextInt();
-        } catch (final Exception e) {
-            System.out.println("Ese es un dato no válido, amiguito ");
-            System.exit(0);
-        }
+        dia = entrada.nextInt();
+
 
         // Condicional, selección del día, validación y salida[Procedimiento]
         if (dia > 0 && dia <= 7){
             salida = nombreDias[dia - 1];
         } else {
-            auxiliar = true;
+            auxiliar = false;
         }
 
-        //Entrega de salidas [Salida]
-        if (auxiliar == false){
+        //Entrega de salidas 
+        if (auxiliar == true){
             System.out.println("El día correspondiente al número es: " + salida);
         } else {
-            System.out.println("El número proporcionado está fuera de rango [1,7]");
+            System.out.println(auxiliar);
         }
     }
 }

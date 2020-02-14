@@ -15,22 +15,20 @@ public class Main{
         int resultado = 0;
         int limite = 0;
 
-        System.out.println("Ingrese un número");
         try {
             limite = entrada.nextInt();
         } catch (Exception e) {
-            System.out.println("Ese es un dato no válido");
+            System.exit(0);
         }
 
         //Bucle para los múltiplos y validación[Procedimiento] 
         if (limite < 5){
-            System.out.println("Ese número no es lo suficientemente grande");
+            System.exit(0);
          } else if(limite >= 5) {
              multiplos = limite/5;
          }
 
-         //Impresión de salidas[Salida]
-         System.out.println("Resultados: ");
+         //Impresión de salidas
          for(int i = 0; i < multiplos; i++){
              resultado = resultado + 5;
              System.out.println(resultado);
