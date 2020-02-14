@@ -10,3 +10,17 @@ Entrada:
 Salida:
 25
 */
+int main(){
+    int suma = 0;
+    //Ciclo principal para calcular
+    for(int i=0; i<=10; i++){
+
+        //Evaluamos que no sea par y de no serlo se suma
+        if(i%2 !=0){
+            suma = suma + i;
+        }
+    }
+    printf("%i", suma);
+
+    return 0;
+}

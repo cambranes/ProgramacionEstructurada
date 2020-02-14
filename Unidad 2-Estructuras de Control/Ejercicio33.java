@@ -28,7 +28,7 @@ public class Main{
        numTablas = entrada.nextInt();
 
        //Verificamos que las tablas sean mayores a 0, de lo contrario se vuelve a leer
-       if(numTablas<=0){
+       while(numTablas<=0){
         numTablas = entrada.nextInt();
        }
 
