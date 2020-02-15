@@ -5,44 +5,34 @@
 //Entrada: Numeros enteros
 //Salida: Numero mayor y menor de la serie
 #include <stdio.h>
-main(){
-int mayor; int menor; int numerouno; int numerodos; int numeros;
-do
-{
-    scanf("%i", &numerouno);//Entrada de numeros enteros
-    scanf("%i", &numerodos);//Entrada de numeros enteros
 
-    if(numerouno>numerodos)//Si el primer numero fue mayor que el segundo
-    menor=numerodos; mayor=numerouno; menor=numerodos;
+int main()
+        {
+            int nmayor; //numero mayor
+            int nmenor; //numero menor
+            int numero; //entrada de numero
+            nmayor = -999;
+            nmenor = 999;
 
-    do
+            do
+            {
 
-    {
-        scanf("&i", &numeros);//Ingreso de numeros enteros
-        if(numeros>mayor){ mayor=numeros;//
-            printf(%mayor);
+                scanf("%d", &numero);
+                if (numero > nmayor)
+                {
+                    if (numero != 999)
+                    {
+                        nmayor = numero;
+                    }
+                }
+
+                if (numero < nmenor)
+                {
+                    nmenor = numero;
+                }
+            } while (numero != 999);
+            printf(nmayor);
+            printf(nmenor);
+            return 0;
+
         }
-        else if(numeros<menor){menor=numeros;
-        printf(%menor);
-        }
-
-    } while (numeros !=999 || numerouno !=999 || numerodos!=999);
-
-    if(numerouno<numerodos)//Si el segundo numero fue mayor que el primero
-    menor=numerouno; mayor=numerodos; menor=numerouno;
-    do
-    {
-        scanf("&i", &numeros);
-        if(numeros>mayor){ mayor=numeros;
-            printf(%mayor);
-        }
-        else if(numeros<menor){menor=numeros;
-        printf(%menor);
-        
-    } while (numeros !=999 || numerouno !=999 || numerodos!=999);
-    
-    
-} while (numeros != 999 || numerouno !=999 || numerodos!=999);
-
-} while (numeros != 999 || numerouno !=999 || numerodos!=999);
-return 0;
