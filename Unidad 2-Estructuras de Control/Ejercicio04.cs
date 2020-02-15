@@ -31,7 +31,7 @@ namespace Ejercicio4
             if(r>=50) //Se compara si el residuo es mayor que 50
             {   //Si es mayor a 50 entonces
                 salida = ((entrada/100)+1)*100; //Se divide la entrada entre 100, se suma 1 y se mutiplica por 100 
-            }                                   //para rendear el número a centena mayor
+            }                                   //para rendondear el número a centena mayor
             else
             {   //Si es menor o igual a 20
                 salida = (entrada/100)*100; //Se divide la entrada entre 100 y se divide entre 100
