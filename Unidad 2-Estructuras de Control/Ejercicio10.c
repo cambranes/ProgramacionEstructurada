@@ -5,12 +5,15 @@
 //Salida: Multiplos de 7
 #include <stdio.h>
 
-main()
-{
-int numMulti; //Entrada
-scanf("%i", &numMulti);//Se lee numero de multiplos
-for (int i=0; i <=(7*numMulti); i+=7)//Ciclo para limite N
-{ printf(numMulti);}//Salida, impresion de N multiplos
-
+int main() 
+{   //Entrada
+    int numMulti; //Entrada
+    scanf("%d", &numMulti);//Se lee numero de multiplos
+    
+    //Proceso
+    for(int i=7; i <=(7*numMulti); i+=7)//Ciclo para limite N
+    { //Salida, impresion de N multiplos
+        printf("%d \n", i);    
+    }
 return 0;
 }

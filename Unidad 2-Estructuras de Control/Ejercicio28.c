@@ -5,44 +5,43 @@
 //Entrada: Numeros enteros
 //Salida: Numero mayor y menor de la serie
 #include <stdio.h>
-main(){
-int mayor; int menor; int numerouno; int numerodos; int numeros;
-do
+
+int main()
 {
-    scanf("%i", &numerouno);//Entrada de numeros enteros
-    scanf("%i", &numerodos);//Entrada de numeros enteros
+    //Entrada
+    int nmayor; //numero mayor
+    int nmenor; //numero menor
+    int numero; //entrada de numero
+    nmayor = -999;//
+    nmenor = 999;
 
-    if(numerouno>numerodos)//Si el primer numero fue mayor que el segundo
-    menor=numerodos; mayor=numerouno; menor=numerodos;
+    scanf("%d", &numero);//Ingreso de la serie de numeros
 
-    do
-
-    {
-        scanf("&i", &numeros);//Ingreso de numeros enteros
-        if(numeros>mayor){ mayor=numeros;//
-            printf(%mayor);
-        }
-        else if(numeros<menor){menor=numeros;
-        printf(%menor);
-        }
-
-    } while (numeros !=999 || numerouno !=999 || numerodos!=999);
-
-    if(numerouno<numerodos)//Si el segundo numero fue mayor que el primero
-    menor=numerouno; mayor=numerodos; menor=numerouno;
+    //Proceso
     do
     {
-        scanf("&i", &numeros);
-        if(numeros>mayor){ mayor=numeros;
-            printf(%mayor);
+        if(numero > nmayor)//Si numero ingresado es mayor que el actual numero mayor
+        {
+            if(numero != 999)//Mientras sea distinto de 999
+            {
+                nmayor = numero;//Se sustituye el antiguo numero mayor por el actual
+            }
         }
-        else if(numeros<menor){menor=numeros;
-        printf(%menor);
-        
-    } while (numeros !=999 || numerouno !=999 || numerodos!=999);
-    
-    
-} while (numeros != 999 || numerouno !=999 || numerodos!=999);
 
-} while (numeros != 999 || numerouno !=999 || numerodos!=999);
-return 0;
+        if(numero < nmenor)//Si numero ingresado es menor que el actual numero menor
+        {
+            if(numero != 999)//Mientras sea distinto de 999
+            {
+            nmenor = numero;//Se sustituye el antiguo numero menor por el actual
+            }
+        }
+    } 
+    while(numero != 999);//Mientras sea distinto de 999
+
+    //Salida
+    printf("%d \n", nmayor);//Impresion del mayor numero de la serie de numeros
+    printf("%d \n", nmenor);//Impresion del menor numero de la serie de numeros
+
+    return 0;
+}
+
