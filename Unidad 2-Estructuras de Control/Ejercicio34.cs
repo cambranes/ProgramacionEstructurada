@@ -18,8 +18,7 @@ namespace Ejercicio34
             int  entrada = 0;//Se define la entrada del programa//
             String salida = "";//se define la salida del programa//
 
-            Console.WriteLine("Por favor escriba cuantas filas desea imprimir:");
-
+            //Proceso//
             int.TryParse(Console.ReadLine(), out entrada);//Se ingrese la cantidad de filas a imprimir, representadas por la salida//
             Console.WriteLine(" ");
             //Proceso//
@@ -30,8 +29,6 @@ namespace Ejercicio34
                 Console.WriteLine(salida);//se imprime la salida de datos alineados por cada fila//
 
             }
-
         }
     }
-    
 }
