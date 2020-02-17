@@ -20,31 +20,36 @@ namespace Ejercicio28
     class Program
     {
         static void Main(string[] args)
-        {
-            int nmayor; int nmenor; int numero;
+        {   //Entrada
+            int nmayor; 
+            int nmenor; 
+            int numero;
             nmayor = -999;
             nmenor = 999;
-
+            //Proceso
             do
             {
+                numero = Convert.ToInt32(Console.ReadLine()); //Ingreso de la serie de numeros
 
-                numero = Convert.ToInt32(Console.ReadLine()); //Ingreso del primer numero
-
-                if (numero > nmayor)
-                {
-                    if (numero != 999)
+                if(numero > nmayor)//Si el numero es mayor que el numero mayor actual
+                {            
+                    if (numero != 999)//Mientras sea distinto de 999
                     {
-                        nmayor = numero;
+                        nmayor = numero;//Se sustituye el anterior numero mayor por el nuevo
                     }
                 }
-                if (numero < nmenor)
+                if(numero < nmenor)//Si el numero es menor que el numero menor actual
                 {
-                    nmenor = numero;
+                    if (numero != 999)//Mientras sea distinto de 999
+                    {
+                    nmenor = numero;//Se sustituye el anterior numero menor por el nuevo
+                    }
                 }
-            } while (numero != 999);
-            Console.WriteLine(nmayor);
-            Console.WriteLine(nmenor);
+            } while (numero != 999);//Mientras sea distinto de 999
 
+            //Salida
+            Console.WriteLine(nmayor);//Impresion del numero mayor
+            Console.WriteLine(nmenor);//Impresion del numero menor
         }
 
     }

@@ -12,15 +12,15 @@ namespace Contador
     {
         static void Main(string[] args)
         {
-
-            //.Escribir el programa para un programa que reciba un numero N y te de los 
-            // primeros N múltiplos de 7 
+            //Entrada
             int n;
             n =Convert.ToInt32(Console.ReadLine());//valor del numero de multiplos deseados
 
+            //Proceso
             for (int i = 7; i <= (7*n); i += 7)//inicio en cero, 7 multiplicado por el valor de n, incrementador
             {
-                Console.WriteLine( i);//Impresion de los multiplos de 7 segun n
+                //Salida
+                Console.WriteLine(i);//Impresion de los multiplos de 7 segun n
             }
             Console.ReadLine();
         }

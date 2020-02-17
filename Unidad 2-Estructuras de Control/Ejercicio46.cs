@@ -16,9 +16,12 @@ namespace Ejercicio46for
     {
         static void Main(string[] args)
         {
+            //Entrada
             double compra; double descuento; double pago; int contador = 0; double acumulado = 0; int continuar; int cliente;
 
             cliente = Convert.ToInt32(Console.ReadLine());//Se ingresan el valor de la compra
+
+            //Proceso
             for (int i=0; i<=cliente; i++)
             {
                 
@@ -67,6 +70,7 @@ namespace Ejercicio46for
                 }
 
             } 
+            //Salida
             Console.WriteLine( acumulado);//El total de ganancias acumuladas de las ventas
             Console.WriteLine(contador);//Salida del numero de descuentos aplicados
             Console.ReadLine();
