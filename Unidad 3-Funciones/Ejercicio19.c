@@ -1,79 +1,64 @@
-/*
-	Autor: Carlos Chan Gongora 15/02/2019
-	Entradas: Tres numeros.
-	Salidas: El mayor de los 3 numeros.
-	Procedimiento general: Lee los 3 numeros, posterior verifica si son iguales y encuentra
-  el mayor de los 3 numeros, si los numeros no son iguales imprime el mayor, de ser iguales
-  imprime un texto indicando que los numeros son iguales.
-*/
+//Autor Irving Eduardo Poot Moo
+//Version 1.0
+//Program who compare two nombers and print the bigger
+
 #include <stdio.h>
 
-int entrada();
-int encontrarMayor(int, int, int);
-int verificarIgualdad(int, int, int);
-void imprimirResultados(int, int);
+float entrada1();
+float entrada2();
+float entrada3();
+float comparacion(float, float, float);
+void imprimirMayor(float);
 
-int main(){
-  // Entradas
-  int num1, num2, num3, mayor, igualdad;
-  num1 = entrada();
-  num2 = entrada();
-  num3 = entrada();
-
-  // Procesos
-  igualdad = verificarIgualdad(num1, num2, num3);
-  if(!igualdad){
-    mayor = encontrarMayor(num1, num2, num3);
-  }
-
-  // Salidas
-  imprimirResultados(igualdad, mayor);
-
-  return 0;
+float main(){
+    //Inputs
+    float num1, num2, num3;
+    float numMayor;
+    num1 = entrada1();
+    num2 = entrada2();
+    num3 = entrada3();
+    // Process
+    comparacion(num1, num2, num3);
+    // Print number
+    imprimirMayor(numMayor);
 }
 
-// Lee un numero
-int entrada(){
-  int numero = 1;
-  printf("Ingrese un numero: ");
-  scanf("%d", &numero);
-  return numero;
-}
-// Verifica si los numeros son iguales, de ser verdad regresa 1 o de lo contrario regresa 0
-int verificarIgualdad(int num1, int num2, int num3){
-  int igualdad = 0;
-  if(num1 == num2 && num2 == num3){
-    igualdad = 1;
-  }
-  return igualdad;
-}
-// Compara 3 numeros para encontrar el mayor
-int encontrarMayor(int num1, int num2, int num3){
-  int mayor = 0;
-  if((num1 > num2 && num1 > num3) || (num1 >= num2 && num1 >= num3)){
-    mayor = num1;
-  }
-  else if(num2 > num1 && num2 > num3){
-    mayor = num2;
-  }
-  else{
-    mayor = num3;
-  }
-  return mayor;
-}
-// Verifica si los numeros son iguales, en ese caso imprime que "son iguales",
-// de lo contrario imprime al mayor
-void imprimirResultados(int igualdad, int mayor){
-  if(igualdad){
-    printf("Los numeros son iguales");
-  }
-  else{
-    printf("El mayor es: %d", mayor);
-  }
+
+float entrada1(){
+    float numero = 1;
+    scanf("%d",&numero);
+    return numero;
 }
 
-/*AUTOR QA: RONSSON RAMIRO MAY SANTOS
-ENTRADAS: 9,9, -3
-SALIDAS: EL MAYOR ES -3
-OBSERVACIONES: SOLO FUNCIONA CON NUMEROS POSITIVOS, CON UN NEGATIVO DICE QUE EL NEGATIVO ES EL MAYOR.
-*/
+float entrada2(){
+    float numero = 1;
+    scanf("%d",&numero);
+    return numero;
+}
+
+float entrada3(){
+    float numero = 1;
+    scanf("%d",&numero);
+    return numero;
+}
+
+float comparacion(float num1, float num2, float num3){
+    float numMayor = 0;
+    if (num3 < num1 > num2)
+    {
+        numMayor = num1;
+    }
+    else if (num3 < num2 > num1)
+    {
+        numMayor = num2;
+    }
+    else
+    {
+        numMayor = num3;
+    }
+    return numMayor;
+}
+
+void imprimirMayor(float numMayor){
+    printf("El numero mayor es: %d", numMayor);
+}
