@@ -1,116 +1,125 @@
 /*
-Autor: Eyder Concha Moreno 16/Febrero/19
-Entradas: sueldo base, antiguedad en la empresa
-Salidas: Incentivo, sueldo total y sueldo base, o error por entradas incorrectas
-
-Procedimiento general:
-1.-Preguntamos el número de años de antiguedad
-2.-Preguntamos antiguedad del empleado
-3.-Verificamos si los datos ingresados son válidos
-4.-Con su antiguedad, determinamos el porcentaje a otorgar
-5.-Definimos el incentivo con el porcentaje obtenido
-6.-Calculamos el sueldo total
-7.-Asignamos un mensaje de salida de acuerdo a lo escrito por el usuario
+Author Joshua Immanuel Meza Magana
+Version 1.0
+Program who add a little amount of money to the salary of a worker depending on the time he has worked on the company.
 */
 
 #include <stdio.h>
-#include <stdlib.h>
 
-void entradas(float*, int*);
-int validacionValores(float, int);
-float calculoIncentivo(float, int);
-float calculoSueldoTotal(float, float);
-void salidas(int, float, float, float);
+int readAge();
+float readMoney();
+float calculateExtra(int,float);
+void printResult(float);
 
-int main()
-{
-    /*Entradas*/
+int main() {
+  
+  /*Input
+  It receives the values.
+    Args:
+      age (int): Age of the worker
+      money (float): Salary of the worker
+      total (float): New total amount of money
+  */
+  int age=0;
+  float money=0,total=0;
+  age=readAge();
+  money=readMoney();
 
-    float sueldoBase;
-    int antiguedad;
+  /*Process
+  It calculates the new total.
+    Args:
+      age (int): Age of the worker
+      money (float): Salary of the worker
+      total (float): New total amount of money
+  */
+  total=calculateExtra(age,money);
 
-    float incentivo;
-    float sueldoTotal;
+  /*Output
+  It prints the result.
+    Args: 
+      total (float): New total amount of money
+  */
+  printResult(total);
 
-    int cantidadValida;
-
-    /*Procedimiento*/
-    printf("Ingresa el sueldo base y la antiguedad en la empresa respectivamente\n");
-    entradas(&sueldoBase, &antiguedad);
-
-    //Comprobamos si valores ingresados son validos
-    cantidadValida = validacionValores(sueldoBase, antiguedad);
-
-    //Determinamos incentivo y sueldo total
-    incentivo = calculoIncentivo(sueldoBase, antiguedad);
-    sueldoTotal = calculoSueldoTotal(sueldoBase, incentivo);
-
-    //Con base a la validación, determinamos la salida
-    salidas(cantidadValida, sueldoTotal, sueldoBase, incentivo);
-
-    return 0;
+  return 0;
 }
 
-void entradas(float* sueldoBase, int* antiguedad){
-    scanf("%f", sueldoBase);
-    scanf("%d", antiguedad) !=2;
-}
+/* Functions */
 
-void salidas(int cantidadValida, float sueldoTotal, float sueldoBase, float incentivo){
-    if(cantidadValida){
-        printf("El sueldo total es de: $ %f \nEl sueldo base es de: $ %f \nEl incentivo es de: %f", sueldoTotal, sueldoBase, incentivo);
-    } else {
-        printf("Entrada invalida");
+int readAge(){
+  /*
+  It reads the age of the worker.
+    Args:
+      _age (int): Value of the age of the worker 
+    Returns:
+      The age of the worker
+  */
+  int _age=0;
+
+  scanf("%d",&_age);
+
+  if (_age<0 || _age>15 || _age==0){
+    while (_age<0 || _age>15 || _age==0){
+      scanf("%d",&_age);
     }
+  }
+
+  return _age;
 }
 
-float calculoSueldoTotal(float sueldoBase, float incentivo){
-    float suma = sueldoBase + incentivo;
-    return suma;
-}
+float readMoney(){
+  /*
+  It reads the salary of the worker.
+    Args:
+      _money (float): Salary of the worker 
+    Returns:
+      The salary of the worker
+  */
+  float _money=0;
 
-float calculoIncentivo(float sueldoBase, int antiguedad){
-    float porcentajeIncentivo;
-    float incentivo;
+  scanf("%f",&_money);
 
-    // Determinamos el incentivo con base a la antiguedad
-    if(antiguedad < 1){
-      porcentajeIncentivo = 0;
-
-    } else if(antiguedad < 4){
-      porcentajeIncentivo = .01;
-
-    } else if(antiguedad < 7){
-      porcentajeIncentivo = .03;
-
-    } else if(antiguedad < 10){
-      porcentajeIncentivo = .05;
-
-    } else {
-      porcentajeIncentivo = .07;
+  if (_money<0){
+    while (_money<0){
+      scanf("%f",&_money);
     }
+  }
 
-    incentivo = porcentajeIncentivo * sueldoBase;
-    return incentivo;
+  return _money;
 }
 
-int validacionValores(float sueldoBase, int antiguedad){
-    // Se valida si las entradas leidas son validas
-    int cantidadValida = 1;
-    if(antiguedad <= 0 || sueldoBase <= 0){
-        cantidadValida = 0;
-    }
-    return cantidadValida;
+float calculateExtra(int _age,float _money){
+  /*
+  It calculates the total new amount of money.
+    Args:
+      _age (int): Age of the worker
+      _money (float): Normal amount of money
+      _total (float): New total amount of money
+    Returns:
+      The new total amount of money
+  */
+  float _total=0;
+
+  if (_age>=1 && _age<=3){
+    _total=_money*1.01;
+  } else if (_age>=4 && _age<=6){
+    _total=_money*1.03;
+  } else if (_age>=7 && _age<=9){
+    _total=_money*1.05;
+  } else if (_age>=10){
+    _total=_money*1.07;
+  } 
+
+  return _total;
 }
-/*
-Autor QA: Jimmy Nathan Ojeda Arana
-Entradas: 1000,8
-Salidas: El sueldo total es de: $ 1050.000000    El sueldo base es de: $ 1000.000000    El incentivo es de: 50.000000
-Proceso: OK
-Modularización: OK. El main no puede estar más simple.
- Función entradas: OK
- Función validacionValores: OK
- Función calculoIncentivo: OK
- Función calculoSueldoTotal: OK
- Función salidas: OK
-*/
+
+void printResult(float _total){
+  /*
+  It prints the total of money.
+    Args:
+      _total (float): Total of money
+    Returns:
+      Nothing
+  */
+  printf("%f",_total);
+}

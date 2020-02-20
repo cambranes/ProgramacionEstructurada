@@ -17,15 +17,15 @@ def readAge():
 
     _age=int(input())
 
-    if _age<0 or _age>15:
-        while _age<0 or _age>15:
+    if _age<0 or _age>15 or _age==0:
+        while _age<0 or _age>15 or _age==0:
             _age=int(input())
     
     return _age
 
 def readMoney():
     '''
-    It reads the salary of the worker
+    It reads the salary of the worker.
         Args:
             _money (float): Salary of the worker 
         Returns:
@@ -43,7 +43,7 @@ def readMoney():
 
 def calculateExtra(_age,_money):
     '''
-    It calculates the total new amount of money
+    It calculates the total new amount of money.
         Args:
             _age (int): Age of the worker
             _money (float): Normal amount of money
@@ -62,16 +62,13 @@ def calculateExtra(_age,_money):
             if _age>=7 and _age<=9:
                 _total=_money*1.05
             else:
-                if _age>=10:
-                    _total=_money*1.07
-                else:
-                    _total=_money
+                _total=_money*1.07
 
     return _total
 
 def printResult(_total):
     '''
-    It prints the total of money
+    It prints the total of money.
         Args:
             _total (float): Total of money
         Returns:
@@ -106,5 +103,7 @@ total=float(calculateExtra(age,money))
 #Output
 '''
 It prints the result.
+    Args:
+        total (float): New total amount of money
 '''
 printResult(total)

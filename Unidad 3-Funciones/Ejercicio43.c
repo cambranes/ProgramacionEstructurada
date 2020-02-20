@@ -1,130 +1,146 @@
 /*
-  Autor: Raul Rivadeneyra
-  Entradas: Numeros enteros
-  Salidas: Cuantos numeros positivos y negativos hay
-  Proceso general: lee numeros enteros del usuario y si es positivo le suma uno al contador de positivos y lo similar
-  si es negativo.
+Author Joshua Immanuel Meza Magana
+Version 1.0
+Program who count how many positive and negative numbers are on N numbers, 0 break the count.
 */
 
-#include "stdio.h"
+#include <stdio.h>
 
-void process(int*, int*);
-char getNumbers(int*);
-void checkSign(int, int*, int*);
+void specifyNumbers(int *);
+void inputNumbers(int,float[]);
+int pResult(int,float[]);
+int nResult(int,float[]);
+void printResult(int,int);
 
 int main() {
-  int positive = 0;
-  int negative = 0;
 
-  //Da instrucciones al usuario
-  printf("Insert numbers to check how many positives or negatives are (type 0 to stop):\n");
+  /* Input
+  It recives the N amount of numbers, and then it reads them.
+    Args:
+        nNum (int): Number of numbers
+        listNumbers (vector): List of numbers
+  */
+  int nNum=0;
+  specifyNumbers(&nNum);
+  float listNumbers[nNum];
+  inputNumbers(nNum,listNumbers);
 
-  //Proceso
-  process(&positive, &negative);
+  /*Process 
+  Calculate how many positive and negative numbers are on the N numbers.
+    Args:
+        pos (int): Ammount of positive numbers
+        neg (int): Amount of negative numbers
+        N (int): Number of numbers
+        listNumbers (list): List of numbers
+  */
+  int pos=0,neg=0;
+  pos=pResult(nNum,listNumbers);
+  neg=nResult(nNum,listNumbers);
 
-  //Imprime el resultado
-  printf("There are %d positive numbers and %d negative numbers\n", positive, negative);
+  /*Output 
+  Print the results.
+  */
+  printResult(pos,neg);
+
   return 0;
 }
 
-//Funciones//
+/* Functions */
 
-//Combina las funciones de getNumber y checkSign en un ciclo
-void process(int *positive, int *negative) {
-  int number;
-  while (getNumbers(&number) == 0) {
-    checkSign(number, positive, negative);
-  }
+void specifyNumbers(int *_nNum){
+    /*
+    It gets the N numbers that we will count.
+        Args:
+            _nNum (int): Value of the number of numbers
+        Returns:
+            The N numbers that will be counted
+    */
+    scanf("%d",_nNum);
+
+    if (*_nNum<0 || *_nNum==0){
+        while (*_nNum<0 || *_nNum==0){
+            scanf("%d",_nNum);
+        }
+    }
 }
 
-/*
-  Lee numeros enteros y le asigna el valor directamente a la variable externa (paso por referencia),
-  si el numero es 0 entonces devuelve 1 para finalizar el ciclo donde se llamo, de lo contrario hace
-  return 0 por lo que sigue el ciclo
-*/
-char getNumbers(int *number) {
-  scanf("%d", number);
-  if (*number == 0){
-    return 1;
-  }
-  return 0;
+void inputNumbers(int _nNum,float _listNumbers[]){
+    /*
+    Get a vector of the numbers that we will compare.
+        Args:
+            _nNum (int): Number of numbers
+            _listNumbers (vector): The temporary list of numbers
+            con (int): Counter
+        Returns:
+            Values of the list of numbers
+    */
+    int con=0;
+
+    while (con<_nNum){
+        scanf("%f",&_listNumbers[con]);
+        if (_listNumbers[con]==0){
+            con=_nNum;
+        }
+        con+=1;
+    }
 }
 
-//Evalua si el numero dado es postitivo o negativo y suma 1 a el asignado
-void checkSign(int value, int *positive, int *negative) {
-  if (value > 0){
-    *positive = *positive + 1;
-  }
-  else{
-    *negative = * negative + 1;
-  }
+int pResult(int _nNum,float _listNumbers[]){
+    /*
+    It calculates the amount of positive numbers.
+        Args:
+            _nNum (int): Number of numbers
+            _listNumbers (vector): List of numbers
+            _pos (int): Ammount of positive numbers
+        Returns:
+            Ammount of positive numbers
+    */
+    int _pos=0,i=0;
+
+    while (i<_nNum){
+        if (_listNumbers[i]==0){
+            break;
+        } else if (_listNumbers[i]>0){
+            _pos+=1;
+        }
+        i+=1;
+    }
+
+    return _pos;
 }
 
-/*
-Autor: Raul Rivadeneyra
-Entradas: Numeros enteros
-Salidas: Cuantos numeros positivos y negativos hay
-Proceso general: lee numeros enteros del usuario y si es positivo le suma uno al contador de positivos y lo similar
-si es negativo.
-*/
+int nResult(int _nNum,float _listNumbers[]){
+    /*
+    It calculates the amount of negative numbers.
+        Args:
+            _nNum (int): Number of numbers
+            _listNumbers (vector): List of numbers
+            _neg (int): Ammount of negative numbers
+        Returns:
+            Ammount of negative numbers
+    */
+    int _neg=0,i=0;
 
-#include "stdio.h"
+    while (i<_nNum){
+        if (_listNumbers[i]==0){
+            break;
+        } else if (_listNumbers[i]<0){
+            _neg+=1;
+        }
+        i+=1;
+    }
 
-void process(int*, int*);
-char getNumbers(int*);
-void checkSign(int, int*, int*);
-
-int main() {
-	int positive = 0;
-	int negative = 0;
-	
-	//Da instrucciones al usuario
-	printf("Insert numbers to check how many positives or negatives are (type 0 to stop):\n");
-	
-	//Proceso
-	process(&positive, &negative);
-	
-	//Imprime el resultado
-	printf("There are %d positive numbers and %d negative numbers\n", positive, negative);
-	return 0;
+    return _neg;
 }
 
-//Funciones//
-
-//Combina las funciones de getNumber y checkSign en un ciclo
-void process(int *positive, int *negative) {
-	int number;
-	while (getNumbers(&number) == 0) {
-		checkSign(number, positive, negative);
-	}
+void printResult(int _pos,int _neg){
+    /*
+    It print the amount of positive and negative numbers
+        Args:
+            _pos (int): Copy of the value of the positive numbers
+            _neg (int): Copy of the value of the negative numbers
+        Returns:
+            Nothing
+    */
+    printf("%d %d",_pos,_neg);
 }
-
-/*
-Lee numeros enteros y le asigna el valor directamente a la variable externa (paso por referencia),
-si el numero es 0 entonces devuelve 1 para finalizar el ciclo donde se llamo, de lo contrario hace
-return 0 por lo que sigue el ciclo
-*/
-char getNumbers(int *number) {
-	scanf("%d", number);
-	if (*number == 0){
-		return 1;
-	}
-	return 0;
-}
-
-//Evalua si el numero dado es postitivo o negativo y suma 1 a el asignado
-void checkSign(int value, int *positive, int *negative) {
-	if (value > 0){
-		*positive = *positive + 1;
-	}
-	else{
-		*negative = * negative + 1;
-	}
-}
-
-/*
-QA: Realizó: Jose Mendez
-Entradas: (5, -6, 9, -7, 99, -99 , 0)
-Salidas: 3 positivps y 3 negativos
-Funciona Correctamente.
-*/
