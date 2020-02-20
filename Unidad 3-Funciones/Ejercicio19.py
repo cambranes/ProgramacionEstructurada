@@ -1,9 +1,13 @@
+#Autor Irving Eduardo Poot Moo
+#Version 1.0
+#Program who Program who compare two nombers and print the bigger
 #Determinate
 numMayor = 0
 num1 = 0
 num2 = 0 
 num3 = 0 
 
+#Comparing numbers
 def comparisons(num1, num2, num3):
     if num1 > num2 and num1 > num3:
         numMayor = num1

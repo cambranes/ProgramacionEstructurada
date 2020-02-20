@@ -1,3 +1,7 @@
+//Autor Irving Eduardo Poot Moo
+//Version 1.0
+//Program who translate a militar hour to a normal hour
+
 #include <stdio.h>
 
 int hora();
@@ -15,35 +19,35 @@ int main(){
 
 
 
-// Leer la hora
+// Reeds the hour
 int hora(){
     int horaMilitar = 0;
     scanf("%d",&horaMilitar);
     return horaMilitar;
 }
 
-// Traduce la hora
+// Translate the hour
 int traducirHora(int horaOriginal){
     int amPm = 0;
     int horas = 0;
     int minutos = 0;
-    //Define am/pm
+    //Determinate am/pm
     amPm = 'am';
 
-    //Se obtienen los primeros 2 números
+    //Gets the firts 2 numbers
     horas = horaOriginal % 100;
 
-    // Se optienen los últimos 2 números
+    // Gets the las 2 numbers
     minutos = horaOriginal - (horaOriginal % 100 ) * 100;
 
-    // Traduce al formato
+    // Translate the format
     if (horas > 12)
         horas = horas - 12;
         amPm = 'pm';
     return ("%d : %d %d",horas, minutos, amPm);
 } 
 
-//Imprimir hora traducida
+//Print the translated hour
 void imprimirHora(int horaOriginal){
     printf(horaOriginal);
 }

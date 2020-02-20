@@ -1,3 +1,7 @@
+//Autor Irving Eduardo Poot Moo
+//Version 1.0
+//Program who compare two nombers and print the bigger
+
 #include <stdio.h>
 
 float entrada1();
@@ -7,15 +11,15 @@ float comparacion(float, float, float);
 void imprimirMayor(float);
 
 float main(){
-    //Entradas
+    //Inputs
     float num1, num2, num3;
     float numMayor;
     num1 = entrada1();
     num2 = entrada2();
     num3 = entrada3();
-    // Proceso
+    // Process
     comparacion(num1, num2, num3);
-    // Impresion del numero
+    // Print number
     imprimirMayor(numMayor);
 }
 
