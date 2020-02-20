@@ -30,7 +30,6 @@ void traduceHour(int originalHour, int horas, float min, int amPm){
     horas = originalHour / 100;
     // Gets the las 2 numbers
     min = originalHour - (originalHour / 100 ) * 100;
-
     // Translate the format
     if (horas > 12) {
         horas = horas - 12;
