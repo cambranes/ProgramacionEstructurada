@@ -1,4 +1,15 @@
-﻿using System;
+﻿/// <summary>
+/// Autor: Manuel Peraza
+/// Descricion:  introduzca el número del día de la semana (1-7) y 
+/// se visualice el nombre del día.
+/// Entrada: Un numero entero de 1 a 7
+/// Salida: Nombre del dia de la semana 
+/// Ejemplo: 
+/// Entrada: 1
+/// Salida: Lunes 
+/// </summary>
+
+using System;
 
 namespace ejercicio3
 {
