@@ -18,9 +18,9 @@
  * @brief Se inicializan los prototipos de funciones
  * 
  */
-void leerEntrada();
-int calcularFactorial();
-void imprimirSalida();
+void leerEntrada(int);
+int calcularFactorial(int);
+void imprimirSalida(int);
 
         /**
          * @brief El bloque de abajo es el Main, ahi es donde se ejecuta el codigo, dentro contiene las variables que se utilizaron
