@@ -1,70 +1,54 @@
-/**
- * @author: Luis Gerardo Leon Ortega | ejercicio 32
- * Entrada: Dos años
- * Salida general: Los años biciestos comprendidos entre ellos
- * Proceso general:
- *  - calcula la diferencia de años y en un for al mas pequeño se le suma 1 hasta llegar al mas grande
- *  - si el año es divisible por 4 y no es divisible por 100 o el numero es divisible por 400 es biciesto
- */
+/*
+Mario Chan Zurita 
+Datos de entrada: Dos números que representan dos años
+Datos de salida: Cantidad de años bisiestos dentro del rango de los dos años dados
+Problema: Dados dos números que representan dos años, determinar la cantidad de años bisiestos
+que hay entre los dos años
+*/
+
 #include <stdio.h>
 
-void entradas(int*, int*);
-void proceso(int*, int*);
-void salidas(int);
+//PROTOTIPOS
+int entrada();
+int calculoAniosBisiestos(int anio1, int anio2);
+int salida(int aniosBisiestos);
 
-int main() {
-    /* entradas */
-    int x,y;
-    entradas(&x, &y);
-    /* proceso */
-    proceso(&x, &y);
-    /* salidas */
-    salidas(x);
-
+//MAIN
+//Como son dos entradas se llama dos veces la funcion "entrada" para poder ingresar los dos valores
+int main(int argc, char** argv) {
+	
+	int aniobase, aniolimite, resultado, imprimir;
+	
+	aniobase = entrada();
+	aniolimite = entrada();
+	
+	resultado = calculoAniosBisiestos(aniobase,aniolimite);
+	
+	imprimir = salida(resultado);
+	
+	return 0;
 }
 
-/*
- * Entradas
- */
-void entradas(int* x, int* y){
-    printf("Ingresa el primer año");
-    scanf("%i", x);
-    printf("Ingresa el segundo año");
-    scanf("%i", y);
+//FUNCIONES
+//Obtiene el valor de anio(entrada)
+int entrada(){
+	int anio;
+	
+	scanf("%d", &anio);
+	
+	return anio;
 }
-
-/*
- * Proceso
- */
-void proceso(int* x, int* y){
-    int temp;
-    if(*x < *y){
-        temp = *x; *x = *y; *y = temp;
-    }
-    temp = 0;
-    for (int i = 1; i < (*x-*y); ++i) {
-        if( ((*y+i)%4 == 0 && (*y+i)%100 != 100) || ((*y+i)%400 == 0)){
-            temp++;
-        }
-    }
-    *x = temp;
+//Verificacion de los años que se encuentran dentro del rango dado para saber cuantos años bisiestos hay
+int calculoAniosBisiestos(int anio1, int anio2){
+	int aniosBisiestos=0,i;
+	for(i=anio1; i<=anio2; i++){
+		if(i%4 == 0){
+			aniosBisiestos+=1;
+		}
+	}
+	return aniosBisiestos;
 }
-
-/*
- * salidas
- */
-void salidas(int x){
-    printf("Cantidad de años biciesto entre ellos %i", x);
+//Imprime el la cantidad de años Bisiestos(salida)
+int salida(int aniosBisiestos){
+	printf("%d", aniosBisiestos);
 }
-
-/*
-Autor QA: Jorge Abraham Pinto López
-Entradas: 1947, 2018
-Salidas:  Cantidad de años biciesto entre ellos 18
-Proceso: El programa presenta un error debido a que en la línea 22 se tiene una variable (y) demás en la función "salidas" que no está declarada. Se realiza corrección y el proceso es OK.
-(Solucionado)
-Modularidad: OK. el main no puede estar más simple. 
-  Función LecturaDeValores: OK
-  Función media: OK.
-  Función impresion: OK
-*/
