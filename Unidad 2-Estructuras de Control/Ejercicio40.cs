@@ -18,12 +18,10 @@ namespace Ejercicio40
             double su = 0, aum = 0; 
             //su: sueldo, aum: aumento
 
-            Console.WriteLine("¿Cuantos trabajadores hay en la empresa?");
             int.TryParse(Console.ReadLine(), out numTra); //Se lee el número de trabajadores
 
             for(int i = 0; i < numTra; i++) //Se inicia un ciclo para todos los trabajadores
             {
-                Console.WriteLine("¿Cuanto gana el trabajador {0}?", i+1);
                 su = Double.Parse(Console.ReadLine()); //Se lee el sueldo de cada trabajador
 
                 //Proceso
@@ -31,11 +29,6 @@ namespace Ejercicio40
                 { //Si es menor a 800 entonces
                     aum = su * 0.15; //Se calcula el aumento multiplicando el sueldo por 0.15
                     su = su + aum; //Se suma el sueldo con el aumento
-                    Console.WriteLine("Su sueldo con aumento será:");
-                }
-                else
-                {
-                    Console.WriteLine("No tiene aumento, por lo tanto, su sueldo será:");
                 }
 
                 //Salida

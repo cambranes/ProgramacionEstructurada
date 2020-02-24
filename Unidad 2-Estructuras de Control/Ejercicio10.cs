@@ -4,23 +4,23 @@
 //Programa que recibe un numero N y da los primeros N multiplos de 7
 //Entrada: Numero entero positivo
 //Salida: N multiplos enteros positivos de 7
-using system;
-namespace Ejercicio10
+using System;
+
+namespace Contador
 {
     class Program
     {
         static void Main(string[] args)
         {
+            //Entrada
             int n;
-
-            Console.WriteLine("Imprime numeros del 0 a n, de 7 en 7");
-
-            Console.WriteLine("Ingrese valor para n");
             n =Convert.ToInt32(Console.ReadLine());//valor del numero de multiplos deseados
 
-            for (int i = 0; i <= (7*n); i += 7)//inicio en cero, 7 multiplicado por el valor de n, incrementador
+            //Proceso
+            for (int i = 7; i <= (7*n); i += 7)//inicio en cero, 7 multiplicado por el valor de n, incrementador
             {
-                Console.WriteLine("i= " + i);//Impresion de los multiplos de 7 segun n
+                //Salida
+                Console.WriteLine(i);//Impresion de los multiplos de 7 segun n
             }
             Console.ReadLine();
         }

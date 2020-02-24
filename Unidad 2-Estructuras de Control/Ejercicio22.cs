@@ -16,7 +16,6 @@ namespace Ejercicio22
             int entrada = 0, fact = 1, salida = 0;
             // entrada: número introducido, fact: factorial, salida: La suma de la serie de factoriales
 
-            Console.WriteLine("Introduce el número de serie");
             int.TryParse(Console.ReadLine(), out entrada); //Se lee el número de entrada
 
             //Proceso
@@ -41,7 +40,6 @@ namespace Ejercicio22
             }
 
             //Salida
-            Console.WriteLine("El total de la serie de factoriales es:");
             Console.WriteLine(salida); //Se imprime la suma de serie de factoriales
         }
     }

@@ -1,71 +1,84 @@
-/*
-	Autor: Carlos Chan Gongora 15/02/2019
-	Entradas: Un numero entero.
-	Salidas: El dia de la semana correspondiente al numero ingresado.
-	Procedimiento general: Lee un numero, valida que este en el rango de 1 a 7 e Imprime
-  el dia correspondiente.
-*/
+/**
+ * @file ejercicio3.c
+ * @author Manuel Peraza
+ * @brief Programa que  introduzca el número del día de la semana (1-7) y se visualice el nombre del día.
+ * Entrada: Numeros enteros del 1 a 7
+ * Salida: Nombre del dia de la semana
+ * Ejemplo: 
+ * Entrada: 1
+ * Salida: Lunes
+ * @version 0.1
+ * @date 2020-02-22
+ * 
+ * @copyright Copyright (c) 2020
+ * 
+ */
 #include <stdio.h>
 
-int entrada();
-int validarNumero(int);
-void imprimirDia(int);
-
-int main(){
-  // Entradas
-  int num;
-  do{
-    num = entrada();
-  }while(!validarNumero(num));
-
-  // Proceso
-  imprimirDia(num);
-
-  return 0;
+/**
+ * @brief Se inicializan los prototipos de las funciones 
+ */
+void leerEntrada(int *);
+void imprimeSalida(int);
+/**
+ * @brief El bloque e abajo ess el Main, ahi es donde se ejecuta el código, dentro contiene las variables  que se utilizaron
+ * para el algoritmo. Tambien contiene las funciones que se encarguen de la entrada.
+ * @return int 
+ */
+int main()
+{ 
+    //Entrada
+    //se inicializan las variables
+    int dia=0;
+    //Funcion que lee la variable 
+    leerEntrada(&dia);
+    //Salida
+    //Funcion que imprime la salida
+    imprimeSalida(dia);
+    return 0;
 }
-
-// Lee un numero
-int entrada(){
-	int numero = 1;
-	printf("Ingrese un numero entre 1 y 7: ");
-	scanf("%d", &numero);
-	return numero;
+/**
+ * @brief La funcion leerEntrada se encarga de que el usuario introdusca los valores y por pase de referencia tenga
+ * los mismos valores la variable en el bloque main 
+ * @param _dia numero entero del 1 al 7
+ */
+void leerEntrada(int *_dia)
+{
+    scanf("%d", _dia);
 }
-// Valida que el numero ingresado sea mayor a cero y menor a 8, devuelve 1 si es mayor y 0 si es menor.
-int validarNumero(int num){
-	int validar = 0;
-	if(num > 0 && num < 8){
-		validar = 1;
-	}
-	else{
-		validar = 0;
-	}
-	return validar;
+/**
+ * @brief La funcion imprimeSalida se encarga de imprimir el nombre del dia de la semana de acuerdo al numero de 
+ * ingresado en la variable
+ * @param num 
+ */
+void imprimeSalida(int num)
+{
+    if(num==1)
+    {
+        printf("Lunes");
+    }
+    else if(num==2)
+    {
+        printf("Martes");
+    }
+    else if(num==3)
+    {
+        printf("Miercoles");
+    }
+    else if(num==4)
+    {
+        printf("Jueves");
+    }
+    else if(num==5)
+    {
+        printf("Viernes");
+    }
+    else if(num==6)
+    {
+        printf("Sabado");
+    }
+    else if(num==7)
+    {
+        printf("Domingo");
+    }
 }
-// Recibe un entero e imprime el dia correspondiente
-void imprimirDia(int num){
-  printf("El dia correspondiente al numero %d es: ", num);
-  switch (num) {
-    case 1: printf("Lunes");
-            break;
-    case 2: printf("Martes");
-            break;
-    case 3: printf("Miercoles");
-            break;
-    case 4: printf("Jueves");
-            break;
-    case 5: printf("Viernes");
-            break;
-    case 6: printf("Sabado");
-            break;
-    case 7: printf("Domingo");
-            break;
-    default: printf("El numero no esta en el rango de 1 a 7.\n");
-  }
-}
-/*
-QA: Hector Abraham V. Cosgalla
-Entradas: 4, 2, 8 y 7
-Salidas: Jueves, Martes, nada y Domingo (respectivamente)
-Comentarios: Todo excelente.
-*/
