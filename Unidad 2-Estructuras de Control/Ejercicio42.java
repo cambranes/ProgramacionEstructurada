@@ -1,7 +1,7 @@
+public class Main {
 
-public class RaizCuadrada {
 
-	public static void main(String[] args) {
+public static void main(String[] args) {
 	double numero = 0;
 	double raiz;
 	
@@ -12,8 +12,10 @@ public class RaizCuadrada {
 		
 		numero ++;
 		raiz = Math.sqrt(numero);
+		int raiztotal = (int)raiz;
+		int entero = (int)numero;
 		
-		System.out.println(numero + "                -         " + raiz);
+		System.out.println(entero + "                -         " + raiztotal);
 		
 	} 
 
