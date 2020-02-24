@@ -20,9 +20,9 @@ numero_inicial = int(input())
 salida = esprimo(numero_inicial)
 
 #Salida | imprime si es primo o no 
-if salida is True:
+if salida is True:  
     print("Es primo")
 else:
-    print("No es primo25")
+    print("No es primo")
 
 
