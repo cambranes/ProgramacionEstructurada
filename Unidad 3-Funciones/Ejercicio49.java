@@ -1,3 +1,9 @@
+/*Autor: Diego De Gante Pérez
+*Entradas: Sin entradas
+*Salidas: Tablas de multiplicar del 2 al 9
+*Proceso:
+Con dos ciclos multiplica cada uno de los números del 1 al 10 para pasar al siguiente
+*/
 import java.util.Scanner;
 
 public class Main{
