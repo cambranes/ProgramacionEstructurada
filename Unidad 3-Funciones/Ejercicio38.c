@@ -1,3 +1,10 @@
+/*Autor: Diego De Gante Pérez
+*Entradas: Todos los digitos de tres digitos
+*Salidas: El número en donde la suma de los cubos de los digitos sea igual al número
+*Proceso:
+Calcular todos los números de tres dígitos tales que la suma de los cubos de
+los dígitos es igual al número
+*/
 #include <stdio.h>
 
 void procesoSalida(int);
