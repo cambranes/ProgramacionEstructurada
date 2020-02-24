@@ -19,3 +19,4 @@ elif aMult%bNum==0:
     print("Si es multiplo")
 else:
     print("No es multiplo")
+    

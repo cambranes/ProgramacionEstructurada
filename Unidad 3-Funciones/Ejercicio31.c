@@ -1,56 +1,57 @@
-/*Autor: Guillermo Canto Dzul
-Entradas: Un numero entero
-Salidas: Imprime si es primo o no
-*/
+//Autor: Farid Espadas Escalante
+#include <stdio.h> //Algoritmo en C donde introduzcas un número y te diga si es primo o no es primo;
 
-#include <stdio.h>
-int entrada();
-int proceso(int n);
-void salida(int n, int esPrimo);
-int main(int argc, char *argv[]) {
-	int n, esPrimo;
-	n = entrada();
-	esPrimo = proceso(n);
-	salida(n, esPrimo);
-	return 0;
-}
-//Lee el numero
-int entrada(){
-	int n;
-	printf("Ingrese un numero:\n");
-	scanf("%d", &n );
-	return n;
-}
-//Verifica si el numero es primo o no.
-int proceso(int n){
-	int suma = 0;
-	int i, flag;
-	for (i=1; i<n ; i++){
-		if (n % i == 0){
-			suma = suma + 1;
-		}
-	}
-	if (suma == 1){
-		flag = 1;
-	}
-	else{
-		flag = 0;
-	}
-	return flag;
-}
-//Imprime el resultado.
-void salida(int n, int esPrimo){
-	if (esPrimo == 1){
-		printf("%d es primo\n", n);
-	}
-	else{
-		printf("%d no es primo\n", n);
-	}
-}
-/*AUTOR QA : DANIEL DELFIN
-ENTRADAS -1,2,17
-SALIDAS -1 NO ES UN NUMERO PRIMO
-	2 ES UN NUMERO PRIMO
-	17 ES UN NUMERO PRIMO
-OBSERVACIONES. MUY BIEN LA MODULARIZACION DEL CODIGO*/
+//Entrada | int numero;
+//Procesos | Determinar si el número es primo o no; 
+//Salida || str "Es primo" or "No es primo"
 
+int read();
+int proceso (int esprimo);
+
+int main(){ //Función principal
+
+    int num, es_Primo;
+
+    num = read(); 
+    es_Primo = proceso(num);
+
+    if (es_Primo == 1){ //Condicion que determina si es primo o no el número
+        printf("Es primo");
+    }
+    else{
+        printf("No es primo");
+    }
+
+    return 0;
+}
+
+
+int read(){ //Función donde se lee la variable a determinar si es primo o no
+
+    int num_Scan;
+
+    scanf("%d",&num_Scan);
+
+    return num_Scan;
+}
+
+
+int proceso(int esprimo){  //Función donde se determina si el número se divide entre 2 números enteros nada más, recorriendo de 1 hasta ese núm con un ciclo for. 
+
+    int i, j, cont = 0;
+
+    for (i = 1; i <= esprimo; i++){
+        if (esprimo % i == 0){
+            cont++;
+        }
+    }
+
+    if (cont == 2){
+        esprimo = 1;
+    }
+    else{
+        esprimo = 0;
+    }
+
+    return esprimo;
+}
