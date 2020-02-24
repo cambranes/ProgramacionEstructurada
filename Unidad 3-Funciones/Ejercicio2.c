@@ -3,7 +3,7 @@
 //Prototipos de las funciones
 void leerEntrada (int *);
 int compararNumeros (int, int);
-void imprimirSalida (int);
+void imprimirSalida (int, int, int);
 
 
 int main() {
@@ -12,7 +12,7 @@ int main() {
     leerEntrada(&numeroUno);
     leerEntrada(&numeroDos);
     caso = compararNumeros(numeroUno, numeroDos);
-    imprimirSalida(caso);
+    imprimirSalida(numeroUno, numeroDos, caso);
 
     return 0;
 }
@@ -22,23 +22,28 @@ void leerEntrada(int *_entrada){
 }
 
 int compararNumeros (int a, int b){
-    if(a%b == 0){
+    if(a>b){
             return 1;
-        } else {
+        } else if (b>a){
             return 2;
+        } else {
+            return 3;
         }
 }
 
-void imprimirSalida(int c){
-    switch (c)
+void imprimirSalida(int x, int y, int z){
+    switch (z)
     {
     case 1:
-        printf("Si es multiplo");
+        printf("%i %i", x, y);
         break;
     
     case 2:
-        printf("No es multiplo");
-        break;   
+        printf("%i %i", y, x);
+        break;
+    case 3:
+    printf("%i %i", x, y);
+    break;     
     }
 }
 
