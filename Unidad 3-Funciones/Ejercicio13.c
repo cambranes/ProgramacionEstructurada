@@ -5,14 +5,20 @@
 #include <stdio.h>
 
 int readHour(int);
-void traduceHour(int, int, float, int);
+char traduceHour(int, char);
+int translateHour(int)
+int translateMinutes(int)
+void printHour(int, int, char)
 
 
 int main(){
    // Entrada de la hora
-    int originalHour, horas, amPm, min;
+    int originalHour, hour, amPm, min;
     originalHour = readHour(originalHour);
-    traduceHour(originalHour, horas, min, amPm);
+    hour = traduceHour(originalHour);
+    min = translateMinutes(originalHour);
+    amPm = traduceHour(amPm, hour);
+    printHour(hour, min, amPm);
 }
 
 // Reeds the hour
@@ -21,27 +27,29 @@ int readHour(int originalHour){
     return originalHour;
 }
 
+int translateHour(int originalHour){
+    hour = originalHour / 100;
+    return hour
+}
+
+int translateMinutes(int originalHour){
+    min = originalHour - (originalHour / 100 ) * 100
+    return min
+}
+
 // Translate the hour
-void traduceHour(int originalHour, int horas, float min, int amPm){
-    
-    //Determinate am/pm
-    amPm=0;
-    //Gets the firts 2 numbers
-    horas = originalHour / 100;
-    // Gets the las 2 numbers
-    min = originalHour - (originalHour / 100 ) * 100;
-    // Translate the format
-    if (horas > 12) {
-        horas = horas - 12;
-        amPm=1;
+char traduceHour(char amPm, int hour){
+
+    amPm= "am";
+    if (hour > 12) {
+        hour = hour - 12;
+        amPm= "pm";
     }
-    
+    return amPm
+}
+
+void printHour(int hour, int min, char amPm){
     //Print the translated hour 
-    if (amPm==0){
-     printf("%d : %1.2d am", horas, min);
-    } else
-    {
-        printf("%d : %1.2d pm", horas, min);
-    }
+    printf("%1.2d : %1.2d %c", hour, min, amPm);
     
 } 
