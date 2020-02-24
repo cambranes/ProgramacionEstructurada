@@ -1,5 +1,5 @@
-import java.util.Scanner
-public class ejercico1
+import java.util.Scanner;
+public class Ejercico12
 {
     public static void main(String[] args)
     {
@@ -15,11 +15,11 @@ int Numero1, Numero2;
 
     if ( Numero1>Numero2) {
 
-        System.out.printf (Numero1 + "es mayor que " + Numero2);
+        System.out.printf (Numero1 + " " + Numero2);
 
     } else {
 
-        System.out.printf (Numero2 + "es mayor que " + Numero1);
+        System.out.printf (Numero2 + " " + Numero1);
 
 }
     }
