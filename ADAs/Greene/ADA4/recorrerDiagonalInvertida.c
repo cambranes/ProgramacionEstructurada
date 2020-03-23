@@ -58,7 +58,7 @@ void asignarArreglo(int arr[][N])
 }
 
 /**
- * @brief Funcion que imprime que la diagonal inversa de la matriz
+ * @brief Funcion que imprime la diagonal inversa de la matriz
  * 
  * @param arr 
  */
