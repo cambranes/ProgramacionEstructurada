@@ -4,22 +4,12 @@
 #include <stdbool.h>
 #define N 3
 
-/*
-Comentarios para el Roberto del Futuro:
--Arreglar el bucle del comando 0 (Probablemente sea por utilizar un switch-case, pero no estoy seguro, checalo,  tienes que darle el mismo número de veces al comando cerrar que el que le das a las otras opciones).
--Hacer que los comandos no se vean cuando se da el resultado (Digo, no puedes apreciar si esta bien xd).
--Arreglar el comando limpiar (veriguar una forma de mantener el resultado despues de darle a limpiar, no funciono poner un scanf ni getchar()).
--No olvides mejorar las secciones 1 y 3, se puede hacer mejor.
--Si conseguir alguna configuración XDXDXD
-Nota. lo voy a dejar adrede, lo quitas mañana, de todas formas, todo funciona, cutre, pero funciona.
-*/
-
 //Prototipado de funciones
 void asignarArreglo(int arr[][N]);
 void imprimirArreglo(int arr[][N]);
 void menuOpciones(int arr[][N]);
+void desplegarMenu();
 void nuevoCuadro(int arr[][N]);
-//void limpiar(int arr[][N]);
 void recorrerMatriz1_2Ascendente(int arr[][N]);
 void recorrerMatriz1_2Descendente(int arr[][N]);
 void recorrerMatriz3_4Ascendente(int arr[][N]);
@@ -66,8 +56,9 @@ void asignarArreglo(int arr[][N]) {
 }
 
 void imprimirArreglo(int arr[][N]) {
-    printf("Su cuadro actual es:\n");
+    printf("[ Cuadro Actual ]\n");
     for(int i = 0; i < N; i++) {
+        printf("\t");
         for (int j = 0; j<N; j++){
             printf("%d\t", arr[i][j]);
         }
@@ -78,30 +69,12 @@ void imprimirArreglo(int arr[][N]) {
 void menuOpciones(int arr[][N]){
     bool check = true;
     int opc;
-    //Eror, checar que el bucle de verdad se salga, no olvidar
+    
+    desplegarMenu();
+    
     while( check ){
-      printf("\nSi conseguir alguna configuración especial, marque alguna opción:\n\t0. Exit");
-      printf("\n\t1. Crear nuevo cuadro");
-      printf("\n\t2. Sección 1-2 Ascendiente");
-      printf("\n\t3. Sección 1-2 Descendente");
-      printf("\n\t4. Sección 3-4 Ascendente");
-      printf("\n\t5. Sección 3-4 Descendente");
-      printf("\n\t6. Sección 1-4 Ascendente");
-      printf("\n\t7. Sección 1-4 Descendente");
-      printf("\n\t8. Sección 2-3 Ascendente");
-      printf("\n\t9. Sección 2-3 Descendente");
-      printf("\n\t10. Sección 1 Ascendiente");
-      printf("\n\t11. Sección 1 Descendiente");
-      printf("\n\t12. Sección 2 Ascendiente");
-      printf("\n\t13. Sección 2 Descendiente");
-      printf("\n\t14. Sección 3 Ascendiente");
-      printf("\n\t15. Sección 3 Descendiente");
-      printf("\n\t16. Sección 4 Ascendiente");
-      printf("\n\t17. Sección 4 Descendiente");
-      printf("\n\t18. Diagonal principal");
-      printf("\n\t19. Diagonal principal invertida\n");
-      
       scanf("%d", &opc);
+      printf("\n");
       switch(opc){
         case 0:
           printf("Buen dia :D\n");
@@ -164,9 +137,26 @@ void menuOpciones(int arr[][N]){
         case 19:
           recorrerDiagonalInvertida(arr); 
         default:
-          printf("El comando seleccionado no esta en la lista, intentelo denuevo :c");
+          printf("El comando seleccionado no esta en la lista, intentelo denuevo :c\n");
       }
+      printf("\n");
     }
+}
+
+void desplegarMenu(){
+  printf("\n[ Tablero de opciones ]");
+      printf("\n 1. Generar nueva matriz");
+      
+      printf("\n 2. 1-2 Ascendiente\t\t6. 1-4 Ascendente\t\t10. 1 Ascendiente\t\t14. 3 Ascendiente");
+      
+      printf("\n 3. 1-2 Descendente\t\t7. 1-4 Descendente\t\t11. 1 Desendiente\t\t15. 3 Descendiente");
+      
+      printf("\n 4. 3-4 Ascendente\t\t8. 2-3 Ascendente\t\t12. 2 Ascendiente\t\t16. 4 Ascendiente");
+      
+      printf("\n 5. 3-4 Descendente\t\t9. 2-3 Descendente\t\t13. 2 Ascendiente\t\t17. 4 Descendiente");
+      
+      printf("\n 18. Diagonal principal\t19. Diagonal invertida\n");
+      printf(" 0. Exit\n");
 }
 
 void nuevoCuadro(int arr[][N]){
@@ -176,54 +166,33 @@ void nuevoCuadro(int arr[][N]){
   menuOpciones(arr);
 }
 
-//Función en cuarentena
-/*void limpiar(int arr[][N]){
-  system("clear");
-  imprimirArreglo(arr);
-  menuOpciones(arr);
-}*/
-
 void recorrerMatriz1_2Ascendente(int arr[][N]){
   for( int i = 0; i < N; i++ ) {
       for( int j = 0; j < N; j++ ){
         if( j < N - i ){
-          printf("%d \t", arr[i][j]);
-        }
-        else{
-          printf("\t");
+          printf("%d\t", arr[i][j]);
         }
     }
-    printf("\n");
   }
-  //limpiar(arr);
 }
 
 void recorrerMatriz1_2Descendente(int arr[][N]){
   for( int i = N-1; 0 <= i; i-- ) {
       for( int j = 0; j < N; j++ ){
         if( j < N - i ){
-          printf("%d \t", arr[i][j]);
-        }
-        else{
-          printf("\t");
+          printf("%d\t", arr[i][j]);
         }
     }
-    printf("\n");
   }
-  //limpiar(arr);
 }
 
 void recorrerMatriz3_4Ascendente(int arr[][N]){
   for( int i = 0; i < N; i++ ) {
       for( int j = 0; j < N; j++ ){
         if( j >= N - i -1 ){
-          printf("%d \t", arr[i][j]);
-        }
-        else{
-          printf("\t");
+          printf("%d\t", arr[i][j]);
         }
     }
-    printf("\n");
   }
 }
 
@@ -231,13 +200,9 @@ void recorrerMatriz3_4Descendente(int arr[][N]){
   for( int i = N-1; 0 <= i; i-- ) {
       for( int j = 0; j < N; j++ ){
         if( j >= N - i -1 ){
-          printf("%d \t", arr[i][j]);
-        }
-        else{
-          printf("\t");
+          printf("%d\t", arr[i][j]);
         }
     }
-    printf("\n");
   }
 }
 
@@ -245,13 +210,9 @@ void recorrerMatriz1_4Ascendente(int arr[][N]){
   for( int i = 0; i < N; i++ ) {
       for( int j = 0; j < N; j++ ){
         if( j <= i ){
-          printf("%d \t", arr[i][j]);
+          printf("%d\t", arr[i][j]);
         }
-        else{
-          printf("\t");
-        }
-    }
-    printf("\n");
+      }
   }
 }
 
@@ -261,11 +222,7 @@ void recorrerMatriz1_4Descendente(int arr[][N]){
         if( j <= i ){
           printf("%d \t", arr[i][j]);
         }
-        else{
-          printf("\t");
-        }
     }
-    printf("\n");
   }
 }
 
@@ -273,13 +230,9 @@ void recorrerMatriz2_3Ascendente(int arr[][N]){
   for( int i = 0; i < N; i++ ) {
       for( int j = 0; j < N; j++ ){
         if( j >= i ){
-          printf("%d \t", arr[i][j]);
-        }
-        else{
-          printf("\t");
+          printf("%d\t", arr[i][j]);
         }
     }
-    printf("\n");
   }
 }
 
@@ -287,67 +240,31 @@ void recorrerMatriz2_3Descendente(int arr[][N]){
   for( int i = N - 1; 0 <= i; i-- ) {
       for( int j = 0; j < N; j++ ){
         if( j >= i ){
-          printf("%d \t", arr[i][j]);
-        }
-        else{
-          printf("\t");
+          printf("%d\t", arr[i][j]);
         }
     }
-    printf("\n");
   }
 }
 
-//Todas las que estoy haciendo con banderas se pueden hacer mejor, sin embargo, Roberto es flojo.
-
 void recorrerMatriz1Ascendente(int arr[][N]){
-  bool bandera = true;
-  int contador = 0, medio = N / 2;
-  for( int i = 0; i < N; i++ ) {
-      for( int j = 0; j < N; j++ ){
-        if( j <= contador ){
-          printf("%d \t", arr[i][j]);
-        }
-        else{
-          printf("\t");
-        }
+  int m = (N-1)/2;
+  for ( int i = 0; i < N; i++ ){
+    for ( int j = 0;j < N; j++ ){
+      if( j <= m && j <= i && j <= N - 1 - i ){
+        printf("%d\t", arr[i][j]);
+      }
     }
-    
-    if ( bandera && contador == medio ){
-      bandera = false; 
-    }
-
-    if ( bandera ){
-      contador++;
-    }
-    else{
-      contador--;
-    }
-    printf("\n");
   }
 }
 
 void recorrerMatriz1Descendente(int arr[][N]){
-  bool bandera = true;
-  int contador = 0, medio = N / 2;
-  for( int i = N - 1; 0 <= i; i-- ) {
-      for( int j = 0; j < N; j++ ){
-        if( j <= contador ){
-          printf("%d \t", arr[i][j]);
-        }
-        else{
-          printf("\t");
-        }
+  int m = (N-1)/2;
+  for ( int i = N; 0 <= i; i-- ){
+    for ( int j = 0;j < N; j++ ){
+      if( j <= m && j <= i && j <= N - 1 - i ){
+        printf("%d \t", arr[i][j]);
+      }
     }
-    if ( bandera && contador == medio ){
-      bandera = false; 
-    }
-    if ( bandera ){
-      contador++;
-    }
-    else{
-      contador--;
-    }
-    printf("\n");
   }
 }
 
@@ -357,11 +274,7 @@ void recorrerMatriz2Ascendente(int arr[][N]){
       if( j < N - i && j >= i ){
         printf("%d \t", arr[i][j]);
       }
-      else{
-        printf("\t");
-      }
     }
-    printf("\n");
   }
 }
 
@@ -371,100 +284,51 @@ void recorrerMatriz2Descendente(int arr[][N]){
       if( j < N - i && j >= i ){
         printf("%d \t", arr[i][j]);
       }
-      else{
-        printf("\t");
-      }
     }
-    printf("\n");
   }
 }
 
 void recorrerMatriz3Ascendente(int arr[][N]){
-  bool bandera = true;
-  int contador = N - 1, medio = N / 2;
-  for( int i = 0; i < N; i++ ) {
-      for( int j = 0; j < N; j++ ){
-        if( j >= contador ){
-          printf("%d \t", arr[i][j]);
-        }
-        else{
-          printf("\t");
-        }
+  int m = (N-1)/2;
+  for ( int i = 0; i < N; i++ ){
+    for ( int j = 0;j < N; j++ ){
+      if( j >= m && j >= i && j >= N - 1 - i ){
+        printf("%d \t", arr[i][j]);
+      }
     }
-    
-    if ( bandera && contador == medio ){
-      bandera = false; 
-    }
-
-    if ( !bandera ){
-      contador++;
-    }
-    else{
-      contador--;
-    }
-    printf("\n");
   }
 }
 
 void recorrerMatriz3Descendente(int arr[][N]){
-  bool bandera = true;
-  int contador = N - 1, medio = N / 2;
-  for( int i = N - 1; 0 <= i; i-- ) {
-      for( int j = 0; j < N; j++ ){
-        if( j >= contador ){
-          printf("%d \t", arr[i][j]);
-        }
-        else{
-          printf("\t");
-        }
+  int m = (N-1)/2;
+  for ( int i = N; 0 <= i; i-- ){
+    for ( int j = 0;j < N; j++ ){
+      if( j >= m && j >= i && j >= N - 1 - i ){
+        printf("%d \t", arr[i][j]);
+      }
     }
-    if ( bandera && contador == medio ){
-      bandera = false; 
-    }
-    if ( !bandera ){
-      contador++;
-    }
-    else{
-      contador--;
-    }
-    printf("\n");
   }
 }
 
 void recorrerMatriz4Ascendente(int arr[][N]){
-  int m = N / 2, contador = 1;
-  for( int i = 0; i < N; i++ ) {
-    for( int j = 0; j < N; j++ ){
-      if( i > m-1 && j > m - contador && j < m + contador ){
+  int m = (N-1)/2;
+  for ( int i = 0; i < N; i++ ){
+    for ( int j = 0;j < N; j++ ){
+      if( i >= m && j <= i && j >= N - 1 - i ){
         printf("%d \t", arr[i][j]);
       }
-      else{
-        printf("\t");
-      }
     }
-    if( i > m-1 ){
-      contador++;
-    }
-    printf("\n");
   }
 }
 
-//Error, no se respeta el orden, no olvdar arreglarlo
 void recorrerMatriz4Descendente(int arr[][N]){
-  int m = N / 2, contador = 1;
-  for( int i = N - 1; 0 <= i; i-- ) {
-    for( int j = 0; j < N; j++ ){
-      if( i > m-1 && j > m - contador && j < m + contador ){
+  int m = (N-1)/2;
+  for ( int i = N - 1; 0 <= i; i-- ){
+    for ( int j = 0;j < N; j++ ){
+      if( i >= m && j <= i && j >= N - 1 - i ){
         printf("%d \t", arr[i][j]);
       }
-      else{
-        printf("\t");
-      }
     }
-    if( i > m-1 ){
-      contador++;
-    }
-    printf("\n");
   }
 }
 
@@ -474,11 +338,7 @@ void recorrerDiagonalPrincipal(int arr[][N]){
       if( i == j ){
         printf("%d \t", arr[i][j]);
       }
-      else{
-        printf("\t");
-      }
     }
-  printf("\n");
   }
 }
 
@@ -488,10 +348,6 @@ void recorrerDiagonalInvertida(int arr[][N]){
       if( j == N - i - 1 ){
         printf("%d \t", arr[i][j]);
       }
-      else{
-        printf("\t");
-      }
     }
-  printf("\n");
   }
 }
