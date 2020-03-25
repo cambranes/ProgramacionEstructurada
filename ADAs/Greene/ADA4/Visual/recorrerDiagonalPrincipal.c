@@ -1,7 +1,7 @@
 /**
- * @file recorrerMatriz2Ascendente.c
+ * @file recorrerDiagonalPrincipal.c
  * @author Carlos Enrique Greene Mex (greenecarlos17@gmail.com)
- * @brief Programa que recorre la zona 3 de forma descendente de una matriz de NxN
+ * @brief Programa que recorre la diagonal principal forma visual de una matriz de NxN
  * @version 0.1
  * @date 2020-03-22
  * 
@@ -21,7 +21,7 @@
  * @param arr 
  */
 void asignarArreglo(int arr[][N]);
-void recorrerMatriz3Descendente(int arr[][N]);
+void recorrerDiagonalPrincipal(int arr[][N]);
 
 /**
  * @brief Main donde inicia el programa
@@ -36,7 +36,7 @@ int main()
 
     asignarArreglo(arreglo);
 
-    recorrerMatriz3Descendente(arreglo);
+    recorrerDiagonalPrincipal(arreglo);
 
     return 0;
 }
@@ -58,21 +58,19 @@ void asignarArreglo(int arr[][N])
 }
 
 /**
- * @brief Función que imprime la zona 3 forma de descendente de la matriz
+ * @brief Función que imprime la diagonal principal de forma lineal de la matriz
  * 
  * @param arr 
  */
-void recorrerMatriz3Descendente(int arr[][N])
+void recorrerDiagonalPrincipal(int arr[][N])
 {
-    for(int i=N-1; i>=0; i--)
-    {
-        for (int j=N-i-1; j<N; j++)
+    for(int i=0; i<N; i++)
+    {    
+        for(int j=0; j<i; j++)
         {
-            if (i<=j)
-            {
-                printf("%d,%d: %d\t", i, j, arr[i][j]);
-            }
+            printf("\t");
         }
+        printf("%d,%d: %d\t", i, i, arr[i][i]);  
         printf("\n");
     }
 }

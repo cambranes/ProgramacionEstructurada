@@ -1,7 +1,7 @@
 /**
- * @file recorrerMatriz3-4Ascendente.c
+ * @file recorrerMatriz2-3Descendente.c
  * @author Carlos Enrique Greene Mex (greenecarlos17@gmail.com)
- * @brief Programa que recorre la zona 3 a 4 de forma ascendente de una matriz de NxN
+ * @brief Programa que recorre la zona 2 a 3 forma descendente y visual de una matriz de NxN
  * @version 0.1
  * @date 2020-03-22
  * 
@@ -21,7 +21,7 @@
  * @param arr 
  */
 void asignarArreglo(int arr[][N]);
-void recorrerMatriz3_4Ascendente(int arr[][N]);
+void recorrerMatriz2_3Descendente(int arr[][N]);
 
 /**
  * @brief Main donde inicia el programa
@@ -36,7 +36,7 @@ int main()
 
     asignarArreglo(arreglo);
 
-    recorrerMatriz3_4Ascendente(arreglo);
+    recorrerMatriz2_3Descendente(arreglo);
 
     return 0;
 }
@@ -58,15 +58,19 @@ void asignarArreglo(int arr[][N])
 }
 
 /**
- * @brief Función que imprime la zona 3 a 4 de forma ascendente de la matriz
+ * @brief Función que imprime la zona 2 a 3 de forma descendente y visual de la matriz
  * 
  * @param arr 
  */
-void recorrerMatriz3_4Ascendente(int arr[][N])
+void recorrerMatriz2_3Descendente(int arr[][N])
 {
-    for(int i=0; i<N; i++)
+    for(int i=N-1; i>=0; i--)
     {
-        for (int j = (N-i-1); j<N; j++)
+        for (int y = 0; y<i; y++)
+        {
+            printf("\t");
+        }
+        for (int j = i; j<N; j++)
         {
             printf("%d,%d: %d\t", i, j, arr[i][j]);
         }

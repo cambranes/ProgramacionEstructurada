@@ -1,7 +1,7 @@
 /**
- * @file recorrerDiagonalInvertida.c
+ * @file recorrerMatriz1-4Descendente.c
  * @author Carlos Enrique Greene Mex (greenecarlos17@gmail.com)
- * @brief Programa que recorre la diagonal inversa de una matriz de NxN
+ * @brief Programa que recorre la zona 1 a 4 forma descendente de una matriz de NxN
  * @version 0.1
  * @date 2020-03-22
  * 
@@ -13,7 +13,7 @@
 #include <time.h>
 
 //Se define el valor de N como constante
-#define N 3
+#define N 3     
 
 /**
  * @brief Prototipos de las funciones
@@ -21,7 +21,7 @@
  * @param arr 
  */
 void asignarArreglo(int arr[][N]);
-void recorrerDiagonalInvertida(int arr[][N]);
+void recorrerMatriz1_4Desscendente(int arr[][N]);
 
 /**
  * @brief Main donde inicia el programa
@@ -36,7 +36,7 @@ int main()
 
     asignarArreglo(arreglo);
 
-    recorrerDiagonalInvertida(arreglo);
+    recorrerMatriz1_4Desscendente(arreglo);
 
     return 0;
 }
@@ -58,15 +58,18 @@ void asignarArreglo(int arr[][N])
 }
 
 /**
- * @brief Funcion que imprime la diagonal inversa de la matriz
+ * @brief Función que imprime la zona 1 a 4 de forma descendente y visual de la matriz
  * 
  * @param arr 
  */
-void recorrerDiagonalInvertida(int arr[][N])
+void recorrerMatriz1_4Desscendente(int arr[][N])
 {
-    for(int i=0; i<N; i++)
-    {    
-        printf("%d,%d: %d\t", N-i-1, i, arr[N-i-1][i]);  
+    for(int i=N-1; i>=0; i--)
+    {
+        for (int j = 0; j<=i; j++)
+        {
+            printf("%d,%d: %d\t", i, j, arr[i][j]);
+        }
         printf("\n");
     }
 }

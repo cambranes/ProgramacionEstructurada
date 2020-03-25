@@ -1,7 +1,7 @@
 /**
- * @file recorrerMatriz2Ascendente.c
+ * @file recorrerDiagonalInvertida.c
  * @author Carlos Enrique Greene Mex (greenecarlos17@gmail.com)
- * @brief Programa que recorre la zona 4 de forma ascendente de una matriz de NxN
+ * @brief Programa que recorre la diagonal inversa y no visual de una matriz de NxN
  * @version 0.1
  * @date 2020-03-22
  * 
@@ -13,7 +13,7 @@
 #include <time.h>
 
 //Se define el valor de N como constante
-#define N 3     
+#define N 3
 
 /**
  * @brief Prototipos de las funciones
@@ -21,7 +21,7 @@
  * @param arr 
  */
 void asignarArreglo(int arr[][N]);
-void recorrerMatriz4Ascendente(int arr[][N]);
+void recorrerDiagonalInvertida(int arr[][N]);
 
 /**
  * @brief Main donde inicia el programa
@@ -36,7 +36,7 @@ int main()
 
     asignarArreglo(arreglo);
 
-    recorrerMatriz4Ascendente(arreglo);
+    recorrerDiagonalInvertida(arreglo);
 
     return 0;
 }
@@ -58,21 +58,15 @@ void asignarArreglo(int arr[][N])
 }
 
 /**
- * @brief Función que imprime la zona 4 forma de ascendente de la matriz
+ * @brief Funcion que imprime la diagonal inversa y no visual de la matriz
  * 
  * @param arr 
  */
-void recorrerMatriz4Ascendente(int arr[][N])
+void recorrerDiagonalInvertida(int arr[][N])
 {
     for(int i=0; i<N; i++)
-    {
-        for (int j=N-i-1; j<N; j++)
-        {
-            if (i>=j)
-            {
-                printf("%d,%d: %d\t", i, j, arr[i][j]);
-            }
-        }
+    {    
+        printf("%d,%d: %d\t", N-i-1, i, arr[N-i-1][i]);  
         printf("\n");
     }
 }

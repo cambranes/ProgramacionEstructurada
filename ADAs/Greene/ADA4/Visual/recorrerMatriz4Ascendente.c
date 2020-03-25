@@ -1,7 +1,7 @@
 /**
- * @file recorrerDiagonalPrincipal.c
+ * @file recorrerMatriz2Ascendente.c
  * @author Carlos Enrique Greene Mex (greenecarlos17@gmail.com)
- * @brief Programa que recorre la diagonal principal de una matriz de NxN
+ * @brief Programa que recorre la zona 4 de forma ascendente y visual de una matriz de NxN
  * @version 0.1
  * @date 2020-03-22
  * 
@@ -21,7 +21,7 @@
  * @param arr 
  */
 void asignarArreglo(int arr[][N]);
-void recorrerDiagonalPrincipal(int arr[][N]);
+void recorrerMatriz4Ascendente(int arr[][N]);
 
 /**
  * @brief Main donde inicia el programa
@@ -36,7 +36,7 @@ int main()
 
     asignarArreglo(arreglo);
 
-    recorrerDiagonalPrincipal(arreglo);
+    recorrerMatriz4Ascendente(arreglo);
 
     return 0;
 }
@@ -58,15 +58,27 @@ void asignarArreglo(int arr[][N])
 }
 
 /**
- * @brief Función que imprime la diagonal principal de la matriz
+ * @brief Función que imprime la zona 4 forma de ascendente y visual de la matriz
  * 
  * @param arr 
  */
-void recorrerDiagonalPrincipal(int arr[][N])
+void recorrerMatriz4Ascendente(int arr[][N])
 {
+    int aux;
     for(int i=0; i<N; i++)
-    {    
-        printf("%d,%d: %d\t", i, i, arr[i][i]);  
+    {
+        for (int j=0; j<N; j++)
+        {
+            aux=i+j;
+            if (i>=j && aux>=N-1)
+            {
+                printf("%d,%d: %d\t", i, j, arr[i][j]);
+            }
+            else if(i>=(N-1)/2)
+            {
+                printf("\t");
+            }
+        }
         printf("\n");
     }
 }
