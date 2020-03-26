@@ -224,7 +224,7 @@ void recorrerMatriz1_2Ascendente(int arr[][N]) {
         for(int j = 0; j < N - i; j++) {
             printf("%d  ", arr[i][j]);
         }
-        
+        printf("\n");
     }
 }
 
@@ -233,7 +233,7 @@ void recorrerMatriz1_2Descendente(int arr[][N]) {
         for(int j = 0; j < N - i; j++) {
             printf("%d  ", arr[i][j]);
         }
-        
+        printf("\n");
     }
 }
 
@@ -242,7 +242,7 @@ void recorrerMatriz3_4Ascendente(int arr[][N]) {
         for(int j = (N - 1) - i; j <= N - 1; j++) {
             printf("%d  ", arr[i][j]);
         }
-        
+        printf("\n");
     }
 }
 
@@ -251,7 +251,7 @@ void recorrerMatriz3_4Descendente(int arr[][N]) {
         for(int j = (N - 1) - i; j < N; j++) {
             printf("%d  ", arr[i][j]);
         }
-        
+        printf("\n");
     }
 }
 
@@ -260,7 +260,7 @@ void recorrerMatriz1_4Ascendente(int arr[][N]) {
         for(int j = 0; j <= i; j++) {
             printf("%d  ", arr[i][j]);
         }
-        
+        printf("\n");
     }
 }
 
@@ -269,7 +269,7 @@ void recorrerMatriz1_4Descendente(int arr[][N]) {
         for(int j = 0; j <= i; j++) {
             printf("%d  ", arr[i][j]);
         }
-        
+        printf("\n");
     }
 }
 
@@ -278,7 +278,7 @@ void recorrerMatriz2_3Ascendente(int arr[][N]) {
         for(int j = i; j < N; j++) {
             printf("%d  ", arr[i][j]);
         }
-        
+        printf("\n");
     }
 }
 
@@ -287,7 +287,7 @@ void recorrerMatriz2_3Descendente(int arr[][N]) {
         for(int j = i; j < N; j++) {
             printf("%d  ", arr[i][j]);
         }
-        
+        printf("\n");
     }
 }
 
@@ -302,7 +302,7 @@ void recorrerMatriz1Ascendente(int arr[][N]) {
                 printf("%d  ", arr[i][j]);
             }
         }
-        
+        printf("\n");
     }
 }
 
@@ -317,7 +317,7 @@ void recorrerMatriz1Descendente(int arr[][N]) {
                 printf("%d  ", arr[i][j]);
             }
         }
-        
+        printf("\n");
     }
 }
 
@@ -326,7 +326,7 @@ void recorrerMatriz2Ascendente(int arr[][N]) {
         for(int j = i; j <= (N - 1) - i; j++) {
             printf("%d  ", arr[i][j]);
         }
-        
+        printf("\n");
     }
 }
 
@@ -335,7 +335,7 @@ void recorrerMatriz2Descendente(int arr[][N]) {
         for(int j = i; j <= (N - 1) - i; j++) {
             printf("%d  ", arr[i][j]);
         }
-        
+        printf("\n");
     }
 }
 
@@ -351,7 +351,7 @@ void recorrerMatriz3Ascendente(int arr[][N]) {
                 printf("%d  ", arr[i][j]);
             }
        }
-       
+       printf("\n");
     }
 }
 
@@ -367,7 +367,7 @@ void recorrerMatriz3Descendente(int arr[][N]) {
                 printf("%d  ", arr[i][j]);
             }
         }
-        
+        printf("\n");
     }
 }
 
@@ -376,7 +376,7 @@ void recorrerMatriz4Ascendente(int arr[][N]) {
         for(int j = (N - 1) - i; j <= i; j++) {
             printf("%d  ", arr[i][j]);
         }
-        
+        printf("\n");
     }
 }
 
@@ -385,18 +385,18 @@ void recorrerMatriz4Descendente(int arr[][N]) {
         for(int j = (N - 1) - i; j <= i; j++) {
             printf("%d  ", arr[i][j]);
         }
-        
+        printf("\n");
     }
 }
 
 void recorrerDiagonalPrincipal(int arr[][N]) {
     for(int i = 0; i < N; i++) {
-        printf("%d  ", arr[i][i]);
+        printf("%d\n", arr[i][i]);
     }
 }
 
 void recorrerDiagonalInvertida(int arr[][N]) {
     for(int i = 0; i < N; i++) {
-        printf("%d  ", arr[i][(N - 1) - i]);
+        printf("%d\n", arr[i][(N - 1) - i]);
     }
 }
