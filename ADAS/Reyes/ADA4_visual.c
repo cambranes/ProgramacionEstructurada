@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-int N = 3;
+int N = 5;
 int running = 1;
 
 // Main Functions
@@ -221,182 +221,274 @@ void printArr(int arr[][N]) {
 // Path Funcionts
 void recorrerMatriz1_2Ascendente(int arr[][N]) {
     for(int i = 0; i < N; i++) {
-        for(int j = 0; j < N - i; j++) {
-            printf("%d  ", arr[i][j]);
+        for(int j = 0; j < N; j++) {
+            if( j <= (N - 1) - i  ) {
+                printf("\033[35m%d  \033[0m", arr[i][j]);
+            } else {
+                printf("%d  ", arr[i][j]);
+            }
         }
-        
+        printf("\n");
     }
 }
 
 void recorrerMatriz1_2Descendente(int arr[][N]) {
-    for(int i = N - 1; i >= 0; i--) {
-        for(int j = 0; j < N - i; j++) {
-            printf("%d  ", arr[i][j]);
+    for(int i = (N-1); i >= 0; i--) {
+        for(int j = 0; j < N; j++) {
+            if( j <= (N - 1) - ((N - 1) - i) ){
+                printf("\033[35m%d  \033[0m", arr[i][j]);
+            } else {
+                printf("%d  ", arr[i][j]);
+            }
         }
-        
+        printf("\n");
     }
 }
 
 void recorrerMatriz3_4Ascendente(int arr[][N]) {
-    for(int i = 0; i <= (N - 1); i++) {
-        for(int j = (N - 1) - i; j <= N - 1; j++) {
-            printf("%d  ", arr[i][j]);
+    for(int i = 0; i < N; i++) {
+        for(int j = 0; j < N; j++) {
+            if( j >= (N - 1) - i ) {
+                printf("\033[35m%d  \033[0m", arr[i][j]);
+            } else {
+                printf("%d  ", arr[i][j]);
+            }
         }
-        
+        printf("\n");
     }
 }
 
 void recorrerMatriz3_4Descendente(int arr[][N]) {
-    for(int i = N - 1; i >= 0; i--) {
-        for(int j = (N - 1) - i; j < N; j++) {
-            printf("%d  ", arr[i][j]);
+    for(int i = (N-1); i >= 0; i--) {
+        for(int j = 0; j < N; j++) {
+            if( j >= (N - 1) - ((N - 1) - i) ) {
+                printf("\033[35m%d  \033[0m", arr[i][j]);
+            } else {
+                printf("%d  ", arr[i][j]);
+            }
         }
-        
+        printf("\n");
     }
 }
 
 void recorrerMatriz1_4Ascendente(int arr[][N]) {
     for(int i = 0; i < N; i++) {
-        for(int j = 0; j <= i; j++) {
-            printf("%d  ", arr[i][j]);
+        for(int j = 0; j < N; j++) {
+            if( j <= i ) {
+                printf("\033[35m%d  \033[0m", arr[i][j]);
+            } else {
+                printf("%d  ", arr[i][j]);
+            }
         }
-        
+        printf("\n");
     }
 }
 
 void recorrerMatriz1_4Descendente(int arr[][N]) {
-    for(int i = (N - 1); i >= 0; i--) {
-        for(int j = 0; j <= i; j++) {
-            printf("%d  ", arr[i][j]);
+    for(int i = (N-1); i >= 0; i--) {
+        for(int j = 0; j < N; j++) {
+            if( j <= ((N-1) - i) ) {
+                printf("\033[35m%d  \033[0m", arr[i][j]);
+            } else {
+                printf("%d  ", arr[i][j]);
+            }
         }
-        
+        printf("\n");
     }
 }
 
 void recorrerMatriz2_3Ascendente(int arr[][N]) {
     for(int i = 0; i < N; i++) {
-        for(int j = i; j < N; j++) {
-            printf("%d  ", arr[i][j]);
+        for(int j = 0; j < N; j++) {
+            if( j >= i) {
+                printf("\033[35m%d  \033[0m", arr[i][j]);
+            } else {
+                printf("%d  ", arr[i][j]);
+            }
         }
-        
+        printf("\n");
     }
 }
 
 void recorrerMatriz2_3Descendente(int arr[][N]) {
-    for(int i = (N - 1); i >= 0; i--) {
-        for(int j = i; j < N; j++) {
-            printf("%d  ", arr[i][j]);
+    for(int i = (N-1); i >= 0; i--) {
+        for(int j = 0; j < N; j++) {
+            if( j >= ((N-1) -i) ) {
+                printf("\033[35m%d  \033[0m", arr[i][j]);
+            } else {
+                printf("%d  ", arr[i][j]);
+            }
         }
-        
+        printf("\n");
     }
 }
 
 void recorrerMatriz1Ascendente(int arr[][N]) {
     for(int i = 0; i < N; i++) {
-        if( i <= N/2) {
-            for(int j = 0; j <= i; j++) {
-                printf("%d  ", arr[i][j]);
-            }
-        } else {
-            for(int j = 0; j <= (N - 1) - i; j++) {
-                printf("%d  ", arr[i][j]);
+        for(int j = 0; j < N; j++) {
+            if(i <= (N/2)) {
+                if( j <= i ) {
+                    printf("\033[35m%d  \033[0m", arr[i][j]);
+                } else {
+                    printf("%d  ", arr[i][j]);
+                }
+            } else {
+                if( j <= (N - 1) - i  ) {
+                    printf("\033[35m%d  \033[0m", arr[i][j]);
+                } else {
+                    printf("%d  ", arr[i][j]);
+                }
             }
         }
-        
+        printf("\n");
     }
 }
 
 void recorrerMatriz1Descendente(int arr[][N]) {
-    for(int i = (N - 1); i >= 0; i--) {
-        if( i <= N/2) {
-            for(int j = 0; j <= i; j++) {
-                printf("%d  ", arr[i][j]);
-            }
-        } else {
-            for(int j = 0; j <= (N - 1) - i; j++) {
-                printf("%d  ", arr[i][j]);
+    for(int i = (N-1); i >= 0; i--) {
+        for(int j = 0; j < N; j++) {
+            if(i <= (N/2)) {
+                if( j <= i ) {
+                    printf("\033[35m%d  \033[0m", arr[i][j]);
+                } else {
+                    printf("%d  ", arr[i][j]);
+                }
+            } else {
+                if( j <= (N - 1) - i  ) {
+                    printf("\033[35m%d  \033[0m", arr[i][j]);
+                } else {
+                    printf("%d  ", arr[i][j]);
+                }
             }
         }
-        
+        printf("\n");
     }
 }
 
 void recorrerMatriz2Ascendente(int arr[][N]) {
-    for(int i = 0; i <= N/2; i++) {
-        for(int j = i; j <= (N - 1) - i; j++) {
-            printf("%d  ", arr[i][j]);
+    for(int i = 0; i < N; i++) {
+        for(int j = 0; j < N; j++) {
+            if( i <= (N/2) && j <= (N - 1) - i) {
+                if( j >= i) {
+                    printf("\033[35m%d  \033[0m", arr[i][j]);
+                } else {
+                    printf("%d  ", arr[i][j]);
+                }
+            } else {
+                printf("%d  ", arr[i][j]);
+            }
         }
-        
+        printf("\n");
     }
 }
 
 void recorrerMatriz2Descendente(int arr[][N]) {
-    for(int i = N/2; i >= 0; i--) {
-        for(int j = i; j <= (N - 1) - i; j++) {
-            printf("%d  ", arr[i][j]);
+    for(int i = (N-1); i >= 0; i--) {
+        for(int j = 0; j < N; j++) {
+            if( (N - 1) - i <= (N/2) ) {
+                if( j <= (N - 1) - ((N - 1) - i) && j >= ((N-1) -i) ){
+                    printf("\033[35m%d  \033[0m", arr[i][j]);
+                } else {
+                    printf("%d  ", arr[i][j]);
+                }
+            } else {
+                printf("%d  ", arr[i][j]);
+            }
         }
-        
+        printf("\n");
     }
 }
 
 void recorrerMatriz3Ascendente(int arr[][N]) {
     for(int i = 0; i < N; i++) {
-        if( i <= N/2) {
-            for(int j = (N - 1) - i; j < N; j++) {
-                printf("%d  ", arr[i][j]);
-            } 
-        } else {
-
-            for(int j = i; j < N; j++) {
+        for(int j = 0; j < N; j++) {
+            if(j >= (N/2)) {
+                if( j >= i && j >= (N - 1) - i) {
+                    printf("\033[35m%d  \033[0m", arr[i][j]);
+                } else {
+                    printf("%d  ", arr[i][j]);
+                }
+            } else {
                 printf("%d  ", arr[i][j]);
             }
-       }
-       
+        }
+        printf("\n");
     }
 }
 
 void recorrerMatriz3Descendente(int arr[][N]) {
-    for(int i = (N - 1); i >= 0; i--) {
-        if(i <= N/2) {
-            for(int j = (N - 1) - i; j < N; j++) {
-                printf("%d  ", arr[i][j]);
-            }
-        } else {
-
-            for(int j = i; j < N; j++){
+    for(int i = (N-1); i >= 0; i--) {
+        for(int j = 0; j < N; j++) {
+            if(j >= (N/2)) {
+                if( j >= i && j >= (N - 1) - i) {
+                    printf("\033[35m%d  \033[0m", arr[i][j]);
+                } else {
+                    printf("%d  ", arr[i][j]);
+                }
+            } else {
                 printf("%d  ", arr[i][j]);
             }
         }
-        
+        printf("\n");
     }
 }
 
 void recorrerMatriz4Ascendente(int arr[][N]) {
-    for(int i = N/2; i < N; i++) {
-        for(int j = (N - 1) - i; j <= i; j++) {
-            printf("%d  ", arr[i][j]);
+    for(int i = 0; i < N; i++) {
+        for(int j = 0; j < N; j++) {
+            if( i >= (N/2) ) {
+                if( j >= (N - 1) - i && j <= i) {
+                    printf("\033[35m%d  \033[0m", arr[i][j]);
+                } else {
+                    printf("%d  ", arr[i][j]);
+                }
+            } else {
+                printf("%d  ", arr[i][j]);
+            }
         }
-        
+        printf("\n");
     }
 }
 
 void recorrerMatriz4Descendente(int arr[][N]) {
-    for(int i = (N - 1); i >= N/2; i--) {
-        for(int j = (N - 1) - i; j <= i; j++) {
-            printf("%d  ", arr[i][j]);
+    for(int i = (N-1); i >= 0; i--) {
+        for(int j = 0; j < N; j++) {
+            if( i < N ) {
+                if( j <= ((N-1) - i) && j >= (N - 1) - ((N - 1) - i) ) {
+                    printf("\033[35m%d  \033[0m", arr[i][j]);
+                } else {
+                    printf("%d  ", arr[i][j]);
+                }
+            } else {
+                printf("%d  ", arr[i][j]);
+            }
         }
-        
+        printf("\n");
     }
 }
 
 void recorrerDiagonalPrincipal(int arr[][N]) {
     for(int i = 0; i < N; i++) {
-        printf("%d  ", arr[i][i]);
+        for(int j = 0; j < N; j++) {
+            if( i == j) {
+                printf("\033[35m%d  \033[0m", arr[i][j]);
+            } else {
+                printf("%d  ", arr[i][j]);
+            }
+        }
+        printf("\n");
     }
 }
 
 void recorrerDiagonalInvertida(int arr[][N]) {
     for(int i = 0; i < N; i++) {
-        printf("%d  ", arr[i][(N - 1) - i]);
+        for(int j = 0; j < N; j++) {
+            if( (N - 1) - i == j) {
+                printf("\033[35m%d  \033[0m", arr[i][j]);
+            } else {
+                printf("%d  ", arr[i][j]);
+            }
+        }
+        printf("\n");
     }
 }
