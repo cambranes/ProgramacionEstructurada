@@ -1,0 +1,2 @@
+los archivos que tiene en el titulos las siglas RG despues del nombre de la funcion, son aquellas que tienen una representación grafica al ejecutarse
+mientras que los que no lo tienen son lo que unicamente representan los numeros solictados por la funcion de manera lineal.
