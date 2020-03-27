@@ -81,3 +81,4 @@ void recorrerMatriz3Ascendente(int arr[][N])
         }
         printf("\n");
     }
+}
