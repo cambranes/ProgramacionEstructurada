@@ -167,7 +167,7 @@ void simplificarRacional(struct racional *r1)
     }
     while (aux2<=r1->numerador && aux2<=r1->denominador)
     {
-        if (r1->numerador%aux2==0 && r1->denominador%aux2)
+        if (r1->numerador%aux2==0 && r1->denominador%aux2==0)
         {
             r1->numerador=r1->numerador/aux2;
             r1->denominador=r1->denominador/aux2;
