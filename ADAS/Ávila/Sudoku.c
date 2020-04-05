@@ -12,12 +12,12 @@ typedef struct table
     tablePart table[3][3];
 } table;
 
-void fillTable(table *tab);
-void printTable(table *tab);
-int checkLineH(table *tab);
-int checkLineV(table *tab);
-int checkSquare(table *tab);
-void result(table *tab);
+void fillTable(table *sudo);
+void printTable(table *sudo);
+int checkLineH(table *sudo);
+int checkLineV(table *sudo);
+int checkSquare(table *sudo);
+void result(table *sudo);
 
 int main()
 {
@@ -29,7 +29,7 @@ int main()
     return 0;
 }
 
-void fillTable(table *tab)
+void fillTable(table *sudo)
 {
 
     for (int i = 0; i < 3; i++)
@@ -40,14 +40,14 @@ void fillTable(table *tab)
             {
                 for (int l = 0; l < 3; l++)
                 {
-                    (*tab).table[i][j].table[k][l] = rand() % 9 + 1;
+                    (*sudo).table[i][j].table[k][l] = rand() % 9 + 1;
                 }
             }
         }
     }
 }
 
-void printTable(table *tab)
+void printTable(table *sudo)
 {
     for (int i = 0; i < 3; i++)
     {
@@ -57,7 +57,7 @@ void printTable(table *tab)
             {
                 for (int l = 0; l < 3; l++)
                 {
-                    printf("%d ", (*tab).table[i][k].table[j][l]);
+                    printf("%d ", (*sudo).table[i][k].table[j][l]);
                 }
                 printf("  ");
             }
@@ -67,7 +67,7 @@ void printTable(table *tab)
     }
 }
 
-int checkLineH(table *tab)
+int checkLineH(table *sudo)
 {
     int checked = 1;
 
@@ -81,7 +81,7 @@ int checkLineH(table *tab)
             {
                 for (int b = 0; b < 3; b++)
                 {
-                    line[ite] = (*tab).table[i][a].table[j][b];
+                    line[ite] = (*sudo).table[i][a].table[j][b];
                     ite += 1;
                 }
             }
@@ -101,7 +101,7 @@ int checkLineH(table *tab)
     return checked;
 }
 
-int checkLineV(table *tab)
+int checkLineV(table *sudo)
 {
     int checked = 1;
 
@@ -115,7 +115,7 @@ int checkLineV(table *tab)
             {
                 for (int b = 0; b < 3; b++)
                 {
-                    line[ite] = (*tab).table[j][i].table[b][a];
+                    line[ite] = (*sudo).table[j][i].table[b][a];
                     ite += 1;
                 }
             }
@@ -135,7 +135,7 @@ int checkLineV(table *tab)
     return checked;
 }
 
-int checkSquare(table *tab)
+int checkSquare(table *sudo)
 {
     int checked = 1;
     int acum = 0;
@@ -150,7 +150,7 @@ int checkSquare(table *tab)
             {
                 for (int b = 0; b < 3; b++)
                 {
-                    line[ite] = (*tab).table[i][j].table[a][b];
+                    line[ite] = (*sudo).table[i][j].table[a][b];
                     ite += 1;
                 }
             }
@@ -175,13 +175,13 @@ int checkSquare(table *tab)
     return checked;
 }
 
-void result(table *tab)
+void result(table *sudo)
 {
     int a, b, c;
     
-    a = checkLineV(tab);
-    b = checkLineH(tab);
-    c = checkSquare(tab);
+    a = checkLineV(sudo);
+    b = checkLineH(sudo);
+    c = checkSquare(sudo);
 
     if (a == 1 && b == 1 && c == 1)
     {
