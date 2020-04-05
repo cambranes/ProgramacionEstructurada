@@ -25,7 +25,11 @@ int main() {
 
   tableroComp sudoku;
 
-  //llenarTablero(&sudoku);
+  llenarTablero(&sudoku);
+
+  /*
+
+    // SUDOKU
 
   sudoku.tablero[0][0].tablero[0][0] = 5;
   sudoku.tablero[0][0].tablero[0][1] = 3;
@@ -109,38 +113,11 @@ int main() {
   sudoku.tablero[2][2].tablero[2][1] = 7;
   sudoku.tablero[2][2].tablero[2][2] = 9;
 
+  */
+
   imprimirTablero(&sudoku);
 
   esSudoku(&sudoku);
-
-/*
-  for (int i = 0; i < 3; i++) {
-    for (int j = 0; j < 3; j++) {
-      for (int a = 0; a < 3; a++) {
-        for (int b = 0; b < 3; b++) {
-          sudoku.tablero[i][j].tablero[a][b] = rand() % 9 + 1;
-        }
-      }
-    }
-  }
-
-  for (int i = 0; i < 3; i++) {
-    for (int j = 0; j < 3; j++) {
-      for (int a = 0; a < 3; a++) {
-        for (int b = 0; b < 3; b++) {
-          printf("%d ", sudoku.tablero[i][a].tablero[j][b]);
-        }
-        printf("  ");
-      }
-      printf("\n");
-    }
-    printf("\n");
-  }
-
-  printf("\n\n");
-
-*/
-
 
   printf("\n");
   return 0;
