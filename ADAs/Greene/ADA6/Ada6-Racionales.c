@@ -1,20 +1,20 @@
 #include <stdio.h>
 
-struct racional{
+typedef struct racional{
     int numerador;
     int denominador;
-};
+}racional;
 
-void leerRacional(struct racional *r1, struct racional *r2); 
-struct racional sumarRacional(struct racional r1, struct racional r2);
-struct racional restarRacionales(struct racional r1, struct racional r2);
-struct racional multiplicarRacionales(struct racional r1, struct racional r2);
-struct racional dividirRacionales(struct racional r1, struct racional r2);
-void simplificarRacional(struct racional *r1);
-void imprimirRacional(struct racional r3, struct racional r4, struct racional r5, struct racional r6);
+void leerRacional(racional *r1, racional *r2); 
+racional sumarRacional(racional r1, racional r2);
+racional restarRacionales(racional r1, racional r2);
+racional multiplicarRacionales(racional r1, racional r2);
+racional dividirRacionales(racional r1, racional r2);
+void simplificarRacional(racional *r1);
+void imprimirRacional(racional r3, racional r4, racional r5, racional r6);
 
-main(){
-    struct racional r1, r2, r3, r4, r5, r6;
+int main(){
+    racional r1, r2, r3, r4, r5, r6;
 
     leerRacional(&r1, &r2);
     r3 = sumarRacional(r1, r2);
@@ -26,7 +26,7 @@ main(){
     return 0;
 }
 
-void leerRacional(struct racional *r1, struct racional *r2)
+void leerRacional(racional *r1, racional *r2)
 {
     int numerador1, denominador1, numerador2, denominador2;
     scanf("%d", &numerador1);
@@ -41,9 +41,9 @@ void leerRacional(struct racional *r1, struct racional *r2)
 
 }
 
-struct racional sumarRacional(struct racional r1, struct racional r2)
+racional sumarRacional(racional r1, racional r2)
 {
-    struct racional resultados;
+    racional resultados;
     int numerador, denominador, d1, d2, mcm;
 
     d1=r1.denominador;
@@ -84,9 +84,9 @@ struct racional sumarRacional(struct racional r1, struct racional r2)
     return resultados;
 }
 
-struct racional restarRacionales(struct racional r1, struct racional r2)
+racional restarRacionales(racional r1, racional r2)
 {
-    struct racional resultados;
+    racional resultados;
     int numerador, denominador, d1, d2, mcm;
 
     d1=r1.denominador;
@@ -127,9 +127,9 @@ struct racional restarRacionales(struct racional r1, struct racional r2)
     return resultados;
 }
 
-struct racional multiplicarRacionales(struct racional r1, struct racional r2)
+racional multiplicarRacionales(racional r1, racional r2)
 {
-    struct racional resultados;
+    racional resultados;
     int numerador, denominador;
 
     numerador = r1.numerador*r2.numerador;
@@ -140,9 +140,9 @@ struct racional multiplicarRacionales(struct racional r1, struct racional r2)
     return resultados;
 }
 
-struct racional dividirRacionales(struct racional r1, struct racional r2)
+racional dividirRacionales(racional r1, racional r2)
 {
-    struct racional resultados;
+    racional resultados;
     int numerador, denominador;
 
     numerador = r1.numerador*r2.denominador;
@@ -153,7 +153,7 @@ struct racional dividirRacionales(struct racional r1, struct racional r2)
     return resultados;
 }
 
-void simplificarRacional(struct racional *r1)
+void simplificarRacional(racional *r1)
 {
     int aux1=0, aux2=2;
 
@@ -183,7 +183,7 @@ void simplificarRacional(struct racional *r1)
     }    
 }
 
-void imprimirRacional(struct racional r3, struct racional r4, struct racional r5, struct racional r6)
+void imprimirRacional(racional r3, racional r4, racional r5, racional r6)
 {
     printf("%d/%d \n", r3.numerador, r3.denominador);
     printf("%d/%d \n", r4.numerador, r4.denominador);
