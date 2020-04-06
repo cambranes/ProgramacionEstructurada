@@ -53,7 +53,7 @@ void asignarValores(sudoku *_sudoku)
                         aux2=verificadorMatriz(aux1, _sudoku->tableroCompleto[i][j].matriz, x, y);
                         aux3=verificadorLineas(aux1, seudoSudoku, x+i*3, y+j*3);
                         aux4=verificadorColumnas(aux1, seudoSudoku, x+i*3, y);
-                    } while (aux2==false || aux3==false/* || aux4==false*/);
+                    } while (aux2==false || aux3==false || aux4==false);
                 }               
             }
         }
@@ -84,32 +84,39 @@ bool verificadorMatriz(int num, int _matriz[][3], int x, int y)
 
 bool verificadorLineas(int num, int _seudoMatriz[][9], int x, int y)
 {
-    for (int i = 0; i < x; i++)
+    for (int i = 0; i < 9; i++)
     {
        if (num==_seudoMatriz[i][y])
        {
-           return false;
-       }          
+           if (x==i)
+           {
+               return true;
+           }
+           else 
+           {
+               return false;
+           }
+           
+        }          
     }
-    return true;
 }
 
 bool verificadorColumnas(int num, int _seudoMatriz[][9], int x, int y)
 {
     for (int i = 0; i < 9; i++)
     {
-        if (num==_seudoMatriz[i][y])
-        {
-            if (x==i)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-            
-        }           
+       if (num==_seudoMatriz[x][i])
+       {
+           if (y==i)
+           {
+               return true;
+           }
+           else 
+           {
+               return false;
+           }
+           
+        }          
     }
 }
 
