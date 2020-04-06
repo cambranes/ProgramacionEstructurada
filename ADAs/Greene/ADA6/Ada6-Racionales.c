@@ -5,13 +5,13 @@ typedef struct racional{
     int denominador;
 }racional;
 
-void leerRacional(racional *r1, racional *r2); 
-racional sumarRacional(racional r1, racional r2);
-racional restarRacionales(racional r1, racional r2);
-racional multiplicarRacionales(racional r1, racional r2);
-racional dividirRacionales(racional r1, racional r2);
-void simplificarRacional(racional *r1);
-void imprimirRacional(racional r3, racional r4, racional r5, racional r6);
+void leerRacional(racional *, racional *); 
+racional sumarRacional(racional, racional );
+racional restarRacionales(racional, racional );
+racional multiplicarRacionales(racional, racional);
+racional dividirRacionales(racional, racional);
+void simplificarRacional(racional *);
+void imprimirRacional(racional, racional, racional, racional);
 
 int main(){
     racional r1, r2, r3, r4, r5, r6;
@@ -135,6 +135,9 @@ racional multiplicarRacionales(racional r1, racional r2)
     numerador = r1.numerador*r2.numerador;
     denominador = r1.denominador*r2.denominador;
 
+    resultados.numerador=numerador;
+    resultados.denominador=denominador;
+
     simplificarRacional(&resultados);
 
     return resultados;
@@ -147,6 +150,9 @@ racional dividirRacionales(racional r1, racional r2)
 
     numerador = r1.numerador*r2.denominador;
     denominador = r1.denominador*r2.numerador;
+
+    resultados.numerador=numerador;
+    resultados.denominador=denominador;
 
     simplificarRacional(&resultados);
 
