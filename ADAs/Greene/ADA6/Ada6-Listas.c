@@ -57,7 +57,7 @@ void menu()
     printf("1.\tInsertar un elemento\n");
     printf("2.\tBorrar un elemento\n");
     printf("3.\tImprimir la lista\n");
-    printf("Para cerrar el programa preciona otro botón");
+    printf("Para cerrar el programa preciona otro botón\n");
 }
 
 void insertarOrdenado(AnimalPtr *sPtr, int valor)
@@ -126,13 +126,12 @@ void imprimir(AnimalPtr actual)
     }
     else
     {
-        printf("Imprimir lista");
+        printf("Imprimir lista\n");
         while (actual!=NULL)
         {
-            printf("%s", actual->edad);
+            printf("%d\n", actual->edad);
             actual=actual->siguiente;
         }
-        printf("\n");
     }
     
 }
