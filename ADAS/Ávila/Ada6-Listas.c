@@ -69,7 +69,7 @@ void menu()
     printf("\n");
 }
 
-void insertList(listP *elementP, int valor)
+void insertList(listP *elementP, int numberV)
 {
     listP newElement;
     listP lastNode;
@@ -78,12 +78,12 @@ void insertList(listP *elementP, int valor)
     newElement = (listNumbers *)malloc(sizeof(listNumbers));
     if (newElement != NULL)
     {
-        newElement->number = valor;
+        newElement->number = numberV;
         newElement->nextNode = NULL;
         lastNode = NULL;
         actualNode = *elementP;
 
-        while (actualNode != NULL && valor > actualNode->number)
+        while (actualNode != NULL && numberV > actualNode->number)
         {
             lastNode = actualNode;
             actualNode = actualNode->nextNode;
@@ -106,20 +106,20 @@ void insertList(listP *elementP, int valor)
     }
 }
 
-listP ereaseNode(listP actualNode, int valor)
+listP ereaseNode(listP actualNode, int numberV)
 {
-    listP paraereaseNode = NULL;
+    listP fereaseNode = NULL;
     if (actualNode != NULL)
     {
-        if (actualNode->number == valor)
+        if (actualNode->number == numberV)
         {
-            paraereaseNode = actualNode;
+            fereaseNode = actualNode;
             actualNode = actualNode->nextNode;
-            free(paraereaseNode);
+            free(fereaseNode);
         }
         else
         {
-            actualNode->nextNode = ereaseNode(actualNode->nextNode, valor);
+            actualNode->nextNode = ereaseNode(actualNode->nextNode, numberV);
         }
     }
     return actualNode;
