@@ -1,81 +1,39 @@
-/*
-Autor:Jorge Chí 16/Febrero/19
-Entradas: dos numeros enteros (A y B)
-Salida: los números ordenados de mayor a menor
-Procedimiento general: Se pregunta cual es mayor y luego se ordenan
-*/
+/* Escribir un programa que lea 2 números y los imprima de mayor a menor. */
 
-#include<stdio.h>
+#include <stdio.h>
 
-int lectura();
-void ascendente(int* numeroA1, int* numeroB1);
-void impresion(int numeroA2, int numeroB2);
-
-int main(){
-
-//se declaran los 2 valores
-
-int numeroA = 0, numeroB = 0;
-
-//entradas: se solicitan 2 valores al usuario
-
-numeroA = lectura();
-numeroB = lectura();
-
-//procedimiento: se comparan para saber cual es el mayor
-
-ascendente(&numeroA,&numeroB);
-
-//salidas: se imprimen en orden
-
-impresion(numeroA,numeroB);
-
-return 0;
+// Entrada
+int getNumber(){
+  int num;
+  scanf("%d", &num);
+  return num;
 }
 
-int lectura(){
-//entradas:ninguna
- int numero = 0;
-//procedimiento: se pide el numero
- printf("Digite uno de los numeros a ordenar: \n");
- scanf("%i",&numero);
-//salidas: el numero leido
- return numero;
-
+// Proceso
+int getResult(num1, num2){
+  if(num1 > num2){
+    return 1;
+  } else {
+    return 0;
+  }
 }
 
-void ascendente(int* numeroA1, int* numeroB1){
-//entradas: los dos numeros
-int temporal = 0;
-//procedimiento: se ordenan si el segundo el mayor al primero
-if (*numeroB1 >= *numeroA1){
-
-    temporal = *numeroB1;
-    *numeroB1 = *numeroA1;
-    *numeroA1 = temporal;
-
-}
-//salidas: ninguna
-
+// Salida
+void getOutput(flag, num1, num2){
+  if (flag == 1){
+    printf("%d %d\n", num1, num2);
+  } else {
+    printf("%d %d\n", num2, num1);
+  }
 }
 
-void impresion(int numeroA2, int numeroB2){
-//entradas: los dos numeros
+/* MAIN */
+int main() {
+  int num1, num2, flag;
+  num1 = getNumber();
+  num2 = getNumber();
+  flag = getResult(num1, num2);
+  getOutput(flag, num1, num2);
 
-//procedimiento: se imprimen en orden
-    printf("%i, %i", numeroA2, numeroB2);
-//salidas: ninguna
-
-
+  return 0;
 }
-
-/*
-Autor QA: Alejandro Torre Reyes
-Entradas: 5,8
-Salidas: 8,5
-Proceso: OK
-Modularización: OK. El main no puede estar más simple.
- Función lectura: OK
- Función ascendente: OK
- Función impresion: OK
-*/
